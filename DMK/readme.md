@@ -1,3 +1,5 @@
 目录结构都用omnioutliner来生成（github生成后用mac编写）
 
-代码用md来标注
+代码用md来生成
+
+每天对代码进行复盘

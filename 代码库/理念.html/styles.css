@@ -7,11 +7,10 @@ body#wholeDocument {
     -webkit-text-size-adjust:none; 
     font-family: Helvetica, sans-serif; 
     font-size: 12px;
-color: rgb(35,40,50);
-    font-family: "Helvetica Neue", sans-serif; 
-    font-size: 13px;
+font-family: "Hoefler Text", sans-serif; 
+    font-size: 14px;
     line-height: 1.32;
-    background-color: rgb(215,218,223);
+    background-color: rgb(247,241,231);
     
 }
 /* height hack to make nested divs set to 100% height work in Chrome and Firefox */
@@ -310,14 +309,16 @@ tr.note-row td.note {
     /* padding-left: 5px;
     padding-right: 3px; */ 
     border: none;
-color: rgba(68,78,94,0.65);
+color: rgb(121,121,121);
+    font-style: italic;
+    font-style: italic;
     
 }
 tr.note-row td.note-bg {
 
 }
 table.whole-row, table.whole-note, table#column-header, div.temp-wrapper {
-width: 1129px;
+width: 467px;
 
 }
 /******************
@@ -335,17 +336,12 @@ tr#header td:nth-of-type(1), tr.outline-row > td:nth-of-type(1), tr.note-row > t
     max-width: 20px; 
 }
 table.outline-column { 
-    width: 959px; 
-    max-width: 959px; 
+    width: 447px; 
+    max-width: 447px; 
 }
 tr#header td:nth-of-type(2), tr.outline-row > td:nth-of-type(2) { 
-    width: 959px; 
-    max-width: 959px; 
-    
-}
-tr#header td:nth-of-type(3), tr.outline-row > td:nth-of-type(3), tr.note-row > td:nth-of-type(3) { 
-    width: 150px; 
-    max-width: 150px; 
+    width: 447px; 
+    max-width: 447px; 
     
 }
 
@@ -354,9 +350,6 @@ tr.outline-row > td:nth-of-type(1), tr.note-row > td:nth-of-type(1){
     
 }
 tr.outline-row > td:nth-of-type(2) { 
-    
-}
-tr.outline-row > td:nth-of-type(3), tr.note-row > td:nth-of-type(3){ 
     
 }
 
@@ -380,9 +373,7 @@ Level# gutter color – Only applied to nested table for outline column
 ******************/
 /* Level 1 styles */
 tr.outline-row.level-1 td, tr.outline-row.level-1 div > div, tr.note-row.level-1 table.note-table td:nth-of-type(3) { 
-    color: rgb(69,79,95);
-    font-weight: 300;
-    font-size: 30px;
+    font-size: 28px;
     
 }
 /* Level 1 background color */
@@ -395,7 +386,7 @@ tr.outline-row.level-1 table.outline-column td:not(:last-of-type) {
 }
 /* Level 2 styles */
 tr.outline-row.level-2 td, tr.outline-row.level-2 div > div, tr.note-row.level-2 table.note-table td:nth-of-type(3) { 
-    font-size: 18px;
+    font-size: 20px;
     
 }
 /* Level 2 background color */
@@ -408,6 +399,7 @@ tr.outline-row.level-2 table.outline-column td:not(:last-of-type) {
 }
 /* Level 3 styles */
 tr.outline-row.level-3 td, tr.outline-row.level-3 div > div, tr.note-row.level-3 table.note-table td:nth-of-type(3) { 
+    font-style: italic;
     font-weight: 500;
     
 }
@@ -435,35 +427,35 @@ div#centered tr td .ns-auoqZ5xVKeG-, .ns-auoqZ5xVKeG-, div#centered .ns-auoqZ5xV
     
 }
 div#centered tr td .ns-hE9mXgl4a8m-, .ns-hE9mXgl4a8m-, div#centered .ns-hE9mXgl4a8m- div { 
-    color: rgb(140,102,181);
+    color: rgb(142,54,255);
     
 }
 div#centered tr td .ns-l2kopvXC4ak-, .ns-l2kopvXC4ak-, div#centered .ns-l2kopvXC4ak- div { 
-    color: rgb(58,135,203);
+    color: rgb(0,143,255);
     
 }
 div#centered tr td .ns-f7F2187eZ56-, .ns-f7F2187eZ56-, div#centered .ns-f7F2187eZ56- div { 
-    color: rgb(0,177,180);
+    color: rgb(0,199,202);
     
 }
 div#centered tr td .ns-kJhkVDl2Xsd-, .ns-kJhkVDl2Xsd-, div#centered .ns-kJhkVDl2Xsd- div { 
-    color: rgb(93,154,52);
+    color: rgb(84,199,0);
     
 }
 div#centered tr td .ns-inNRQJ-da6E-, .ns-inNRQJ-da6E-, div#centered .ns-inNRQJ-da6E- div { 
-    color: rgb(181,139,0);
+    color: rgb(213,164,0);
     
 }
 div#centered tr td .ns-nAm7imW-teW-, .ns-nAm7imW-teW-, div#centered .ns-nAm7imW-teW- div { 
-    color: rgb(203,128,73);
+    color: rgb(255,119,0);
     
 }
 div#centered tr td .ns-jtC-ndQ7Pcw-, .ns-jtC-ndQ7Pcw-, div#centered .ns-jtC-ndQ7Pcw- div { 
-    color: rgb(205,99,113);
+    color: rgb(237,35,46);
     
 }
 div#centered tr td .ns-dI8s4BxgdIs-, .ns-dI8s4BxgdIs-, div#centered .ns-dI8s4BxgdIs- div { 
-    color: rgb(109,125,158);
+    color: rgb(109,125,157);
     
 }
 

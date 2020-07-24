@@ -15,8 +15,7 @@ class net_name (nn.Mudel)：#M必需为大写
 ### 构建损失函数与优化器
 
 ```python
-criterion = nn.MSELoss()
-optimzer = optim.SGD(  )
+
 ```
 
 ### 进行训练

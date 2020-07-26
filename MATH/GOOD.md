@@ -1,0 +1,1 @@
+$$ J(\theta) = \frac 1 2 \sum*_{i=1}^m (h_*\theta(x^{(i)})-y^{(i)})^2 $$

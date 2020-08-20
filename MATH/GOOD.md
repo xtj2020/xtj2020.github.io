@@ -38,5 +38,4 @@ $ x\in domf 有\triangledown^2f(x) \succeq 0$,对于R上的函数，可以简化
 
 ### 三阶条件
 
-
-
+$$ J(\theta) = \frac 1 2 \sum*_{i=1}^m (h_*\theta(x^{(i)})-y^{(i)})^2 $$

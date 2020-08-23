@@ -1,6 +1,4 @@
-<head>
-    <script src="../ut.js" type="text/javascript"></script>
-</head>
+<script src="../ut.js" type="text/javascript"></script>
 
 
 # preamble

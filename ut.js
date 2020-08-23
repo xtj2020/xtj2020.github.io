@@ -1,4 +1,3 @@
-<script type="text/javascript">
     function wrapOldContentByDiv() {
         var oldContentDiv = document.createElement("div");
         oldContentDiv.style.cssText = "float:right; width:72%; padding-left: 3%; padding-right:3%;border: 2px solid #CACACA;";
@@ -284,4 +283,3 @@
         }
         directoryOl.innerHTML = htmlContent;
     });
-</script>

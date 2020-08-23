@@ -103,7 +103,7 @@
         return " width: 0;" +
             "    height: 0;" +
             "    position: relative;" +
-            "    margin-right: -38px;" + //离边框右边
+            "    margin-right: 8px;" + //离边框右边
             "    top: 3px;" + //相对文字向下
             "    display: inline-block;" +
             "    border: 6px outset;" + //箭头大小
@@ -115,7 +115,7 @@
             "    height: 0;" +
             "    left: 5px;" +
             "    position: relative;" +
-            "    margin-right: -38px;" +
+            "    margin-right: 8px;" +
             "    display: inline-block;" +
             "    border: 6px solid;" +
             "    border-color: transparent transparent transparent black;"

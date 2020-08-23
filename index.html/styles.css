@@ -8,7 +8,6 @@ body#wholeDocument {
     font-family: Helvetica, sans-serif; 
     font-size: 12px;
 font-family: "Hoefler Text", sans-serif; 
-    font-size: 14px;
     line-height: 1.32;
     background-color: rgb(247,241,231);
     
@@ -310,15 +309,15 @@ tr.note-row td.note {
     padding-right: 3px; */ 
     border: none;
 color: rgb(121,121,121);
-    font-style: italic;
-    font-style: italic;
+    font-size: 18px;
+    font-size: 18px;
     
 }
 tr.note-row td.note-bg {
 
 }
 table.whole-row, table.whole-note, table#column-header, div.temp-wrapper {
-width: 684px;
+width: 938px;
 
 }
 /******************
@@ -336,17 +335,17 @@ tr#header td:nth-of-type(1), tr.outline-row > td:nth-of-type(1), tr.note-row > t
     max-width: 20px; 
 }
 table.outline-column { 
-    width: 150px; 
-    max-width: 150px; 
+    width: 315px; 
+    max-width: 315px; 
 }
 tr#header td:nth-of-type(2), tr.outline-row > td:nth-of-type(2) { 
-    width: 150px; 
-    max-width: 150px; 
+    width: 315px; 
+    max-width: 315px; 
     
 }
 tr#header td:nth-of-type(3), tr.outline-row > td:nth-of-type(3), tr.note-row > td:nth-of-type(3) { 
-    width: 514px; 
-    max-width: 514px; 
+    width: 603px; 
+    max-width: 603px; 
     
 }
 
@@ -407,8 +406,8 @@ tr.outline-row.level-2 table.outline-column td:not(:last-of-type) {
 }
 /* Level 3 styles */
 tr.outline-row.level-3 td, tr.outline-row.level-3 div > div, tr.note-row.level-3 table.note-table td:nth-of-type(3) { 
-    font-style: italic;
-    font-weight: 500;
+    font-weight: 200;
+    font-size: 18px;
     
 }
 /* Level 3 background color */
@@ -417,6 +416,19 @@ tr.level-3 > td > div.alt-row-layer > div, tr.level-3.note-row > td > div {
 }
 /* Level 3 gutter color */
 tr.outline-row.level-3 table.outline-column td:not(:last-of-type) { 
+    
+}
+/* Level 4 styles */
+tr.outline-row.level-4 td, tr.outline-row.level-4 div > div, tr.note-row.level-4 table.note-table td:nth-of-type(3) { 
+    font-size: 18px;
+    
+}
+/* Level 4 background color */
+tr.level-4 > td > div.alt-row-layer > div, tr.level-4.note-row > td > div { 
+    
+}
+/* Level 4 gutter color */
+tr.outline-row.level-4 table.outline-column td:not(:last-of-type) { 
     
 }
 

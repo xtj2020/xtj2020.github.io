@@ -103,7 +103,7 @@
         return " width: 0;" +
             "    height: 0;" +
             "    position: relative;" +
-            "    margin-right: 8px;" +
+            "    margin-right: 18px;" +
             "    top: 3px;" +
             "    display: inline-block;" +
             "    border: 6px outset;" +
@@ -115,7 +115,7 @@
             "    height: 0;" +
             "    left: 5px;" +
             "    position: relative;" +
-            "    margin-right: 8px;" +
+            "    margin-right: 18px;" +
             "    display: inline-block;" +
             "    border: 6px solid;" +
             "    border-color: transparent transparent transparent black;"

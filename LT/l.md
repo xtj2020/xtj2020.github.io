@@ -1,4 +1,4 @@
-<script src="../ut.js" type="text/javascript"></script>
+ <script src="../ut.js" type="text/javascript"></script>
 
 
 # preamble
@@ -11,16 +11,6 @@
 
 \begin{document}
 \end{document}
-
-## 发动发撒扽afdf
-
-### 疯僧gfdhhg
-
-##### 跟躬耕发动
-
-###### 复赛ajg
-
-
 
 # LaTeX语言
 
@@ -191,9 +181,19 @@ quoted statements in a narrowed width.
 
 ## 深化结构
 
+![image-20200823144606809](l.assets/image-20200823144606809.png)
+
+如果不需要编号，可以使用负编号
+
 ## 改标题
 
 ## 多栏
+
+可以使用\document[]{}中的twocolumn选项，也可以使用\twocolumn[ ]
+除非单列模式用于单列打印文章的摘要外，不要混用。
+
+参数
+
 
 ## Mini pages
 
@@ -206,6 +206,18 @@ quoted statements in a narrowed width.
 # 图
 
 # 自定义宏
+
+## 定义命令
+
+\newcommand{newc}{aval}或\providecommand{newc}{aval} newc代表新命令
+aval代表属性，新命令名称只能为字母，不能以end开头，不能与现有命令相同。
+\providecommand{newc}{aval} newc 不会返回是否冲突，故尽量不用。
+
+
+
+
+
+## 定义环境
 
 # 文献
 

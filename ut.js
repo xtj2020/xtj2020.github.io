@@ -1,5 +1,5 @@
-    //生成总框
-	function wrapOldContentByDiv() {
+<script type="text/javascript">
+    function wrapOldContentByDiv() {
         var oldContentDiv = document.createElement("div");
         oldContentDiv.style.cssText = "float:right; width:72%; padding-left: 3%; padding-right:3%;border: 2px solid #CACACA;";
         oldContentDiv.innerHTML = document.body.innerHTML;
@@ -9,7 +9,7 @@
         document.body.innerHTML = '';
         document.body.appendChild(oldContentDiv);
     };
-    //生成目录开关
+
     function addDirectorySwitch(directoryDiv) {
         var directorySwitchP = document.createElement("p");
         directorySwitchP.style.cssText = "text-align: left; margin: 0;";
@@ -29,7 +29,7 @@
         ele_span.appendChild(ele_a);
         directorySwitchP.appendChild(ele_span);
     }
-	//创建树
+
     function createTree(parentNode, tags, index, maxLevel) {
         if (index >= tags.length) {
             return -1;
@@ -62,7 +62,7 @@
             }
         }
     }
-	
+
     function createAElement(tag, index) {
         var a = document.createElement("a");
         a.style.cssText = "";
@@ -98,15 +98,15 @@
         liEle.appendChild(aEle);
         return liEle
     }
-    //文字离箭头
+
     function getArrowDownStyle() {
         return " width: 0;" +
             "    height: 0;" +
             "    position: relative;" +
-            "    margin-right: 8px;" + //离边框右边
-            "    top: 3px;" + //相对文字向下
+            "    margin-right: 8px;" +
+            "    top: 3px;" +
             "    display: inline-block;" +
-            "    border: 6px outset;" + //箭头大小
+            "    border: 6px outset;" +
             "    border-color: black transparent transparent transparent;"
     }
 
@@ -150,7 +150,7 @@
 
         // 叶子节点
         if (childNodes.length === 0) {
-            return "<li style='padding-left: 24px;line-height: 180%;'><a href='#" + tagContent + "'>" + directoryName + "</a></li>" //子目录向右多少
+            return "<li style='padding-left: 24px;'><a href='#" + tagContent + "'>" + directoryName + "</a></li>"
     //                return createLeafElement(node, curDirectory)
         }
 
@@ -160,12 +160,12 @@
             childContent += renderTree(node.childNodes[j], curDirectory, directoryLevel + 1, j);
         }
 
-        return "<li id='li-z' style='line-height: 20%;'>" +
+        return "<li>" +
             "   <div>" +
-            "      <div>" + //控制关键行
-            "       <div id='" + directoryName + "' class='open' style='" + getArrowDownStyle() + "' onclick='return switchDirectory(this);'></div>" +
-            "         	<a href='#" + tagContent + "' ondblclick='return switchByDbClick(this);'>" + directoryName + "</a>" +
-            "      	</div>" +
+            "      <div>" +
+            "         <div id='" + directoryName + "' class='open' style='" + getArrowDownStyle() + "' onclick='return switchDirectory(this);'></div>" +
+            "         <a href='#" + tagContent + "' ondblclick='return switchByDbClick(this);'>" + directoryName + "</a>" +
+            "      </div>" +
             "      <ol id='ol-" + directoryName + "' style='line-height: 180%;list-style-type: none; padding-left: 20px;'>" + childContent + "</ol>" +
             "   </div>" +
             "</li>";
@@ -255,7 +255,6 @@
 
         // 4, 创建目录列表
         var directoryOl = document.createElement("ol");
-		//控制一级目录格式
         directoryOl.style.cssText = "padding-left:14px;line-height:180%;list-style-type:none;height: 85%;padding-bottom: 30px; overflow: auto;";
         directoryOl.setAttribute("id", "outline_ol");
         directoryDiv.appendChild(directoryOl);
@@ -285,3 +284,4 @@
         }
         directoryOl.innerHTML = htmlContent;
     });
+</script>

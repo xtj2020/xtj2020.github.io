@@ -1,5 +1,8 @@
 # 数据的准备
 
+总共三个关键包：datasets、transforms,DataLoader、samper
+从datasets导入数据，transforms将数据转换，DataLoader将数据转为dataloader对象。
+
 ## 数据的加载
 
 ```python
@@ -7,15 +10,29 @@ from Torchvison import datasets,transforms
 x_train = datasets.fashionMNIST(root = '../datasets',train = True,transorms.ToTensor(),download = True)
 ```
 
-
-
 ## 数据的预处理
 
-### 归一处理
+## 构建数据加载器
+
+```python
+train_loader = DataLoader(dataset = x_train,batch_size = batch_size,shuffle = False)
+```
+
+可以在加载器中设置samper
+
+从加载器中查看数据形状
+
+```python
+for images,label in train_loader:
+	print(images.shape,label.shape)
+	break
+```
 
 
 
 # 网络配置
+
+关键模块torch.nn.Module
 
 ## 网络搭建
 

@@ -4,7 +4,7 @@
 # preamble
 
 生成文档的全局处理参数
-\document[](dtype)
+\documentclass[ ] (dtype)
 []为选项，可以有若干无序参数![image-20200823074537156](l.assets/image-20200823074537156.png)
 
 # body
@@ -201,7 +201,29 @@ quoted statements in a narrowed width.
 
 # 页布局
 
-# 表
+## 标准布局
+
+![image-20200823161034606](l.assets/image-20200823161034606.png)
+
+可选项portrait(纵向，默认，较长尺寸在垂直方向)与landscape（横向）
+
+## 改变部分
+
+![image-20200823161601405](l.assets/image-20200823161601405.png)
+
+## 自定义尺寸
+
+<img src="l.assets/image-20200823161737087.png" alt="image-20200823161737087" style="zoom:150%;" />
+
+# 列表与对齐
+
+## 制表环境
+
+\begin{tabbing}
+\= \\\
+\\>\\\
+\\>
+\end{tabbing}
 
 # 图
 

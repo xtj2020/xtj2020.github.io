@@ -5,7 +5,7 @@
 
 生成文档的全局处理参数
 \documentclass[ ] (dtype)
-[]为选项，可以有若干无序参数![image-20200823074537156](l.assets/image-20200823074537156.png)
+[]为选项，可以有若干无序参数![image-20200823074537156](rl.assets/image-20200823074537156.png)
 
 # body
 
@@ -48,7 +48,7 @@
 
 键盘输入
 
-![image-20200823081721537](l.assets/image-20200823081721537.png)
+![image-20200823081721537](rl.assets/image-20200823081721537.png)
 
 通过命令输入（本身在LaTeX中有原意）
 可以用\verb"$"打印美元符号
@@ -75,13 +75,13 @@
 
 包括：paragraph模式、LR模式
 
-<img src="l.assets/image-20200823084040041.png" alt="image-20200823084040041" style="zoom: 200%;" />
+<img src="rl.assets/image-20200823084040041.png" alt="image-20200823084040041" style="zoom: 200%;" />
 
 
 
 ## math模式
 
-<img src="l.assets/image-20200823084357173.png" alt="image-20200823084357173" style="zoom:200%;" />
+<img src="rl.assets/image-20200823084357173.png" alt="image-20200823084357173" style="zoom:200%;" />
 
 ## 强调
 
@@ -91,7 +91,7 @@
 
 ## 文章结构
 
-![image-20200823084620591](l.assets/image-20200823084620591.png)
+![image-20200823084620591](rl.assets/image-20200823084620591.png)
 
 章以整数编号，后面接标签词和标题
 
@@ -173,15 +173,15 @@ quoted statements in a narrowed width.
 
 一系列空格和Tab键产生的空格被视为一个
 
-![image-20200823100117787](l.assets/image-20200823100117787.png)
+![image-20200823100117787](rl.assets/image-20200823100117787.png)
 
-![image-20200823100157805](l.assets/image-20200823100157805.png)
+![image-20200823100157805](rl.assets/image-20200823100157805.png)
 
 # 格式化文本2
 
 ## 深化结构
 
-![image-20200823144606809](l.assets/image-20200823144606809.png)
+![image-20200823144606809](rl.assets/image-20200823144606809.png)
 
 如果不需要编号，可以使用负编号
 
@@ -203,17 +203,17 @@ quoted statements in a narrowed width.
 
 ## 标准布局
 
-![image-20200823161034606](l.assets/image-20200823161034606.png)
+![image-20200823161034606](rl.assets/image-20200823161034606.png)
 
 可选项portrait(纵向，默认，较长尺寸在垂直方向)与landscape（横向）
 
 ## 改变部分
 
-![image-20200823161601405](l.assets/image-20200823161601405.png)
+![image-20200823161601405](rl.assets/image-20200823161601405.png)
 
 ## 自定义尺寸
 
-<img src="l.assets/image-20200823161737087.png" alt="image-20200823161737087" style="zoom:150%;" />
+<img src="rl.assets/image-20200823161737087.png" alt="image-20200823161737087" style="zoom:150%;" />
 
 # 列表与对齐
 

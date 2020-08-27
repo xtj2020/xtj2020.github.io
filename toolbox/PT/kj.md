@@ -1,3 +1,7 @@
+基本的模块
+
+[torch模块](ap.md)
+
 # 数据的准备
 
 总共三个关键包：datasets、transforms,DataLoader、samper
@@ -9,6 +13,8 @@
 from Torchvison import datasets,transforms
 x_train = datasets.fashionMNIST(root = '../datasets',train = True,transorms.ToTensor(),download = True)
 ```
+
+root下载位置,transorms是否转为Tensor对象，train控制是否为训练集，download是否下载
 
 ## 数据的预处理
 

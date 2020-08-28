@@ -1,54 +1,57 @@
-Torch.nn
+### Torch.nn
 
-Torch.nn.functional
+### Torch.nn.functional
 
-Torch.tensor
+与torch.nn的区别：nn是定义的类，可以提取变化的参数。function是一个函数，是一个固定的运算公式。
+有可学习的参数（层内有变量）用类，没有的话两者没区别。简单的用function来做。
 
-Tensor Attributes
+### Torch.tensor
 
-Tensor Views
+### Tensor Attributes
 
-torch.autograd
+### Tensor Views
 
-Torch.cuda
+### torch.autograd
 
-torch.cuda.amp
+### Torch.cuda
 
-torch.distributed
+### torch.cuda.amp
 
-torch.distributions
+### torch.distributed
 
-torch.futures
+### torch.distributions
 
-torch.hub
+### torch.futures
 
-torch.jit
+### torch.hub
 
-torch.nn.init
+### torch.jit
 
-torch.onnx
+### torch.nn.init
 
-torch.optim
+### torch.onnx
 
-Complex Numbers
+### torch.optim
 
-Quantization
+### Complex Numbers
 
-Distributed RPC Framework
+### Quantization
 
-torch.random
+### Distributed RPC Framework
 
-torch.sparse
+### torch.random
 
-Torch.storeage
+### torch.sparse
 
-torch.utils.bottleneck
+### Torch.storeage
 
-torch.utils.checkpoint
+### torch.utils.bottleneck
 
-torch.utils.cpp_extension
+### torch.utils.checkpoint
 
-torch.utils.data
+### torch.utils.cpp_extension
+
+### torch.utils.data
 
 torch.utils.dlpack
 

@@ -98,7 +98,7 @@ reshape
 
 split				
 
-squeeze				
+squeeze		压缩，去掉维数为一的维度		
 
 stack				
 

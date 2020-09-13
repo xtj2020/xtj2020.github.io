@@ -10,21 +10,43 @@
 
 # Concepts
 
-# LeNet
+## LeNet-5
 
-# AlexNet
+### 架构
 
-# VGG
+input:32\*32
+c1:6@28\*28
+s2:6@14\*14-1
+c3:16@10\*10
+s4:16@5\*5
+c5:120
+f6:84
+output:10
 
-## VGG-16
+## AlexNet
 
-### 模型架构
+### 架构
 
-**<u>输入为244\*224\*64,输出为1000</u>**
+input:227x227x3
+c1:96@55x55
+p1:96@27x27
+c2:256@27x27
+p2:96@13x13
+c3:384@13x13
+c4:384@13x13
+c5:256@13x13
+p5:256@6c6
+fc6:
+fc7:
+fc8:
 
-![img](mc.assets/SouthEast.png)
 
-<img src="mc.assets/SouthEast-20200823200400270.png" alt="img" style="zoom:150%;" />
+
+## VGG
+
+
+
+### 
 
 ### pytorch搭建
 

@@ -69,3 +69,57 @@ realpath()
 
 remove()
 
+# 代码基准
+
+## 如何对文件进行改名
+
+```python
+import os 
+import re
+mylist = r"E:\下载\1"
+mylist_list = os.listdir(mylist)
+name_list = [ ]
+for i in mylist_list:
+    myobj = re.findall(r"[0-8][0-9]",i)
+    mypath = os.path.join(mylist,i)
+    mypath_2 = os.path.join(mylist,myobj[0])
+    mypath_2 = mypath_2 + '.mp4'
+    print(mypath_2)
+    os.rename(mypath,mypath_2)	
+    
+import re
+new_path = list()
+mypath = r'G:\Mirror\Developed\哲学\新建文件夹'
+old_name_list = os.listdir(mypath)
+for i in old_name_list:
+    old_path = os.path.join(mypath,i)
+    new_i = re.sub(r'p[0-0]',"",i)
+    new_path = os.path.join(mypath,new_i)
+    os.rename(old_path,new_path)
+print(os.listdir(mypath))
+```
+
+## md2anki
+
+```python
+#输入参数：第一个是md文件，第二个是生成的文件名
+print("开始转换MarkDown文件为Key-Value文件")
+print("设置分隔符为：@")
+ 
+import sys
+file_name=sys.argv[1]
+output_file=open(sys.argv[2], "w+",encoding='UTF-8')
+file=open(file_name, 'r', encoding='UTF-8')
+ 
+for line in file:
+	if line.startswith("##"):
+		output_file.write('\n')
+		output_file.write(line.strip("##").rstrip().lstrip()+'@')
+	else:
+		output_file.write(line.rstrip().lstrip() + " ")
+ 
+ 
+output_file.close()
+file.close()
+```
+

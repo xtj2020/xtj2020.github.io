@@ -9,17 +9,17 @@
 作为代码引用仓库及常见API调用知识库
 文件命名不能含有数字，不使用I字符，只使用l
 
-## [DL](/Users/xtj2020/Documents/code/xtj2020.github.io/toolbox/DL)-深度学习
+## [DL](.//toolbox/DL)-深度学习
 
-- [mc](https://xtj2020.github.io/toolbox/DL/mc.html)-mode(CNN)
+- [mc](.//toolbox/DL/mc.md)-mode(CNN)
   只涉及模型，不涉及数据处理，数据处理在pytorch库中
-- [cc](https://xtj2020.github.io/toolbox/DL/cc.html)-对于基本CNN的调整
-- [mg](https://xtj2020.github.io/toolbox/DL/mg.html)-mode(GNN)
-- [mr](https://xtj2020.github.io/toolbox/DL/mr.html)-mode(RNN)
-- [ma](https://xtj2020.github.io/toolbox/DL/ma.html)-mode(GANs)
-- [ht](https://xtj2020.github.io/toolbox/DL/ht.html)-绘制网络图
+- [cc](.//toolbox/DL/cc.md)-对于基本CNN的调整
+- [mg](.//toolbox/DL/mg.md)-mode(GNN)
+- [mr](.//toolbox/DL/mr.md)-mode(RNN)
+- [ma](.//toolbox/DL/ma.md)-mode(GANs)
+- [ht](.//toolbox/DL/ht.md)-绘制网络图
 
-## [PT](/Users/xtj2020/Documents/code/xtj2020.github.io/toolbox/PT)-pytorch
+## [PT](.//toolbox/PT)-pytorch
 
 - aa-所有pytorch模块   
   介绍所有模块功能
@@ -31,19 +31,20 @@
 - ts-torch.Storage
 - nf-torch.nn.function
 
-## [SF](/Users/xtj2020/Documents/code/xtj2020.github.io/toolbox/SF)-算法训练
+## [SF](.//toolbox/SF)-算法训练
 
 - lt-leetcode
   解题代码
 - st-数据结构
+- /Volumes/Mirror
 
-## [PY](/Users/xtj2020/Documents/code/xtj2020.github.io/toolbox/PY)-python
+## [PY](.//toolbox/PY)-python
 
 - jc-基础使用
-- [gj](https://xtj2020.github.io/toolbox/PY/gj.html)-高级使用
+- [gj](.//toolbox/PY/gj.md)-高级使用
   [win](.//toolbox/PY/gj.md)
 
-## [DA](/Users/xtj2020/Documents/code/xtj2020.github.io/toolbox/DA)-数据分析
+## [DA](.//toolbox/DA)-数据分析
 
 - np-numpy库
 - pd-pandas库
@@ -52,9 +53,9 @@
 
 - yc-数据预处理
 
-## [ML](/Users/xtj2020/Documents/code/xtj2020.github.io/toolbox/ML)-机器学习
+## [ML](.//toolbox/ML)-机器学习
 
-## [PC](/Users/xtj2020/Documents/code/xtj2020.github.io/toolbox/PC)-爬虫
+## [PC](.//toolbox/PC)-爬虫
 
 - rq-requests
   下载url图片
@@ -64,14 +65,14 @@
 
 - kj-框架
 
-## [DB](/Users/xtj2020/Documents/code/xtj2020.github.io/toolbox/DB)-数据库
+## [DB](.//toolbox/DB)-数据库
 
 - kj-框架
 
-## [WD](/Users/xtj2020/Documents/code/xtj2020.github.io/toolbox/WD)-文档操作
+## [WD](.//toolbox/WD)-文档操作
 
-- [rl](https://xtj2020.github.io/toolbox/wd/rl.html)-LATEX规则（不含公式，公式见anki）
-- [md](https://xtj2020.github.io/toolbox/wd/md.html)-mermaid
+- [rl](.//toolbox/wd/rl.md)-LATEX规则（不含公式，公式见anki）
+- [md](.//toolbox/wd/md.md)-mermaid
 
 # 项目实现
 
@@ -88,4 +89,4 @@
 # 资源列表
 
 [1]: G:\Mirror\Works\LaTeX\LaTeXIn24Hours.pdf
-[2]: https://zh.wikipedia.org/wiki/Help:%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F
+[2]: https://zh.wikipedia.org/wiki/Help:%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8

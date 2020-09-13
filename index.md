@@ -1,3 +1,7 @@
+---
+
+---
+
 <script src="ut.js" type="text/javascript"></script>
 
 # 语言基础
@@ -36,7 +40,8 @@
 ## [PY](/Users/xtj2020/Documents/code/xtj2020.github.io/toolbox/PY)-python
 
 - jc-基础使用
-- gj-高级使用
+- [gj](https://xtj2020.github.io/toolbox/PY/gj.html)-高级使用
+  [win](.//toolbox/PY/gj.md)
 
 ## [DA](/Users/xtj2020/Documents/code/xtj2020.github.io/toolbox/DA)-数据分析
 
@@ -63,10 +68,10 @@
 
 - kj-框架
 
-## [LT](/Users/xtj2020/Documents/code/xtj2020.github.io/toolbox/LT)-LaTeX
+## [WD](/Users/xtj2020/Documents/code/xtj2020.github.io/toolbox/WD)-文档操作
 
-- rl-系统规则
-- md-mermaid
+- [rl](https://xtj2020.github.io/toolbox/wd/rl.html)-LATEX规则（不含公式，公式见anki）
+- [md](https://xtj2020.github.io/toolbox/wd/md.html)-mermaid
 
 # 项目实现
 
@@ -79,3 +84,8 @@
 ### 训练
 
 #### 串联训练
+
+# 资源列表
+
+[1]: G:\Mirror\Works\LaTeX\LaTeXIn24Hours.pdf
+[2]: https://zh.wikipedia.org/wiki/Help:%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F

@@ -4,35 +4,12 @@
 
 ## DL-深度学习
 
-- mc-mode(CNN)
-
-  [mc]: https://xtj2020.github.io/toolbox/DL/mc.html
-
-- cc-对于基本CNN的调整
-
-  [cc]: https://xtj2020.github.io/toolbox/DL/mc.html
-
+- [mc](https://xtj2020.github.io/toolbox/DL/mc.html)-mode(CNN)
+- [cc](https://xtj2020.github.io/toolbox/DL/cc.html)-对于基本CNN的调整
 - mg-mode(GNN)
-
-  [mg]: https://xtj2020.github.io/toolbox/DL/mc.html
-
 - mr-mode(RNN)
-
-  [mr]: https://xtj2020.github.io/toolbox/DL/mc.html
-
-  
-
 - ma-mode(GANs)
-
-  [ma]: https://xtj2020.github.io/toolbox/DL/mc.html
-
-  
-
 - ht-绘制网络图
-
-  [ht]: https://xtj2020.github.io/toolbox/DL/mc.html
-
-  
 
 ## PT-pytorch
 

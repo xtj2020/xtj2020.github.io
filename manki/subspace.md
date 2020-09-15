@@ -1,4 +1,3 @@
-```html
 <head>
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
     <script type="text/x-mathjax-config">
@@ -10,8 +9,6 @@
         });
     </script>
 </head>
-```
-
 ## 子空间的定义
 
 W为线性空间V的非空子集，则W是V的子空间的充要条件是：

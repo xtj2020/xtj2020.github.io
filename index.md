@@ -46,7 +46,8 @@
 
 ## [DA](.//toolbox/DA)-数据分析
 
-- np-numpy库
+- [np](.//toolbox/DA/np.md)-numpy库
+  [第一段][1]
 - pd-pandas库
 - lo-数据加载、存储
   目录、路径操作、文件操作、文件读写
@@ -86,7 +87,25 @@
 
 #### 串联训练
 
+[]: 
+
+
+
+# anki拓展
+
+如何理解线性代数中的子空间
+
 # 资源列表
 
-[1]: G:\Mirror\Works\LaTeX\LaTeXIn24Hours.pdf
+[文档目录](../../../Document/)
+
+## 书籍
+
+[1]:../../../Document/Coding/python&数据分析/用Python做科学计算-中文版.pdf
+
+
+
+## 网页C
+
 [2]: https://zh.wikipedia.org/wiki/Help:%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8
+[用python做科学计算]: 

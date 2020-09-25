@@ -4,7 +4,7 @@
 
 <script src="ut.js" type="text/javascript"></script>
 
-# 语言基础
+# 代码工具
 
 作为代码引用仓库及常见API调用知识库
 文件命名不能含有数字，不使用I字符，只使用l
@@ -70,10 +70,14 @@
 
 - kj-框架
 
-## [WD](.//toolbox/WD)-文档操作
+## [WD](.//toolbox/WD)-文档与操作备份
 
 - [rl](.//toolbox/wd/rl.md)-LATEX规则（不含公式，公式见anki）
+
+## HT-绘图
+
 - [md](.//toolbox/wd/md.md)-mermaid
+- 3d-mplot3d
 
 # 项目实现
 

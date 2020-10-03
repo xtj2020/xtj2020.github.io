@@ -42,7 +42,7 @@
 
 - jc-基础使用
 - [gj](.//toolbox/PY/gj.md)-高级使用
-  [win](.//toolbox/PY/gj.md)
+- nz-内置函数
 
 ## [DA](.//toolbox/DA)-数据分析
 

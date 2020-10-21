@@ -9,6 +9,8 @@
 
 ## 数据的加载
 
+### 自带数据的加载
+
 ```python
 from Torchvison import datasets,transforms
 x_train = datasets.fashionMNIST(root = '../datasets',train = True,transorms.ToTensor(),download = True)
@@ -17,6 +19,10 @@ x_train = datasets.fashionMNIST(root = '../datasets',train = True,transorms.ToTe
 root下载位置,transorms是否转为Tensor对象，train控制是否为训练集，download是否下载
 
 ## 数据的预处理
+
+### 确定各数据的类型
+
+### 处理缺失数据
 
 ## 构建数据加载器
 

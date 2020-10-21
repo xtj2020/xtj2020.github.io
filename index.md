@@ -4,7 +4,7 @@
 
 <script src="ut.js" type="text/javascript"></script>
 
-# 语言基础
+# 代码工具
 
 作为代码引用仓库及常见API调用知识库
 文件命名不能含有数字，不使用I字符，只使用l
@@ -42,11 +42,12 @@
 
 - jc-基础使用
 - [gj](.//toolbox/PY/gj.md)-高级使用
-  [win](.//toolbox/PY/gj.md)
+- nz-内置函数
 
 ## [DA](.//toolbox/DA)-数据分析
 
-- np-numpy库
+- [np](.//toolbox/DA/np.md)-numpy库
+  [第一段][1]
 - pd-pandas库
 - lo-数据加载、存储
   目录、路径操作、文件操作、文件读写
@@ -69,10 +70,14 @@
 
 - kj-框架
 
-## [WD](.//toolbox/WD)-文档操作
+## [WD](.//toolbox/WD)-文档与操作备份
 
 - [rl](.//toolbox/wd/rl.md)-LATEX规则（不含公式，公式见anki）
+
+## HT-绘图
+
 - [md](.//toolbox/wd/md.md)-mermaid
+- 3d-mplot3d
 
 # 项目实现
 
@@ -86,7 +91,50 @@
 
 #### 串联训练
 
+[]: 
+
+
+
+# anki拓展
+
+如何理解线性代数中的子空间
+
+# 系统配置
+
+## jpyter系统配置
+
+```python
+#设置密码与指定端口
+c.NotebookApp.password=u'sha1:67c9e60bb8b6:9ffede0825894254b2e042ea597d771089e11aed'
+c.NotebookApp.port = 9999
+#使得所有机器都能连接
+c.NotebookApp.allow_remote_access = True
+c.NotebookApp.ip='*'
+#默认不打开浏览器
+c.NotebookApp.open_browser = False
+#使用指定文件配置jupytermotebook
+jupyter notebook --config jupyter_notebook_config_2.py
+#即使断开连接也能够继续运行
+nohup jupyter notebook &
+```
+
+```
+argon2:$argon2id$v=19$m=10240,t=10,p=8$CTE4Cy82xEK+UI3IEZwd5A$QQp58PNCbEfmJABqe4Jf0A
+```
+
+
+
 # 资源列表
 
-[1]: G:\Mirror\Works\LaTeX\LaTeXIn24Hours.pdf
+[文档目录](../../../Document/)
+
+## 书籍
+
+[1]:../../../Document/Coding/python&数据分析/用Python做科学计算-中文版.pdf
+
+
+
+## 网页C
+
 [2]: https://zh.wikipedia.org/wiki/Help:%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8
+[用python做科学计算]: 

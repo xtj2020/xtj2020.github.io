@@ -21,3 +21,8 @@ nohup jupyter notebook &
 argon2:$argon2id$v=19$m=10240,t=10,p=8$CTE4Cy82xEK+UI3IEZwd5A$QQp58PNCbEfmJABqe4Jf0A
 ```
 
+```
+pip install kaggle
+在我的账号里找到kaggle.json文件，放入～.kaggle目录下
+```
+

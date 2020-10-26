@@ -1,4 +1,52 @@
-# PANDAS
+# 医学知识
+
+## 前列腺癌的诊断
+
+数字直肠检查（DRE）：在DRE期间，医生将戴手套的润滑手指插入直肠，以检查与直肠相邻的前列腺。
+如果您的医生发现腺体的纹理，形状或大小有任何异常，则可能需要进一步检查。
+前列腺特异性抗原（PSA）测试：从您手臂的静脉中抽取血液样品，并分析PSA（一种由前列腺自然产生的物质）。
+少量PSA进入您的血液是正常的。如果发现水平高于正常水平，则可能表明前列腺感染，炎症，肿大或癌症。
+
+如果DRE或PSA测试检测到异常，您的医生可能会建议您做进一步的检查以确定您是否患有前列腺癌，例如：超声。
+如果其他检查引起了关注，您的医生可能会使用经直肠超声来进一步评估您的前列腺。
+
+将一根大约雪茄大小和形状的小探针插入直肠，该探头使用声波来创建您的前列腺图像。收集前列腺组织样本：如果初步检查结果表明前列腺癌，您的医生可能会建议从前列腺中收集细胞样本的程序（前列腺活检）。前列腺穿刺活检通常使用一根细针进行，穿刺针插入前列腺以收集组织。在实验室中分析组织样本，以确定是否存在癌细胞。
+
+当活检确认癌症的存在时，下一步就是确定癌细胞的侵袭性（等级）水平。
+实验室病理学家检查您的癌症样本，以确定癌细胞与健康细胞的差异。
+较高的等级表示更具侵略性的癌症，更可能迅速扩散。
+用于评估前列腺癌细胞等级的最常见量表称为格里森评分。
+格里森（Gleason）得分结合了两个数字，范围从2（非侵略性癌症）到10（非常侵略性癌症），尽管该范围的较低部分并不经常使用。
+
+- Gleason score 6 = ISUP grade 1
+- Gleason score 7 (3 + 4) = ISUP grade 2
+- Gleason score 7 (4 + 3) = ISUP grade 3
+- Gleason score 8 = ISUP grade 4
+- Gleason score 9-10 = ISUP grade 5
+
+# 数据的统计与可视化
+
+## 对主目录路径的设置
+
+```python
+import os																																							
+main_path = "../input/prostate-cancer-grade-assessment"
+train_path = "../input/prostate-cancer-grade-assessment/train_images"
+label_path = "../input/prostate-cancer-grade-assessment/train_label_masks"
+
+os.path.jion
+
+```
+
+## 查看原始数据与图片
+
+
+
+## 读取与分析标签
+
+利用panda读取CSV信息，
+
+# 图像的采样
 
 ## 库
 
@@ -195,6 +243,10 @@ len(image_files), len(mask_files), len(images_with_masks)
 
 ```
 
+# 对于mask的处理
+
+# 深度学习代码基准
+
 
 
 # 参考文献：
@@ -205,4 +257,5 @@ len(image_files), len(mask_files), len(images_with_masks)
 [openslide库]: https://openslide.org/api/python/
 [16*128*128]: https://www.kaggle.com/iafoss/panda-16x128x128-tiles/output
 [openslide下采样]: https://www.kaggle.com/jberros/panda-wsi-manipulation-openslide-overview
+[KAGGLE基准]:(https://www.kaggle.com/rohitsingh9990/panda-eda-better-visualization-simple-baseline)
 

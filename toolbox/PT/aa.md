@@ -8,83 +8,119 @@
 
 #### 属性列表
 
-is_tensor				is_storage				is_complex				is_floating_point				
+|                   |                         |      |      |
+| ----------------- | ----------------------- | ---- | ---- |
+| is_tensor         | set_default_tensor_type |      |      |
+| is_storage        | numel                   |      |      |
+| is_complex        | set_printoptions        |      |      |
+| is_floating_point | set_flush_denormal      |      |      |
+| is_nonzero        |                         |      |      |
+| set_default_dtype |                         |      |      |
+| get_default_dtype |                         |      |      |
+|                   |                         |      |      |
+|                   |                         |      |      |
 
-is_nonzero				set_default_dtype				get_default_dtype				set_default_tensor_type				
-
-numel				set_printoptions				set_flush_denormal
+​			
 
 #### 创建方法
 
-tensor				sparse_coo_tensor				as_tensor				as_strided				from_numpy				
+|                   |                      |      |      |
+| ----------------- | -------------------- | ---- | ---- |
+| tensor            | linspace             |      |      |
+| sparse_coo_tensor | logspace             |      |      |
+| as_tensor         | eye                  |      |      |
+| as_strided        | empty                |      |      |
+| from_numpy        | empty_like           |      |      |
+| zeros             | empty_strided        |      |      |
+| zeros_like        | full                 |      |      |
+| ones              | full_like            |      |      |
+| ones_like         | quantize_per_tensor  |      |      |
+| arange            | quantize_per_channel |      |      |
+| range             | dequantize           |      |      |
+|                   |                      |      |      |
+|                   |                      |      |      |
+|                   |                      |      |      |
+|                   |                      |      |      |
+|                   |                      |      |      |
+|                   |                      |      |      |
+|                   |                      |      |      |
+|                   |                      |      |      |
 
-zeros				zeros_like				ones				ones_like				arange				
+​				
 
-range				linspace				logspace				eye				empty				
-
-empty_like				empty_strided				full				full_like				quantize_per_tensor				
-
-quantize_per_channel				dequantize					
+​			
 
 #### 切片、索引
+
+|               |      |           |      |
+| ------------- | ---- | --------- | ---- |
+| chunk         |      | t         |      |
+| squeeze       |      | take      |      |
+| stack         |      | transpose |      |
+| masked_select |      | unbind    |      |
+| narrow        |      | unsqueeze |      |
+| nonzero       |      | where     |      |
+| reshape       |      | split     |      |
+| index_select  |      | gather    |      |
+|               |      |           |      |
 
 cat按指定维度进行堆叠
 
 ```
-cat(seq,dim=0,out=None)
+cat(seq,dim=0,out=None)				
 ```
-
-​				
-
-chunk				gather				
-
-index_select				masked_select				
-
-narrow				nonzero				
-
-reshape				split				squeeze		压缩，去掉维数为一的维度		
-
-stack				t				take				transpose				unbind				unsqueeze				where				
 
 ### 生成器
 
+创建并返回一个生成器对象，该对象管理产生伪随机数的算法的状态。
+
 ### 随机取样
 
-#### 属性
+可以利用随机取样来获得自己想要的模拟数据，对模型进行测试与模拟。
+训练自己通过分布函数来模拟现实数据的能力。
 
-seed				
+#### 随机取样
 
-manual_seed				
+##### 基础知识
 
-initial_seed				
+| 属性          |      |      |      |
+| ------------- | ---- | ---- | ---- |
+| seed          |      |      |      |
+| manual_seed   |      |      |      |
+| initial_seed  |      |      |      |
+| get_rng_state |      |      |      |
+| set_rng_state |      |      |      |
+|               |      |      |      |
+|               |      |      |      |
+|               |      |      |      |
 
-get_rng_state				
 
-set_rng_state
 
-#### 随机化
+#### 生成常见分布
 
-bernoulli	伯努利分布			
+| 名称         | 分布                                       |
+| ------------ | ------------------------------------------ |
+| bernolli     | 伯努利分布的二值分布0-1                    |
+| multinomial  | 多项式分布                                 |
+| normal       | 二项分布                                   |
+| poisson      | 泊松分布                                   |
+| rand         | [0,1)的均匀分布                            |
+| rand_like    |                                            |
+| randint      |                                            |
+| randint_like |                                            |
+| randn        | 从标准正态分布中返回一个填充有随机数的张量 |
+| randn_like   |                                            |
+| randperm     | 返回从0到n-1的随机排列                     |
+|              |                                            |
+|              |                                            |
+|              |                                            |
+|              |                                            |
 
-multinomial				
 
-normal				
 
-poisson				
 
-rand				
 
-rand_like				
 
-randint				
-
-randint_like				
-
-randn				
-
-randn_like				
-
-randperm	
 
 #### 内建随机化
 
@@ -119,6 +155,14 @@ load
 
 可以指定映射空间
 
+### 并行计算
+
+get_num_threads 返回用于并行化CPU操作的线程数
+
+set_num_threads 返回用于CPU上的互操作并行的线程数
+
+get_num_interop_threads 设置用于互操作并行的线程数
+
 ### 局部禁用梯度计算
 
 no_grad
@@ -131,297 +175,134 @@ set_grad_enable
 
 #### 点运算
 
-abs
-
-absolute
-
-acos
-
-acosh
-
-add
-
-addcdiv
-
-addcmul
-
-angle
-
-asin
-
-asinh
-
-atan
-
-atn2
-
-btwise_not
-
-bitwise_and
-
-bitwise_or
-
-bitwise_xor
-
-ceil
-
-clamp
-
-conj
-
-cos
-
-cosh
-
-deg2rad
-
-div
-
-digamma
-
-erf
-
-erfc
-
-erfinv
-
-exp
-
-expm1
-
-floor
-
-floor_divide
-
-fmod
-
-frac
-
-imag
-
-lerp
-
-lgamma
-
-log
-
-log10
-
-log1p
-
-log2
-
-logaddexp
-
-logaddexp2
-
-logical_and
-
-logical_not
-
-logical_or
-
-logical_xor
-
-mul
-
-mvlgamma
-
-neg
-
-polygamma
-
-th
-
-pow
-
-rad2deg
-
-real
-
-reciprocal
-
-remainder
-
-round
-
-rsqrt
-
-sigmoid
-
-sign
-
-sin
-
-sinh
-
-sqrt
-
-square
-
-tan
-
-tanh
-
-true_divide
-
-trunc
+| a-d         | e            | m           |      |      |
+| ----------- | ------------ | ----------- | ---- | ---- |
+| abs         | erf          | mul         |      |      |
+| absolute    | erfc         | mvlgamma    |      |      |
+| acos        | erfinv       | neg         |      |      |
+| acosh       | exp          | polygamma   |      |      |
+| add         | expm1        | th          |      |      |
+| addcdiv     | floor        | pow         |      |      |
+| addcmul     | floor_divide | rad2deg     |      |      |
+| angle       | fmod         | real        |      |      |
+| asin        | frac         | reciprocal  |      |      |
+| asinh       | imag         | remainder   |      |      |
+| atan        | lerp         | round       |      |      |
+| atn2        | lgamma       | rsqrt       |      |      |
+| btwise_not  | log          | sigmoid     |      |      |
+| bitwise_and | log10        | sign        |      |      |
+| bitwise_or  | log1p        | sin         |      |      |
+| bitwise_xor | log2         | sinh        |      |      |
+| ceil        | logaddexp    | sqrt        |      |      |
+| clamp       | logaddexp2   | square      |      |      |
+| conj        | logical_and  | tan         |      |      |
+| cos         | logical_not  | tanh        |      |      |
+| cosh        | logical_or   | true_divide |      |      |
+| deg2rad     | logical_xor  | trunc       |      |      |
+| div         |              |             |      |      |
+| digamma     |              |             |      |      |
+|             |              |             |      |      |
+|             |              |             |      |      |
+|             |              |             |      |      |
+|             |              |             |      |      |
+|             |              |             |      |      |
 
 #### 缩小运算
 
-argmax
+|           |      |                    |      |
+| --------- | ---- | ------------------ | ---- |
+| argmax    |      | unique             |      |
+| argmin    |      | unique_consecutive |      |
+| dist      |      | var                |      |
+| logsumexp |      | var_mean           |      |
+| mean      |      |                    |      |
+| median    |      |                    |      |
+| mode      |      |                    |      |
+| norm      |      |                    |      |
+| prod      |      |                    |      |
+| std       |      |                    |      |
+| std_mean  |      |                    |      |
+| sum       |      |                    |      |
+|           |      |                    |      |
+|           |      |                    |      |
+|           |      |                    |      |
+|           |      |                    |      |
+|           |      |                    |      |
+|           |      |                    |      |
+|           |      |                    |      |
 
-argmin
 
-dist
 
-logsumexp
 
-mean
-
-median
-
-mode
-
-norm
-
-prod
-
-std
-
-std_mean
-
-sum
-
-unique
-
-unique_consecutive
-
-var
-
-var_mean
 
 #### 比较运算
 
-allclose
+|          |      |          |      |
+| -------- | ---- | -------- | ---- |
+| allclose |      | kthvalue |      |
+| argsort  |      | le       |      |
+| eq       |      | lt       |      |
+| equal    |      | max      |      |
+| ge       |      | min      |      |
+| gt       |      | ne       |      |
+| isclose  |      | sort     |      |
+| isfinite |      | topk     |      |
+| isinf    |      |          |      |
+| isnan    |      |          |      |
+|          |      |          |      |
+|          |      |          |      |
+|          |      |          |      |
+|          |      |          |      |
 
-argsort
 
-eq
-
-equal
-
-ge
-
-gt
-
-isclose
-
-isfinite
-
-isinf
-
-isnan
-
-kthvalue
-
-le
-
-lt
-
-max
-
-min
-
-ne
-
-sort
-
-topk
 
 #### 线性代数
 
-addbmm
-
-addmm
-
-addmv
-
-addr
-
-baddbmm
-
-bmm
-
-chain_matmul
-
-cholesky
-
-cholesky_inverse
-
-cholesky_solve
-
-dot
-
-eig
-
-geqrf
-
-ger
-
-inverse
-
-det
-
-logdet
-
-slogdet
-
-lstsq
-
-lu
-
-lu_solve
-
-lu_unpack
-
-matmul
-
-matrix_power
-
-matrix_rank
-
-mm
-
-mv
-
-orgqr
-
-ormqr
-
-pinverse
-
-qr
-
-solve
-
-svd
-
-T
-
-svd_lowrank
-
-pca_lowrank
-
-symeig
-
-lobpcg
-
-trapz
-
-triangular_solve
+|                  |      |           |      |              |      |                  |
+| ---------------- | ---- | --------- | ---- | ------------ | ---- | ---------------- |
+| addbmm           |      | dot       |      | matmul       |      | qr               |
+| addmm            |      | eig       |      | matrix_power |      | solve            |
+| addmv            |      | geqrf     |      | matrix_rank  |      | svd              |
+| addr             |      | ger       |      | mm           |      | T                |
+| baddbmm          |      | inverse   |      | mv           |      | svd_lowrank      |
+| bmm              |      | det       |      | orgqr        |      | pca_lowrank      |
+| chain_matmul     |      | logdet    |      | ormqr        |      | symeig           |
+| cholesky         |      | slogdet   |      | pinverse     |      | lobpcg           |
+| cholesky_inverse |      | lstsq     |      |              |      | trapz            |
+| cholesky_solve   |      | lu        |      |              |      | triangular_solve |
+|                  |      | lu_solve  |      |              |      |                  |
+|                  |      | lu_unpack |      |              |      |                  |
+|                  |      |           |      |              |      |                  |
+|                  |      |           |      |              |      |                  |
+|                  |      |           |      |              |      |                  |
+|                  |      |           |      |              |      |                  |
+|                  |      |           |      |              |      |                  |
+|                  |      |           |      |              |      |                  |
+|                  |      |           |      |              |      |                  |
 
 #### 特殊变换
+
+|      |      |      |      |
+| ---- | ---- | ---- | ---- |
+|      |      |      |      |
+|      |      |      |      |
+|      |      |      |      |
+|      |      |      |      |
+|      |      |      |      |
+|      |      |      |      |
+|      |      |      |      |
+|      |      |      |      |
+|      |      |      |      |
+|      |      |      |      |
+|      |      |      |      |
+|      |      |      |      |
+|      |      |      |      |
+|      |      |      |      |
+|      |      |      |      |
+|      |      |      |      |
+|      |      |      |      |
+|      |      |      |      |
+|      |      |      |      |
 
 fft
 
@@ -890,7 +771,32 @@ adaptive_avg_pool2d(自适应平均池化函数)
 
 ## Distributed RPC Framework
 
-# 脚本与预处理
+# 脚本与库
+
+## torchvision
+
+### datasets
+
+```python
+#如果不进行转换则为PIL图片,转换后为tensor类型。返回的对象都是torch.utils.data.Dataset的子集
+mnist_train = torchvision.datasets.FashionMNIST(root=" ",train=True,download=True,transforms.ToTensor())
+```
+
+访问到数据后要查看数据的类型与图像属性。
+
+在实践中，当模型简单且硬件比较强大的时候，数据读取可能会成为训练的瓶颈，我们可以通过DataLoader中的num_workers来设置多个进程对数据进行读取。
+
+
+
+### models
+
+### transforms
+
+常用的图片变换
+
+### utils
+
+一些有用的方法
 
 ## torch.hub
 
@@ -900,7 +806,7 @@ adaptive_avg_pool2d(自适应平均池化函数)
 
 TorchScript脚本
 
-# 某些功能的实现
+# 功能函数
 
 ## torch.distributions
 
@@ -1014,7 +920,7 @@ tolist()
 
 type(dtype=None, non_blocking=False, **kwargs)
 
-# 单元
+# 单元(一些常用的方法)
 
 ## torch.utils.bottleneck
 
@@ -1047,4 +953,6 @@ type(dtype=None, non_blocking=False, **kwargs)
 ## Named Tensors
 
 ## Named Tensors operator coverage
+
+# 参考文献
 

@@ -18,6 +18,7 @@
 - [mr](.//toolbox/DL/mr.md)-mode(RNN)
 - [ma](.//toolbox/DL/ma.md)-mode(GANs)
 - [ht](.//toolbox/DL/ht.md)-绘制网络图
+- baseFrameModel-基础的模型
 
 ## [PT](.//toolbox/PT)-pytorch
 
@@ -38,12 +39,16 @@
 
 ## [DA](.//toolbox/DA)-数据分析
 
-- [np](.//toolbox/DA/np.md)-numpy库
-- pd-pandas库
-- lo-数据加载、存储
+- [Learnnp](.//toolbox/DA/np.md)-numpy库
+
+- [Learnpd](.//toolbox/DA/Learnpd.md)-pandas库
+
+- [LoadReadData](.//toolbox/DA/np.md)-数据加载、存储
   目录、路径操作、文件操作、文件读写
-- yc-数据预处理
-- db-数据集索引
+  
+- [PreproccessData](.//toolbox/DA/np.md)-数据预处理
+
+  对数据进行样本与标签的组合，并进行打乱（map）
 
 ## [PC](.//toolbox/PC)-爬虫\脚本\linux
 
@@ -52,7 +57,7 @@
 - re-正则表达式
 - bs-beatifulsoup
 - kj-框架
-- [sy](.//toolbox/sy.md)-系统配置
+- [sysConfig](.//toolbox/sysConfig.md)-系统配置
 
 
 

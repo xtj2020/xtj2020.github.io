@@ -26,3 +26,9 @@ pip install kaggle
 在我的账号里找到kaggle.json文件，放入～.kaggle目录下
 ```
 
+36号机密码（存疑）
+
+```
+sha1:dc17e5844fdc:81d5f49b2ed73c5f7ebc0300b2e30b1f395e5882 
+```
+

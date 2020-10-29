@@ -53,7 +53,7 @@ yield  features.index_select(0, j), labels.index_select(0, j)
 ==为什么只选取第一个维度的数据==
 ==因为只有一个维度，为什么产生的这个维度？==
 
-### 定义模型
+### 定义模型与初始化
 
 torch.mul(a,b)对应位相乘
 
@@ -66,25 +66,27 @@ def linreg(X,w,b):
 
 ==需要知道返回的是什么样的数据==
 
-### 初始化模型
+
 
 数值的初始化
 
-```
-
+```python
+w=torch.tensor(np.normal(0,0.01,(num_inputs,1)),dytpe=torch.float32)
+b=torch.zeros(1,dtype=torch.float32)
 ```
 
 加入梯度
 
 ```
-w
+w.requires_grad_(requires_grad=True)
+b.requires_grad_(requires_grad=True)
 ```
 
 ### 损失函数与代价函数
 
-单个误差$\mathcal l^{(i)}(w_1,w_2,b)={1 \over 2} ({\hat y^{(i)} -y^{(i)} )^2}$
+单个误差$\Large \mathcal l^{(i)}(w_1,w_2,b)={1 \over 2} ({\hat y^{(i)} -y^{(i)} )^2}$
 
-总的误差$\mathcal l(w_1,w_2,b)={1 \over n}{\sum_{i=1}^n(\hat y - y)^2}$
+总的误差$\Large \mathcal l(w_1,w_2,b)={1 \over n}{\sum_{i=1}^n(\hat y - y)^2}$
 
 ```python
 def suqared_loss(y_hat,y):
@@ -112,7 +114,23 @@ def sgd(params,lr,batch_size):
 
 epoch为迭代模型的周期
 
-```
+```python
+lr=0.03
+net=linereg
+loss=squared_loss
+optimier=sgd
+
+for epoch for range(num_epoch):
+    for x,y in data_liter:
+		l=loss(net(w_1,w_2,b),y).sum()
+        l.backward
+        sgd([w,b],lr,batch_size)
+        
+        w.grad.data.zero_()
+        b.grad.data.zero_()
+     train_l =loss(net(feature,w,b),labels)
+     print('epoch %d,loss %f' % (epoch+1,train_l.mean().item())
+    
 
 ```
 
@@ -123,19 +141,44 @@ epoch为迭代模型的周期
 线性回归的局限性：只能够预测一个连续值，不能够进行分类。
 我们需要一个能够进行分类的，并能够给出分类概率的学习网络。softmax能够将输出值变换成值为正且和为1的概率分布。
 
-### 数据的读取
+### 数据
 
-### 初始化模型参数
+**torchvision包**
+torchvision.datasets
+torchvision.models
+torchvision.transforms
+torchvison.utils
+
+**获取数据集**
+
+```
+torchvision.dataset.FasionMNIST(root="",train =True,download=Ture,transform=transform.toTensor())
+```
+
+**读取小批量**
+
+```
+
+```
+
+
+
+### 定义模型与初始化
 
 ### softmax的实现
 
 softmax公式
 
-$\hat y_i = {e^{(0_i)} \over \sum_i^n e^{(o_i)}}$
+$\huge \hat y_i = {e^{(o_i)} \over \sum_i^n e^{(o_i)}}$
 
 ### 模型
 
-### 损失函数
+### 损失函数-交叉熵
+
+公式为：$\large H(y^{(i)},\hat y^{(i)})=-\sum_{j=1}^qy_j^{(i)}log \hat y_j^{(i)}$
+
+n个样本的交叉熵
+$\Large l（ \boldsymbol\Theta）={1 \over n}H(y^{(i)},\hat y^{(i)})$
 
 ### 计算准确率
 
@@ -144,6 +187,20 @@ $\hat y_i = {e^{(0_i)} \over \sum_i^n e^{(o_i)}}$
 ### 预测
 
 ## 多层感知机
+
+### 多层感知机的实现
+
+### 数据
+
+### 激活函数
+
+### 模型
+
+### 定义损失函数
+
+### 训练模型
+
+## 模型的进一步优化z
 
 ## 卷积神经网络
 

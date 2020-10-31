@@ -45,8 +45,9 @@ torch.relu(conv(inputs.view(1, 4, 1, 1)))
 ```
 
 <figure class="half">     
-    <img src="cc.assets/image-20200827215118886.png" alt="image-20200827215118886" style="zoom:50%;" />   
-    <img src="cc.assets/image-20200827215300956.png" /> </figure>
+    <img src="ModelCNN.assets/image-20200827215118886.png" alt="image-20200827215118886" style="zoom:40%;" />   
+    <img src="ModelCNN.assets/image-20200827215300956.png" style="zoom:80%;" /> </figure>
+
 
 ## 全卷积层
 

@@ -4,38 +4,42 @@
 
 <script src="ut.js" type="text/javascript"></script>
 
-# 代码工具（toolbox）
+# UPDATE-day
+
+## 注意事项
 
 作为代码引用仓库及常见API调用知识库
 文件命名不能含有数字，不使用I字符，只使用l
 
+## 理念
+
+每天对代码进行复盘
+写代码是最后手段
+函数只做一件事
+若耗费时间过长，你的做法很可能就是错的
+第一次就要用最佳的方法完成
+遵循惯例
+
+# 代码工具（toolbox）
+
 ## [DL](.//toolbox/DL)-深度学习
 
-- [mc](.//toolbox/DL/mc.md)-mode(CNN)
-  只涉及模型，不涉及数据处理，数据处理在pytorch库中
-- [cc](.//toolbox/DL/cc.md)-对于基本CNN的调整
-- [mg](.//toolbox/DL/mg.md)-mode(GNN)
-- [mr](.//toolbox/DL/mr.md)-mode(RNN)
-- [ma](.//toolbox/DL/ma.md)-mode(GANs)
-- [ht](.//toolbox/DL/ht.md)-绘制网络图
-- baseFrameModel-基础的模型
+- [baseFrameModel](../toolbox/DL/baseFrameModel.md)-基础的模型
+- [ModelCNN](.//toolbox/DL/ModelCNN.md)-对于基本CNN的调整
+- [ModelRNN](.//toolbox/DL/ModelRNN.md)-RNN模型
+- [PlotNeuralNet](.//toolbox/DL/PlotNeuralNet.md)-绘制网络图
 
 ## [PT](.//toolbox/PT)-pytorch
 
-- [aa](.//toolbox/PT/aa.md)-pytorch API
-- [kj](.//toolbox/PT/kj.md)-pytoch框架
-
-## [SF](.//toolbox/SF)-算法与数据结构
-
-- lt-leetcode
-  解题代码
-- st-数据结构
+- [pytorchAPI](.//toolbox/PT/pytorchAPI.md)-pytorch API
+- [framePytorch](.//toolbox/PT/framePytorch.md)-pytoch框架
 
 ## [PY](.//toolbox/PY)-python
 
-- jc-基础使用
-- [gj](.//toolbox/PY/gj.md)-高级使用
-- nz-内置函数
+- [BasePython](.//toolbox/PY/BasePython.md)-基础python用法
+- [MorePython](.//toolbox/PY/MorePython.md)-高级使用
+
+  
 
 ## [DA](.//toolbox/DA)-数据分析
 
@@ -50,14 +54,11 @@
 
   对数据进行样本与标签的组合，并进行打乱（map）
 
-## [PC](.//toolbox/PC)-爬虫\脚本\linux
+## [PC](.//toolbox/PC)-脚本\linux\爬虫
 
-- rq-requests
-  下载url图片
-- re-正则表达式
-- bs-beatifulsoup
-- kj-框架
-- [sysConfig](.//toolbox/sysConfig.md)-系统配置
+- [FrameSpider](.//toolbox/PC/FrameSpider)-爬虫框架
+- [sysConfig](.//toolbox/PC/sysConfig.md)-系统配置
+- [Json](.//toolbox/PC/Json)-Json文件格式
 
 
 
@@ -73,14 +74,15 @@
 
 # 学术跟踪(academic)
 
-## [WD](.//toolbox/WD)-文档与操作备份
+## [WT](.//toolbox/WD)-文档与操作备份
 
 - [rl](.//toolbox/wd/rl.md)-LATEX规则（不含公式，公式见anki）
-
-## HT-绘图
-
 - [md](.//toolbox/wd/md.md)-mermaid
 - 3d-mplot3d
+
+## CO-凸优化
+
+- 
 
 # 资源列表
 

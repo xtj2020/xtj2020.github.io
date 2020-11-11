@@ -794,6 +794,40 @@ mnist_train = torchvision.datasets.FashionMNIST(root=" ",train=True,download=Tru
 
 常用的图片变换
 
+Resize：把给定的图片resize到given size
+
+Normalize：Normalized an tensor image with mean and standard deviation
+
+ToTensor：convert a PIL image to tensor (H*W*C) in range [0,255] to a torch.Tensor(C*H*W) in the range [0.0,1.0]
+
+ToPILImage: convert a tensor to PIL image
+
+Scale：目前已经不用了，推荐用Resize
+
+CenterCrop：在图片的中间区域进行裁剪
+
+RandomCrop：在一个随机的位置进行裁剪
+
+RandomHorizontalFlip：以0.5的概率水平翻转给定的PIL图像
+
+RandomVerticalFlip：以0.5的概率竖直翻转给定的PIL图像
+
+RandomResizedCrop：将PIL图像裁剪成任意大小和纵横比
+
+Grayscale：将图像转换为灰度图像
+
+RandomGrayscale：将图像以一定的概率转换为灰度图像
+
+FiceCrop：把图像裁剪为四个角和一个中心
+
+TenCrop
+
+Pad：填充
+
+ColorJitter：随机改变图像的亮度对比度和饱和度。
+
+transforms.Compose()将多个操作合并在一起
+
 ### utils
 
 一些有用的方法

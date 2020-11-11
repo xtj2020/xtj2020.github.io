@@ -31,11 +31,9 @@ $\phi$为激活函数
 
 # 线性回归
 
-自己模拟数据进行房价的预测
+## 数据
 
-## 数据（集成）
-
-### 数据的模拟与生成
+### 数据的生成
 
 $y = X{\mathcal w}+b+ \epsilon$
 
@@ -44,8 +42,7 @@ $\epsilon$代表着干扰，服从均值为0，标准查为0.01的正态分布,�
 $X \in {\mathbb R}^{100*2} $,X为矩阵，其中上标1000的含义为1000个样本，2为2列，即2个影响因素，相对于是一个向量。100*2表示特征。
 
 ```python
-feature = tensor.randn(1000,2,dtype=float32) 
-#生成干扰项
+feature = tensor.randn(1000,2,dtype=float32) #生成干扰项
 torch.tensor(np.random.normal((0,0.01,size = labels.size()),dtype=float32)
 ```
 
@@ -64,29 +61,52 @@ random.randint()给定范围的整数
 random.random()返回0与1之间的浮点数字，不接受参数
 ```
 
+### 数据的表示
 
+```python
+pylot使用rc配置文件来自定义图形的各种默认属性，称之为rc配置或rc参数。通过rc参数可以修改默认的属性，包括窗体大小、每英寸的点数、线条宽度、颜色、样式、坐标轴、坐标和网络属性、文本、字体等。
+import numpy as np
+import matplotlib.pyplot as plt
+###%matplotlib inline    #jupyter可以用，这样就不用plt.show()
 
-### 导入包中数据
+#生成数据
+x = np.linspace(0, 4*np.pi)
+y = np.sin(x)
+#设置rc参数显示中文标题
+#设置字体为SimHei显示中文
+plt.rcParams['font.sans-serif'] = 'SimHei'
+#设置正常显示字符
+plt.rcParams['axes.unicode_minus'] = False
+plt.title('sin曲线')
+#设置线条样式
+plt.rcParams['lines.linestyle'] = '-.'
+#设置线条宽度
+plt.rcParams['lines.linewidth'] = 3
+#绘制sin曲线
+plt.plot(x, y, label='$sin(x)$')
 
-**torchvision包**
-torchvision.datasets
-torchvision.models
-torchvision.transforms
-torchvison.utils
+plt.savefig('sin.png')
+plt.show()
+```
 
-**获取数据集**
+```python
+def use_svg_display():
+    # 用矢量图显示
+    display.set_matplotlib_formats('svg')
+
+def set_figsize(figsize=(3.5, 2.5)):
+    use_svg_display()
+    # 设置图的尺寸
+    plt.rcParams['figure.figsize'] = figsize
+
+set_figsize()
+plt.scatter(features[:, 1].numpy(), labels.numpy(), 1);
 
 ```
-torchvision.dataset.FasionMNIST(root="",train =True,download=Ture,transform=transform.toTensor())
-```
+
+
 
 ### **读取小批量**
-
-```
-
-```
-
-
 
 利用迭代器来获取每次小批量的数据：先打乱，然后取步长为批量处理数来对样本进行抽样。
 
@@ -104,8 +124,6 @@ yield  features.index_select(0, j), labels.index_select(0, j)
 ```
 
 ==因为只有一个维度，为什么产生的这个维度？==
-
-
 
 ## 定义模型与初始化
 
@@ -183,10 +201,6 @@ $\Large \mathcal l（ \boldsymbol\Theta）={1 \over n}\sum_{i=1}^nH(y^{(i)},\hat
 我们要求某个地势上的一个最小点，利用一个球的滚动去求这个点。
 这个最小点为C,地势的变化为$\triangle C$ ，$\nabla C$为地势的方向，$\triangle v$为球的位置变化，球由地势进行小梯度地下降。
 
-### 小批量数据处理
-
-
-
 ### 动手实践的理论与代码
 
 能进行反向传播的基础：$\triangle output \approx \sum_j {\partial output \over \partial w_j}\triangle w_j + {\partial output \over \partial b}\triangle b$
@@ -203,7 +217,7 @@ def sgd(params,lr,batch_size):
     #在加入梯度的过程中就赋予了param.grad，
 ```
 
-### 训练模型
+## 训练模型
 
 epoch为迭代模型的周期
 
@@ -212,12 +226,13 @@ lr=0.03
 net=linereg
 loss=squared_loss
 optimier=sgd
-
-for epoch for range(num_epoch):
+#这里用的是小批量梯度下降，那么对数据的提取又是一种什么样的情况呢？
+#可以理解为每处理一批，计算一次损失函数，并对其进行一次反向传播
+for epoch in range(num_epoch):
     for x,y in data_liter:
 		l=loss(net(w_1,w_2,b),y).sum()
-        l.backward
-        sgd([w,b],lr,batch_size)
+        l.backward#小批量的损失对模型参数求梯度
+        sgd([w,b],lr,batch_size)#sgd对应小批量随机梯度下降迭代模型参数
         
         w.grad.data.zero_()
         b.grad.data.zero_()
@@ -226,6 +241,40 @@ for epoch for range(num_epoch):
     
 
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 导入包中数据
+
+**torchvision包**
+torchvision.datasets
+torchvision.models
+torchvision.transforms
+torchvison.utils
+
+**获取数据集**
+
+```
+torchvision.dataset.FasionMNIST(root="",train =True,download=Ture,transform=transform.toTensor())
+```
+
+
+
+
 
 
 

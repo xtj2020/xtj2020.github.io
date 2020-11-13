@@ -1,9 +1,3 @@
----
-
----
-
-<script src="ut.js" type="text/javascript"></script>
-
 # UPDATE-day
 
 ## 注意事项
@@ -24,41 +18,41 @@
 
 ## [DL](.//toolbox/DL)-深度学习
 
-- [baseFrameModel](../toolbox/DL/baseFrameModel.md)-基础的模型
-- [ModelCNN](.//toolbox/DL/ModelCNN.md)-对于基本CNN的调整
-- [ModelRNN](.//toolbox/DL/ModelRNN.md)-RNN模型
-- [PlotNeuralNet](.//toolbox/DL/PlotNeuralNet.md)-绘制网络图
+- [baseFrameModel](./toolbox/DL/baseFrameModel.html)-基础的模型
+- [ModelCNN](./toolbox/DL/ModelCNN.html)-对于基本CNN的调整
+- [ModelRNN](./toolbox/DL/ModelRNN.html)-RNN模型
+- [PlotNeuralNet](./toolbox/DL/PlotNeuralNet.html)-绘制网络图
 
 ## [PT](.//toolbox/PT)-pytorch
 
-- [pytorchAPI](.//toolbox/PT/pytorchAPI.md)-pytorch API
-- [framePytorch](.//toolbox/PT/framePytorch.md)-pytoch框架
+- [pytorchAPI](./toolbox/PT/pytorchAPI.html)-pytorch API
+- [framePytorch](./toolbox/PT/framePytorch.html)-pytoch框架
 
 ## [PY](.//toolbox/PY)-python
 
-- [BasePython](.//toolbox/PY/BasePython.md)-基础python用法
-- [MorePython](.//toolbox/PY/MorePython.md)-高级使用
+- [BasePython](./toolbox/PY/BasePython.html)-基础python用法
+- [MorePython](./toolbox/PY/MorePython.html)-高级使用
 
   
 
 ## [DA](.//toolbox/DA)-数据分析
 
-- [Learnnp](.//toolbox/DA/np.md)-numpy库
+- [Learnnp](./toolbox/DA/learnnp.html)-numpy库
 
-- [Learnpd](.//toolbox/DA/Learnpd.md)-pandas库
+- [Learnpd](.//toolbox/DA/Learnpd.html)-pandas库
 
-- [LoadReadData](.//toolbox/DA/np.md)-数据加载、存储
+- [LoadReadData](.//toolbox/DA/np.html)-数据加载、存储
   目录、路径操作、文件操作、文件读写
   
-- [PreproccessData](.//toolbox/DA/np.md)-数据预处理
+- [PreproccessData](.//toolbox/DA/np.html)-数据预处理
 
   对数据进行样本与标签的组合，并进行打乱（map）
 
 ## [PC](.//toolbox/PC)-脚本\linux\爬虫
 
-- [FrameSpider](.//toolbox/PC/FrameSpider)-爬虫框架
-- [sysConfig](.//toolbox/PC/sysConfig.md)-系统配置
-- [Json](.//toolbox/PC/Json)-Json文件格式
+- [FrameSpider](./toolbox/PC/FrameSpider)-爬虫框架
+- [sysConfig](./toolbox/PC/sysConfig.html)-系统配置
+- [Json](./toolbox/PC/Json.html)-Json文件格式
 
 
 
@@ -66,8 +60,8 @@
 
 一些通用的理论与应用框架
 
-- [theoryGuide](.//frame/theoryGuide.md)-机器学习理论导引
-- [convexOptimize](.//frame/convexOptimize.md)-机器学习理论导引
+- [theoryGuide](./frame/theoryGuide.html)-机器学习理论导引
+- [convexOptimize](./frame/convexOptimize.html)-机器学习理论导引
 - 
 
 
@@ -76,11 +70,11 @@
 
 ## [WT](.//stone/WT)-文档与操作备份
 
-- [rl](.//stone/WT/rl.md)-LATEX规则（不含公式，公式见anki）
-- [md](.//stone/WT/md.md)-mermaid
-- [3d](.//stone/WT/3d.md)-mplot3d
-- [sb](.//stone/WT/sb.md)-seaborn绘图
-- [pt](.//stone/WT/pt.md)-matplotlib.plot
+- [rl](.//stone/WT/rl.html)-LATEX规则（不含公式，公式见anki）
+- [md](./stone/WT/md.html)-mermaid
+- [3d](./stone/WT/3d.html)-mplot3d
+- [sb](./stone/WT/sb.html)-seaborn绘图
+- [pt](./stone/WT/pt.html)-matplotlib.plot
 
 ## CO-凸优化更加具体的内容
 

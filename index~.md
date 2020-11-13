@@ -62,27 +62,25 @@
 
 
 
-# 框架(frame)
+# 项目实践(achieve)
 
-一些通用的理论与应用框架
+从项目中提取通用的医学图像处理算法功能
 
-- [theoryGuide](.//frame/theoryGuide.md)-机器学习理论导引
-- [convexOptimize](.//frame/convexOptimize.md)-机器学习理论导引
-- 
+## [FG](./achieve/FG)-图像分割
+
+- YS-图像采样与压缩
 
 
 
-# 积累(stone)
+# 学术跟踪(academic)
 
-## [WT](.//stone/WT)-文档与操作备份
+## [WT](.//toolbox/WD)-文档与操作备份
 
-- [rl](.//stone/WT/rl.md)-LATEX规则（不含公式，公式见anki）
-- [md](.//stone/WT/md.md)-mermaid
-- [3d](.//stone/WT/3d.md)-mplot3d
-- [sb](.//stone/WT/sb.md)-seaborn绘图
-- [pt](.//stone/WT/pt.md)-matplotlib.plot
+- [rl](.//toolbox/wd/rl.md)-LATEX规则（不含公式，公式见anki）
+- [md](.//toolbox/wd/md.md)-mermaid
+- 3d-mplot3d
 
-## CO-凸优化更加具体的内容
+## CO-凸优化
 
 - 
 

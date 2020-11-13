@@ -41,16 +41,16 @@
 
 - [Learnpd](./toolbox/DA/Learnpd.html)-pandas库
 
-- [LoadReadData](./toolbox/DA/np.html)-数据加载、存储
+- [LoadReadData](./toolbox/DA/LoadReadData.html)-数据加载、存储
   目录、路径操作、文件操作、文件读写
   
-- [PreproccessData](./toolbox/DA/np.html)-数据预处理
+- [PreproccessData](./toolbox/DA/PreproccessData.html)-数据预处理
 
   对数据进行样本与标签的组合，并进行打乱（map）
 
 ## [PC](./toolbox/PC)-脚本\linux\爬虫
 
-- [FrameSpider](./toolbox/PC/FrameSpider)-爬虫框架
+- [FrameSpider](./toolbox/PC/FrameSpider.html)-爬虫框架
 - [sysConfig](./toolbox/PC/sysConfig.html)-系统配置
 - [Json](./toolbox/PC/Json.html)-Json文件格式
 

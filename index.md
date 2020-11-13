@@ -37,7 +37,7 @@
 
 ## [DA](.//toolbox/DA)-数据分析
 
-- [Learnnp](./toolbox/DA/learnnp.html)-numpy库
+- [Learnnp](./toolbox/DA/Learnnp.html)-numpy库
 
 - [Learnpd](.//toolbox/DA/Learnpd.html)-pandas库
 

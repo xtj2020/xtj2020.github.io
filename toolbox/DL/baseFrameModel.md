@@ -339,7 +339,7 @@ $\Large sigmoid \ x = {1 \over {1+exp(-x)}}$
 
 可以将元素变换到-1和1之间
 
-$\Large tanh(x)={{1-exp(-2x)}\over{1+exp(-2x)}}$
+$\Large tanh(x)={ 1-exp(-2x)\over 1+exp(-2x)} $
 
 ### 模型
 

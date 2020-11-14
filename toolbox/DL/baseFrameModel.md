@@ -33,9 +33,9 @@ $ l^{(i)}$ 损失函数 $l(x)$代价函数
 
 输入层为$x_i$,隐藏层为$h_i$,输出层为$o_i$
 
-隐藏层权重参数$\large W_h \in \mathbb R^{d*h}$和偏差参数$\large b_h \in \mathbb R^{1*h}$,
-隐藏单元个数为h,输出为H，$H \in \mathbb R^{n*h}$
-输出层权重参数$\large W_o \in \mathbb R^{d*q}$和偏差参数$\large b_h \in \mathbb R^{1*h}$。
+隐藏层权重参数$\large W_h \in \mathbb R^{d \times h} $和偏差参数$\large b_h \in \mathbb R^{1 \times h}$,
+隐藏单元个数为h,输出为H，$H \in \mathbb R^{n \times h}$
+输出层权重参数$\large W_o \in \mathbb R^{d \times q}$和偏差参数$\large b_h \in \mathbb R^{1 \times h}$。
 $\eta$学习率 batch epoch
 $\phi$为激活函数
 
@@ -51,7 +51,7 @@ $y = X{\mathcal w}+b+ \epsilon$
 
 $\epsilon$代表着干扰，服从均值为0，标准查为0.01的正态分布,真实${\mathbb w}$的取值为$[2,-3.4]^T$,偏差b=4.2。
 
-$X \in {\mathbb R}^{100*2} $,X为矩阵，其中上标1000的含义为1000个样本，2为2列，即2个影响因素，相对于是一个向量。100*2表示特征。
+$X \in {\mathbb R}^{100 \times 2} $,X为矩阵，其中上标1000的含义为1000个样本，2为2列，即2个影响因素，相对于是一个向量。100*2表示特征。
 
 ```python
 feature = tensor.randn(1000,2,dtype=float32) #生成干扰项

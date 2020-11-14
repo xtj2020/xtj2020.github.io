@@ -217,9 +217,9 @@ $\Large \mathcal l（ \boldsymbol\Theta）={1 \over n}\sum_{i=1}^nH(y^{(i)},\hat
 
 能进行反向传播的基础：$\triangle output \approx \sum_j {\partial output \over \partial w_j}\triangle w_j + {\partial output \over \partial b}\triangle b$
 
-$$\Large w_1 \leftarrow w_1 - {\eta \over \lvert \mathcal{B}\rvert}\sum_{i \in \mathcal{B}}{\partial l^{(i)}(w_1,w_2,b)\over \partial w_1} $$
-$$\Large w_2 \leftarrow w_2 - {\eta \over \lvert \mathcal{B}\rvert}\sum_{i \in \mathcal{B}}{\partial l^{(i)}(w_1,w_2,b)\over \partial w_2} $$
-$$\Large b \quad \leftarrow b \quad - {\eta \over \lvert \mathcal{B}\rvert}\sum_{i \in \mathcal{B}}{\partial l^{(i)}(w_1,w_2,b)\over \partial b} $$
+$\Large w_1 \leftarrow w_1 - {\eta \over \lvert \mathcal{B}\rvert}\sum_{i \in \mathcal{B}}{\partial l^{(i)}(w_1,w_2,b)\over \partial w_1} $
+$\Large w_2 \leftarrow w_2 - {\eta \over \lvert \mathcal{B}\rvert}\sum_{i \in \mathcal{B}}{\partial l^{(i)}(w_1,w_2,b)\over \partial w_2} $
+$\Large b \quad \leftarrow b \quad - {\eta \over \lvert \mathcal{B}\rvert}\sum_{i \in \mathcal{B}}{\partial l^{(i)}(w_1,w_2,b)\over \partial b} $
 
 ```python
 def sgd(params,lr,batch_size):

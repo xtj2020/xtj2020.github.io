@@ -48,6 +48,8 @@
 
   对数据进行样本与标签的组合，并进行打乱（map）
 
+- [LoadPicData](./toolbox/DA/LoadPicData.html)-对于图片的展示
+
 ## [PC](./toolbox/PC)-脚本\linux\爬虫
 
 - [FrameSpider](./toolbox/PC/FrameSpider.html)-爬虫框架
@@ -78,7 +80,15 @@
 
 ## CO-凸优化更加具体的内容
 
+
+
+
+
 - 
+
+# 代码展示
+
+https://nbviewer.jupyter.org/urls/xtj2020.top/toolbox/aa.ipynb
 
 # 资源列表
 

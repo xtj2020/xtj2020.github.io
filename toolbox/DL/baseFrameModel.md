@@ -443,7 +443,7 @@ $\large p(w_1,w_2,...,w_t)=\prod_i^TP(w_t\vert w_1,...,w_t-1)$
 
 # pytorch库的实现
 
-$\begin{equation*} p = \sum_{n=1}^Na_n \end{equation*}$
+$\begin{equation} p = \sum_{n=1}^Na_n \end{equation}$
 
 $p = \sum\limits_{n=1}^Na_n$
 

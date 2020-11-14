@@ -16,41 +16,41 @@
 
 # 代码工具（toolbox）
 
-## [DL](.//toolbox/DL)-深度学习
+## [DL](./toolbox/DL)-深度学习
 
 - [baseFrameModel](./toolbox/DL/baseFrameModel.html)-基础的模型
 - [ModelCNN](./toolbox/DL/ModelCNN.html)-对于基本CNN的调整
 - [ModelRNN](./toolbox/DL/ModelRNN.html)-RNN模型
 - [PlotNeuralNet](./toolbox/DL/PlotNeuralNet.html)-绘制网络图
 
-## [PT](.//toolbox/PT)-pytorch
+## [PT](./toolbox/PT)-pytorch
 
 - [pytorchAPI](./toolbox/PT/pytorchAPI.html)-pytorch API
 - [framePytorch](./toolbox/PT/framePytorch.html)-pytoch框架
 
-## [PY](.//toolbox/PY)-python
+## [PY](./toolbox/PY)-python
 
 - [BasePython](./toolbox/PY/BasePython.html)-基础python用法
 - [MorePython](./toolbox/PY/MorePython.html)-高级使用
 
   
 
-## [DA](.//toolbox/DA)-数据分析
+## [DA](./toolbox/DA)-数据分析
 
 - [Learnnp](./toolbox/DA/Learnnp.html)-numpy库
 
-- [Learnpd](.//toolbox/DA/Learnpd.html)-pandas库
+- [Learnpd](./toolbox/DA/Learnpd.html)-pandas库
 
-- [LoadReadData](.//toolbox/DA/np.html)-数据加载、存储
+- [LoadReadData](./toolbox/DA/LoadReadData.html)-数据加载、存储
   目录、路径操作、文件操作、文件读写
   
-- [PreproccessData](.//toolbox/DA/np.html)-数据预处理
+- [PreproccessData](./toolbox/DA/PreproccessData.html)-数据预处理
 
   对数据进行样本与标签的组合，并进行打乱（map）
 
-## [PC](.//toolbox/PC)-脚本\linux\爬虫
+## [PC](./toolbox/PC)-脚本\linux\爬虫
 
-- [FrameSpider](./toolbox/PC/FrameSpider)-爬虫框架
+- [FrameSpider](./toolbox/PC/FrameSpider.html)-爬虫框架
 - [sysConfig](./toolbox/PC/sysConfig.html)-系统配置
 - [Json](./toolbox/PC/Json.html)-Json文件格式
 
@@ -68,9 +68,9 @@
 
 # 积累(stone)
 
-## [WT](.//stone/WT)-文档与操作备份
+## [WT](./stone/WT)-文档与操作备份
 
-- [rl](.//stone/WT/rl.html)-LATEX规则（不含公式，公式见anki）
+- [rl](./stone/WT/rl.html)-LATEX规则（不含公式，公式见anki）
 - [md](./stone/WT/md.html)-mermaid
 - [3d](./stone/WT/3d.html)-mplot3d
 - [sb](./stone/WT/sb.html)-seaborn绘图

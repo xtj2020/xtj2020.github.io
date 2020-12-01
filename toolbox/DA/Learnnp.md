@@ -28,7 +28,7 @@ reshape可以创建一个改变了尺寸的新数组，原数组不变。同时�
 
 tofile以二进制无格式写入文件，用numpy.fromfile读取回来需要自己格式化数据
 
-## 生成随机数
+## 生成随机数（所生成的随机数为列表形式）
 
 ##### numpy.random.rand(d0,d1,…,dn)
 
@@ -65,3 +65,5 @@ tofile以二进制无格式写入文件，用numpy.fromfile读取回来需要自
 - 返回随机整数，范围区间为[low,high），包含low，不包含high
 - 参数：low为最小值，high为最大值，size为数组维度大小，dtype为数据类型，默认的数据类型是np.int
 - high没有填写时，默认生成随机数的范围是[0，low)
+
+np.random.shuffle(x) 类似洗牌，打乱顺序；np.random.permutation(x)返回一个随机排列

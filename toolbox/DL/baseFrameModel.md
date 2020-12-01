@@ -16,6 +16,343 @@
 
 统一符号与公式，看万家书，走自己路
 
+# 训练基准代码（11.27日下午必须完成）
+
+## 导入包
+
+```python
+import matplotlib.pyplot as plt # plt 用于显示图片
+import matplotlib.image as mpimg # mpimg 用于读取图片
+import numpy as np
+import pandas as pd
+import os
+import inspect as ist
+import shutil
+import torch.nn as nn
+import torchvision
+import torch
+import time
+from PIL import Image
+from tqdm import *
+import torch.nn.functional as F
+import math
+import random
+from torchvision import transforms,datasets,models
+import torch.nn as nn
+import torch.utils.data as data
+from PIL import Image
+from torch.utils.data.sampler import RandomSampler, SequentialSampler
+##import img.transformer as transformer
+import csv
+
+import torchvision.transforms as transforms
+from torch.autograd import Variable
+```
+
+
+
+## 数据类
+
+
+
+### 数据加载器(采用datasets.ImageFolder方式)	
+
+```python
+class Dataset:
+    '''
+属性：transform\train\data_images\data_images_loader\classes\classes_index
+方法：get_item 返回值测试集图像和标签
+    '''
+    def __init__(self, train=True):
+        self.transform = transforms.Compose([transforms.Resize((256, 256)),transforms.ToTensor(),
+                                             transforms.Normalize(conf.mean, conf.std)
+                                             ])
+ 
+        self.train = train
+        # 加载训练数据集和验证数据集
+        if train:
+
+            # 数据类型 data_images = {'train': xxx, 'valid': xxx}
+            self.data_images = {x: datasets.ImageFolder(root=os.path.join(conf.root_data, x),
+                                                        transform=self.transform)
+                                for x in ['train', 'valid']}
+            self.data_images_loader = {x: torch.utils.data.DataLoader(dataset=self.data_images[x],
+                                                                      batch_size=conf.batch_size,
+                                                                      shuffle=True)
+                                       for x in ['train', 'valid']}
+            # 图片分类 ['cat', 'dog']
+            self.classes = self.data_images['train'].classes
+            # 图片分类键值对 {'cat': 0, 'dog': 1}
+            self.classes_index = self.data_images['train'].class_to_idx
+
+        # 加载测试数据集
+        else:
+            images = [os.path.join(conf.test_data, img) for img in os.listdir(conf.test_data)]
+            self.images = sorted(images, key=lambda x: int(x.split('.')[0].split('_')[0]))
+
+#    重载专有方法__getitem__,该模块的目的只是为了获取测试图片(而且为验证集的图片)
+    def __getitem__(self, index):
+        img_path = self.images[index]
+        label = int(self.images[index].split('.')[0].split('_')[0])
+        data_images_test = Image.open(img_path)
+        data_images_test = self.transform(data_images_test)
+        return data_images_test, label
+
+    # 重载专有方法__len__
+    def __len__(self):
+        return len(self.images)
+    
+dst = Dataset()
+```
+
+
+
+### 数据方法
+
+数据的自身属性
+
+```python
+def __init__(self, train=True):
+        # 图片预处理
+        # Compose用于将多个transfrom组合起来
+        # ToTensor()将像素从[0, 255]转换为[0, 1.0]
+        # Normalize()用均值和标准差对图像标准化处理 x'=(x-mean)/std，加速收敛
+        self.transform = transforms.Compose([transforms.Resize((64, 64)),
+                                             transforms.ToTensor(),
+                                             transforms.Normalize(conf.mean, conf.std)])
+        self.train = train
+        # 加载训练数据集和验证数据集
+        if train:
+            # 这里使用通用的ImageFolder和DataLoader数据加载器，ImageFolder是读取文件夹下面的所有图片并与标签构成字典，data_images = {'train': xxx, 'valid': xxx}，DataLoader是按批打乱，是生成一批数据。
+            self.data_images = {x: datasets.ImageFolder(root=os.path.join(conf.root_dataset, x),
+                                                        transform=self.transform)
+                                for x in ['trainData', 'validData']}
+            self.data_images_loader = {x: torch.utils.data.DataLoader(dataset=self.data_images[x],
+                                                                      batch_size=conf.batch_size,
+                                                                      shuffle=True)
+                                       for x in ['trainData', 'validData']}
+            # 图片分类
+            self.classes = self.data_images['trainData'].classes
+            # 图片分类键值对 
+            self.classes_index = self.data_images['trainData'].class_to_idx
+
+        # 加载测试数据集
+        else:
+            images = [os.path.join(conf.test_dataset, img) for img in os.listdir(conf.test_dataset)]
+            self.images = sorted(images, key=lambda x: int(x.split('.')[-2].split('/')[0]))
+```
+
+获取项目的方法
+
+```python
+   def __getitem__(self, index):
+        img_path = self.images[index]
+        label = int(self.images[index].split('.')[-2].split('/')[-1])
+        data_images_test = Image.open(img_path)
+        data_images_test = self.transform(data_images_test)
+        return data_images_test, label
+```
+
+获取数目的方法
+
+```
+    def __len__(self):
+        return len(self.images)
+```
+
+
+
+## 数据集的划分（移动到相应文件夹方法）
+
+### 用csv文件作为标签读取，添加一列pd存储该行数据的情况
+
+```python
+len_small_csv = 3000
+
+origin_csv = pd.read_csv('/home/xtu_conda/Downloads/DRD/trainLabels.csv')
+small_csv = origin_csv.iloc[0:len_small_csv]
+small_csv["usetype"] = None
+
+#对csv中前3000个数据进行打乱
+index_small_csv = np.arange(len(small_csv))
+np.random.shuffle(index_small_csv)
+len_train = 0.8*len(small_csv)
+for i in range(len(small_csv)):
+    if i < len_train:
+        small_csv.loc[i,"usetype"] = "train"
+    else:
+        small_csv.loc[i,"usetype"] = "valid"
+
+```
+
+```python
+#对文件的移动操作
+if not os.listdir(os.path.join(conf.train_data,"0/")):    
+    for i in range(len(small_csv)):
+        subpath = small_csv.loc[i,"image"]+".jpeg"
+        old_path = os.path.join(conf.root_train_data,subpath)
+        sub_str = small_csv.loc[i,"usetype"]+r'/'+str(small_csv.loc[i,"level"])
+        new_path = os.path.join(conf.root_data,sub_str)
+#         print(old_path)
+        shutil.copy(old_path,new_path)
+```
+
+### 对文件夹直接进行操作
+
+```
+trainFiles = os.listdir(os.path.join(conf.origin_dataset,'train/'))
+dogFiles = list(filter(lambda x : x[:3] == "dog",trainFiles))
+dogFiles=dogFiles[0:2500]
+catFiles = list(filter(lambda x : x[:3] == "cat",trainFiles))
+catFiles=catFiles[0:2500]
+dogNum_train,catNum_train = len(dogFiles)*0.8,len(catFiles)*0.8
+
+
+if not os.listdir(os.path.join(conf.train_dataset,'dog/')):    
+    for i in range(len(dogFiles)):
+        pre_path = os.path.join(conf.origin_dataset,'train/',dogFiles[i])
+        if i < dogNum_train:
+            new_path = os.path.join(conf.train_dataset,'dog/')
+        else:
+            new_path = os.path.join(conf.valid_dataset,'dog/')
+        shutil.move(pre_path,new_path)
+
+    for i in range(len(catFiles)):
+        pre_path = os.path.join(conf.origin_dataset,'train/',catFiles[i])
+        if i < catNum_train:
+            new_path = os.path.join(conf.train_dataset,'cat/')
+        else:
+            new_path = os.path.join(conf.valid_dataset,'cat/')
+        shutil.copy(pre_path,new_path)
+```
+
+```
+pre_testset = os.listdir(os.path.join(conf.origin_dataset,'test/'))
+pre_testset = pre_testset[0:1249]
+new_path = conf.test_dataset
+for i in range(len(pre_testset)):
+    pre_path = os.path.join(conf.origin_dataset,'test/',pre_testset[i])
+    shutil.copy(pre_path,new_path)
+```
+
+
+
+## 配置文件
+
+### 配置内容
+
+```
+class config:
+    root_train_data = '/home/xtu_conda/xtjdata/DRD/train/'
+    root_data = '/home/xtu_conda/xtjdata/small-DRD/'
+    train_data = '/home/xtu_conda/xtjdata/small-DRD/train/'
+    test_data = '/home/xtu_conda/xtjdata/small-DRD/test/'
+    label_csv = '/home/xtu_conda/xtjdata/small-DR/trainLabels.csv'
+    
+    mean = [0.3219411 , 0.22811799, 0.16616374]
+    std =[0.15051048, 0.10913553, 0.0876774 ]
+    batch_size = 16
+    
+conf = config() 
+```
+
+
+
+### 获取图片的均值
+
+获取图像的均值与方差的前提是要对图像进行加载
+
+```python
+def get_mean_std(data_images):
+    times, mean, std = 0, 0, 0
+    data_loader = {x: torch.utils.data.DataLoader(dataset=data_images[x],
+                                                  batch_size=1000,
+                                                  shuffle=True)
+                          for x in ['trainData', 'validData']}
+    for imgs, labels in data_loader['trainData']:
+        # imgs.shape = torch.Size([32, 3, 64, 64])
+        times += 1
+        mean += np.mean(imgs.numpy(), axis=(0, 2, 3))
+        std += np.std(imgs.numpy(), axis=(0, 2, 3))
+        print('times:', times)
+
+    mean /= times
+    std /= times
+    return mean, std
+
+dataset=Dataset()
+get_mean_std(dataset.data_images)
+```
+
+## 统计与可视化分析
+
+### 标签类别数目的统计
+
+使用文件夹的形式
+
+```python
+pic_list = os.listdir('/home/xtu_conda/Downloads/DRD/test/')
+a = len(pic_list)
+```
+
+使用csv的形式
+
+```
+
+```
+
+### 对图片的展示
+
+```python
+import torchvision
+import cv2
+
+imgs, labels = iter(dst.data_images_loader['train']).next() 
+# 制作雪碧图
+# 类型为tensor，维度为[channel, height, width]
+img = torchvision.utils.make_grid(imgs)
+# 转换为数组并调整维度为[height, width, channel]
+img = img.numpy().transpose([1, 2, 0])
+# 通过反向推导标准差交换法计算图片原来的像素值
+mean, std = conf.mean, conf.std
+img = img * std + mean
+# 打印图片标签
+print([dst.classes[i] for i in labels])
+# 显示图片
+# cv2.imshow('img', img)
+# # 等待图片关闭
+# cv2.waitKey(0)
+
+import matplotlib.pyplot as plt # plt 用于显示图片
+import matplotlib.image as mpimg # mpimg 用于读取图片
+import numpy as np
+
+# 此时 lena 就已经是一个 np.array 了，可以对它进行任意处理
+# cat = mpimg.imread(img)
+# print(cat.shape) 
+plt.imshow(img) # 显示图片
+plt.axis('off') # 不显示坐标轴
+plt.show()
+```
+
+
+
+## 模型与网络(用过的，计入代码基准的)
+
+
+
+## 训练与验证
+
+## 训练（独立的）
+
+## 验证（独立的）
+
+## 测试
+
+
+
+
+
 # 基本术语
 
 带有集成字样的是对目前所学内容的集成
@@ -443,9 +780,21 @@ $\large p(w_1,w_2,...,w_t)=\prod_i^TP(w_t\vert w_1,...,w_t-1)$
 
 # pytorch库的实现
 
-$\begin{equation} p = \sum_{n=1}^Na_n \end{equation}$
+$\large \begin{equation} p = \sum_{n=1}^Na_n \end{equation}$
 
-$p = \sum\limits_{n=1}^Na_n$
+$\large p = \sum\limits_{n=1}^Na_n$
+
+# 计算神经网络的像素大小
+
+
+
+Width=(W-F+2P)/S+1
+
+Height=(H-F+2P)/S+1
+
+池化层计算公式
+
+
 
 # 参考文献
 [动手实现]: https://tangshusen.me/Dive-into-DL-PyTorch/#/	"动手实现深度学习"

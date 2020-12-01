@@ -74,17 +74,12 @@
 
 - [rl](./stone/WT/rl.html)-LATEX规则（不含公式，公式见anki）
 - [md](./stone/WT/md.html)-mermaid
-- [3d](./stone/WT/3d.html)-mplot3d
 - [sb](./stone/WT/sb.html)-seaborn绘图
 - [pt](./stone/WT/pt.html)-matplotlib.plot
 
 ## CO-凸优化更加具体的内容
 
 
-
-
-
-- 
 
 # 代码展示
 

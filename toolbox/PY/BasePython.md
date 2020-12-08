@@ -31,3 +31,26 @@ isintance('abc',iterable)
 for i,value enumerate(['a','b','c']):
 ```
 
+# 使用jupyter
+
+## 进度条
+
+
+
+```python
+# 安装
+pip install tqdm
+conda install -c conda-forge tqdm
+# trange()来代替tqdm(range()),可以使用desc来设置文字说明
+# 预先实例化进度条对象，在需要刷新说明文字的时候执行相应的程序
+bar = trange(10)
+for i in bar:
+	bar.set_description(f'第{i}轮')
+# tqdm.notebook来美化jupyter
+# 你可以将pandas中的任何apply操作替换为progress_apply，并且记住每个单独的progress_apply前要先执行tqdm.pandas()
+
+```
+
+# 参考文献
+
+[进度条]:(https://zhuanlan.zhihu.com/p/172134892)

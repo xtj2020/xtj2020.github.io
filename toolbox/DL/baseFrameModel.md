@@ -798,3 +798,5 @@ Height=(H-F+2P)/S+1
 
 # 参考文献
 [动手实现]: https://tangshusen.me/Dive-into-DL-PyTorch/#/	"动手实现深度学习"
+[无痛的机器学习]:https://zhuanlan.zhihu.com/p/23776390 "无痛的深度学习"
+

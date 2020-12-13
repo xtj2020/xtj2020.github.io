@@ -268,3 +268,6 @@ $minimize \ x^TQx +  c^Tx \\ \qquad \qquad \quad Ax \le b$
 
 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTU4NzQwNTgwMV19
+-->

@@ -67,7 +67,7 @@
 
 # 代码展示
 
-https://nbviewer.jupyter.org/urls/xtj2020.top/toolbox/aa.ipynb
+
 
 # 资源列表
 

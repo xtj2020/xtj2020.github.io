@@ -64,7 +64,7 @@
 ## [CO](./stone/CO)-凸优化更加具体的内容
 
 ## [PS](./stone/PS)-概率论与数理统计 
-- [probability](./stone/PS/probability.html)-matplotlib.plot
+- [probability](./stone/PS/probability.html)-概率论知识
 
 # 资源列表
 
@@ -76,3 +76,24 @@
 
 [2]: https://zh.wikipedia.org/wiki/Help:%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8
 [用python做科学计算]:
+
+```{.python .input  n=3}
+import os
+# os.makedirs("./stone/PS/")
+file = open('./stone/PS/probability.md','a')
+file.close
+
+```
+
+```{.json .output n=3}
+[
+ {
+  "data": {
+   "text/plain": "<function TextIOWrapper.close()>"
+  },
+  "execution_count": 3,
+  "metadata": {},
+  "output_type": "execute_result"
+ }
+]
+```

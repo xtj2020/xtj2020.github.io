@@ -2,7 +2,7 @@
 
 ## [DL](https://xtj2020.top/toolbox/DL)-深度学习
 
-- [baseFrameModel](https://xtj2020.top/toolbox/DL/baseFrameModel.html)-基础的模型
+- [baseFrameModel](https://xtj2020.top/toolbox/DL/baseFrameModel.html)-基础的模型 [edit](./toolbox/DL/baseFrameModel.md)
 - [ModelCNN](https://xtj2020.top/toolbox/DL/ModelCNN.html)-对于基本CNN的调整
 - [ModelRNN](https://xtj2020.top/toolbox/DL/ModelRNN.html)-RNN模型
 - [PlotNeuralNet](https://xtj2020.top/toolbox/DL/PlotNeuralNet.html)-绘制网络图
@@ -76,24 +76,3 @@
 
 [2]: https://zh.wikipedia.org/wiki/Help:%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8
 [用python做科学计算]:
-
-```{.python .input  n=3}
-import os
-# os.makedirs("./stone/PS/")
-file = open('./stone/PS/probability.md','a')
-file.close
-
-```
-
-```{.json .output n=3}
-[
- {
-  "data": {
-   "text/plain": "<function TextIOWrapper.close()>"
-  },
-  "execution_count": 3,
-  "metadata": {},
-  "output_type": "execute_result"
- }
-]
-```

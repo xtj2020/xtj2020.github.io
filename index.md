@@ -77,23 +77,4 @@
 [2]: https://zh.wikipedia.org/wiki/Help:%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8
 [用python做科学计算]:
 
-```{.python .input  n=3}
-import os
-# os.makedirs("./stone/PS/")
-file = open('./stone/PS/probability.md','a')
-file.close
-
-```
-
-```{.json .output n=3}
-[
- {
-  "data": {
-   "text/plain": "<function TextIOWrapper.close()>"
-  },
-  "execution_count": 3,
-  "metadata": {},
-  "output_type": "execute_result"
- }
-]
-```
+辅助jiao'b

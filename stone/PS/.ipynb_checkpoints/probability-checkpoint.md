@@ -1,3 +1,5 @@
+<script src="../../../ut.js" type="text/javascript"></script>
+
 <head>
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
     <script type="text/x-mathjax-config">
@@ -87,26 +89,26 @@ $f(x,y) \longrightarrow f_x(x)$
 
 - 设在一个家庭中有n个小孩的概率为$p_n = \begin{cases} \alpha p^n, & n \ge1 \\ 1-{\alpha \over 1-p},& n=0\end{cases}$,$0 < \alpha < {1-p \over p},0<p<1 $，若生男生女是等可能的，求恰好有k个男生的概率。
 
-4、$\delta$是$(\Omega,\mathcal{F},P)$上的随机变量，$\mathcal{B}$是R上的Bovel $\sigma$代数。$\forall B \in \mathcal{B}$,令$F(B) = P(w;\delta(w)\in B),证明（R，\mathcal{B}，\mathcal{F}）$是一个概率空间。P30
+- $\delta$是$(\Omega,\mathcal{F},P)$上的随机变量，$\mathcal{B}$是R上的Bovel $\sigma$代数。$\forall B \in \mathcal{B}$,令$F(B) = P(w;\delta(w)\in B),证明（R，\mathcal{B}，\mathcal{F}）$是一个概率空间。P30
 
-5、设$a \subset \Omega$,令$I_A(w) = \begin{cases} 1 ,&w \in A \\ 0 ,& w \notin A\end{cases}$，证明$I_A$为随机变量
+- 设$a \subset \Omega$,令$I_A(w) = \begin{cases} 1 ,&w \in A \\ 0 ,& w \notin A\end{cases}$，证明$I_A$为随机变量
 
-6、$(\Omega,\mathcal{F},P)，A、B \in \mathcal{F},X = \begin{cases} 0 & w \in \bar A \\ 1  &w \in A\end{cases},y  = \begin{cases} 0 & w \in \bar B \\ 1  &w \in B\end{cases}$
+- $(\Omega,\mathcal{F},P)，A、B \in \mathcal{F},X = \begin{cases} 0 & w \in \bar A \\ 1  &w \in A\end{cases},y  = \begin{cases} 0 & w \in \bar B \\ 1  &w \in B\end{cases}$
 (1)、若X、Y独立，$\forall x,y \in R,p\{X <x.Y<y\} = p(x<X)p(y<Y)$
 (2)、若A、B独立
 
-7、$X \sim U(-a,a),Y \sim U(-a,a)$相互独立，求Z=X+Y的密度
+- $X \sim U(-a,a),Y \sim U(-a,a)$相互独立，求Z=X+Y的密度
 (1)、注意上下限的问题
 (2)、$F^{(z)}_z = p(x+y < z)$
 
-8、$x \sim e^{\lambda_{(1)}},y \sim e^{\lambda_{(2)}}$独立，则Z=min(x,y)的密度函数
+- $x \sim e^{\lambda_{(1)}},y \sim e^{\lambda_{(2)}}$独立，则Z=min(x,y)的密度函数
 
-9、设$\delta$的密度函数为$f^{(x)}_\delta=\lambda^2xe^{-\lambda x},x \ge0,\lambda >0,令y \sim U(0,\delta)$,求P(y>2)
+- 设$\delta$的密度函数为$f^{(x)}_\delta=\lambda^2xe^{-\lambda x},x \ge0,\lambda >0,令y \sim U(0,\delta)$,求P(y>2)
 
-10、x取非负整数值，EX存在的，证：$EX=\sum^{+\infty}_{n=1}P(x \ge n)$
+- x取非负整数值，EX存在的，证：$EX=\sum^{+\infty}_{n=1}P(x \ge n)$
 
-11、$\begin{matrix}  x_1 \rightarrow A - X\\ 1 - x_1 \rightarrow Y \end{matrix}, $$\begin{matrix} E(X)=1, \\E(Y)=2\end{matrix}$,$\begin{matrix} D(X)=0.1, \\D(Y)=3\end{matrix}$,$p_{xy} = -0.5$  $Z=X_1X+(1-X_1)Y$当$x_1$为何值时，该投资风险最小？
+- $\begin{matrix}  x_1 \rightarrow A - X\\ 1 - x_1 \rightarrow Y \end{matrix}, $$\begin{matrix} E(X)=1, \\E(Y)=2\end{matrix}$,$\begin{matrix} D(X)=0.1, \\D(Y)=3\end{matrix}$,$p_{xy} = -0.5$  $Z=X_1X+(1-X_1)Y$当$x_1$为何值时，该投资风险最小？
 
-12、$（\delta ，n \ge 0)$独立同分布，$E \delta = u < +\infty,D \delta = <  +\infty,证明：S^2_n = {1 \over n} \ sum^n_{n=1}(\delta_i-\bar \delta_n)  ^2 \rightarrow \delta^2,其中 \delta = {1 \over n} \sum_1^n \\delta_i$
+- $（\delta ，n \ge 0)$独立同分布，$E \delta = u < +\infty,D \delta = <  +\infty,证明：S^2_n = {1 \over n} \ sum^n_{n=1}(\delta_i-\bar \delta_n)  ^2 \rightarrow \delta^2,其中 \delta = {1 \over n} \sum_1^n \\delta_i$
 
 

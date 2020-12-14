@@ -14,7 +14,12 @@
 
 # 概率论
 
-## 知识点
+## 记忆点
+
+|      1        |  2    |     3      |  4    | 5 | 6  | 7 |
+| ------------- | ---- | --------- | ---- | ---- | ---- | --- |
+| 随机变量的定义 | 常见的离散型分布 | 
+
 
 |      1        |  2    |     3      |  4    | 5 | 6 | 7 |
 | ------------- | ---- | --------- | ---- | ---- | ---- | ---- |
@@ -22,7 +27,7 @@
 |
 
 
-## 考题
+## 题目
 
 1、假设只考虑天气的两种情况：有雨或无雨，若已知今天的天气情况，明天天气保持不变的概率为p，变的概率为1-p，设第一天无雨，试求第n天也无雨的概率。
 
@@ -42,25 +47,31 @@
 
 8、设$\{X_n,n \ge 1\}$为独立的随机变量序列，其分布为：$P(X_k = \sqrt k) = P(X_k = -\sqrt k) = {1 \over 2},k =1,2,3,...,$试证$\{X_n,n \ge 1\}$服从中心极限定理
 
-## 划题
+## 复习重点
 
 总共七道题，完整做出两道及格，有一道完全陌生的题。
 
 ### 第一章 随机事件和概率
 
-求概率的基础题，带级数带极限的概率题，全概率公式
+**重点：** 求概率的基础题，带级数带极限的概率题，全概率公式
 
-p63页 串并联
-p76 55\56\58\59\60\64\66
+**书本题：** p63页 串并联
+p76 例2.1.7  例2.1.8 ~55~\56\58\59\60\ ~64~\66
+
+**课上题：**
+
+- 甲盒中有n_1个白球，n_2个红球，乙盒中有m_1个白球，m_2个红球。从甲盒中抽一个球放入乙盒中，再从乙盒中取一个球，求该球为红色的概率？
+
+- 设在一个家庭中有n个小孩的概率为$p_n = \begin{cases} \alpha p^n, & n \ge1 \\ 1-{\alpha \over 1-p},& n=0\end{cases}$,$0 < \alpha < {1-p \over p},0<p<1 $，若生男生女是等可能的，求恰好有k个男生的概率。
 
 ### 第二章 随机变量及其分布函数
 
-p181 20/29/30/31/35
+**重点：**
 
 三种问题
 
-$F(x,y) \longrightarrow F_x(x)$
-$p(i,j) \longrightarrow p_{i,} = p\{x=x_i\}$
+$F(x,y) \longrightarrow F_x(x)$ \
+$p(i,j) \longrightarrow p_{i,} = p\{x=x_i\}$ \
 $f(x,y) \longrightarrow f_x(x)$
 
 几种分布
@@ -68,6 +79,15 @@ $f(x,y) \longrightarrow f_x(x)$
 1、$x \sim t(n)$，则${1 \over x^2} \sim \underline{ F(n,1)}$
 
 2、$x \sim F(n,n),则P(x>1) = \underline{1 \over 2}$
+
+多维随机变量有两道大题，共30分
+
+**书本题：** p181 20/29/30/31/35
+
+**课上题：**
+- 从1...6中任意取一个数X，从1...X中取Y，求Y的分布列。
+
+- 设$a \subset \Omega$,令$I_A(w) = \begin{cases} 1 ,&w \in A \\ 0 ,& w \notin A\end{cases}$，证明$I_A$为随机变量
 
 ### 第三章  随机变量的数字特征
 
@@ -83,15 +103,12 @@ $f(x,y) \longrightarrow f_x(x)$
 
 ## 黑板上的题
 
-- 从1...6中任意取一个数X，从1...X中取Y，求Y的分布列。
 
-- 甲盒中有n_1个白球，n_2个红球，乙盒中有m_1个白球，m_2个红球。从甲盒中抽一个球放入乙盒中，再从乙盒中取一个球，求该球为红色的概率？
 
-- 设在一个家庭中有n个小孩的概率为$p_n = \begin{cases} \alpha p^n, & n \ge1 \\ 1-{\alpha \over 1-p},& n=0\end{cases}$,$0 < \alpha < {1-p \over p},0<p<1 $，若生男生女是等可能的，求恰好有k个男生的概率。
 
 - $\delta$是$(\Omega,\mathcal{F},P)$上的随机变量，$\mathcal{B}$是R上的Bovel $\sigma$代数。$\forall B \in \mathcal{B}$,令$F(B) = P(w;\delta(w)\in B),证明（R，\mathcal{B}，\mathcal{F}）$是一个概率空间。P30
 
-- 设$a \subset \Omega$,令$I_A(w) = \begin{cases} 1 ,&w \in A \\ 0 ,& w \notin A\end{cases}$，证明$I_A$为随机变量
+
 
 - $(\Omega,\mathcal{F},P)，A、B \in \mathcal{F},X = \begin{cases} 0 & w \in \bar A \\ 1  &w \in A\end{cases},y  = \begin{cases} 0 & w \in \bar B \\ 1  &w \in B\end{cases}$
 (1)、若X、Y独立，$\forall x,y \in R,p\{X <x.Y<y\} = p(x<X)p(y<Y)$

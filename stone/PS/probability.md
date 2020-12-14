@@ -97,7 +97,7 @@ $f(x,y) \longrightarrow f_x(x)$
 
 - $\delta$是$(\Omega,\mathcal{F},P)$上的随机变量，$\mathcal{B}$是R上的Bovel $\sigma$代数。$\forall B \in \mathcal{B}$,令$F(B) = P(w;\delta(w)\in B),证明（R，\mathcal{B}，\mathcal{F}）$是一个概率空间。P30
 
-- 设$a \subset \Omega$,令$I_A(w) = \begin{cases} 1 ,&w \in A \\ 0 ,& w \notin A\end{cases}$，证明$I_A$为随机变量
+
 
 - $(\Omega,\mathcal{F},P)，A、B \in \mathcal{F},X = \begin{cases} 0 & w \in \bar A \\ 1  &w \in A\end{cases},y  = \begin{cases} 0 & w \in \bar B \\ 1  &w \in B\end{cases}$
 (1)、若X、Y独立，$\forall x,y \in R,p\{X <x.Y<y\} = p(x<X)p(y<Y)$

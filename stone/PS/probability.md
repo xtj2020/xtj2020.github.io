@@ -75,7 +75,7 @@ $f(x,y) \longrightarrow f_x(x)$
 
 2、$x \sim F(n,n),则P(x>1) = \underline{1 \over 2}$
 
-多维s
+多维随机变量有两道大题，共30分
 
 **书本题：** p181 20/29/30/31/35
 

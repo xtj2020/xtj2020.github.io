@@ -65,8 +65,8 @@ p181 20/29/30/31/35
 
 三种问题
 
-$F(x,y) \longrightarrow F_x(x)$
-$p(i,j) \longrightarrow p_{i,} = p\{x=x_i\}$
+$F(x,y) \longrightarrow F_x(x)$ \
+$p(i,j) \longrightarrow p_{i,} = p\{x=x_i\}$ \
 $f(x,y) \longrightarrow f_x(x)$
 
 几种分布
@@ -77,6 +77,8 @@ $f(x,y) \longrightarrow f_x(x)$
 
 **课上题：**
 - 从1...6中任意取一个数X，从1...X中取Y，求Y的分布列。
+
+- 设$a \subset \Omega$,令$I_A(w) = \begin{cases} 1 ,&w \in A \\ 0 ,& w \notin A\end{cases}$，证明$I_A$为随机变量
 
 ### 第三章  随机变量的数字特征
 

@@ -9,7 +9,7 @@
 
 ## [PT](./toolbox/PT)-pytorch
 
-- [pytorchAPI](https://xtj2020.top/toolbox/PT/pytorchAPI.html)-pytorch API
+- [pytorchAPI](https://xtj2020.top/toolbox/PT/pytorchAPI.html)-pytorch API [edit](./toolbox/PT/pytorchAPI.md)
 - [framePytorch](https://xtj2020.top/toolbox/PT/framePytorch.html)-pytoch框架
 
 ## [PY](./toolbox/PY)-python
@@ -67,4 +67,6 @@
 - [probability](https://xtj2020.top/stone/PS/probability.html)-概率论知识 [edit](./stone/PS/probability.md)
 
 
-# [辅助工具](./Forindex.ipynb)
+# 辅助工具
+- 使用js\nbview [js](./引用js.txt)
+- [编程工具](./Forindex.ipynb)

@@ -70,3 +70,5 @@
 # 辅助工具
 - 使用js\nbview [js](./引用js.txt)
 - [编程工具](./Forindex.ipynb)
+- [返回首页](../)
+- [更新记录](../cron.txt)

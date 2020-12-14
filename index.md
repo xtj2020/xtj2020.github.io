@@ -61,13 +61,9 @@
 - [sb](./stone/WT/sb.html)-seaborn绘图
 - [pt](./stone/WT/pt.html)-matplotlib.plot
 
-## CO-凸优化更加具体的内容
+## [CO](./stone/)--凸优化更加具体的内容
 
-
-
-# 代码展示
-
-
+ 
 
 # 资源列表
 

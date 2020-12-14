@@ -61,9 +61,10 @@
 - [sb](./stone/WT/sb.html)-seaborn绘图
 - [pt](./stone/WT/pt.html)-matplotlib.plot
 
-## [CO](./stone/)--凸优化更加具体的内容
+## [CO](./stone/CO)-凸优化更加具体的内容
 
- 
+## [PS](./stone/PS)-概率论与数理统计 
+- [probability](./stone/PS/probability.html)-matplotlib.plot
 
 # 资源列表
 

@@ -77,4 +77,4 @@
 [2]: https://zh.wikipedia.org/wiki/Help:%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8
 [用python做科学计算]:
 
-辅助jiao'b
+# [辅助](./Forindex.ipynb)

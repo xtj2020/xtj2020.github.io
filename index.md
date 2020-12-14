@@ -2,7 +2,7 @@
 
 ## [DL](https://xtj2020.top/toolbox/DL)-深度学习
 
-- [baseFrameModel](https://xtj2020.top/toolbox/DL/baseFrameModel.html)-基础的模型
+- [baseFrameModel](https://xtj2020.top/toolbox/DL/baseFrameModel.html)-基础的模型 [edit](./toolbox/DL/baseFrameModel.md)
 - [ModelCNN](https://xtj2020.top/toolbox/DL/ModelCNN.html)-对于基本CNN的调整
 - [ModelRNN](https://xtj2020.top/toolbox/DL/ModelRNN.html)-RNN模型
 - [PlotNeuralNet](https://xtj2020.top/toolbox/DL/PlotNeuralNet.html)-绘制网络图
@@ -97,5 +97,3 @@ file.close
  }
 ]
 ```
-
-[]./toolbox/DL/baseFrameModel.md

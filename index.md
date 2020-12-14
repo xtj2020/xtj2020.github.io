@@ -42,7 +42,7 @@
 
 
 
-# 框架(frame)
+# 框架([frame](./frame/))
 
 一些通用的理论与应用框架
 
@@ -52,18 +52,18 @@
 
 
 
-# 积累(stone)
+# 积累([stone](./stone/))
 
-## [WT](https://xtj2020.top/stone/WT)-文档与操作备份
+## [WT](./stone/WT)-文档与操作备份
 
 - [rl](https://xtj2020.top/stone/WT/rl.html)-LATEX规则（不含公式，公式见anki）
 - [md](https://xtj2020.top/stone/WT/md.html)-mermaid
 - [sb](https://xtj2020.top/stone/WT/sb.html)-seaborn绘图
 - [pt](https://xtj2020.top/stone/WT/pt.html)-matplotlib.plot
 
-## [CO](https://xtj2020.top/stone/CO)-凸优化更加具体的内容
+## [CO](./stone/CO)-凸优化更加具体的内容
 
-## [PS](https://xtj2020.top/stone/PS)-概率论与数理统计 
+## [PS](./stone/PS)-概率论与数理统计 
 - [probability](https://xtj2020.top/stone/PS/probability.html)-概率论知识
 
 # 资源列表
@@ -77,4 +77,4 @@
 [2]: https://zh.wikipedia.org/wiki/Help:%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8
 [用python做科学计算]:
 
-# [辅助](./Forindex.ipynb)
+# [辅助工具](./Forindex.ipynb)

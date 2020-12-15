@@ -1,4 +1,4 @@
-```{.python .input}
+```python
 # %load functionBook.py
 ## 获取迭代器的长## 获取迭代器的长度
 def get_length(generator):

@@ -16,7 +16,7 @@
 
 ## 记忆点
 
-|      1        |  2    |     3      |  4    | 5 | 6  | 7 |
+|   1  |  2    |  3  |  4  | 5 | 6  | 7 |
 | ------------- | ---- | --------- | ---- | ---- | ---- | --- |
 | 随机变量的定义 | 常见的离散型分布 | 
 
@@ -33,7 +33,7 @@
 
 2、甲、乙比赛射击，每进行一次，胜者得1分，在一次射击中，甲胜的概率为$\alpha$,乙胜的概率为$\beta$,设$\alpha > \beta$,$\alpha + \beta =1$，且独立进行比赛到有人超过对方2分就停止，多得两分者胜。求甲、乙获胜的概率。
 
-3、设随机变量X与Y独立同分布，其密度函数为$f(x) = \begin{cases}e^{-x},x>0 \\ 0, x \le 0 \end{cases}$ 
+3、设随机变量X与Y独立同分布，其密度函数为$f(x) = \begin{cases}e^{-x},x>0 \\\\ 0, x \le 0 \end{cases}$
 1)、设U = X+Y与$V = {X \over X+Y}$的联合概率密度$f(u,v)$;2)、判断U和V是否独立
 
 4、设二维随机变量（X,Y）的密度概率为$f(x,y) = {8 \over 3},0 \le x-y \le 0.5,0 \le x \le 1 ,0 \le y \le 1$,求
@@ -62,7 +62,7 @@ p76 例2.1.7  例2.1.8 ~55~\56\58\59\60\ ~64~\66
 
 - 甲盒中有n_1个白球，n_2个红球，乙盒中有m_1个白球，m_2个红球。从甲盒中抽一个球放入乙盒中，再从乙盒中取一个球，求该球为红色的概率？
 
-- 设在一个家庭中有n个小孩的概率为$p_n = \begin{cases} \alpha p^n, & n \ge1 \\ 1-{\alpha \over 1-p},& n=0\end{cases}$,$0 < \alpha < {1-p \over p},0<p<1 $，若生男生女是等可能的，求恰好有k个男生的概率。
+- 设在一个家庭中有n个小孩的概率为$p_n = \begin{cases} \alpha p^n, & n \ge1 \\\\ 1-{\alpha \over 1-p},& n=0\end{cases}$,$0 < \alpha < {1-p \over p},0<p<1 $，若生男生女是等可能的，求恰好有k个男生的概率。
 
 ### 第二章 随机变量及其分布函数
 
@@ -127,5 +127,3 @@ $f(x,y) \longrightarrow f_x(x)$
 - $\begin{matrix}  x_1 \rightarrow A - X\\ 1 - x_1 \rightarrow Y \end{matrix}, $$\begin{matrix} E(X)=1, \\E(Y)=2\end{matrix}$,$\begin{matrix} D(X)=0.1, \\D(Y)=3\end{matrix}$,$p_{xy} = -0.5$  $Z=X_1X+(1-X_1)Y$当$x_1$为何值时，该投资风险最小？
 
 - $（\delta ，n \ge 0)$独立同分布，$E \delta = u < +\infty,D \delta = <  +\infty,证明：S^2_n = {1 \over n} \ sum^n_{n=1}(\delta_i-\bar \delta_n)  ^2 \rightarrow \delta^2,其中 \delta = {1 \over n} \sum_1^n \\delta_i$
-
-

@@ -11,13 +11,13 @@
 
 - [pytorchAPI](https://xtj2020.top/toolbox/PT/pytorchAPI.html)-pytorch API [edit](./toolbox/PT/pytorchAPI.md)
 - [framePytorch](https://xtj2020.top/toolbox/PT/framePytorch.html)-pytoch框架
-- [pythonFunction]()
+
 
 ## [PY](./toolbox/PY)-python
 
 - [BasePython](https://xtj2020.top/toolbox/PY/BasePython.html)-基础python用法
 - [MorePython](https://xtj2020.top/toolbox/PY/MorePython.html)-高级使用
-
+- [pythonFunction](https://nbviewer.jupyter.org/urls/xtj2020.top/toolbox/PY/pythonFunction.ipynb)-一些常用的函数功能
   
 
 ## [DA](./toolbox/DA)-数据分析

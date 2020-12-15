@@ -1,25 +1,26 @@
-# 代码工具（toolbox）
+# 代码工具（[toolbox](./toolbox/)）
 
-## [DL](https://xtj2020.top/toolbox/DL)-深度学习
+## [DL](./toolbox/DL)-深度学习
 
 - [baseFrameModel](https://xtj2020.top/toolbox/DL/baseFrameModel.html)-基础的模型 [edit](./toolbox/DL/baseFrameModel.md)
 - [ModelCNN](https://xtj2020.top/toolbox/DL/ModelCNN.html)-对于基本CNN的调整
 - [ModelRNN](https://xtj2020.top/toolbox/DL/ModelRNN.html)-RNN模型
 - [PlotNeuralNet](https://xtj2020.top/toolbox/DL/PlotNeuralNet.html)-绘制网络图
 
-## [PT](https://xtj2020.top/toolbox/PT)-pytorch
+## [PT](./toolbox/PT)-pytorch
 
-- [pytorchAPI](https://xtj2020.top/toolbox/PT/pytorchAPI.html)-pytorch API
+- [pytorchAPI](https://xtj2020.top/toolbox/PT/pytorchAPI.html)-pytorch API [edit](./toolbox/PT/pytorchAPI.md)
 - [framePytorch](https://xtj2020.top/toolbox/PT/framePytorch.html)-pytoch框架
 
-## [PY](https://xtj2020.top/toolbox/PY)-python
+
+## [PY](./toolbox/PY)-python
 
 - [BasePython](https://xtj2020.top/toolbox/PY/BasePython.html)-基础python用法
 - [MorePython](https://xtj2020.top/toolbox/PY/MorePython.html)-高级使用
-
+- [pythonFunction](https://nbviewer.jupyter.org/urls/xtj2020.top/toolbox/PY/pythonFunction.ipynb)
   
 
-## [DA](https://xtj2020.top/toolbox/DA)-数据分析
+## [DA](./toolbox/DA)-数据分析
 
 - [Learnnp](https://xtj2020.top/toolbox/DA/Learnnp.html)-numpy库
 
@@ -34,15 +35,15 @@
 
 - [LoadPicData](https://xtj2020.top/toolbox/DA/LoadPicData.html)-对于图片的展示
 
-## [PC](https://xtj2020.top/toolbox/PC)-脚本\linux\爬虫
+## [PC](./toolbox/PC)-脚本\linux\爬虫
 
 - [FrameSpider](https://xtj2020.top/toolbox/PC/FrameSpider.html)-爬虫框架
 - [sysConfig](https://xtj2020.top/toolbox/PC/sysConfig.html)-系统配置
 - [Json](https://xtj2020.top/toolbox/PC/Json.html)-Json文件格式
+ [edit](./toolbox/PC/Json.md)
 
 
-
-# 框架(frame)
+# 框架([frame](./frame/))
 
 一些通用的理论与应用框架
 
@@ -52,27 +53,26 @@
 
 
 
-# 积累(stone)
+# 积累([stone](./stone/))
 
-## [WT](https://xtj2020.top/stone/WT)-文档与操作备份
+## [WT](./stone/WT)-文档与操作备份
 
 - [rl](https://xtj2020.top/stone/WT/rl.html)-LATEX规则（不含公式，公式见anki）
 - [md](https://xtj2020.top/stone/WT/md.html)-mermaid
 - [sb](https://xtj2020.top/stone/WT/sb.html)-seaborn绘图
 - [pt](https://xtj2020.top/stone/WT/pt.html)-matplotlib.plot
 
-## [CO](https://xtj2020.top/stone/CO)-凸优化更加具体的内容
+## [CO](./stone/CO)-凸优化更加具体的内容
 
-## [PS](https://xtj2020.top/stone/PS)-概率论与数理统计 
-- [probability](https://xtj2020.top/stone/PS/probability.html)-概率论知识
+## [PS](./stone/PS)-概率论与数理统计 
+- [probability](https://xtj2020.top/stone/PS/probability.html)-概率论知识 [edit](./stone/PS/probability.md)
 
-# 资源列表
+## [DM](./stone/DM)-深度学习中的数学
+- [DLMath](https://xtj2020.top/stone/DM/DLMath.html)-深度学习中的数学[edit](./stone/DM/DLMath.md)
 
-## 书籍
 
-[1]:.https://xtj2020.top/.https://xtj2020.top/.https://xtj2020.top/Document/Coding/python&数据分析/用Python做科学计算-中文版.pdf
-
-## 网页
-
-[2]: https://zh.wikipedia.org/wiki/Help:%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8
-[用python做科学计算]:
+# 辅助工具
+- 使用js\nbview [js](./引用js.txt)
+- [编程工具](./Forindex.ipynb)
+- [返回首页](../)
+- [更新记录](../cron.txt)

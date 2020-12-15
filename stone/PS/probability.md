@@ -122,8 +122,7 @@ $f(x,y) \longrightarrow f_x(x)$
 
 - 设$\delta$的密度函数为$f^{(x)}_\delta=\lambda^2xe^{-\lambda x},x \ge0,\lambda >0,令y \sim U(0,\delta)$,求P(y>2)
 
-- x取非负整数值，EX存在的，证：$EX=\sum^{+\infty}_{n=1}P(x \ge n)$
-
+- x取非负整数值，EX存在的，证：$EX=\sum\limits^{+\infty}_{n=1}P(x \ge n)$
 - $\begin{matrix}  x_1 \rightarrow A - X\\ 1 - x_1 \rightarrow Y \end{matrix}, $$\begin{matrix} E(X)=1, \\E(Y)=2\end{matrix}$,$\begin{matrix} D(X)=0.1, \\D(Y)=3\end{matrix}$,$p_{xy} = -0.5$  $Z=X_1X+(1-X_1)Y$当$x_1$为何值时，该投资风险最小？
 
-- $（\delta ，n \ge 0)$独立同分布，$E \delta = u < +\infty,D \delta = <  +\infty,证明：S^2_n = {1 \over n} \ sum^n_{n=1}(\delta_i-\bar \delta_n)  ^2 \rightarrow \delta^2,其中 \delta = {1 \over n} \sum_1^n \\delta_i$
+- $（\delta ，n \ge 0)$独立同分布，$E \delta = u < +\infty,D \delta = <  +\infty,证明：S^2_n = {1 \over n} \sum\limits^n_{n=1}(\delta_i-\bar \delta_n)  ^2 \rightarrow \delta^2,其中 \delta = {1 \over n} \sum\limits_1^n \\delta_i$

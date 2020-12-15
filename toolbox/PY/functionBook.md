@@ -181,4 +181,14 @@ def get_AlldiseaseAb():
 def get_countsLable():
     df["sumLabel"].value_counts()
 ```
+## 时间戳
 
+```python
+import time
+a = time.time()
+print(a)
+now = int(round(a*1000))
+print(now)
+now02 = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(now/1000))
+print(now02)
+```

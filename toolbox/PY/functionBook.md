@@ -68,3 +68,84 @@ def smaller_pic(i):
     return shape_list
 
 ```
+
+```python
+class person:
+    """
+    输入id，df作为一个全局变量
+    是否健康health=Ture,若False，能够获取病人患病总数nums_disease,种类数types_Edisease,中文名type_Cdisease
+    返回图片路径person_imgPath，返回图片的像素imgPixel
+    """
+    def __init__(self,id):
+        self.id = id
+        self.imgPath = "../xtjdata/RF2021/Training_Set/Training/"+str(person_id)+".png"
+                
+    def get_disease(self):
+        types_Edisease = []
+        for i in values_list:
+            if df[i][self.id-1] == 1:
+                dieseas_list.append(i)
+        return dieseas_list
+    
+    def getPixel(id):
+        img_str = str(id)+".png"
+        imgPath = os.path.join("../xtjdata/RF2021/Training_Set/Training/",img_str)
+        img=Image.open(imgPath)
+        array_img = np.array(img)
+        img.close()
+        return array_img
+    
+#原始的标签表
+label_df=pd.read_csv("/home/xtu_conda/xtjdata/RF2021/Training_Set/RFMiD_Training_Labels.csv")
+# 缩写、中英对照表
+name_df=pd.read_csv("chinese_name.csv")
+
+def get_sumLabel_df():
+    sumLabel_df = label_df.copy()
+    sumLabel_df["sumLabel"]=''
+    sumLabel_df["sumLabel"]=label_df.iloc[:,2:].sum(axis=1)
+    return sumLabel_df
+sumLabel_df = get_sumLabel_df()
+
+
+
+def statistic_pixel():
+    shape_list = []
+    id_list = []
+    for i in trange(1920):
+        i +=1
+        id_list.append(i)
+        shape_list.append(getPixel(i).shape) 
+    return id_list,shape_list 
+
+#获取多重患病的id
+def getID_multiplyDisease(n):
+    all_id = []
+    for id in df["ID"]:
+        if df["sumLabel"][id-1] == n:
+            all_id.append(id)
+        else:
+            pass
+    print("总共：",len(all_id))
+    return all_id
+
+#返回所有疾病的患病个数
+def disease_nums():
+    nums_person = []
+    values_list = df[""]
+    for i in values_list:
+        nums_person.append(df[i].value_counts()[1])
+
+    a = zip(values_list,nums_person)
+    disesase = [x  for x in a]
+    sorted(disesase, key=lambda x:x[1],reverse=True) 
+    return disesase
+
+
+def get_AlldiseaseAb():
+    AlldiseaseName = label_df.columns.values[2:]
+    return AlldiseaseName
+
+def get_countsLable():
+    df["sumLabel"].value_counts()
+```

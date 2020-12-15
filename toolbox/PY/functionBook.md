@@ -182,7 +182,3 @@ def get_countsLable():
     df["sumLabel"].value_counts()
 ```
 
-
-```{.python .input}
-
-```

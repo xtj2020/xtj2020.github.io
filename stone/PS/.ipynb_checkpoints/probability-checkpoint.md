@@ -1,5 +1,3 @@
-<script src="../../../ut.js" type="text/javascript"></script>
-
 <head>
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
     <script type="text/x-mathjax-config">
@@ -19,6 +17,11 @@
 |   1  |  2    |  3  |  4  | 5 | 6  | 7 |
 | ------------- | ---- | --------- | ---- | ---- | ---- | --- |
 | 随机变量的定义 | 常见的离散型分布 | 
+
+|   1  |  2    |  3  |  4  | 5 | 6  | 7 |
+| ------------- | ---- | --------- | ---- | ---- | ---- | --- |
+|  联合分布函数 | 证明某种分布 | 边缘分布 | 山洞公式 | 条件密度函数 |
+
 
 
 |      1        |  2    |     3      |  4    | 5 | 6 | 7 |
@@ -68,19 +71,21 @@ p76 例2.1.7  例2.1.8 ~55~\56\58\59\60\ ~64~\66
 
 **重点：**
 
-三种问题
+- 三种问题
 
 $F(x,y) \longrightarrow F_x(x)$ \
 $p(i,j) \longrightarrow p_{i,} = p\{x=x_i\}$ \
 $f(x,y) \longrightarrow f_x(x)$
 
-几种分布
+- 几种分布（会下面类型的就可以了）
 
 1、$x \sim t(n)$，则${1 \over x^2} \sim \underline{ F(n,1)}$
 
 2、$x \sim F(n,n),则P(x>1) = \underline{1 \over 2}$
 
-多维随机变量有两道大题，共30分
+- 多维随机变量有两道大题，共30分
+
+- 随机变量的函数及其分布函数，两道大题。（和的分布可能会考）
 
 **书本题：** p181 20/29/30/31/35
 
@@ -88,6 +93,11 @@ $f(x,y) \longrightarrow f_x(x)$
 - 从1...6中任意取一个数X，从1...X中取Y，求Y的分布列。
 
 - 设$a \subset \Omega$,令$I_A(w) = \begin{cases} 1 ,&w \in A \\ 0 ,& w \notin A\end{cases}$，证明$I_A$为随机变量
+
+
+- $X \sim U(-a,a),Y \sim U(-a,a)$相互独立，求Z=X+Y的密度
+(1)、注意上下限的问题
+(2)、$F^{(z)}_z = p(x+y < z)$
 
 ### 第三章  随机变量的数字特征
 
@@ -114,16 +124,13 @@ $f(x,y) \longrightarrow f_x(x)$
 (1)、若X、Y独立，$\forall x,y \in R,p\{X <x.Y<y\} = p(x<X)p(y<Y)$
 (2)、若A、B独立
 
-- $X \sim U(-a,a),Y \sim U(-a,a)$相互独立，求Z=X+Y的密度
-(1)、注意上下限的问题
-(2)、$F^{(z)}_z = p(x+y < z)$
+
 
 - $x \sim e^{\lambda_{(1)}},y \sim e^{\lambda_{(2)}}$独立，则Z=min(x,y)的密度函数
 
 - 设$\delta$的密度函数为$f^{(x)}_\delta=\lambda^2xe^{-\lambda x},x \ge0,\lambda >0,令y \sim U(0,\delta)$,求P(y>2)
 
-- x取非负整数值，EX存在的，证：$EX=\sum^{+\infty}_{n=1}P(x \ge n)$
-
+- x取非负整数值，EX存在的，证：$EX=\sum\limits^{+\infty}_{n=1}P(x \ge n)$
 - $\begin{matrix}  x_1 \rightarrow A - X\\ 1 - x_1 \rightarrow Y \end{matrix}, $$\begin{matrix} E(X)=1, \\E(Y)=2\end{matrix}$,$\begin{matrix} D(X)=0.1, \\D(Y)=3\end{matrix}$,$p_{xy} = -0.5$  $Z=X_1X+(1-X_1)Y$当$x_1$为何值时，该投资风险最小？
 
-- $（\delta ，n \ge 0)$独立同分布，$E \delta = u < +\infty,D \delta = <  +\infty,证明：S^2_n = {1 \over n} \ sum^n_{n=1}(\delta_i-\bar \delta_n)  ^2 \rightarrow \delta^2,其中 \delta = {1 \over n} \sum_1^n \\delta_i$
+- $（\delta ，n \ge 0)$独立同分布，$E \delta = u < +\infty,D \delta = <  +\infty,证明：S^2_n = {1 \over n} \sum\limits^n_{n=1}(\delta_i-\bar \delta_n)  ^2 \rightarrow \delta^2,其中 \delta = {1 \over n} \sum\limits_1^n \\delta_i$

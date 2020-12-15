@@ -1,5 +1,3 @@
-<script src="../../../ut.js" type="text/javascript"></script>
-
 <head>
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
     <script type="text/x-mathjax-config">
@@ -73,19 +71,21 @@ p76 例2.1.7  例2.1.8 ~55~\56\58\59\60\ ~64~\66
 
 **重点：**
 
-三种问题
+- 三种问题
 
 $F(x,y) \longrightarrow F_x(x)$ \
 $p(i,j) \longrightarrow p_{i,} = p\{x=x_i\}$ \
 $f(x,y) \longrightarrow f_x(x)$
 
-几种分布（会下面类型的就可以了）
+- 几种分布（会下面类型的就可以了）
 
 1、$x \sim t(n)$，则${1 \over x^2} \sim \underline{ F(n,1)}$
 
 2、$x \sim F(n,n),则P(x>1) = \underline{1 \over 2}$
 
-多维随机变量有两道大题，共30分
+- 多维随机变量有两道大题，共30分
+
+- 随机变量的函数及其分布函数，两道大题。（和的分布可能会考）
 
 **书本题：** p181 20/29/30/31/35
 
@@ -93,6 +93,11 @@ $f(x,y) \longrightarrow f_x(x)$
 - 从1...6中任意取一个数X，从1...X中取Y，求Y的分布列。
 
 - 设$a \subset \Omega$,令$I_A(w) = \begin{cases} 1 ,&w \in A \\ 0 ,& w \notin A\end{cases}$，证明$I_A$为随机变量
+
+
+- $X \sim U(-a,a),Y \sim U(-a,a)$相互独立，求Z=X+Y的密度
+(1)、注意上下限的问题
+(2)、$F^{(z)}_z = p(x+y < z)$
 
 ### 第三章  随机变量的数字特征
 
@@ -119,9 +124,7 @@ $f(x,y) \longrightarrow f_x(x)$
 (1)、若X、Y独立，$\forall x,y \in R,p\{X <x.Y<y\} = p(x<X)p(y<Y)$
 (2)、若A、B独立
 
-- $X \sim U(-a,a),Y \sim U(-a,a)$相互独立，求Z=X+Y的密度
-(1)、注意上下限的问题
-(2)、$F^{(z)}_z = p(x+y < z)$
+
 
 - $x \sim e^{\lambda_{(1)}},y \sim e^{\lambda_{(2)}}$独立，则Z=min(x,y)的密度函数
 

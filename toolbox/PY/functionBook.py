@@ -1,13 +1,11 @@
-```{.python .input}
 ## 获取迭代器的长## 获取迭代器的长度
 def get_length(generator):
     if hasattr(generator,"__len__"):
         return len(generator)
     else:
         return sum(1 for _ in generator)
-```
-
-```{.python .input}
+    
+    
 ##图像的去噪 
 def cut_pic(read_file): 
     img = cv2.imread(read_file)   
@@ -48,10 +46,3 @@ def smaller_pic(i):
     image = Image.fromarray(cv2.cvtColor(img_result1,cv2.COLOR_BGR2RGB))    
     image.save(new_path)
     return shape_list
-```
-
-```{.python .input}
-# %load functionBook.py
-import os 
-os.path
-```

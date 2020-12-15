@@ -8,6 +8,10 @@ def get_length(generator):
     
 ##图像的去噪 
 def cut_pic(read_file): 
+"""
+通过去噪的方式来实现对
+
+"""
     img = cv2.imread(read_file)   
     h, w, _ = img.shape
 
@@ -37,7 +41,11 @@ def cut_pic(read_file):
     width = right - left                #右边界
     #返回剪切图
     return img[top:top+height,left:left+width]
+
 def smaller_pic(i):
+    """
+    实现对图片的缩小。输入为
+    """
     img = "/home/xtu_conda/xtjdata/RF2021//Training_Set/classedPiexl/1424/"+str(i)
     new_path = "/home/xtu_conda/xtjdata/small-RF/originData/"+str(i)
     img_src = cv2.imread(img)

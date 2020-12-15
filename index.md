@@ -17,7 +17,7 @@
 
 - [BasePython](https://xtj2020.top/toolbox/PY/BasePython.html)-基础python用法
 - [MorePython](https://xtj2020.top/toolbox/PY/MorePython.html)-高级使用
-- [pythonFunction](https://xtj2020.top/toolbox/PY/pythonFunction.html)-一些常用的函数功能  [edit](./toolbox/PY/pythonFunction.md)
+- [pythonFunction](https://xtj2020.top/toolbox/PY/functionBook.html)-一些常用的函数功能  [edit](./toolbox/PY/pythonFunction.md)
   
 
 ## [DA](./toolbox/DA)-数据分析

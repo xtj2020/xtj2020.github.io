@@ -1,9 +1,14 @@
-## 获取迭代器的长度
+```{.python .input}
+## 获取迭代器的长## 获取迭代器的长度
 def get_length(generator):
     if hasattr(generator,"__len__"):
         return len(generator)
     else:
         return sum(1 for _ in generator)
+```
+
+```{.python .input}
+##图像的去噪 
 def cut_pic(read_file): 
     img = cv2.imread(read_file)   
     h, w, _ = img.shape
@@ -34,3 +39,13 @@ def cut_pic(read_file):
     width = right - left                #右边界
     #返回剪切图
     return img[top:top+height,left:left+width]
+def smaller_pic(i):
+    img = "/home/xtu_conda/xtjdata/RF2021//Training_Set/classedPiexl/1424/"+str(i)
+    new_path = "/home/xtu_conda/xtjdata/small-RF/originData/"+str(i)
+    img_src = cv2.imread(img)
+    img_result1 = cv2.resize(img_src, (0, 0), fx=0.25, fy=0.25, interpolation=cv2.INTER_LINEAR)
+    shape_list.append(img_result1.shape)
+    image = Image.fromarray(cv2.cvtColor(img_result1,cv2.COLOR_BGR2RGB))    
+    image.save(new_path)
+    return shape_list
+```

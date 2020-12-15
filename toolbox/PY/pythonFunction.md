@@ -1,0 +1,36 @@
+## 获取迭代器的长度
+def get_length(generator):
+    if hasattr(generator,"__len__"):
+        return len(generator)
+    else:
+        return sum(1 for _ in generator)
+def cut_pic(read_file): 
+    img = cv2.imread(read_file)   
+    h, w, _ = img.shape
+
+    GrayImage = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY) #图片灰度化处理
+    ret,binary = cv2.threshold(GrayImage,15,255,cv2.THRESH_BINARY) #图片二值化,灰度值大于40赋值255，反之0
+    threshold = 10   #噪点阈值
+    contours,hierarch=cv2.findContours(binary,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_NONE)
+
+    # 直接填充二值图
+    for i in range(len(contours)):
+        area = cv2.contourArea(contours[i])          #计算轮廓所占面积
+        if area < threshold:                         #将area小于阈值区域填充背景色
+            cv2.drawContours(binary, [contours[i]],-1, 0, thickness=-1)     #原始图片背景0
+            continue
+
+    #     print(binary.shape,end=' ')
+    #找到填充后轮廓的边界
+    #找到所有目标点 横坐标、纵坐标
+    edges_x,edges_y = np.where(binary==255)
+
+    top = min(edges_x)                 #上边界
+    bottom = max(edges_x)              #下边界
+    height=  bottom  - top               #高度
+
+    left = min(edges_y)             #底部
+    right = max(edges_y)                #左边界
+    width = right - left                #右边界
+    #返回剪切图
+    return img[top:top+height,left:left+width]

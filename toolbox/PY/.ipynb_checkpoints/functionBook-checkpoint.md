@@ -1,13 +1,30 @@
+# 对文件夹的处理
 ```python
-# %load functionBook.py
-## 获取迭代器的长## 获取迭代器的长度
+## 列出输入目录中文件的个数
+def lenDirFile(img_path):
+    return len(os.listdir(img_path))
+
+## 移除指定路径下的文件
+def removeDirFile(img_path):
+    try:
+        shutil.rmtree(img_path)
+    except OSError as e:
+        print ("Error: %s - %s." % (e.filename, e.strerror))
+    os.mkdir(img_path)
+    print("\n 文件列表：",os.listdir(img_path),"\n 文件个数：",len(os.listdir(img_path)))
+```
+
+# 迭代器操作
+```python
 def get_length(generator):
     if hasattr(generator,"__len__"):
         return len(generator)
     else:
         return sum(1 for _ in generator)
-    
-    
+```    
+
+# 对图像的处理
+```python    
 ##图像的去噪 
 def cut_pic(read_file): 
     img = cv2.imread(read_file)   
@@ -39,6 +56,7 @@ def cut_pic(read_file):
     width = right - left                #右边界
     #返回剪切图
     return img[top:top+height,left:left+width]
+
 def smaller_pic(i):
     img = "/home/xtu_conda/xtjdata/RF2021//Training_Set/classedPiexl/1424/"+str(i)
     new_path = "/home/xtu_conda/xtjdata/small-RF/originData/"+str(i)
@@ -48,4 +66,5 @@ def smaller_pic(i):
     image = Image.fromarray(cv2.cvtColor(img_result1,cv2.COLOR_BGR2RGB))    
     image.save(new_path)
     return shape_list
+
 ```

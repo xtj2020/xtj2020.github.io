@@ -1,5 +1,7 @@
 http://www.itboth.com/d/e2mYJn
 
+https://www.cnblogs.com/xiaojianliu/articles/9649037.html
+
 深度学习的优化算法，说白了就是梯度下降。每次的参数更新有两种方式。
 
 第一种，遍历全部数据集算一次损失函数，然后算函数对各个参数的梯度，更新梯度。这种方法每更新一次参数都要把数据集里的所有样本都看一遍，计算量开销大，计算速度慢，不支持在线学习，这称为Batch gradient descent，**批梯度下降**。

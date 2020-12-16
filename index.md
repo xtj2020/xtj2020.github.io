@@ -25,7 +25,7 @@
 
 - [Learnnp](https://xtj2020.top/toolbox/DA/Learnnp.html)-numpy库
 
-- [Learnpd](https://xtj2020.top/toolbox/DA/Learnpd.html)-pandas库
+- [Learnpd](https://xtj2020.top/toolbox/DA/Learnpd.html)-pandas库 [edit](./toolbox/DA/Learnpd.md)
 
 - [LoadReadData](https://xtj2020.top/toolbox/DA/LoadReadData.html)-数据加载、存储
   目录、路径操作、文件操作、文件读写

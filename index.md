@@ -16,7 +16,7 @@
 
 ## [PY](./toolbox/PY)-python
 
-- [BasePython](https://xtj2020.top/toolbox/PY/BasePython.html)-基础python用法
+- [BasePython](https://xtj2020.top/toolbox/PY/BasePython.html)-基础python用法 [edit](/toolbox/PY/BasePython.md)
 - [MorePython](https://xtj2020.top/toolbox/PY/MorePython.html)-高级使用
 - [pythonFunction](https://xtj2020.top/toolbox/PY/functionBook.html)-一些常用的函数功能  [edit](./toolbox/PY/functionBook.md)
   

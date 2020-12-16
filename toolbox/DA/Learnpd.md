@@ -45,8 +45,21 @@ DataFrame 类设计用来管理具有索引和标签的数据
 pandas.DataFrame( data, index, columns, dtype, copy)
 # 例子
 df = pd.DtaFrame([10,20,30,40].columns=['numbers'],index=['a','b','c','d'])
-```
 
+# 创建空的DataFrame
+pd.DataFrame()
+```
+可以从列表、字典、Series、Numpy ndarrays、另一个DataFrame中创建DataFrame
+
+从单个列表，会自动生成索引
+```python
+import pandas as pd
+data = [['Alex',10],['Bob',12],['Clarke',13]]
+df = pd.DataFrame(data,columns=['Name','Age'],dtype=float)
+print df
+
+
+```
 
 ![image-20201022134757098](Learnpd.assets/image-20201022134757098.png)
 
@@ -59,6 +72,13 @@ dfname.columns.values.tolist()    # 列名称
 df[i].value_counts()
 ```
 
+
+## 编辑
+```bash
+train['工作饱和度'] = saturation_str   # 增加一列
+train.insert(4, '工作饱和度', saturation_str)   # 插入一列
+```
+df.append()是创建了一个新的对象
 
 索引
 
@@ -82,7 +102,7 @@ df.loc[0]=['cat', 3]  # 其中loc[]中需要加入的是插入地方dataframe的
 ```
 
 
-**添加一个空的列**
+添加一个空的列
 
 mydf['列名'] = None
 
@@ -102,7 +122,10 @@ con
 
 # 排序与取值
 
-## 取列
+## 取值与切片操作
+
+
+
 
 ```python
 df['x']      取列名为'x'的列,格式为series
@@ -111,8 +134,6 @@ df[['w','z']]    取多列时需要用Dataframe的格式
 df[df.columns[0:3]]    按照索引位置来取列，其实是分两步，先用索引取列名，再用列名取列
 ```
 
-
-## 切片操作
 
 loc['A']取名为‘A’的行
 
@@ -124,11 +145,3 @@ df.iloc[0:3, [0,1]]
 df.iloc[1]   绝对索引第一行
 ```
 
-
-# 编辑
-
-```bash
-train['工作饱和度'] = saturation_str   # 增加一列
-train.insert(4, '工作饱和度', saturation_str)   # 插入一列
-```
-df.append()是创建了一个新的对象

@@ -1024,7 +1024,15 @@ Iterable-style：iter(dataset)
 
 ### 加载数据与数据样本
 
-可以用 torch.utils.data.Sampler来
+可以用 torch.utils.data.Sampler来处理Map-style数据
+
+导入批数据与非批数据
+
+自动批处理
+
+#### 多线程处理数据
+
+
 
 
 

@@ -11,12 +11,12 @@
 ## [PT](./toolbox/PT)-pytorch
 
 - [pytorchAPI](https://xtj2020.top/toolbox/PT/pytorchAPI.html)-pytorch API [edit](./toolbox/PT/pytorchAPI.md)
-- [framePytorch](https://xtj2020.top/toolbox/PT/framePytorch.html)-pytoch框架
+- [framePytorch](https://xtj2020.top/toolbox/PT/framePytorch.html)-pytoch框架 [edit](./toolbox/PT/framePytorch.html)
 
 
 ## [PY](./toolbox/PY)-python
 
-- [BasePython](https://xtj2020.top/toolbox/PY/BasePython.html)-基础python用法
+- [BasePython](https://xtj2020.top/toolbox/PY/BasePython.html)-基础python用法 [edit](./toolbox/PY/BasePython.md)
 - [MorePython](https://xtj2020.top/toolbox/PY/MorePython.html)-高级使用
 - [pythonFunction](https://xtj2020.top/toolbox/PY/functionBook.html)-一些常用的函数功能  [edit](./toolbox/PY/functionBook.md)
   

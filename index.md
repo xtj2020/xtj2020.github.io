@@ -11,7 +11,7 @@
 ## [PT](./toolbox/PT)-pytorch
 
 - [pytorchAPI](https://xtj2020.top/toolbox/PT/pytorchAPI.html)-pytorch API [edit](./toolbox/PT/pytorchAPI.md)
-- [framePytorch](https://xtj2020.top/toolbox/PT/framePytorch.html)-pytoch框架
+- [framePytorch](https://xtj2020.top/toolbox/PT/framePytorch.html)-pytoch框架 [edit](./toolbox/PT/framePytorch.html)
 
 
 ## [PY](./toolbox/PY)-python

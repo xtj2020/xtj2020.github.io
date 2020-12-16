@@ -1,3 +1,4 @@
+# python基础
 ##### 内置函数
 
 abs( ) 返回绝对值，是复数返回模
@@ -73,7 +74,3 @@ os.getmtime(path)
 os.getctime(path)	
 
 ```
-
-# 参考文献
-
-[进度条]:(https://zhuanlan.zhihu.com/p/172134892)

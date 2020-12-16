@@ -6,6 +6,7 @@
 - [ModelCNN](https://xtj2020.top/toolbox/DL/ModelCNN.html)-对于基本CNN的调整
 - [ModelRNN](https://xtj2020.top/toolbox/DL/ModelRNN.html)-RNN模型
 - [PlotNeuralNet](https://xtj2020.top/toolbox/DL/PlotNeuralNet.html)-绘制网络图
+- [grad](https://xtj2020.top/toolbox/DL/PlotNeuralNet.html)-梯度下降
 
 ## [PT](./toolbox/PT)-pytorch
 

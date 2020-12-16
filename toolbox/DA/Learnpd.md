@@ -51,13 +51,27 @@ pd.DataFrame()
 ```
 可以从列表、字典、Series、Numpy ndarrays、另一个DataFrame中创建DataFrame
 
+- 列表 
+
 从单个列表，会自动生成索引
+用列表嵌套的方式进行生成
 ```python
 import pandas as pd
 data = [['Alex',10],['Bob',12],['Clarke',13]]
 df = pd.DataFrame(data,columns=['Name','Age'],dtype=float)
 print df
 
+```
+
+- 字典
+
+以键作为列名，以值作为元素，自动生成（可以指定）索引
+
+```python
+import pandas as pd
+data = {'Name':['Tom', 'Jack', 'Steve', 'Ricky'],'Age':[28,34,29,42]}
+df = pd.DataFrame(data, index=['rank1','rank2','rank3','rank4'])
+print(df)
 
 ```
 

@@ -1064,3 +1064,20 @@ __len__:返回Sampler的长度与DataLoader默认操作
 ## Named Tensors operator coverage
 
 # 参考文献
+
+```{.python .input  n=1}
+(0,)>=(0,1)
+```
+
+```{.json .output n=1}
+[
+ {
+  "data": {
+   "text/plain": "False"
+  },
+  "execution_count": 1,
+  "metadata": {},
+  "output_type": "execute_result"
+ }
+]
+```

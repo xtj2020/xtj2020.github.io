@@ -12,7 +12,12 @@ http://www.itboth.com/d/e2mYJn
 
 
 
-# 梯度下降
+# 最速梯度下降法BSD
+又称批量梯度下降法 Batch Gradient Descent
+${ \partial ( \theta ) \over \partial \theta_i }=-{1 \over m} \sum \limit$
+
+# 随机梯度下降SGD
+
 
 # 随机梯度下降
 

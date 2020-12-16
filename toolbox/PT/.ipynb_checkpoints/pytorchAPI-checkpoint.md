@@ -1,37 +1,8 @@
-#!/usr/bin/python
-
 # 基础与常用库
 
 ## 调用cuda
-```python
-torch.cuda.is_available()
-torch.cuda.device_count()
-```
 
-深度学习中我们默认使用的是CPU，如果我们要使用GPU，需要使用.cuda将计算或者数据从CPU移动至GPU，
 
-如果当我们需要在CPU上进行运算时，比如使用plt可视化绘图, 我们可以使用.cpu将计算或者数据转移至CPU.
-```python
-
-# 将CPU上的Tensor或变量放到GPU上
-x.cuda()
-
-# 将GPU上的Tensor或Variable放到CPU上
-x.data.cpu().numpy()
-
-# 将CPU上的神经网络模型放到GPU上
-net = model()
-net.cuda()
-
-import torch
-from torch.autograd import Variable
-
-# 将变量或者数据移到GPU
-gpu_info = Variable(torch.randn(3,3)).cuda()
-# 将变量或者数据移到CPU
-cpu_info = gpu_info.cpu()
-
-```
 
 torch.cuda会记录当前选择的GPU，并且分配的所有CUDA张量将在上面创建。可以使用torch.cuda.device上下文管理器更改所选设备。
 
@@ -807,6 +778,38 @@ adaptive_avg_pool2d(自适应平均池化函数)
 
 对CUDA张量类型的支持，利用GPU计算
 
+```python
+torch.cuda.is_available()
+torch.cuda.device_count()
+```
+
+深度学习中我们默认使用的是CPU，如果我们要使用GPU，需要使用.cuda将计算或者数据从CPU移动至GPU，
+
+如果当我们需要在CPU上进行运算时，比如使用plt可视化绘图, 我们可以使用.cpu将计算或者数据转移至CPU.
+
+```python
+
+# 将CPU上的Tensor或变量放到GPU上
+x.cuda()
+
+# 将GPU上的Tensor或Variable放到CPU上
+x.data.cpu().numpy()
+
+# 将CPU上的神经网络模型放到GPU上
+net = model()
+net.cuda()
+
+import torch
+from torch.autograd import Variable
+
+# 将变量或者数据移到GPU
+gpu_info = Variable(torch.randn(3,3)).cuda()
+# 将变量或者数据移到CPU
+cpu_info = gpu_info.cpu()
+
+```
+
+
 ## torch.cuda.amp
 
 ## torch.distributed
@@ -1009,9 +1012,36 @@ type(dtype=None, non_blocking=False, **kwargs)
 
 ## torch.utils.data
 
+
+
+
+
+
 ### 数据类型
 
+Map-style:使用dataset\[idx\]
+Iterable-style：iter(dataset)
+
 ### 加载数据与数据样本
+
+可以用 torch.utils.data.Sampler来处理Map-style数据
+
+导入批数据与非批数据
+
+自动批处理
+
+#### 多线程处理数据
+
+
+
+
+
+
+
+所有数据都要属于这个子类
+__getiem__
+__len__:返回Sampler的长度与DataLoader默认操作
+
 
 ### 多线程数据加载
 

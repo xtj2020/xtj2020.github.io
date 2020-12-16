@@ -58,12 +58,12 @@ pd.DataFrame()
 ```python
 import pandas as pd
 data = [['Alex',10],['Bob',12],['Clarke',13]]
-df = pd.DataFrame(data,columns=['Name','Age'],dtype=float)
-print df
+df = pd.DataFrame(data,columns=['Name','Age'],index=["2","3","4"],dtype=float)
+print(df)
 
 ```
 
-- 字典
+- ndarrays/Lists的字典
 
 以键作为列名，以值作为元素，自动生成（可以指定）索引
 
@@ -75,7 +75,8 @@ print(df)
 
 ```
 
-- 
+- 字典的列表
+![image.png](attachment:image.png)
 
 ![image-20201022134757098](Learnpd.assets/image-20201022134757098.png)
 

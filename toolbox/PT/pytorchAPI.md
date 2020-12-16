@@ -1,4 +1,44 @@
+#!/usr/bin/python
+
 # 基础与常用库
+
+## 调用cuda
+```python
+torch.cuda.is_available()
+torch.cuda.device_count()
+```
+
+深度学习中我们默认使用的是CPU，如果我们要使用GPU，需要使用.cuda将计算或者数据从CPU移动至GPU，
+
+如果当我们需要在CPU上进行运算时，比如使用plt可视化绘图, 我们可以使用.cpu将计算或者数据转移至CPU.
+```python
+
+# 将CPU上的Tensor或变量放到GPU上
+x.cuda()
+
+# 将GPU上的Tensor或Variable放到CPU上
+x.data.cpu().numpy()
+
+# 将CPU上的神经网络模型放到GPU上
+net = model()
+net.cuda()
+
+import torch
+from torch.autograd import Variable
+
+# 将变量或者数据移到GPU
+gpu_info = Variable(torch.randn(3,3)).cuda()
+# 将变量或者数据移到CPU
+cpu_info = gpu_info.cpu()
+
+```
+
+torch.cuda会记录当前选择的GPU，并且分配的所有CUDA张量将在上面创建。可以使用torch.cuda.device上下文管理器更改所选设备。
+
+但是，一旦张量被分配，您可以直接对其进行操作，而不考虑所选择的设备，结果将始终放在与张量相同的设备上。
+
+默认情况下，不支持跨GPU操作，唯一的例外是copy_()。 除非启用对等存储器访问，否则对分布不同设备上的张量任何启动操作的尝试都将会引发错误。
+
 
 ## torch
 

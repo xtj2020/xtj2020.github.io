@@ -1011,10 +1011,6 @@ type(dtype=None, non_blocking=False, **kwargs)
 ## torch.utils.cpp_extension
 
 ## torch.utils.data
-### torch.utils.data.Dataset
-所有数据都要属于这个子类
-__getiem__
-__len__
 
 
 
@@ -1023,7 +1019,17 @@ __len__
 
 ### 数据类型
 
-### 加载数据与数据样本
+Map-style:使用dataset[idx
+Iterable-style
+
+### torch.utils.data.Dataset
+
+加载数据与数据样本
+
+所有数据都要属于这个子类
+__getiem__
+__len__:返回Sampler的长度与DataLoader默认操作
+
 
 ### 多线程数据加载
 

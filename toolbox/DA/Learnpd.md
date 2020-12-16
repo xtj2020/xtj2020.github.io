@@ -1,12 +1,11 @@
-pd有点类似于数据库
-
-# 展示信息
+# 展示与统计信息
 
 ```python
 df.head(10)
 df.info()
 type(df[1])
 df.dtypes
+
 
 from pandas.api.types import is_string_dtype
 from pandas.api.types import is_numeric_dtype
@@ -18,6 +17,21 @@ is_string_dtype(df[1])
 .sort_index(axis=0, ascending=True)
 ```
 
+```python
+df.index    行名称
+df.columns  列名称
+df._info_axis_     列名称
+
+（bike1，bike2）=df.shape  行、列高度
+len(df)    输出的是行高
+df.index.size    行高
+df.columns.size   列高
+```
+## pd显示
+
+pd.set_option('display.width', 200)   # 横向最多显示多少个字符， 一般80不适合横向的屏幕，平时多用200.pd.set_option('display.max_columns', 12)
+ pd.set_option('display.max_rows', 10)  # 显示的最大行数和列数
+pd.set_option('colheader_justify', 'left')    显示的单元格内容靠左边还是右边
 
 # DataFrame 类
 
@@ -41,7 +55,8 @@ df = pd.DtaFrame([10,20,30,40].columns=['numbers'],index=['a','b','c','d'])
 ```python
 dfname._stat_axis.values.tolist() # 行名称
 dfname.columns.values.tolist()    # 列名称
-dfname.account_values
+
+df[i].value_counts()
 ```
 
 
@@ -85,7 +100,7 @@ mydf['列名'] = None
 
 con
 
-# 取值
+# 排序与取值
 
 ## 取列
 
@@ -110,40 +125,10 @@ df.iloc[1]   绝对索引第一行
 ```
 
 
-# 获取信息
-
-```python
-df.index    行名称
-df.columns  列名称
-df._info_axis_     列名称
-
-（bike1，bike2）=df.shape  行、列高度
-len(df)    输出的是行高
-df.index.size    行高
-df.columns.size   列高
-```
-
-
-# 排序
-
-# 多重索引
-
-# 插入行、列
+# 编辑
 
 ```bash
 train['工作饱和度'] = saturation_str   # 增加一列
 train.insert(4, '工作饱和度', saturation_str)   # 插入一列
 ```
-
-
-# 计算
-
-# 拼接与拆分
-
 df.append()是创建了一个新的对象
-
-# pd显示
-
-pd.set_option('display.width', 200)   # 横向最多显示多少个字符， 一般80不适合横向的屏幕，平时多用200.pd.set_option('display.max_columns', 12)
- pd.set_option('display.max_rows', 10)  # 显示的最大行数和列数
-pd.set_option('colheader_justify', 'left')    显示的单元格内容靠左边还是右边

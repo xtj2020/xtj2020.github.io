@@ -21,14 +21,15 @@ is_string_dtype(df[1])
 
 # DataFrame 类
 
-DataFrame 类设计用来管理具有索引和标签的数据，
-
-​           列名
-index 列值
+DataFrame 类设计用来管理具有索引和标签的数据
+会自动生成的一列的索引，从0开始，列名为标签。
 
 ## 创立
 
 ```python
+#创建，行列标签默认都为可选缺省值np.arrange(n)，copy是复制数据
+pandas.DataFrame( data, index, columns, dtype, copy)
+# 例子
 df = pd.DtaFrame([10,20,30,40].columns=['numbers'],index=['a','b','c','d'])
 ```
 

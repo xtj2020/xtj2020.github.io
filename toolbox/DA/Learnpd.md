@@ -44,7 +44,7 @@ DataFrame 类设计用来管理具有索引和标签的数据
 #创建，行列标签默认都为可选缺省值np.arrange(n)，copy是复制数据
 pandas.DataFrame( data, index, columns, dtype, copy)
 # 例子
-df = pd.DtaFrame([10,20,30,40].columns=['numbers'],index=['a','b','c','d'])
+df = pd.DataFrame([10,20,30,40].columns=['numbers'],index=['a','b','c','d'])
 
 # 创建空的DataFrame
 pd.DataFrame()
@@ -81,12 +81,23 @@ print(df)
 ```python
 import pandas as pd
 data = [{'a': 1, 'b': 2},{'a': 5, 'b': 10, 'c': 20}]
-
-#With two column indices, values same as dictionary keys
 df1 = pd.DataFrame(data, index=['first', 'second'], columns=['a', 'b'])
 print(df1)
 
 ```
+
+- 从Series的字典
+
+```python
+import pandas as pd
+
+d = {'one' : pd.Series([1, 2, 3], index=['a', 'b', 'c']),
+      'two' : pd.Series([1, 2, 3, 4], index=['a', 'b', 'c', 'd'])}
+
+df = pd.DataFrame(d)
+print df
+```
+
 
 
 ![image-20201022134757098](Learnpd.assets/image-20201022134757098.png)
@@ -102,6 +113,9 @@ df[i].value_counts()
 
 
 ## 编辑
+
+https://www.yiibai.com/pandas/python_pandas_dataframe.html
+
 ```bash
 train['工作饱和度'] = saturation_str   # 增加一列
 train.insert(4, '工作饱和度', saturation_str)   # 插入一列

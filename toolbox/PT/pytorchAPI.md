@@ -1019,12 +1019,16 @@ type(dtype=None, non_blocking=False, **kwargs)
 
 ### 数据类型
 
-Map-style:使用dataset[idx
-Iterable-style
+Map-style:使用dataset\[idx\]
+Iterable-style：iter(dataset)
 
-### torch.utils.data.Dataset
+### 加载数据与数据样本
 
-加载数据与数据样本
+可以用 torch.utils.data.Sampler来
+
+
+
+
 
 所有数据都要属于这个子类
 __getiem__

@@ -14,7 +14,9 @@ http://www.itboth.com/d/e2mYJn
 
 # 最速梯度下降法BSD
 又称批量梯度下降法 Batch Gradient Descent
-${ \partial ( \theta ) \over \partial \theta_i }=-{1 \over m} \sum \limit$
+${ \partial J( \theta ) \over \partial \theta_j }=-{1 \over m} \sum \limits _{i=1}^m (y_i - h_\theta(x_i))x_j^i$
+
+沿导数相反的方向
 
 # 随机梯度下降SGD
 

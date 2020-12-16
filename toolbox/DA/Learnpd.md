@@ -76,7 +76,18 @@ print(df)
 ```
 
 - 字典的列表
-![image.png](attachment:image.png)
+
+是以每个字典为行的方式进行的加载，字典的键为列，没有的键会形成新的列，若指定了columns，那么只会显示有的列
+```python
+import pandas as pd
+data = [{'a': 1, 'b': 2},{'a': 5, 'b': 10, 'c': 20}]
+
+#With two column indices, values same as dictionary keys
+df1 = pd.DataFrame(data, index=['first', 'second'], columns=['a', 'b'])
+print(df1)
+
+```
+
 
 ![image-20201022134757098](Learnpd.assets/image-20201022134757098.png)
 

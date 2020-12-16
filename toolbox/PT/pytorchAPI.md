@@ -1065,17 +1065,17 @@ __len__:返回Sampler的长度与DataLoader默认操作
 
 # 参考文献
 
-```{.python .input  n=1}
-(0,)>=(0,1)
+```{.python .input  n=11}
+(0,3,5)>=(0,4,6)
 ```
 
-```{.json .output n=1}
+```{.json .output n=11}
 [
  {
   "data": {
    "text/plain": "False"
   },
-  "execution_count": 1,
+  "execution_count": 11,
   "metadata": {},
   "output_type": "execute_result"
  }

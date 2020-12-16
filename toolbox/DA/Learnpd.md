@@ -36,11 +36,12 @@ df = pd.DtaFrame([10,20,30,40].columns=['numbers'],index=['a','b','c','d'])
 
 ![image-20201022134757098](Learnpd.assets/image-20201022134757098.png)
 
-获取各种属性
+## 获取各种属性
 
 ```python
 dfname._stat_axis.values.tolist() # 行名称
 dfname.columns.values.tolist()    # 列名称
+dfname.account_values
 ```
 
 

@@ -1,3 +1,15 @@
+<head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
+
 | 1  |  2 | 3 | 4 | 5 | 6 | 7 |
 | ------------- | ---- | --------- | --------- | --------- |--------- |--------- |
 | 异常值判别方法 | 3$\sigma$原则 | 肖维勒准则 | 格拉布斯 | 狄克逊准则 | t检验 | 箱型图分析 | 
@@ -41,5 +53,9 @@ GM(1,1)模型是基于随机的原始时间序列，经按时间累加后形成�
     1. 数据量不少于4个；
     2. 原始数据非负、符合指数规律变化且变化不是很快。
 - 建模过程
-    1. 对给定原始观测时间序列$X^{(0)}$做一次累加生成$X^{(1)}$,，做它的紧邻均值生成序列
+    1. 对给定原始观测时间序列$X^{(0)}$做一次累加生成$X^{(1)}$,，做它的紧邻均值生成序列$Z^{(1)}$
+    2. 定义灰导数、构造灰微分方程模型、灰色及百化微分方程系数的确定
+    3. 数据还原及预测
+    
+    
 

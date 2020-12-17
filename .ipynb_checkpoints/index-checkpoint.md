@@ -34,7 +34,7 @@
   目录、路径操作、文件操作、文件读写
 - [researchData](https://xtj2020.top/toolbox/DA/researchData.html)-探索性数据分析 [edit](/toolbox/DA/researchData.md)
   
-- [PreproccessData](https://xtj2020.top/toolbox/DA/PreproccessData.html)-数据预处理
+- [PreproccessData](https://xtj2020.top/toolbox/DA/PreproccessData.html)-数据预处理 [edit](./toolbox/DA/PreproccessData.md)
 
   对数据进行样本与标签的组合，并进行打乱（map）
 

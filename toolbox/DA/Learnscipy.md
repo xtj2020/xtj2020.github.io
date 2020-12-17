@@ -12,6 +12,7 @@ S.round
 
 # 线性代数运算
 ```python
+# scipy.linalg模块提供标准线性代数运算
 
 ```
 

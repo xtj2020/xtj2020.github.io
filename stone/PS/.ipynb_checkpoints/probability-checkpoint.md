@@ -20,7 +20,7 @@
 |   1  |  2    |  3  |  4  | 5 | 6  | 7 |
 | ------------- | ---- | --------- | ---- | ---- | ---- | --- |
 |  联合分布函数 | 证明某种分布 | 边缘分布 | 山洞公式 | 条件密度函数 |
-
+| $\xi_1 + \xi_2$的分布函数 | 2.3 | 相互独立随机变量 |  
 
 
 |      1        |  2    |     3      |  4    | 5 | 6 | 7 |
@@ -75,7 +75,8 @@ p76 例2.1.7  例2.1.8 ~55~\56\58\59\60\ ~64~\66
 
 - 三种问题
 
-$F(x,y) \longrightarrow F_x(x)$ \
+$F(x,y) 
+..... \longrightarrow F_x(x)$ \
 $p(i,j) \longrightarrow p_{i,} = p\{x=x_i\}$ \
 $f(x,y) \longrightarrow f_x(x)$
 
@@ -88,6 +89,8 @@ $f(x,y) \longrightarrow f_x(x)$
 - 多维随机变量有两道大题，共30分
 
 - 随机变量的函数及其分布函数，两道大题。（和的分布可能会考）
+
+定理2.4.7
 
 **书本题：** p181 20/29/30/31/35
 
@@ -118,7 +121,8 @@ $f(x,y) \longrightarrow f_x(x)$
 
 只考一题 $p_{xy}$
 
-- $\begin{matrix}  x_1 \rightarrow A - X\\ 1 - x_1 \rightarrow Y \end{matrix}, $$\begin{matrix} E(X)=1, \\E(Y)=2\end{matrix}$,$\begin{matrix} D(X)=0.1, \\D(Y)=3\end{matrix}$,$p_{xy} = -0.5$  $Z=X_1X+(1-X_1)Y$当$x_1$为何值时，该投资风险最小？
+- $\begin{matrix}  x_1 \rightarrow A - X \\ 1 - x_1 \rightarrow Y \end{matrix}, $ $\begin{matrix} E(X)=1, \\ E(Y)=2 \end{matrix}$,
+$\begin{matrix} D(X)=0.1, \\D(Y)=3\end{matrix} , $,$p_{xy} = -0.5$  $Z=X_1X+(1-X_1)Y$ 当$x_1$为何值时，该投资风险最小？
 
 ## 第四章 不考
 

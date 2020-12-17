@@ -10,9 +10,8 @@
     </script>
 </head>
 
-# 概率论
 
-## 记忆点
+# 记忆点
 
 |   1  |  2    |  3  |  4  | 5 | 6  | 7 |
 | ------------- | ---- | --------- | ---- | ---- | ---- | --- |
@@ -30,7 +29,7 @@
 |
 
 
-## 题目
+# 题目
 
 1、假设只考虑天气的两种情况：有雨或无雨，若已知今天的天气情况，明天天气保持不变的概率为p，变的概率为1-p，设第一天无雨，试求第n天也无雨的概率。
 
@@ -50,11 +49,11 @@
 
 8、设$\{X_n,n \ge 1\}$为独立的随机变量序列，其分布为：$P(X_k = \sqrt k) = P(X_k = -\sqrt k) = {1 \over 2},k =1,2,3,...,$试证$\{X_n,n \ge 1\}$服从中心极限定理
 
-## 复习重点
+# 复习重点
 
 总共七道题，完整做出两道及格，有一道完全陌生的题。
 
-### 第一章 随机事件和概率
+## 第一章 随机事件和概率
 
 **重点：** 求概率的基础题，带级数带极限的概率题，全概率公式
 
@@ -67,7 +66,10 @@ p76 例2.1.7  例2.1.8 ~55~\56\58\59\60\ ~64~\66
 
 - 设在一个家庭中有n个小孩的概率为$p_n = \begin{cases} \alpha p^n, & n \ge1 \\\\ 1-{\alpha \over 1-p},& n=0\end{cases}$,$0 < \alpha < {1-p \over p},0<p<1 $，若生男生女是等可能的，求恰好有k个男生的概率。
 
-### 第二章 随机变量及其分布函数
+- $\delta$是$(\Omega,\mathcal{F},P)$上的随机变量，$\mathcal{B}$是R上的Bovel $\sigma$代数。$\forall B \in \mathcal{B}$,令$F(B) = P(w;\delta(w)\in B),证明（R，\mathcal{B}，\mathcal{F}）$是一个概率空间。P30
+
+
+## 第二章 随机变量及其分布函数
 
 **重点：**
 
@@ -99,38 +101,40 @@ $f(x,y) \longrightarrow f_x(x)$
 (1)、注意上下限的问题
 (2)、$F^{(z)}_z = p(x+y < z)$
 
-### 第三章  随机变量的数字特征
-
-只考一题 $p_{xy}$
-
-### 第四章 不考
-
-### 第五章 极限定理
-**说明：**
-两三道大题，不考中心极限，只考大数定理与依概率收敛
-
-1、2、5、8
-
-## 黑板上的题
-
-
-
-
-- $\delta$是$(\Omega,\mathcal{F},P)$上的随机变量，$\mathcal{B}$是R上的Bovel $\sigma$代数。$\forall B \in \mathcal{B}$,令$F(B) = P(w;\delta(w)\in B),证明（R，\mathcal{B}，\mathcal{F}）$是一个概率空间。P30
-
-
-
 - $(\Omega,\mathcal{F},P)，A、B \in \mathcal{F},X = \begin{cases} 0 & w \in \bar A \\ 1  &w \in A\end{cases},y  = \begin{cases} 0 & w \in \bar B \\ 1  &w \in B\end{cases}$
 (1)、若X、Y独立，$\forall x,y \in R,p\{X <x.Y<y\} = p(x<X)p(y<Y)$
 (2)、若A、B独立
-
-
 
 - $x \sim e^{\lambda_{(1)}},y \sim e^{\lambda_{(2)}}$独立，则Z=min(x,y)的密度函数
 
 - 设$\delta$的密度函数为$f^{(x)}_\delta=\lambda^2xe^{-\lambda x},x \ge0,\lambda >0,令y \sim U(0,\delta)$,求P(y>2)
 
 - x取非负整数值，EX存在的，证：$EX=\sum\limits^{+\infty}_{n=1}P(x \ge n)$
-- $\begin{matrix}  x_1 \rightarrow A - X\\ 1 - x_1 \rightarrow Y \end{matrix}, $$\begin{matrix} E(X)=1, \\E(Y)=2\end{matrix}$,$\begin{matrix} D(X)=0.1, \\D(Y)=3\end{matrix}$,$p_{xy} = -0.5$  $Z=X_1X+(1-X_1)Y$当$x_1$为何值时，该投资风险最小？
+
 
 - $（\delta ，n \ge 0)$独立同分布，$E \delta = u < +\infty,D \delta = <  +\infty,证明：S^2_n = {1 \over n} \sum\limits^n_{n=1}(\delta_i-\bar \delta_n)  ^2 \rightarrow \delta^2,其中 \delta = {1 \over n} \sum\limits_1^n \\delta_i$
+
+## 第三章  随机变量的数字特征
+
+只考一题 $p_{xy}$
+
+- $\begin{matrix}  x_1 \rightarrow A - X\\ 1 - x_1 \rightarrow Y \end{matrix}, $$\begin{matrix} E(X)=1, \\E(Y)=2\end{matrix}$,$\begin{matrix} D(X)=0.1, \\D(Y)=3\end{matrix}$,$p_{xy} = -0.5$  $Z=X_1X+(1-X_1)Y$当$x_1$为何值时，该投资风险最小？
+
+## 第四章 不考
+
+## 第五章 极限定理
+**说明：**
+两三道大题，不考中心极限，只考大数定理与依概率收敛
+
+1、2、5、8
+
+
+
+
+
+
+
+
+
+
+

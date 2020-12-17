@@ -23,9 +23,12 @@
 
 ## [DA](./toolbox/DA)-数据分析
 
-- [Learnnp](https://xtj2020.top/toolbox/DA/Learnnp.html)-numpy库
+- [Learnnp](https://xtj2020.top/toolbox/DA/Learnnp.html)-numpy库 [edit](./toolbox/DA/Learnnp.md)
 
 - [Learnpd](https://xtj2020.top/toolbox/DA/Learnpd.html)-pandas库 [edit](./toolbox/DA/Learnpd.md)
+
+- [Learnscipy](https://xtj2020.top/toolbox/DA/Learnscipy.html)-scipy库
+[edit](./toolbox/DA/Learnscipy.md)
 
 - [LoadReadData](https://xtj2020.top/toolbox/DA/LoadReadData.html)-数据加载、存储
   目录、路径操作、文件操作、文件读写

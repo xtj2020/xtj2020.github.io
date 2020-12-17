@@ -75,7 +75,8 @@ p76 例2.1.7  例2.1.8 ~55~\56\58\59\60\ ~64~\66
 
 - 三种问题
 
-$F(x,y) \longrightarrow F_x(x)$ \
+$F(x,y) 
+.....\longrightarrow F_x(x)$ \
 $p(i,j) \longrightarrow p_{i,} = p\{x=x_i\}$ \
 $f(x,y) \longrightarrow f_x(x)$
 

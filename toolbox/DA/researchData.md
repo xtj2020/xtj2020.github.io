@@ -41,9 +41,9 @@ np.argsort(x)与np.sort()
 ##  序列（字符串、列表、元组）、字典  $\rightarrow$ 索引切片操作异同、优缺点
 
 ## 控制语句：实现简单的程序功能
-  
-
-
+```python  
+value1 if condition else value2
+```
 ## 线性表
 
 ## 随机数的生成

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], inlineMath: [['$','$']] } }); </script>
 记忆点
 1	2	3	4	5	6	7
@@ -7,6 +8,36 @@
 $\xi_1 + \xi_2$的分布函数	2.3	相互独立随机变量				
 1	2	3	4	5	6	7
 弱大数定理	切比雪夫大数定理	大数定理	辛钦大数定理	强大数定理	泊松大数定理	伯努力大数定理
+=======
+<head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
+
+
+# 记忆点
+
+|   1  |  2    |  3  |  4  | 5 | 6  | 7 |
+| ------------- | ---- | --------- | ---- | ---- | ---- | --- |
+| 随机变量的定义 | 常见的离散型分布 | 
+
+|   1  |  2    |  3  |  4  | 5 | 6  | 7 |
+| ------------- | ---- | --------- | ---- | ---- | ---- | --- |
+|  联合分布函数 | 证明某种分布 | 边缘分布 | 山洞公式 | 条件密度函数 |
+| $\xi_1 + \xi_2$的分布函数 | 2.3 | 相互独立随机变量 |  
+
+
+|      1        |  2    |     3      |  4    | 5 | 6 | 7 |
+| ------------- | ---- | --------- | ---- | ---- | ---- | ---- |
+| 弱大数定理  | 切比雪夫大数定理  | 大数定理 |  辛钦大数定理 |  强大数定理  | 泊松大数定理 | 伯努力大数定理 |
+>>>>>>> temp
 |
 
 题目
@@ -45,9 +76,19 @@ $\delta$是$(\Omega,\mathcal{F},P)$上的随机变量，$\mathcal{B}$是R上的B
 第二章 随机变量及其分布函数
 重点：
 
+<<<<<<< HEAD
 三种问题
 $F(x,y) ..... \longrightarrow F_x(x)$
 $p(i,j) \longrightarrow p_{i,} = p{x=x_i}$
+=======
+**重点：**
+
+- 三种问题
+
+$F(x,y) 
+..... \longrightarrow F_x(x)$ \
+$p(i,j) \longrightarrow p_{i,} = p\{x=x_i\}$ \
+>>>>>>> temp
 $f(x,y) \longrightarrow f_x(x)$
 
 几种分布（会下面类型的就可以了）
@@ -60,6 +101,11 @@ $f(x,y) \longrightarrow f_x(x)$
 随机变量的函数及其分布函数，两道大题。（和的分布可能会考）
 
 定理2.4.7
+<<<<<<< HEAD
+=======
+
+**书本题：** p181 20/29/30/31/35
+>>>>>>> temp
 
 书本题： p181 20/29/30/31/35
 
@@ -84,9 +130,19 @@ $（\delta ，n \ge 0)$独立同分布，$E \delta = u < +\infty,D \delta = < +\
 第三章 随机变量的数字特征
 只考一题 $p_{xy}$
 
+<<<<<<< HEAD
 $ x_1 \rightarrow A - X , 1 - x_1 \rightarrow Y , E(X)=1,D(X)=0.1, E(Y)=2 ,D(Y)=3 ,p_{xy} = -0.5. \ Z=X_1X+(1-X_1)Y$ 当$x_1$为何值时，该投资风险最小？
 第四章 不考
 第五章 极限定理
 说明： 两三道大题，不考中心极限，只考大数定理与依概率收敛
+=======
+- $ x_1 \rightarrow A - X ，1 - x_1  \rightarrow Y  \\ E(X)=1, D(X)=0.1,\\ E(Y)=2 \ D(Y)=3, p_{xy} = -0.5$  $Z=X_1X+(1-X_1)Y$ 当$x_1$为何值时，该投资风险最小？
+
+## 第四章 不考
+
+## 第五章 极限定理
+**说明：**
+两三道大题，不考中心极限，只考大数定理与依概率收敛
+>>>>>>> temp
 
 1、2、5、8

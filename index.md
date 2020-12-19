@@ -32,7 +32,7 @@
 
 - [LoadReadData](https://xtj2020.top/toolbox/DA/LoadReadData.html)-数据加载、存储
   目录、路径操作、文件操作、文件读写
-- [researchData](https://xtj2020.top/toolbox/DA/researchData.html)-探索性数据分析 [edit](/toolbox/DA/researchData.md)
+- [researchData](https://xtj2020.top/toolbox/DA/researchData.html)-探索性数据分析 [edit](./toolbox/DA/researchData.md)
   
 - [PreproccessData](https://xtj2020.top/toolbox/DA/PreproccessData.html)-数据预处理 [edit](./toolbox/DA/PreproccessData.md)
 
@@ -81,3 +81,4 @@
 - [编程工具](./Forindex.ipynb)
 - [返回首页](../)
 - [更新记录](../cron.txt)
+-

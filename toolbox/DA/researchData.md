@@ -46,6 +46,11 @@ value1 if condition else value2
 ```
 ## 线性表
 
+pop()
+push()
+remove()
+
+
 ## 随机数的生成
 
 ## 数值型的基本特征：均值方差

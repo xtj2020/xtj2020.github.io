@@ -66,8 +66,9 @@ pandas的索引对象负责管理轴标签和其他元数据（比如轴名称�
 
 Index对象是不可修改的（immutable)
 
+drop方法返回的是一个在指定轴上删除了指定值的新对象
 
-![image.png](attachment:image.png)
+
 
 
 ## scipy

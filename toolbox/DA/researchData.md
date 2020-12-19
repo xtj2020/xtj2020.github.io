@@ -44,7 +44,10 @@ Series([4, 7,-5,3], index=['d','b','a','c'])
 
 利用isnull与notnull来检测缺失数据
 
-Series对象本身及其索引都有一个name属性![image-4.png](attachment:image-4.png)
+Series对象本身及其索引都有一个name属性
+可以通过赋值的方式就地修改
+
+
 
 
 横向：两个表的堆叠 concat axis = 1

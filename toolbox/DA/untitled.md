@@ -32,8 +32,10 @@
 
 ## pandas
 
-横向：两个表的堆叠 concat
+横向：两个表的堆叠 concat axis = 1
 纵向：
+
+主键合并:m
 
 
 ## scipy

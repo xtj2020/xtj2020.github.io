@@ -40,9 +40,11 @@ Series是一种类似于一维数组的对象，它由一组数据（各种NumPy
 Series([4, 7,-5,3], index=['d','b','a','c'])
 
 ```
-使用numpy进行运算会保留索引，在算数运算中会保留对应索引
+使用numpy进行运算会保留索引，在算数运算中会会自动对齐不同索引的数据。
 
 利用isnull与notnull来检测缺失数据
+
+Series对象本身及其索引都有一个name属性![image-4.png](attachment:image-4.png)
 
 
 横向：两个表的堆叠 concat axis = 1

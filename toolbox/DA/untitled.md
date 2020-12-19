@@ -123,6 +123,19 @@ GM(1,1)模型是基于随机的原始时间序列，经按时间累加后形成�
 
 
 
-```{.python .input}
-dict([("1","d")])
+```{.python .input  n=1}
+dict([("1","d"),("2","f")])
+```
+
+```{.json .output n=1}
+[
+ {
+  "data": {
+   "text/plain": "{'1': 'd', '2': 'f'}"
+  },
+  "execution_count": 1,
+  "metadata": {},
+  "output_type": "execute_result"
+ }
+]
 ```

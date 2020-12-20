@@ -24,3 +24,5 @@
 \varepsilon $\varepsilon$
 
 \lambda $\lambda$
+
+\infty $\infty$

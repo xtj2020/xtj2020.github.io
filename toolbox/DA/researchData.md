@@ -244,6 +244,11 @@ pandas.DataFrame.fillna()
 
 ### 优化方法
 
+SGD
+在下降速度最快的方向
+
+
+
 
 ## 常见激活函数
 

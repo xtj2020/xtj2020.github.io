@@ -134,7 +134,7 @@ drop方法返回的是一个在指定轴上删除了指定值的新对象
 ### $3\sigma$准则
 
 1. 计算均值$\bar x = \sum\limits_{i=1}^{n} x_i$
-2. 计算标准差 $\sigma= \sqrt {{1 \over n-1} \sum \limits_{i=1}^n(x_i - \bar x)^2}$
+2. 计算标准差 $\sigma= \sqrt{ \ {1 \over n-1} \sum \limits_{i=1}^n(x_i - \bar x)^2}$
 3. 小于$\bar x -3 \sigma$或者大于$\bar x +3 \sigma$的为异常值
 
 ### 肖维勒准则

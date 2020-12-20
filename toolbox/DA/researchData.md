@@ -221,6 +221,8 @@ pandas.DataFrame.fillna()
  
 **解决办法**：正则化、交叉验证、早停（early stopping）、数据集扩充、dropout
 
+### 正则化
+
 
 
 

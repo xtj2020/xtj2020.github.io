@@ -14,3 +14,7 @@
 
 \sum\limits
  $\bar x = \sum\limits_{i=1}^{n} x_i$
+ 
+ 需要用\vert 来替代|
+ 
+ 需要用来替代 > 

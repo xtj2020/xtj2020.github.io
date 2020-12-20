@@ -152,9 +152,12 @@ drop方法返回的是一个在指定轴上删除了指定值的新对象
 1. 将数据从小到大进行排序
 2. 求出数据的$\bar x \text 与\sigma$
 3. 查表得$\lambda(n,\alpha)$
-4. y
+4. 异常数据小于$\bar x - \lambda \sigma \text 大于 \bar x + \lambda \sigma$
 
 ### 狄克逊准则
+
+1.样本从大到小进行排序
+2. 根据n,$\alpha$查表得$D(n,\alpha)$
 
 ### 箱体图
 

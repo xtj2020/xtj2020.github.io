@@ -14,3 +14,13 @@
 
 \sum\limits
  $\bar x = \sum\limits_{i=1}^{n} x_i$
+ 
+ 需要用\vert 来替代|
+ 
+ 用\times 来替代* 用\div替代除法
+ 
+\xi $\xi$
+
+\varepsilon $\varepsilon$
+
+\lambda $\lambda$

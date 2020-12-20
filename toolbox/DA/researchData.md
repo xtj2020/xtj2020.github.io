@@ -140,8 +140,9 @@ drop方法返回的是一个在指定轴上删除了指定值的新对象
 ### 肖维勒准则
 
 1. 计算数据的$\bar x  \text 与 \sigma$；
-2. 计算每个数据的的误差$e_i = \vert $
-
+2. 计算每个数据的的误差$e_i = \vert x_i - x \vert $
+3. 查概率积分表得到$\varepsilon = w_n \sigma$
+4. 比较误差$e_i 与 $ \varepsilon $
 
 ### t检验
 将数据从小到大排列，计算排除min得到均值与方差。查表得n,$\alpha$

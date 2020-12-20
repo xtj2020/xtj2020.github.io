@@ -17,4 +17,8 @@
  
  需要用\vert 来替代|
  
- 需要用来替代 > 
+ 用\times 来替代* 用\div替代除法
+ 
+\xi $\xi$
+
+\varepsilon $\varepsilon$

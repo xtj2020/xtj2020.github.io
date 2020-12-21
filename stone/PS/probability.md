@@ -31,7 +31,7 @@
 
 - 设在一个家庭中有n个小孩的概率为$p_n = \begin{cases} \alpha p^n, & n \ge1 \\ 1-{\alpha \over 1-p},& n=0\end{cases}$,$0 < \alpha < {1-p \over p},0<p<1 $，若生男生女是等可能的，求恰好有k个男生的概率。
 
-- $\delta$是$(\Omega,\mathcal{F},P)$上的随机变量，$\mathcal{B}$是R上的Bovel $\sigma$代数。$\forall B \in \mathcal{B}$,令$F(B) = P(w;\delta(w)\in B),证明（R，\mathcal{B}，\mathcal{F}）$是一个概率空间。P30
+- $\xi$是$(\Omega,\mathcal{F},P)$上的随机变量，$\mathcal{B}$是R上的Bovel $\sigma$代数。$\forall B \in \mathcal{B}$,令$F(B) = P(w;\xi(w)\in B),证明（R，\mathcal{B}，\mathcal{F}）$是一个概率空间。P30
 
 ## 第二章 随机变量及其分布函数
 重点：
@@ -66,7 +66,7 @@ $f(x,y) \longrightarrow f_x(x)$
 
 - $x \sim e^{\lambda_{(1)}},y \sim e^{\lambda_{(2)}}$独立，则Z=min(x,y)的密度函数
 
-- 设$\delta$的密度函数为$f^{(x)}_\delta=\lambda^2xe^{-\lambda x},x \ge0,\lambda >0,令y \sim U(0,\delta)$,求P(y>2)
+- 设$\xi$的密度函数为$f^{(x)}_\xi=\lambda^2xe^{-\lambda x},x \ge0,\lambda >0,令y \sim U(0,\xi)$,求P(y>2)
 
 - x取非负整数值，EX存在的，证：$EX=\sum\limits^{+\infty}_{n=1}P(x \ge n)$
 
@@ -94,10 +94,14 @@ $f(x,y) \longrightarrow f_x(x)$
 1、2、5、8
 
 **课上题：**
-- $（\delta ，n \ge 0)$独立同分布，$E \delta = u < +\infty,D \delta  = \sigma^2 < +\infty,证明：S^2_n = {1 \over n} \sum\limits^n_{n=1}(\delta_i-\bar \delta_n) ^2 \stackrel{p} \rightarrow \sigma^2,其中 \bar \delta = {1 \over n} \sum\limits_{i=1}^n \delta_i$
+- $（\xi ，n \ge 0)$独立同分布，$E \xi = u < +\infty,D \xi  = \sigma^2 < +\infty,证明：S^2_n = {1 \over n} \sum\limits^n_{n=1}(\xi_i-\bar \xi_n) ^2 \stackrel{p} \rightarrow \sigma^2,其中 \bar \xi = {1 \over n} \sum\limits_{i=1}^n \xi_i$
 
-- 独立同分布$P(\delta_n = {3^k \over k^2})={2 \over 3^k},k=1,2,...判断\delta是否服从大数定律$
-
-
+- 独立同分布$P(\xi_n = {3^k \over k^2})={2 \over 3^k},k=1,2,...判断\xi是否服从大数定律$
 
 
+
+
+
+```{.python .input}
+
+```

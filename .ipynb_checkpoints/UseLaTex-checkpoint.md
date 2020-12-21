@@ -5,18 +5,14 @@
 \sum\limits
  $\bar x = \sum\limits_{i=1}^{n} x_i$
  
- 需要用\vert 来替代|
+ 需要用 \vert 来替代 \|
  
  用\times 来替代* 用\div替代除法
  
-\xi $\xi$
-
+\xi $\xi$ \delta $\delta$
 \varepsilon $\varepsilon$
-
 \lambda $\lambda$
 
 \infty $\infty$
 
 2 \stackrel{p} \rightarrow \delta^2  $2 \stackrel{p} \rightarrow \delta^2$
-
-

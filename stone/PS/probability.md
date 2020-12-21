@@ -27,11 +27,11 @@
 
 课上题：
 
-甲盒中有n_1个白球，n_2个红球，乙盒中有m_1个白球，m_2个红球。从甲盒中抽一个球放入乙盒中，再从乙盒中取一个球，求该球为红色的概率？
+- 甲盒中有n_1个白球，n_2个红球，乙盒中有m_1个白球，m_2个红球。从甲盒中抽一个球放入乙盒中，再从乙盒中取一个球，求该球为红色的概率？
 
-设在一个家庭中有n个小孩的概率为$p_n = \begin{cases} \alpha p^n, & n \ge1 \\ 1-{\alpha \over 1-p},& n=0\end{cases}$,$0 < \alpha < {1-p \over p},0<p<1 $，若生男生女是等可能的，求恰好有k个男生的概率。
+- 设在一个家庭中有n个小孩的概率为$p_n = \begin{cases} \alpha p^n, & n \ge1 \\ 1-{\alpha \over 1-p},& n=0\end{cases}$,$0 < \alpha < {1-p \over p},0<p<1 $，若生男生女是等可能的，求恰好有k个男生的概率。
 
-$\delta$是$(\Omega,\mathcal{F},P)$上的随机变量，$\mathcal{B}$是R上的Bovel $\sigma$代数。$\forall B \in \mathcal{B}$,令$F(B) = P(w;\delta(w)\in B),证明（R，\mathcal{B}，\mathcal{F}）$是一个概率空间。P30
+- $\delta$是$(\Omega,\mathcal{F},P)$上的随机变量，$\mathcal{B}$是R上的Bovel $\sigma$代数。$\forall B \in \mathcal{B}$,令$F(B) = P(w;\delta(w)\in B),证明（R，\mathcal{B}，\mathcal{F}）$是一个概率空间。P30
 
 ## 第二章 随机变量及其分布函数
 重点：
@@ -56,15 +56,15 @@ $f(x,y) \longrightarrow f_x(x)$
 
 课上题：
 
-从1...6中任意取一个数X，从1...X中取Y，求Y的分布列。
+- 从1...6中任意取一个数X，从1...X中取Y，求Y的分布列。
 
-设$a \subset \Omega$,令$I_A(w) = \begin{cases} 1 ,&w \in A \ 0 ,& w \notin A\end{cases}$，证明$I_A$为随机变量
+- 设$a \subset \Omega$,令$I_A(w) = \begin{cases} 1 ,&w \in A \\\\ 0 ,& w \notin A\end{cases}$，证明$I_A$为随机变量
 
-$X \sim U(-a,a),Y \sim U(-a,a)$相互独立，求Z=X+Y的密度 (1)、注意上下限的问题 (2)、$F^{(z)}_z = p(x+y < z)$
+- $X \sim U(-a,a),Y \sim U(-a,a)$相互独立，求Z=X+Y的密度 (1)、注意上下限的问题 (2)、$F^{(z)}_z = p(x+y < z)$
 
-$(\Omega,\mathcal{F},P)，A、B \in \mathcal{F},X = \begin{cases} 0 & w \in \bar A \ 1 &w \in A\end{cases},y = \begin{cases} 0 & w \in \bar B \ 1 &w \in B\end{cases}$ (1)、若X、Y独立，$\forall x,y \in R,p{X <x.Y<y} = p(x<X)p(y<Y)$ (2)、若A、B独立
+- $(\Omega,\mathcal{F},P)，A、B \in \mathcal{F},X = \begin{cases} 0 & w \in \bar A \ 1 &w \in A\end{cases},y = \begin{cases} 0 & w \in \bar B \ 1 &w \in B\end{cases}$ (1)、若X、Y独立，$\forall x,y \in R,p{X <x.Y<y} = p(x<X)p(y<Y)$ (2)、若A、B独立
 
-$x \sim e^{\lambda_{(1)}},y \sim e^{\lambda_{(2)}}$独立，则Z=min(x,y)的密度函数
+- $x \sim e^{\lambda_{(1)}},y \sim e^{\lambda_{(2)}}$独立，则Z=min(x,y)的密度函数
 
 设$\delta$的密度函数为$f^{(x)}_\delta=\lambda^2xe^{-\lambda x},x \ge0,\lambda >0,令y \sim U(0,\delta)$,求P(y>2)
 

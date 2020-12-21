@@ -34,7 +34,7 @@
 - $\xi$是$(\Omega,\mathcal{F},P)$上的随机变量，$\mathcal{B}$是R上的Bovel $\sigma$代数。$\forall B \in \mathcal{B}$,令$F(B) = P(w;\xi(w)\in B),证明（R，\mathcal{B}，\mathcal{F}）$是一个概率空间。P30
 
 ## 第二章 随机变量及其分布函数
-重点：
+**知识点：**
 
 三种问题
 $F(x,y) ..... \longrightarrow F_x(x)$
@@ -52,9 +52,9 @@ $f(x,y) \longrightarrow f_x(x)$
 
 定理2.4.7
 
-书本题： p181 20/29/30/31/35
+**书本题：** p181 20/29/30/31/35
 
-课上题：
+**课上题：**
 
 - 从1...6中任意取一个数X，从1...X中取Y，求Y的分布列。
 
@@ -94,7 +94,3 @@ $f(x,y) \longrightarrow f_x(x)$
 - $（\xi ，n \ge 0)$独立同分布，$E \xi = u < +\infty,D \xi  = \sigma^2 < +\infty,证明：S^2_n = {1 \over n} \sum\limits^n_{n=1}(\xi_i-\bar \xi_n) ^2 \stackrel{p} \rightarrow \sigma^2,其中 \bar \xi = {1 \over n} \sum\limits_{i=1}^n \xi_i$
 
 - 独立同分布$P(\xi_n = {3^k \over k^2})={2 \over 3^k},k=1,2,... \text 判断 \xi  \text 是否服从大数定律$
-
-
-
-

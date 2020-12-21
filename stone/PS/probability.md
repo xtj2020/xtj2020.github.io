@@ -66,11 +66,11 @@ $f(x,y) \longrightarrow f_x(x)$
 
 - $x \sim e^{\lambda_{(1)}},y \sim e^{\lambda_{(2)}}$独立，则Z=min(x,y)的密度函数
 
-设$\delta$的密度函数为$f^{(x)}_\delta=\lambda^2xe^{-\lambda x},x \ge0,\lambda >0,令y \sim U(0,\delta)$,求P(y>2)
+- 设$\delta$的密度函数为$f^{(x)}_\delta=\lambda^2xe^{-\lambda x},x \ge0,\lambda >0,令y \sim U(0,\delta)$,求P(y>2)
 
-x取非负整数值，EX存在的，证：$EX=\sum\limits^{+\infty}_{n=1}P(x \ge n)$
+- x取非负整数值，EX存在的，证：$EX=\sum\limits^{+\infty}_{n=1}P(x \ge n)$
 
-$（\delta ，n \ge 0)$独立同分布，$E \delta = u < +\infty,D \delta = < +\infty,证明：S^2_n = {1 \over n} \sum\limits^n_{n=1}(\delta_i-\bar \delta_n) ^2 \rightarrow \delta^2,其中 \delta = {1 \over n} \sum\limits_1^n \delta_i$
+
 
 ## 第三章 随机变量的数字特征
 只考一题 $p_{xy}$
@@ -88,7 +88,11 @@ $（\delta ，n \ge 0)$独立同分布，$E \delta = u < +\infty,D \delta = < +\
 **说明：**
 两三道大题，不考中心极限，只考大数定理与依概率收敛
 
+书上题：
 1、2、5、8
+
+课上题：
+- $（\delta ，n \ge 0)$独立同分布，$E \delta = u < +\infty,D \delta  = \sigma^2 < +\infty,证明：S^2_n = {1 \over n} \sum\limits^n_{n=1}(\delta_i-\bar \delta_n) ^2 \stackrel{p} \rightarrow \delta^2,其中 \delta = {1 \over n} \sum\limits_1^n \delta_i$
 
 ### 知识点
 #### 依概率收敛

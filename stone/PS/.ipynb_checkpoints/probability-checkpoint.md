@@ -93,7 +93,7 @@ $f(x,y) \longrightarrow f_x(x)$
 **课上题：**
 - $（\xi ，n \ge 0)$独立同分布，$E \xi = u < +\infty,D \xi  = \sigma^2 < +\infty,证明：S^2_n = {1 \over n} \sum\limits^n_{n=1}(\xi_i-\bar \xi_n) ^2 \stackrel{p} \rightarrow \sigma^2,其中 \bar \xi = {1 \over n} \sum\limits_{i=1}^n \xi_i$
 
-- 独立同分布$P(\xi_n = {3^k \over k^2})={2 \over 3^k},k=1,2,...判断\xi是否服从大数定律$
+- 独立同分布$P(\xi_n = {3^k \over k^2})={2 \over 3^k},k=1,2,... \text 判断 \xi  \text 是否服从大数定律$
 
 
 

@@ -62,7 +62,7 @@ $f(x,y) \longrightarrow f_x(x)$
 
 - $X \sim U(-a,a),Y \sim U(-a,a)$相互独立，求Z=X+Y的密度 (1)、注意上下限的问题 (2)、$F^{(z)}_z = p(x+y < z)$
 
-- $(\Omega,\mathcal{F},P)，A、B \in \mathcal{F},X = \begin{cases} 0 & w \in \bar A \ 1 &w \in A\end{cases},y = \begin{cases} 0 & w \in \bar B \ 1 &w \in B\end{cases}$ (1)、若X、Y独立，$\forall x,y \in R,p{X <x.Y<y} = p(x<X)p(y<Y)$ (2)、若A、B独立
+- $(\Omega,\mathcal{F},P)，A、B \in \mathcal{F},X = \begin{cases} 0 & w \in \bar A \\\\ 1 &w \in A\end{cases},  y = \begin{cases} 0 & w \in \bar B \\\\ 1 &w \in B\end{cases}$   (1)、若X、Y独立，$\forall x,y \in R,p{X <x.Y<y} = p(x<X)p(y<Y)$   (2)、若A、B独立
 
 - $x \sim e^{\lambda_{(1)}},y \sim e^{\lambda_{(2)}}$独立，则Z=min(x,y)的密度函数
 
@@ -91,6 +91,6 @@ $f(x,y) \longrightarrow f_x(x)$
 1、2、5、8
 
 **课上题：**
-- $（\xi ，n \ge 0)$独立同分布，$E \xi = u < +\infty,D \xi  = \sigma^2 < +\infty,  \text 证明：S^2_n = {1 \over n} \sum\limits^n_{n=1}(\xi_i-\bar \xi_n) ^2 \stackrel{p} \rightarrow \sigma^2, \text 其中 \bar \xi = {1 \over n} \sum\limits_{i=1}^n \xi_i$
+- $（\xi ，n \ge 0)$独立同分布，$E \xi = u < +\infty,D \xi  = \sigma^2 < +\infty$,证明： $ S^2_n = {1 \over n} \sum\limits^n_{n=1}(\xi_i-\bar \xi_n) ^2 \stackrel{p} \rightarrow \sigma^2 $ , 其中 $ \bar \xi = {1 \over n} \sum\limits_{i=1}^n \xi_i $
 
 - 独立同分布$P(\xi_n = {3^k \over k^2})={2 \over 3^k},k=1,2,... \text 判断 \xi  \text 是否服从大数定律$

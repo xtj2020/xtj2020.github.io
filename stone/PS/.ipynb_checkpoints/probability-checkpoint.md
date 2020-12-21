@@ -88,11 +88,13 @@ $f(x,y) \longrightarrow f_x(x)$
 **说明：**
 两三道大题，不考中心极限，只考大数定理与依概率收敛
 
-书上题：
+**书上题：**
 1、2、5、8
 
-课上题：
+**课上题：**
 - $（\delta ，n \ge 0)$独立同分布，$E \delta = u < +\infty,D \delta  = \sigma^2 < +\infty,证明：S^2_n = {1 \over n} \sum\limits^n_{n=1}(\delta_i-\bar \delta_n) ^2 \stackrel{p} \rightarrow \sigma^2,其中 \bar \delta = {1 \over n} \sum\limits_{i=1}^n \delta_i$
+
+- 独立同分布$P(\delta_n = {3^k \over k^2})={2 \over 3^k},k=1,2,...判断\delta是否服从大数定律$
 
 
 

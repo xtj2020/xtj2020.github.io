@@ -21,11 +21,11 @@
 总共七道题，完整做出两道及格，有一道完全陌生的题。
 
 ## 第一章 随机事件和概率
-重点： 求概率的基础题，带级数带极限的概率题，全概率公式
+**知识点：** 求概率的基础题，带级数带极限的概率题，全概率公式
 
-书本题： p63页 串并联 p76 例2.1.7 例2.1.8 55\56\58\59\60\ 64\66
+**书本题：** p63页 串并联 p76 例2.1.7 例2.1.8 55\56\58\59\60\ 64\66
 
-课上题：
+**课上题：**
 
 - 甲盒中有n_1个白球，n_2个红球，乙盒中有m_1个白球，m_2个红球。从甲盒中抽一个球放入乙盒中，再从乙盒中取一个球，求该球为红色的概率？
 
@@ -91,6 +91,6 @@ $f(x,y) \longrightarrow f_x(x)$
 1、2、5、8
 
 **课上题：**
-- $（\xi ，n \ge 0)$独立同分布，$E \xi = u < +\infty,D \xi  = \sigma^2 < +\infty,证明：S^2_n = {1 \over n} \sum\limits^n_{n=1}(\xi_i-\bar \xi_n) ^2 \stackrel{p} \rightarrow \sigma^2,其中 \bar \xi = {1 \over n} \sum\limits_{i=1}^n \xi_i$
+- $（\xi ，n \ge 0)$独立同分布，$E \xi = u < +\infty,D \xi  = \sigma^2 < +\infty, \text 证明：S^2_n = {1 \over n} \sum\limits^n_{n=1}(\xi_i-\bar \xi_n) ^2 \stackrel{p} \rightarrow \sigma^2,\text 其中 \bar \xi = {1 \over n} \sum\limits_{i=1}^n \xi_i$
 
 - 独立同分布$P(\xi_n = {3^k \over k^2})={2 \over 3^k},k=1,2,... \text 判断 \xi  \text 是否服从大数定律$

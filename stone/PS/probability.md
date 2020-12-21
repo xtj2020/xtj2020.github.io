@@ -88,22 +88,12 @@ $f(x,y) \longrightarrow f_x(x)$
 **说明：**
 两三道大题，不考中心极限，只考大数定理与依概率收敛
 
-书上题：
+**书上题：**
 1、2、5、8
 
-课上题：
+**课上题：**
 - $（\delta ，n \ge 0)$独立同分布，$E \delta = u < +\infty,D \delta  = \sigma^2 < +\infty,证明：S^2_n = {1 \over n} \sum\limits^n_{n=1}(\delta_i-\bar \delta_n) ^2 \stackrel{p} \rightarrow \sigma^2,其中 \bar \delta = {1 \over n} \sum\limits_{i=1}^n \delta_i$
 
-### 知识点
-#### 依概率收敛
-随机序列一定收敛吗？
-####  大数定理
-证明伯努利大数定律
-
-#### 切比雪夫不等式
-
-#### 
- 
 
 
 

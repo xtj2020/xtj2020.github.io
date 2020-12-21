@@ -18,3 +18,5 @@
 \infty $\infty$
 
 2 \stackrel{p} \rightarrow \delta^2  $2 \stackrel{p} \rightarrow \delta^2$
+
+

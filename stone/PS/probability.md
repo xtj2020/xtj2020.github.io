@@ -92,7 +92,7 @@ $f(x,y) \longrightarrow f_x(x)$
 1、2、5、8
 
 课上题：
-- $（\delta ，n \ge 0)$独立同分布，$E \delta = u < +\infty,D \delta  = \sigma^2 < +\infty,证明：S^2_n = {1 \over n} \sum\limits^n_{n=1}(\delta_i-\bar \delta_n) ^2 \stackrel{p} \rightarrow \delta^2,其中 \delta = {1 \over n} \sum\limits_1^n \delta_i$
+- $（\delta ，n \ge 0)$独立同分布，$E \delta = u < +\infty,D \delta  = \sigma^2 < +\infty,证明：S^2_n = {1 \over n} \sum\limits^n_{n=1}(\delta_i-\bar \delta_n) ^2 \stackrel{p} \rightarrow \delta^2,其中 \delta = {1 \over n} \sum\limits_{i=1}^n \delta_i$
 
 ### 知识点
 #### 依概率收敛

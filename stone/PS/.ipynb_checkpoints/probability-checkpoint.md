@@ -41,7 +41,7 @@
 
 - 甲盒中有$n_1$个白球，$n_2$个红球，乙盒中有$m_1$个白球，$m_2$个红球。从甲盒中抽一个球放入乙盒中，再从乙盒中取一个球，求该球为红色的概率？
 
-- 设在一个家庭中有n个小孩的概率为$p_n = \begin{cases} \alpha p^n, & n \ge1 \\ 1-{\alpha \over 1-p},& n=0\end{cases}$,$0 < \alpha < {1-p \over p},0<p<1 $，若生男生女是等可能的，求恰好有k个男生的概率。
+- 设在一个家庭中有n个小孩的概率为$p_n = \begin{cases} \alpha p^n, & n \ge1 \\\\ 1-{\alpha \over 1-p},& n=0\end{cases}$,$0 < \alpha < {1-p \over p},0<p<1 $，若生男生女是等可能的，求恰好有k个男生的概率。
 
 - $\xi$是$(\Omega,\mathcal{F},P)$上的随机变量，$\mathcal{B}$是R上的Bovel $\sigma$代数。$\forall B \in \mathcal{B}$,令$\mathcal{F}(B) = P(w;\xi(w)\in B),证明（R，\mathcal{B}，\mathcal{F}）$是一个概率空间。P30
 

@@ -59,7 +59,7 @@ $f(x,y) \longrightarrow f_x(x)$ 有一种简便方法，大概率会考
 
 2、$x \sim F(n,n),则P(x>1) = \underline{1 \over 2}$
 
-
+独立性问题
 
 定理2.4.7
 

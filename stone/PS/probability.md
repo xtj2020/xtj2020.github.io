@@ -81,7 +81,7 @@ $f(x,y) \longrightarrow f_x(x)$ 有一种简便方法，大概率会考
 
 - $x \sim e^{\lambda_{(1)}},y \sim e^{\lambda_{(2)}}$独立，则Z=min(x,y)的密度函数
 
-- 设$\xi$的密度函数为$f^{(x)}_\xi=\lambda^2xe^{-\lambda x},x \ge0,\lambda >0,令y \sim U(0,\xi)$,求P(y>2)
+- 设$\xi$的密度函数为$f_\xi{(x)}=\lambda^2xe^{-\lambda x},x \ge0,\lambda >0,令y \sim U(0,\xi),求P(y>2)$
 
 
 

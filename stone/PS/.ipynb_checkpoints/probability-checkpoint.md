@@ -52,7 +52,7 @@
 三种问题: \
 $F(x,y) ..... \longrightarrow F_x(x)$ \
 $p(i,j) \longrightarrow p_{i,} = p(x=x_i)$ \
-$f(x,y) \longrightarrow f_x(x)$
+$f(x,y) \longrightarrow f_x(x)$ 有一种简便方法，大概率会考
 
 几种分布（会下面类型的就可以了）: \
 1、$x \sim t(n)$，则${1 \over x^2} \sim \underline{ F(n,1)}$ 
@@ -71,9 +71,12 @@ $f(x,y) \longrightarrow f_x(x)$
 
 - 设$a \subset \Omega$,令$I_A(w) = \begin{cases} 1 ,&w \in A \\\\ 0 ,& w \notin A\end{cases}$，证明$I_A$为随机变量
 
-- $X \sim U(-a,a),Y \sim U(-a,a)$相互独立，求Z=X+Y的密度 (1)、注意上下限的问题 (2)、$F^{(z)}_z = p(x+y < z)$
+- $X \sim U(-a,a),Y \sim U(-a,a)$相互独立，求Z=X+Y的密度 \
+(1)、注意上下限的问题  \
+(2)、$F^{(z)}_z = p(x+y < z)$
 
-- $(\Omega,\mathcal{F},P)，A、B \in \mathcal{F},X = \begin{cases} 0 & w \in \bar A \\\\ 1 &w \in A\end{cases},  y = \begin{cases} 0 & w \in \bar B \\\\ 1 &w \in B\end{cases}$   (1)、若X、Y独立，$\forall x,y \in R,p{X <x.Y<y} = p(x<X)p(y<Y)$   (2)、若A、B独立
+- $(\Omega,\mathcal{F},P)，A、B \in \mathcal{F},X = \begin{cases} 0 & w \in \bar A \\\\ 1 &w \in A\end{cases},  y = \begin{cases} 0 & w \in \bar B \\\\ 1 &w \in B\end{cases}$  \
+(1)、若X、Y独立，$\forall x,y \in R,p{X <x.Y<y} = p(x<X)p(y<Y)$ \(2)、若A、B独立
 
 - $x \sim e^{\lambda_{(1)}},y \sim e^{\lambda_{(2)}}$独立，则Z=min(x,y)的密度函数
 

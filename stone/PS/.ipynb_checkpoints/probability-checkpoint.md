@@ -44,13 +44,13 @@
 ## 第二章 随机变量及其分布函数
 **知识点：**
 
-三种问题
-$F(x,y) ..... \longrightarrow F_x(x)$
-$p(i,j) \longrightarrow p_{i,} = p{x=x_i}$
+三种问题: \
+$F(x,y) ..... \longrightarrow F_x(x)$ \
+$p(i,j) \longrightarrow p_{i,} = p（x=x_i）$ \
 $f(x,y) \longrightarrow f_x(x)$
 
-几种分布（会下面类型的就可以了）
-1、$x \sim t(n)$，则${1 \over x^2} \sim \underline{ F(n,1)}$
+几种分布（会下面类型的就可以了）: \
+1、$x \sim t(n)$，则${1 \over x^2} \sim \underline{ F(n,1)}$ 
 
 2、$x \sim F(n,n),则P(x>1) = \underline{1 \over 2}$
 
@@ -90,7 +90,7 @@ $f(x,y) \longrightarrow f_x(x)$
 ## 第四章 不考
 
 ## 第五章 极限定理
-**知识点：** 依概率收敛、大数定理、切比雪夫不等式、辛钦大数定律
+**知识点：** 依概率收敛、大数定理、切比雪夫不等式、辛钦大数定律、马尔可夫大数定律证明与应用
 
 **说明：**
 两三道大题，不考中心极限，只考大数定理与依概率收敛

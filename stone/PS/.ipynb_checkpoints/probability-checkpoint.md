@@ -76,13 +76,13 @@ $f(x,y) \longrightarrow f_x(x)$ 有一种简便方法，大概率会考
 (2)、$F^{(z)}_z = p(x+y < z)$
 
 - $(\Omega,\mathcal{F},P)，A、B \in \mathcal{F},X = \begin{cases} 0 & w \in \bar A \\\\ 1 &w \in A\end{cases},  y = \begin{cases} 0 & w \in \bar B \\\\ 1 &w \in B\end{cases}$  \
-(1)、若X、Y独立，$\forall x,y \in R,p{X <x.Y<y} = p(x<X)p(y<Y)$ \(2)、若A、B独立
+(1)、若X、Y独立，$\forall x,y \in R,P\{X <x.Y<y\} = p(x<X)p(y<Y)$ \
+(2)、若A、B独立
 
 - $x \sim e^{\lambda_{(1)}},y \sim e^{\lambda_{(2)}}$独立，则Z=min(x,y)的密度函数
 
 - 设$\xi$的密度函数为$f^{(x)}_\xi=\lambda^2xe^{-\lambda x},x \ge0,\lambda >0,令y \sim U(0,\xi)$,求P(y>2)
 
-- x取非负整数值，EX存在的，证：$EX=\sum\limits^{+\infty}_{n=1}P(x \ge n)$
 
 
 
@@ -92,6 +92,9 @@ $f(x,y) \longrightarrow f_x(x)$ 有一种简便方法，大概率会考
 
 **课上题：**
 - $ x_1 \rightarrow A - X , 1 - x_1 \rightarrow Y , E(X)=1,D(X)=0.1, E(Y)=2 ,D(Y)=3 ,p_{xy} = -0.5. \\ Z=X_1X+(1-X_1)Y$ 当$x_1$为何值时，该投资风险最小？
+
+- x取非负整数值，EX存在的，证：$EX=\sum\limits^{+\infty}_{n=1}P(x \ge n)$
+
 
 ## 第四章 不考
 

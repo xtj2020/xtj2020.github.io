@@ -52,7 +52,7 @@ $f(x,y) \longrightarrow f_x(x)$
 
 定理2.4.7
 
-**书本题：** p181 20/29/30/31/35
+**书本题：** p181 20、29、30、31、35
 
 **课上题：**
 
@@ -77,7 +77,7 @@ $f(x,y) \longrightarrow f_x(x)$
 **说明：**只考一题 $p_{xy}$
 
 **课上题：**
-- $ x_1 \rightarrow A - X , 1 - x_1 \rightarrow Y , E(X)=1,D(X)=0.1, E(Y)=2 ,D(Y)=3 ,p_{xy} = -0.5. \ Z=X_1X+(1-X_1)Y$ 当$x_1$为何值时，该投资风险最小？
+- $ x_1 \rightarrow A - X , 1 - x_1 \rightarrow Y , E(X)=1,D(X)=0.1, E(Y)=2 ,D(Y)=3 ,p_{xy} = -0.5. \\ Z=X_1X+(1-X_1)Y$ 当$x_1$为何值时，该投资风险最小？
 
 ## 第四章 不考
 

@@ -43,7 +43,7 @@
 
 - 设在一个家庭中有n个小孩的概率为$p_n = \begin{cases} \alpha p^n, & n \ge1 \\ 1-{\alpha \over 1-p},& n=0\end{cases}$,$0 < \alpha < {1-p \over p},0<p<1 $，若生男生女是等可能的，求恰好有k个男生的概率。
 
-- $\xi$是$(\Omega,\mathcal{F},P)$上的随机变量，$\mathcal{B}$是R上的Bovel $\sigma$代数。$\forall B \in \mathcal{B}$,令$F(B) = P(w;\xi(w)\in B),证明（R，\mathcal{B}，\mathcal{F}）$是一个概率空间。P30
+- $\xi$是$(\Omega,\mathcal{F},P)$上的随机变量，$\mathcal{B}$是R上的Bovel $\sigma$代数。$\forall B \in \mathcal{B}$,令$\mathcal{F}(B) = P(w;\xi(w)\in B),证明（R，\mathcal{B}，\mathcal{F}）$是一个概率空间。P30
 
 ## 第二章 随机变量及其分布函数
 **说明：**

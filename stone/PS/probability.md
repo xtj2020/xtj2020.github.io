@@ -56,6 +56,8 @@ $F(x,y) ..... \longrightarrow F_x(x)$ \
 $p(i,j) \longrightarrow p_{i,} = p(x=x_i)$ \
 $f(x,y) \longrightarrow f_x(x)$ 有一种简便方法，大概率会考
 
+
+
 几种分布（会下面类型的就可以了）: \
 1、$x \sim t(n)$，则${1 \over x^2} \sim \underline{ F(n,1)}$ 
 

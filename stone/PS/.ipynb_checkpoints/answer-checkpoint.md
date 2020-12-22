@@ -1,6 +1,6 @@
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], inlineMath: [['$','$']] } }); </script>
 
-# 题目
+## 题目
 1、假设只考虑天气的两种情况：有雨或无雨，若已知今天的天气情况，明天天气保持不变的概率为p，变的概率为1-p，设第一天无雨，试求第n天也无雨的概率。
 
 2、甲、乙比赛射击，每进行一次，胜者得1分，在一次射击中，甲胜的概率为$\alpha$,乙胜的概率为$\beta$,设$\alpha > \beta$,$\alpha + \beta =1$，且独立进行比赛到有人超过对方2分就停止，多得两分者胜。求甲、乙获胜的概率。
@@ -25,13 +25,9 @@
 
 8、设${X_n,n \ge 1}$为独立的随机变量序列，其分布为：$P(X_k = \sqrt k) = P(X_k = -\sqrt k) = {1 \over 2},k =1,2,3,...,$试证${X_n,n \ge 1}$服从中心极限定理
 
-# 复习重点
-总共七道题，完整做出两道及格，有一道完全陌生的题。
 
 ## 第一章 随机事件和概率
-**说明：** 涉及级数、极限的概率题
 
-**知识点：** 求概率的基础题，带级数带极限的概率题，全概率公式
 
 **书本题：** p63页 串并联 p76 例2.1.7、例2.1.8 课后题55、56、58、59、60、 64、66
 

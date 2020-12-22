@@ -114,7 +114,7 @@ $f(x,y) \longrightarrow f_x(x)$ 有一种简便方法，大概率会考
 两三道大题，不考中心极限，只考大数定理与依概率收敛
 
 **书上题：**
-1、2、5、8
+1（各种证明依概率收敛）、2（证明g(x)依概率收敛）、5（马尔可夫大数定律）、8（使用马尔可夫大数定律）
 
 **课上题：**
 - $（\xi ，n \ge 0)$独立同分布，$E \xi = u < +\infty,D \xi  = \sigma^2 < +\infty$,证明： $ S_n^2 = {1 \over n} \sum\limits^n_{n=1}(\xi_i-\bar \xi_n) ^2 \stackrel{p} \rightarrow \sigma^2 $ , 其中 $ \bar \xi = {1 \over n} \sum\limits_{i=1}^n \xi_i $

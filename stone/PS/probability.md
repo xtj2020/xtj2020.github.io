@@ -71,7 +71,7 @@ $f(x,y) \longrightarrow f_x(x)$ 有一种简便方法，大概率会考
 
 **课上题：**
 
-- 设$a \subset \Omega$,令$I_A(w) = \begin{cases} 1 ,&w \in A \\\\ 0 ,& w \notin A\end{cases}$，证明$I_A$为随机变量
+- 设$a \subset \Omega$,令$I_A(w) = \begin{cases} 1 ,&w \in A \\\\ 0 ,& w \notin A\end{cases}$，证明$I_A为随机变量 \iff A \in \mathcal{F} $
 
 - $X \sim U(-a,a),Y \sim U(-a,a)$相互独立，求Z=X+Y的密度 \
 (1).注意上下限的问题  \

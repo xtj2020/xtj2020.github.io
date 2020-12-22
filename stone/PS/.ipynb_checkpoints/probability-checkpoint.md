@@ -74,8 +74,8 @@ $f(x,y) \longrightarrow f_x(x)$ 有一种简便方法，大概率会考
 - 设$a \subset \Omega$,令$I_A(w) = \begin{cases} 1 ,&w \in A \\\\ 0 ,& w \notin A\end{cases}$，证明$I_A$为随机变量
 
 - $X \sim U(-a,a),Y \sim U(-a,a)$相互独立，求Z=X+Y的密度 \
-(1)、注意上下限的问题  \
-(2)、$F_z{(z)} = p(x+y < z)$
+(1).注意上下限的问题  \
+(2).$F_z{(z)} = p(x+y < z)$
 
 - $(\Omega,\mathcal{F},P)，A、B \in \mathcal{F},X = \begin{cases} 0 & w \in \bar A \\\\ 1 &w \in A\end{cases},  y = \begin{cases} 0 & w \in \bar B \\\\ 1 &w \in B\end{cases}$  \
 (1).若X、Y独立，$\forall x,y \in R,P\{X <x.Y<y\} = p(x<X)p(y<Y)$ \

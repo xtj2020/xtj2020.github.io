@@ -5,7 +5,7 @@
 
 2、甲、乙比赛射击，每进行一次，胜者得1分，在一次射击中，甲胜的概率为$\alpha$,乙胜的概率为$\beta$,设$\alpha > \beta$,$\alpha + \beta =1$，且独立进行比赛到有人超过对方2分就停止，多得两分者胜。求甲、乙获胜的概率。
 
-3、设随机变量X与Y独立同分布，其密度函数为$f(x) = \begin{cases}e^{-x},x>0 \\ 0, x \le 0 \end{cases}$  \
+3、设随机变量X与Y独立同分布，其密度函数为$f(x) = \begin{cases}e^{-x},x>0 \\\\ 0, x \le 0 \end{cases}$  \
 1).设U = X+Y与$V = {X \over X+Y}$的联合概率密度$f(u,v)$； \
 2).判断U和V是否独立；
 
@@ -114,7 +114,7 @@ $f(x,y) \longrightarrow f_x(x)$ 有一种简便方法，大概率会考
 两三道大题，不考中心极限，只考大数定理与依概率收敛
 
 **书上题：**
-1、2、5、8
+1（各种证明依概率收敛）、2（证明g(x)依概率收敛）、5（马尔可夫大数定律）、8（使用马尔可夫大数定律）
 
 **课上题：**
 - $（\xi ，n \ge 0)$独立同分布，$E \xi = u < +\infty,D \xi  = \sigma^2 < +\infty$,证明： $ S_n^2 = {1 \over n} \sum\limits^n_{n=1}(\xi_i-\bar \xi_n) ^2 \stackrel{p} \rightarrow \sigma^2 $ , 其中 $ \bar \xi = {1 \over n} \sum\limits_{i=1}^n \xi_i $

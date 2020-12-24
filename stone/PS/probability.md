@@ -78,7 +78,7 @@ $f(x,y) \longrightarrow f_x(x)$ 有一种简便方法，大概率会考
 (2).$F_z{(z)} = p(x+y < z)$
 
 - $(\Omega,\mathcal{F},P)，A、B \in \mathcal{F},X = \begin{cases} 0 & w \in \bar A \\\\ 1 &w \in A\end{cases},  y = \begin{cases} 0 & w \in \bar B \\\\ 1 &w \in B\end{cases}$  \
-(1).若X、Y独立，$\forall x,y \in R,P\{X <x.Y<y\} = p(x<X)p(y<Y)$ \
+(1).若X、Y独立，$\forall x,y \in R,P\{X <x.Y<y\} = p(X<x)p(Y<y)$ \
 (2).若A、B独立
 
 - $x \sim e^{\lambda_{(1)}},y \sim e^{\lambda_{(2)}}$独立，则Z=min(x,y)的密度函数

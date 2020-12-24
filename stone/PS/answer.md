@@ -27,17 +27,34 @@ T1、设第n天无雨为时间$A,P(A_n) = P( \vert )$
 ]
 ```
 
-```{.python .input  n=5}
-0.011/(0.011+0.001)
+```{.python .input  n=9}
+4*0.7**3*0.3
 ```
 
-```{.json .output n=5}
+```{.json .output n=9}
 [
  {
   "data": {
-   "text/plain": "0.9166666666666666"
+   "text/plain": "0.4115999999999999"
   },
-  "execution_count": 5,
+  "execution_count": 9,
+  "metadata": {},
+  "output_type": "execute_result"
+ }
+]
+```
+
+```{.python .input  n=11}
+0.14*0.6+0.35
+```
+
+```{.json .output n=11}
+[
+ {
+  "data": {
+   "text/plain": "0.434"
+  },
+  "execution_count": 11,
   "metadata": {},
   "output_type": "execute_result"
  }

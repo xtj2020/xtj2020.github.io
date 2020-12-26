@@ -19,6 +19,7 @@
 - [BasePython](https://xtj2020.top/toolbox/PY/BasePython.html)-基础python用法 [edit](./toolbox/PY/BasePython.md)
 - [MorePython](https://xtj2020.top/toolbox/PY/MorePython.html)-高级使用
 - [pythonFunction](https://xtj2020.top/toolbox/PY/functionBook.html)-一些常用的函数功能  [edit](./toolbox/PY/functionBook.md)
+- [DataStructure](https://xtj2020.top/toolbox/PY/DataStructure.html)
   
 
 ## [DA](./toolbox/DA)-数据分析
@@ -71,6 +72,7 @@
 
 ## [PS](./stone/PS)-概率论与数理统计 
 - [probability](https://xtj2020.top/stone/PS/probability.html)-概率论知识 [edit](./stone/PS/probability.md)
+- [answer](https://xtj2020.top/stone/PS/answer.html)-答案页 [edit](./stone/PS/answer.md)
 
 ## [DM](./stone/DM)-深度学习中的数学
 - [DLMath](https://xtj2020.top/stone/DM/DLMath.html)-深度学习中的数学[edit](./stone/DM/DLMath.md)

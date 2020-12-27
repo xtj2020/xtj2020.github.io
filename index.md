@@ -43,7 +43,7 @@
 
 ## [PC](./toolbox/PC)-脚本\linux\爬虫
 
-- [FrameSpider](https://xtj2020.top/toolbox/PC/FrameSpider.html)-爬虫框架
+- [FrameSpider](https://xtj2020.top/toolbox/PC/FrameSpider.html)-爬虫框架 [edit](./toolbox/PC/FrameSpider.md)
 - [sysConfig](https://xtj2020.top/toolbox/PC/sysConfig.html)-系统配置
 - [Json](https://xtj2020.top/toolbox/PC/Json.html)-Json文件格式
  [edit](./toolbox/PC/Json.md)

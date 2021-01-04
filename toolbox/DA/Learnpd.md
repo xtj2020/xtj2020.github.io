@@ -129,6 +129,11 @@ df.append()是创建了一个新的对象
 
 处理缺漏
 
+### 删除行、列
+
+df4=df1.drop(labels=['gender',"age"],axis=1) \
+axis = 0 是按行操作，axis = 1是按列操作
+
 # Series类
 
 ## 创建

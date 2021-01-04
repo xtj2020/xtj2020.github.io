@@ -20,7 +20,7 @@
 - [MorePython](https://xtj2020.top/toolbox/PY/MorePython.html)-高级使用
 - [pythonFunction](https://xtj2020.top/toolbox/PY/functionBook.html)-一些常用的函数功能  [edit](./toolbox/PY/functionBook.md)
 - [DataStructure](https://xtj2020.top/toolbox/PY/DataStructure.html)-数据结构刷题的一些记录 [edit](./toolbox/PY/DataStructure.md)
-- [Inspect](https://xtj2020.top/toolbox/PY/Inspect.html)-对python的调试 [edit](./toolbox/PY/Inspect.html)
+- [Inspect](https://xtj2020.top/toolbox/PY/Inspect.html)-对python的调试 [edit](./toolbox/PY/Inspect.md)
   
 
 ## [DA](./toolbox/DA)-数据分析
@@ -48,6 +48,7 @@
 - [sysConfig](https://xtj2020.top/toolbox/PC/sysConfig.html)-系统配置
 - [Json](https://xtj2020.top/toolbox/PC/Json.html)-Json文件格式
  [edit](./toolbox/PC/Json.md)
+- [GitHub](https://xtj2020.top/toolbox/PC/GitHub.html)-GitHub的使用 [edit](./toolbox/PC/GitHub.md)
 
 
 # 框架([frame](./frame/))

@@ -20,7 +20,7 @@
 - [MorePython](https://xtj2020.top/toolbox/PY/MorePython.html)-高级使用
 - [pythonFunction](https://xtj2020.top/toolbox/PY/functionBook.html)-一些常用的函数功能  [edit](./toolbox/PY/functionBook.md)
 - [DataStructure](https://xtj2020.top/toolbox/PY/DataStructure.html)-数据结构刷题的一些记录 [edit](./toolbox/PY/DataStructure.md)
-- [Inspect](https://xtj2020.top/toolbox/PY/Inspect.html)-对python的调试 [edit](./toolbox/PY/Inspect.html)
+- [Inspect](https://xtj2020.top/toolbox/PY/Inspect.html)-对python的调试 [edit](./toolbox/PY/Inspect.md)
   
 
 ## [DA](./toolbox/DA)-数据分析
@@ -48,6 +48,7 @@
 - [sysConfig](https://xtj2020.top/toolbox/PC/sysConfig.html)-系统配置
 - [Json](https://xtj2020.top/toolbox/PC/Json.html)-Json文件格式
  [edit](./toolbox/PC/Json.md)
+- [GitHub](https://xtj2020.top/toolbox/PC/GitHub.html)-GitHub的使用 [edit](./toolbox/PC/GitHub.md)
 
 
 # 框架([frame](./frame/))
@@ -74,7 +75,7 @@
 ## [PS](./stone/PS)-传统统计与建模
 - [probability](https://xtj2020.top/stone/PS/probability.html)-概率论知识 [edit](./stone/PS/probability.md)
 - [answer](https://xtj2020.top/stone/PS/answer.html)-答案页 [edit](./stone/PS/answer.md)
-- [predict](https://xtj2020.top/stone/PS/predict.html)-传统预测 [edit](./stone/PS/predict.html)
+- [predict](https://xtj2020.top/stone/PS/predict.html)-传统预测 [edit](./stone/PS/predict.md)
 
 ## [DM](./stone/DM)-深度学习中的数学
 - [DLMath](https://xtj2020.top/stone/DM/DLMath.html)-深度学习中的数学[edit](./stone/DM/DLMath.md)

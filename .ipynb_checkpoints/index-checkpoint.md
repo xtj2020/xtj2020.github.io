@@ -20,6 +20,7 @@
 - [MorePython](https://xtj2020.top/toolbox/PY/MorePython.html)-高级使用
 - [pythonFunction](https://xtj2020.top/toolbox/PY/functionBook.html)-一些常用的函数功能  [edit](./toolbox/PY/functionBook.md)
 - [DataStructure](https://xtj2020.top/toolbox/PY/DataStructure.html)-数据结构刷题的一些记录 [edit](./toolbox/PY/DataStructure.md)
+- [Inspect](https://xtj2020.top/toolbox/PY/Inspect.html)-对python的调试 [edit](./toolbox/PY/Inspect.html)
   
 
 ## [DA](./toolbox/DA)-数据分析
@@ -70,9 +71,10 @@
 
 ## [CO](./stone/CO)-凸优化更加具体的内容
 
-## [PS](./stone/PS)-概率论与数理统计 
+## [PS](./stone/PS)-传统统计与建模
 - [probability](https://xtj2020.top/stone/PS/probability.html)-概率论知识 [edit](./stone/PS/probability.md)
 - [answer](https://xtj2020.top/stone/PS/answer.html)-答案页 [edit](./stone/PS/answer.md)
+- [predict](https://xtj2020.top/stone/PS/predict.html)-传统预测 [edit](./stone/PS/predict.html)
 
 ## [DM](./stone/DM)-深度学习中的数学
 - [DLMath](https://xtj2020.top/stone/DM/DLMath.html)-深度学习中的数学[edit](./stone/DM/DLMath.md)

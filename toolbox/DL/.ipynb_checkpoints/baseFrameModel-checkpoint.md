@@ -1,3 +1,17 @@
+# 优化器
+https://www.cnblogs.com/NeilZhang/p/8454890.html
+
+- SGD
+
+- SGDM
+
+- Adagrad
+
+- RMSProp
+
+- Adam
+
+
 <head>
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
     <script type="text/x-mathjax-config">
@@ -16,7 +30,7 @@
 
 统一符号与公式，看万家书，走自己路
 
-# 训练基准代码（11.27日下午必须完成）
+# 训练基准代码
 
 ## 导入包
 

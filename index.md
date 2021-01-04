@@ -68,7 +68,7 @@
 
 - [rl](https://xtj2020.top/stone/WT/rl.html)-LATEX规则（不含公式，公式见anki）
 - [md](https://xtj2020.top/stone/WT/md.html)-mermaid
-- [sb](https://xtj2020.top/stone/WT/sb.html)-seaborn绘图
+- [sb](https://xtj2020.top/stone/WT/sb.html)-seaborn绘图 [edit](./stone/WT/sb.md)
 - [pt](https://xtj2020.top/stone/WT/pt.html)-matplotlib.plot
 
 ## [CO](./stone/CO)-凸优化更加具体的内容

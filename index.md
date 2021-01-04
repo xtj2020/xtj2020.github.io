@@ -70,7 +70,7 @@
 
 ## [CO](./stone/CO)-凸优化更加具体的内容
 
-## [PS](./stone/PS)-概率论与数理统计 
+## [PS](./stone/PS)-传统统计
 - [probability](https://xtj2020.top/stone/PS/probability.html)-概率论知识 [edit](./stone/PS/probability.md)
 - [answer](https://xtj2020.top/stone/PS/answer.html)-答案页 [edit](./stone/PS/answer.md)
 

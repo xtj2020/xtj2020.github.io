@@ -58,7 +58,7 @@
 
 - [theoryGuide](https://xtj2020.top/frame/theoryGuide.html)-机器学习理论导引
 - [convexOptimize](https://xtj2020.top/frame/convexOptimize.html)-机器学习理论导引
-- 
+- [人工智能与数据分析前景分析]
 
 
 
@@ -81,7 +81,8 @@
 ## [DM](./stone/DM)-深度学习中的数学
 - [DLMath](https://xtj2020.top/stone/DM/DLMath.html)-深度学习中的数学[edit](./stone/DM/DLMath.md)
 
-## ML
+## [ML](./stone/ML)-机器学习知识
+- [EnsembleLearning](https://xtj2020.top/stone/ML/EnsembleLearning.html)-集成学习 [edit](./stone/ML/EnsembleLearning.md)
 
 
 # 辅助工具

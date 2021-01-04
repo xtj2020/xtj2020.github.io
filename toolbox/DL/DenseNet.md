@@ -23,7 +23,9 @@ https://blog.csdn.net/l494926429/article/details/51737883
 
 ResNet网络
 
-越深的网络效果越好，但是到达某一种程度后效果不降反升，这种被称为“退化”。
+越深的网络效果越好，但是到达某一种程度后效果不降反升，这种被称为“退化”。处理方法有：“快捷连接”、降采样处理。
+
+https://zhuanlan.zhihu.com/p/101332297
 
 # 参考文献
 https://blog.csdn.net/u014380165/article/details/75142664

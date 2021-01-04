@@ -8,7 +8,7 @@
 - [ModelRNN](https://xtj2020.top/toolbox/DL/ModelRNN.html)-RNN模型
 - [PlotNeuralNet](https://xtj2020.top/toolbox/DL/PlotNeuralNet.html)-绘制网络图
 - [grad](https://xtj2020.top/toolbox/DL/PlotNeuralNet.html)-梯度下降
-- [DesNet](https://xtj2020.top/toolbox/DL/DesNet.html)-对于DesNet网络的彻底了解 [edit](./toolbox/DL/DesNet.md)
+- [DenseNet](https://xtj2020.top/toolbox/DL/DenseNet.html)-对于DesNet网络的彻底了解 [edit](./toolbox/DL/DenseNet.md)
 ## [PT](./toolbox/PT)-pytorch
 
 - [pytorchAPI](https://xtj2020.top/toolbox/PT/pytorchAPI.html)-pytorch API [edit](./toolbox/PT/pytorchAPI.md)

@@ -82,6 +82,10 @@ catplot() 分类图(它是下面8种图的接口，下面八种图表均可通�
 8.countplot() 计数图
 
 
+### 应用
+
+https://www.jianshu.com/p/94931255aede
+
 # 数据均衡
 
 模型评价指标 https://blog.csdn.net/login_sonata/article/details/54288653

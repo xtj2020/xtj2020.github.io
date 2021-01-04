@@ -1,23 +1,16 @@
 # 展示与统计信息
 
-```python
+
 df.head(10)
 df.info()
 type(df[1])
 df.dtypes
 
 
-from pandas.api.types import is_string_dtype
-from pandas.api.types import is_numeric_dtype
-from pandas.api.types import is_timedelta64_dtype
-is_string_dtype(df[1])
-
-#排序
+## 排序
 .sort_index()方法在指定轴上根据索引进行排序，默认升序
 .sort_index(axis=0, ascending=True)
-```
 
-```python
 df.index    行名称
 df.columns  列名称
 df._info_axis_     列名称
@@ -26,7 +19,9 @@ df._info_axis_     列名称
 len(df)    输出的是行高
 df.index.size    行高
 df.columns.size   列高
-```
+
+
+
 ## pd显示
 
 pd.set_option('display.width', 200)   # 横向最多显示多少个字符， 一般80不适合横向的屏幕，平时多用200.pd.set_option('display.max_columns', 12)
@@ -49,12 +44,15 @@ df = pd.DataFrame([10,20,30,40].columns=['numbers'],index=['a','b','c','d'])
 # 创建空的DataFrame
 pd.DataFrame()
 ```
+
+
 可以从列表、字典、Series、Numpy ndarrays、另一个DataFrame中创建DataFrame
 
 - 列表 
 
 从单个列表，会自动生成索引
 用列表嵌套的方式进行生成
+
 ```python
 import pandas as pd
 data = [['Alex',10],['Bob',12],['Clarke',13]]
@@ -62,6 +60,7 @@ df = pd.DataFrame(data,columns=['Name','Age'],index=["2","3","4"],dtype=float)
 print(df)
 
 ```
+
 
 - ndarrays/Lists的字典
 
@@ -75,9 +74,11 @@ print(df)
 
 ```
 
+
 - 字典的列表
 
 是以每个字典为行的方式进行的加载，字典的键为列，没有的键会形成新的列，若指定了columns，那么只会显示有的列
+
 ```python
 import pandas as pd
 data = [{'a': 1, 'b': 2},{'a': 5, 'b': 10, 'c': 20}]
@@ -85,6 +86,7 @@ df1 = pd.DataFrame(data, index=['first', 'second'], columns=['a', 'b'])
 print(df1)
 
 ```
+
 
 - 从Series的字典
 
@@ -97,7 +99,6 @@ d = {'one' : pd.Series([1, 2, 3], index=['a', 'b', 'c']),
 df = pd.DataFrame(d)
 print df
 ```
-
 
 
 ![image-20201022134757098](Learnpd.assets/image-20201022134757098.png)
@@ -120,6 +121,8 @@ https://www.yiibai.com/pandas/python_pandas_dataframe.html
 train['工作饱和度'] = saturation_str   # 增加一列
 train.insert(4, '工作饱和度', saturation_str)   # 插入一列
 ```
+
+
 df.append()是创建了一个新的对象
 
 索引
@@ -166,9 +169,6 @@ con
 
 ## 取值与切片操作
 
-
-
-
 ```python
 df['x']      取列名为'x'的列,格式为series
 df[['x']]    取列名为'x'的列，格式为Dataframe
@@ -187,3 +187,5 @@ df.iloc[0:3, [0,1]]
 df.iloc[1]   绝对索引第一行
 ```
 
+
+# 读取于存储csv文件

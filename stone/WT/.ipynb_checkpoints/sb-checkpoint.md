@@ -10,3 +10,16 @@
    研究是变量比较多（x比较多），把x两两组合查看之间的关系的一种图形，一般有热力图，聚集图等
 
 https://www.cnblogs.com/biyoulin/p/9565350.html
+
+查看linux下可用的中文字体
+fc-list :lang=zh
+
+
+import matplotlib.pyplot as plt
+
+plt.rcParams['font.sans-serif'] = ['SimHei']  # 用来正常显示中文标签
+plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
+
+防止字体重叠
+
+https://www.jb51.net/article/191678.htm

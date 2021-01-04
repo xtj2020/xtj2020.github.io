@@ -189,3 +189,7 @@ df.iloc[1]   绝对索引第一行
 
 
 # 读取于存储csv文件
+
+df = pd.read_csv('movies.csv')
+添加 skiprows 参数可以直接跳过前面的行
+df.to_csv('to_mivies.csv')

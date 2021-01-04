@@ -6,6 +6,10 @@
 
 ## catplot() 分类图
 
+http://seaborn.pydata.org/tutorial/categorical.html
+
+https://cloud.tencent.com/developer/article/1506468
+
 ### 函数原型
 
 ``` python
@@ -55,7 +59,7 @@ orient:方向：v或者h
 
 ### 艺术风格的设置
 
-
+https://blog.csdn.net/ICERON/article/details/85088582
 
 ### 八种接口
 
@@ -100,3 +104,58 @@ catplot() 分类图(它是下面8种图的接口，下面八种图表均可通�
     - F1分数
     - AOC
     - DUA
+
+```{.python .input  n=5}
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+def sinplot(flip=1):
+    x = np.linspace(0, 14, 100)
+#     fig = plt.figure(figsize=(10,6))
+    for i in range(1,7):
+        plt.plot(x, np.sin(x + i * .5) * (7 - i) * flip)
+
+sinplot()
+```
+
+```{.json .output n=5}
+[
+ {
+  "ename": "ModuleNotFoundError",
+  "evalue": "No module named 'seaborn'",
+  "output_type": "error",
+  "traceback": [
+   "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+   "\u001b[0;31mModuleNotFoundError\u001b[0m                       Traceback (most recent call last)",
+   "\u001b[0;32m<ipython-input-5-86f38a229fa4>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mnumpy\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0mnp\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mpandas\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0mpd\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 3\u001b[0;31m \u001b[0;32mimport\u001b[0m \u001b[0mseaborn\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0msns\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      4\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mmatplotlib\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mpyplot\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0mplt\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0;32mdef\u001b[0m \u001b[0msinplot\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mflip\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+   "\u001b[0;31mModuleNotFoundError\u001b[0m: No module named 'seaborn'"
+  ]
+ }
+]
+```
+
+```{.python .input  n=4}
+sns.set(style='darkgrid',font_scale=1.5)
+
+# 利用此方法可以快速设置seaborn的默认风格，当然也可以添加参数设置其他风格
+# font_scale：float，单独的缩放因子可以独立缩放字体元素的大小。
+
+sinplot()
+```
+
+```{.json .output n=4}
+[
+ {
+  "ename": "NameError",
+  "evalue": "name 'sns' is not defined",
+  "output_type": "error",
+  "traceback": [
+   "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+   "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+   "\u001b[0;32m<ipython-input-4-f9a9a78533c0>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0msns\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mset\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mstyle\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m'darkgrid'\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mfont_scale\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m1.5\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0;31m# \u5229\u7528\u6b64\u65b9\u6cd5\u53ef\u4ee5\u5feb\u901f\u8bbe\u7f6eseaborn\u7684\u9ed8\u8ba4\u98ce\u683c\uff0c\u5f53\u7136\u4e5f\u53ef\u4ee5\u6dfb\u52a0\u53c2\u6570\u8bbe\u7f6e\u5176\u4ed6\u98ce\u683c\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m \u001b[0;31m# font_scale\uff1afloat\uff0c\u5355\u72ec\u7684\u7f29\u653e\u56e0\u5b50\u53ef\u4ee5\u72ec\u7acb\u7f29\u653e\u5b57\u4f53\u5143\u7d20\u7684\u5927\u5c0f\u3002\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+   "\u001b[0;31mNameError\u001b[0m: name 'sns' is not defined"
+  ]
+ }
+]
+```

@@ -13,7 +13,7 @@ highway网络
 
 higway灵感来自于LSTM门机制，允许信息高速无障碍地通过深度神经网络各层。应用在词情感分析上。
 内在逻辑公式：
-$ $
+$ H(x,W_H)T(x,W_T)+xC(x,W_C)$
 
 https://zhuanlan.zhihu.com/p/38130339
 

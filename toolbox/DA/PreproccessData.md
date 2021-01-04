@@ -28,8 +28,34 @@ seaborn.catplot(x=None, y=None, hue=None,
 
 import seaborn as sns
 
+``` 
 
-```
+必须的参数data 其他参数均为可选；
+
+data:是DataFrame类型的;
+
+x,y为数据中变量的名称(如上表，date,name,age,sex为数据字段变量名);
+
+row，col：数据中变量的名称
+作用：设置分类变量将决定网格的分面。
+
+kind：字符串
+要绘制的绘图类型
+(对应于分类绘图功能的名称:"count"-统计图, "point"-点, 
+"bar"-条形, "strip"-条形, "swarm"-群形, "box"-框形, 
+"violin"-小提琴形, or"boxen"-盒形.）
+
+col_wrap:int类型数值
+作用：让每行显示指定数量的图，如果超过该数量，则多行显示。
+
+orient:方向：v或者h
+作用：设置图的绘制方向(垂直或水平)
+如何选择：一般是根据输入变量的数据类型(dtype)推断出来。
+
+
+### 艺术风格的设置
+
+
 
 ### 八种接口
 

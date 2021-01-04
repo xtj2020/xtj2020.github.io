@@ -166,9 +166,9 @@ mydf['列名'] = None
 
 # 数据的透视
 
-对数据的连接处理
+https://www.cnblogs.com/onemorepoint/p/8425300.html
 
-con
+pd.pivot_table(df,index=["Manager","Rep"],values=["Price"],aggfunc=[np.mean,len])
 
 # 排序与取值
 

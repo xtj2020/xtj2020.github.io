@@ -129,6 +129,11 @@ df.append()是创建了一个新的对象
 
 处理缺漏
 
+### 删除行、列
+
+df4=df1.drop(labels=['gender',"age"],axis=1) \
+axis = 0 是按行操作，axis = 1是按列操作
+
 # Series类
 
 ## 创建
@@ -190,6 +195,6 @@ df.iloc[1]   绝对索引第一行
 
 # 读取于存储csv文件
 
-df = pd.read_csv('movies.csv')
-添加 skiprows 参数可以直接跳过前面的行
+df = pd.read_csv('movies.csv') \
+添加 skiprows 参数可以直接跳过前面的行 \
 df.to_csv('to_mivies.csv')

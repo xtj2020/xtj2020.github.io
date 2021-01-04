@@ -11,7 +11,7 @@
 
 highway网络
 
-higway灵感来自于LSTM门机制
+higway灵感来自于LSTM门机制，允许信息高速无障碍地通过深度神经网络各层。
 
 https://zhuanlan.zhihu.com/p/38130339
 

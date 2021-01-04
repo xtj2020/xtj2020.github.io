@@ -4,6 +4,53 @@
 - [ ] 用柱状图对数据进行合适的描述
 - [ ] 用饼状图来表示数据的分布
 
+## catplot() 分类图
+
+### 函数原型
+
+``` python
+
+seaborn.catplot(x=None, y=None, hue=None,
+                data=None, row=None, col=None,
+                col_wrap=None, estimator=<function mean>, ci=95, 
+                n_boot=1000, units=None, order=None,
+                hue_order=None, row_order=None, col_order=None, 
+                kind='strip', height=5, aspect=1, orient=None, 
+                color=None, palette=None, legend=True,
+                legend_out=True, sharex=True, sharey=True, 
+                margin_titles=False, facet_kws=None, **kwargs)
+
+
+```
+
+### 使用
+``` python
+
+import seaborn as sns
+
+
+```
+
+### 八种接口
+
+catplot() 分类图(它是下面8种图的接口，下面八种图表均可通过指定kind参数来绘制)
+
+1.stripplot() 分类散点图
+
+2.swarmplot() 能够显示分布密度的分类散点图
+
+3.boxplot() 箱图、盒形图
+
+4.violinplot() 小提琴图
+
+5.boxenplot() 增强箱图
+
+6.pointplot() 点图
+
+7.barplot() 条形图
+
+8.countplot() 计数图
+
 
 # 数据均衡
 

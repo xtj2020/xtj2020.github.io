@@ -70,9 +70,10 @@
 
 ## [CO](./stone/CO)-凸优化更加具体的内容
 
-## [PS](./stone/PS)-传统统计
+## [PS](./stone/PS)-传统统计与建模
 - [probability](https://xtj2020.top/stone/PS/probability.html)-概率论知识 [edit](./stone/PS/probability.md)
 - [answer](https://xtj2020.top/stone/PS/answer.html)-答案页 [edit](./stone/PS/answer.md)
+- [predict]()
 
 ## [DM](./stone/DM)-深度学习中的数学
 - [DLMath](https://xtj2020.top/stone/DM/DLMath.html)-深度学习中的数学[edit](./stone/DM/DLMath.md)

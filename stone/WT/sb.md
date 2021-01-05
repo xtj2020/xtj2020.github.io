@@ -24,3 +24,6 @@ plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
 防止字体重叠
 
 https://www.jb51.net/article/191678.htm
+
+柱状图
+https://zhuanlan.zhihu.com/p/25128216

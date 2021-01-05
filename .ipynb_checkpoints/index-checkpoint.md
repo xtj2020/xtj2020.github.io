@@ -8,7 +8,7 @@
 - [ModelRNN](https://xtj2020.top/toolbox/DL/ModelRNN.html)-RNN模型
 - [PlotNeuralNet](https://xtj2020.top/toolbox/DL/PlotNeuralNet.html)-绘制网络图
 - [grad](https://xtj2020.top/toolbox/DL/PlotNeuralNet.html)-梯度下降
-- [DesNet](https://xtj2020.top/toolbox/DL/DesNet.html)-对于DesNet网络的彻底了解 [edit](./toolbox/DL/DesNet.md)
+- [DenseNet](https://xtj2020.top/toolbox/DL/DenseNet.html)-对于DesNet网络的彻底了解 [edit](./toolbox/DL/DenseNet.md)
 ## [PT](./toolbox/PT)-pytorch
 
 - [pytorchAPI](https://xtj2020.top/toolbox/PT/pytorchAPI.html)-pytorch API [edit](./toolbox/PT/pytorchAPI.md)
@@ -68,7 +68,7 @@
 
 - [rl](https://xtj2020.top/stone/WT/rl.html)-LATEX规则（不含公式，公式见anki）
 - [md](https://xtj2020.top/stone/WT/md.html)-mermaid
-- [sb](https://xtj2020.top/stone/WT/sb.html)-seaborn绘图
+- [sb](https://xtj2020.top/stone/WT/sb.html)-seaborn绘图 [edit](./stone/WT/sb.md)
 - [pt](https://xtj2020.top/stone/WT/pt.html)-matplotlib.plot
 
 ## [CO](./stone/CO)-凸优化更加具体的内容

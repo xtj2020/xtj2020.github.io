@@ -1,23 +1,19 @@
 # 展示与统计信息
 
 
-df.head(10)
-df.info()
-type(df[1])
-df.dtypes
-
+df.head(10) &#8194; df.info()  &#8194; type(df[1])  &#8194; df.dtypes 
 
 ## 排序
-.sort_index()方法在指定轴上根据索引进行排序，默认升序
+.sort_index()方法在指定轴上根据索引进行排序，默认升序 \
 .sort_index(axis=0, ascending=True)
 
-df.index    行名称
-df.columns  列名称
-df._info_axis_     列名称
-
+df.index    行名称 \
+df.columns  列名称 \
+df._info_axis_     列名称 \
 （bike1，bike2）=df.shape  行、列高度
-len(df)    输出的是行高
-df.index.size    行高
+
+len(df)    输出的是行高 \
+df.index.size    行高 \
 df.columns.size   列高
 
 
@@ -179,10 +175,11 @@ pd.pivot_table(df,index=["Manager","Rep"],values=["Price"],aggfunc=[np.mean,len]
 ## 取值与切片操作
 
 ```python
-df['x']      取列名为'x'的列,格式为series
-df[['x']]    取列名为'x'的列，格式为Dataframe
-df[['w','z']]    取多列时需要用Dataframe的格式
-df[df.columns[0:3]]    按照索引位置来取列，其实是分两步，先用索引取列名，再用列名取列
+df['x']      #取列名为'x'的列,格式为series
+df[['x']]    #取列名为'x'的列，格式为Dataframe
+df[['w','z']]    #取多列时需要用Dataframe的格式
+df[df.columns[0:3]]    #按照索引位置来取列，其实是分两步，先用索引取列名，再用列名取列
+#不能用df1[1]来进行取值
 ```
 
 

@@ -1,23 +1,19 @@
 # 展示与统计信息
 
 
-df.head(10)  
-df.info() 
-type(df[1])  
-df.dtypes  
-
+df.head(10) &#8194; df.info()  &#8194; type(df[1])  &#8194; df.dtypes 
 
 ## 排序
-.sort_index()方法在指定轴上根据索引进行排序，默认升序
+.sort_index()方法在指定轴上根据索引进行排序，默认升序 \
 .sort_index(axis=0, ascending=True)
 
-df.index    行名称
-df.columns  列名称
-df._info_axis_     列名称
-
+df.index    行名称 \
+df.columns  列名称 \
+df._info_axis_     列名称 \
 （bike1，bike2）=df.shape  行、列高度
-len(df)    输出的是行高
-df.index.size    行高
+
+len(df)    输出的是行高 \
+df.index.size    行高 \
 df.columns.size   列高
 
 

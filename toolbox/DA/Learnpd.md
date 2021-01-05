@@ -194,6 +194,12 @@ df[(df.A==100)&(df.B=='a')]
 df[(df.A==100)|(df.B=='b')]
 
 
+## 计算
+即按行求和
+df_pt["总和"] =df_pt.apply(lambda x:x.sum(),axis =1)
+dataf_test1['diff'].sum()  // diff为要求和的列
+
+
 # 数据的透视
 
 https://www.cnblogs.com/onemorepoint/p/8425300.html

@@ -47,3 +47,6 @@ ax.legend(..., fontsize=20)
 ax.xaxis.set_ticks_position(‘none’) 
 ax.yaxis.set_ticks_position(‘right’)
 ```
+
+
+https://zhuanlan.zhihu.com/p/25128216

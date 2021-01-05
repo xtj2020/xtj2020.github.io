@@ -31,3 +31,19 @@ https://zhuanlan.zhihu.com/p/25128216
 ```{.python .input}
 print("good")
 ```
+
+
+```python
+ax = plt.subplot(111)
+# 设置刻度字体大小
+plt.xticks(fontsize=20)
+plt.yticks(fontsize=20)
+# 设置坐标标签字体大小
+ax.set_xlabel(..., fontsize=20)
+ax.set_ylabel(..., fontsize=20)
+# 设置图例字体大小
+ax.legend(..., fontsize=20)
+选择如何显示刻度 
+ax.xaxis.set_ticks_position(‘none’) 
+ax.yaxis.set_ticks_position(‘right’)
+```

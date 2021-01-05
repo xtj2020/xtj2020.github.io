@@ -161,7 +161,7 @@ DataFrame.index = [newName]，DataFrame.columns = [newName]
 
 
 
-## 取值与切片操作
+## 取值
 ```python
 df['x']      #取列名为'x'的列,格式为series
 df[['x']]    #取列名为'x'的列，格式为Dataframe
@@ -181,6 +181,17 @@ df.iloc[0:3, [0,1]]
 df.iloc[1]   绝对索引第一行
 ```
 
+
+### 利用条件与组合条件筛选
+- 筛选单个值 \
+df[df.A==100]
+- 筛选出A列值在num列表的数据条 \
+num = [100, 200, 300] \
+df[df.A.isin(num)]     
+- 找出df中A列值为100且B列值为‘a’的所有数据 \
+df[(df.A==100)&(df.B=='a')]
+- 找出df中A列值为100或B列值为‘b’的所有数据 \
+df[(df.A==100)|(df.B=='b')]
 
 
 # 数据的透视

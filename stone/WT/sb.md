@@ -27,3 +27,7 @@ https://www.jb51.net/article/191678.htm
 
 柱状图
 https://zhuanlan.zhihu.com/p/25128216
+
+```{.python .input}
+print("good")
+```

@@ -1,10 +1,10 @@
 # 展示与统计信息
 
 
-df.head(10)
-df.info()
-type(df[1])
-df.dtypes
+df.head(10)  
+df.info() 
+type(df[1])  
+df.dtypes  
 
 
 ## 排序
@@ -179,10 +179,11 @@ pd.pivot_table(df,index=["Manager","Rep"],values=["Price"],aggfunc=[np.mean,len]
 ## 取值与切片操作
 
 ```python
-df['x']      取列名为'x'的列,格式为series
-df[['x']]    取列名为'x'的列，格式为Dataframe
-df[['w','z']]    取多列时需要用Dataframe的格式
-df[df.columns[0:3]]    按照索引位置来取列，其实是分两步，先用索引取列名，再用列名取列
+df['x']      #取列名为'x'的列,格式为series
+df[['x']]    #取列名为'x'的列，格式为Dataframe
+df[['w','z']]    #取多列时需要用Dataframe的格式
+df[df.columns[0:3]]    #按照索引位置来取列，其实是分两步，先用索引取列名，再用列名取列
+#不能用df1[1]来进行取值
 ```
 
 

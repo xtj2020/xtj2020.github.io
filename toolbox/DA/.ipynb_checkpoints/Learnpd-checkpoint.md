@@ -20,8 +20,11 @@ df.columns.size   列高
 
 ## pd显示
 
-pd.set_option('display.width', 200)   # 横向最多显示多少个字符， 一般80不适合横向的屏幕，平时多用200.pd.set_option('display.max_columns', 12)
- pd.set_option('display.max_rows', 10)  # 显示的最大行数和列数
+pd.set_option('display.width', 200) \
+横向最多显示多少个字符， 一般80不适合横向的屏幕，平时多用
+200.pd.set_option('display.max_columns', 12) \
+ pd.set_option('display.max_rows', 10)  \
+显示的最大行数和列数
 pd.set_option('colheader_justify', 'left')    显示的单元格内容靠左边还是右边
 
 # DataFrame 类

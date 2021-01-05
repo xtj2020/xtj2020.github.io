@@ -27,12 +27,11 @@ pd.set_option('display.width', 200) \
 显示的最大行数和列数
 pd.set_option('colheader_justify', 'left')    显示的单元格内容靠左边还是右边
 
-# DataFrame 类
+# 基本操作
 
+## DataFrame创建
 DataFrame 类设计用来管理具有索引和标签的数据
 会自动生成的一列的索引，从0开始，列名为标签。
-
-## 创立
 
 ```python
 #创建，行列标签默认都为可选缺省值np.arrange(n)，copy是复制数据
@@ -102,6 +101,27 @@ print df
 
 ![image-20201022134757098](Learnpd.assets/image-20201022134757098.png)
 
+
+## Series 创建
+
+Series类型由一组数据及与之相关的数据索引组成
+
+
+可以用自动索引或者index值都可以进行读取
+
+
+```python
+df.loc[0]=['cat', 3]  # 其中loc[]中需要加入的是插入地方dataframe的索引，默认是整数型
+# 也可采用诸如df.loc['a'] = ['123',30]的形式
+```
+添加一个空的列
+
+mydf['列名'] = None
+
+运算中会自动对齐不同索引的数据
+
+可以随时修改并能即刻生效
+
 ## 获取各种属性
 
 ```python
@@ -137,46 +157,11 @@ df4=df1.drop(labels=['gender',"age"],axis=1) \
 axis = 0 是按行操作，axis = 1是按列操作　\
 DataFrame.index = [newName]，DataFrame.columns = [newName]
 
-# Series类
-
-## 创建
-
-Series类型由一组数据及与之相关的数据索引组成
-
-## 基本操作
-
-可以用自动索引或者index值都可以进行读取
-
-##### 添加列
-
-```python
-df.loc[0]=['cat', 3]  # 其中loc[]中需要加入的是插入地方dataframe的索引，默认是整数型
-# 也可采用诸如df.loc['a'] = ['123',30]的形式
-```
-添加一个空的列
-
-mydf['列名'] = None
-
-## 性质
 
 
 
-运算中会自动对齐不同索引的数据
-
-可以随时修改并能即刻生效
-
-
-
-# 数据的透视
-
-https://www.cnblogs.com/onemorepoint/p/8425300.html
-
-pd.pivot_table(df,index=["Manager","Rep"],values=["Price"],aggfunc=[np.mean,len])
-
-# 排序与取值
 
 ## 取值与切片操作
-
 ```python
 df['x']      #取列名为'x'的列,格式为series
 df[['x']]    #取列名为'x'的列，格式为Dataframe
@@ -195,6 +180,17 @@ df.iloc[1,1]    根据绝对索引来取值，所谓绝对索引即按照0，1�
 df.iloc[0:3, [0,1]]
 df.iloc[1]   绝对索引第一行
 ```
+
+
+
+# 数据的透视
+
+https://www.cnblogs.com/onemorepoint/p/8425300.html
+
+pd.pivot_table(df,index=["Manager","Rep"],values=["Price"],aggfunc=[np.mean,len])
+
+
+
 
 
 # 读取于存储csv文件

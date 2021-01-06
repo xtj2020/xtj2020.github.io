@@ -56,8 +56,7 @@
 # 框架([frame](./frame/))
 
 ## [DP](./frame/DP)-进度展示
-- [RIADD](https://xtj2020.top/toolbox/PC/GitHub.html)
-
+- [RIADD](https://xtj2020.top/frame/DP/RIADD.html) -RIADD比赛进度展示 [edit](./frame/DP/RIADD.md)
 
 
 

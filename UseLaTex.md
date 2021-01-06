@@ -1,3 +1,15 @@
+latex模块
+
+章节
+\section
+\subsection
+\subsubsection
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.5\textwidth]{donate.jpg}
+\end{figure}
+
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], inlineMath: [['$','$']] } }); </script>
 
 \sigma $\sigma$
@@ -31,3 +43,4 @@ I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
 
 [^脚注]: http://www.google.com
 ```
+

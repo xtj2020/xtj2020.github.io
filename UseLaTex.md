@@ -11,6 +11,7 @@ latex模块
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.5\textwidth]{donate.jpg}
+  \caption{一键三连求赞}
 \end{figure}
 
 # 不缩进 加粗
@@ -18,6 +19,25 @@ latex模块
 
 # 内置文字类型
 \lstinline{founder} 
+
+# 进行枚举（带编号）
+
+\begin{enumerate}
+
+\item
+
+\end{enumerate}
+
+# 链接
+\href{https://github.com/peggy2006xzyz}{YPY}
+
+# 不带编号进行枚举
+
+\begin{itemize}
+ \item
+
+\end{itemize}
+
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], inlineMath: [['$','$']] } }); </script>
 

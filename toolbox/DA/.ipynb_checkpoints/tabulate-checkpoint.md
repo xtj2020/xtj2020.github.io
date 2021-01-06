@@ -24,6 +24,7 @@ table_data = [
 | Lucy   |        90 |     70 |        90 |
 +--------+-----------+--------+-----------+
 ```
+简介
 https://python.fasionchan.com/zh_CN/latest/libs/tabulate.html
 
 官方文档

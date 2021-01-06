@@ -44,6 +44,8 @@
 
 - [LoadPicData](https://xtj2020.top/toolbox/DA/LoadPicData.html)-对于图片的展示
 
+- [tabulate](https://xtj2020.top/toolbox/DA/tabulate.html) -使用tabulate对表格进行美化 [edit](./toolbox/DA/tabulate.md)
+
 ## [PC](./toolbox/PC)-脚本\linux\爬虫
 
 - [FrameSpider](https://xtj2020.top/toolbox/PC/FrameSpider.html)-爬虫框架 [edit](./toolbox/PC/FrameSpider.md)

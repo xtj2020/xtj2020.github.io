@@ -57,12 +57,6 @@
 
 # 框架([frame](./frame/))
 
-## [DP](./frame/DP)-进度展示
-- [RIADD](https://xtj2020.top/frame/DP/RIADD.html) -RIADD比赛进度展示 [edit](./frame/DP/RIADD.md)
-
-
-
-
 - [theoryGuide](https://xtj2020.top/frame/theoryGuide.html)-机器学习理论导引
 - [convexOptimize](https://xtj2020.top/frame/convexOptimize.html)-机器学习理论导引
 - [ForeGround](https://xtj2020.top/frame/ForeGround.html)- 人工智能与数据分析前景 [edit](./frame/ForeGround.md)

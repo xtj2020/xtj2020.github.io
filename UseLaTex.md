@@ -45,7 +45,10 @@ latex模块
 \end{lstlisting}
 
 
-
+# 使用Latex公式
+\begin{equation}
+  \int_{R^q} f(x,y) dy.\emph{of\kern0pt f}
+\end{equation}
 
 
 

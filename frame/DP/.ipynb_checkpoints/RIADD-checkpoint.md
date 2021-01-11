@@ -74,6 +74,11 @@ Widodo Budihartoa, Edi Abdurachmana \
 标题：Identification of Diabetic Retinopathy from Color Fundus Images using Deep Convolutional Neural Network
 作者：Bansode Balhim Narhari, Bakwad K.M., Ajij Dildar Sayyad
 
+-----
+
+文件名：quellec2020.pdf
+标题：Automatic detection of rare pathologies in fundus photographs using few-shot learning
+作者：GwenoléQuellec a , Mathieu Lamard b , a , Pierre-Henri Conze c , a , Pascale Massin d , Béatrice Cochener
 
 ## 图像的预处理方法
 

@@ -75,11 +75,11 @@ Widodo Budihartoa, Edi Abdurachmana \
 作者：Bansode Balhim Narhari, Bakwad K.M., Ajij Dildar Sayyad
 
 -----
-文件名：jama_ting_2017_oi_170140.pdf
-标题：Development and Validation of a Deep Learning System
-for Diabetic Retinopathy and Related Eye Diseases Using
-Retinal Images From Multiethnic Populations With Diabetes
-作者:Daniel ShuWei Ting, MD, PhD; Carol Yim-Lui Cheung, PhD; Gilbert Lim, PhD;
+
+文件名：quellec2020.pdf
+标题：Automatic detection of rare pathologies in fundus photographs using few-shot learning
+作者：GwenoléQuellec a , Mathieu Lamard b , a , Pierre-Henri Conze c , a , Pascale Massin d , Béatrice Cochener
+主要内容：
 
 ## 图像的预处理方法
 

@@ -21,6 +21,9 @@
 标题：Computer Methods and Programs in Biomedicine \
 主要工作：自动检测眼底图像中的视网膜微动脉瘤（MA）
 
+
+源代码：无
+
 ------
 
 文件名：Automatic Detection of Hard Exudates in Retinal Fundus Images.pdf \
@@ -32,6 +35,8 @@
 作者：Avula Benzamin, Chandan Chakraborty \
 Images Using Deep Learning
 主要工作：检测硬质渗透液来判断是否有DR
+
+源代码：无
 
 -----
 
@@ -46,7 +51,8 @@ Mathematical Morphology Operations
 - 使用形态学上的闭合算子来移除血管。
 然后使用熵特征来查找和删除视盘区域。
 最后，他们通过扩张操作使用形态重建来分割硬性渗出液。
-- 无源代码
+
+源代码：无
 
 参考意义：
 - 可以用传统方法实现血管、视盘的移除并分割出硬性渗出液
@@ -70,6 +76,9 @@ Widodo Budihartoa, Edi Abdurachmana \
 - Usher等人提出了数字化视网膜图像中糖尿病视网膜病变自动检测系统的开发及其在糖尿病视网膜病变筛查中的潜在价值。 
 [19]。 
 - Mohamed [20]使用先进的饲料神经网络进行了用于诊断的糖尿病性视网膜病变智能自动检测系统。
+
+源代码：无
+
 ------
 文件名：F9905038620.pdf \
 标题：Identification of Diabetic Retinopathy from Color Fundus Images using Deep Convolutional Neural Network \
@@ -79,6 +88,8 @@ Widodo Budihartoa, Edi Abdurachmana \
 最后，利用支持向量机分类器，从最近的深度CNN模型中有效学习。
 同时，额外的视网膜图像预处理技术被应用以获得更好的分类结果。
 改进的结果为视网膜筛查系统的计算机辅助诊断领域做出了贡献
+
+源代码：无
 
 -------
 

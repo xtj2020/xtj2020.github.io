@@ -103,6 +103,22 @@ CNN学习的功能通过合并手工制作的功能得到增强。
 源代码：<https://github.com/ignaciorlando/red-lesion-detection>
 
 
+------
+文件名：2007.14456v1.pdf
+
+标题：Enhancement of Retinal Fundus Images via Pixel Color Amplification
+
+主要工作：通过像素颜色放大增强视网膜眼底图像2020年7月28日•Alex Gaudio•Asim Smailagic•AurélioCampilho我们提出了像素颜色放大理论和一系列增强方法，以促进视网膜图像的分割任务。
+我们对除雾理论基础的图像失真模型的新颖重新解释显示了除雾社区常用的三个现有先验与新颖的第四先验之间的关系。
+我们利用该理论为视网膜图像开发了一系列增强方法，包括使整个图像变亮和变暗的新颖方法。
+我们展示了Unsharp Masking算法的新颖派生。
+我们评估了增强方法，将其作为具有挑战性的多任务分割问题的预处理步骤，并显示出所有任务的性能大幅提高，Dice分数在无增强基线的基础上增加了0.491。
+我们提供的证据表明，我们的增强预处理对于不平衡和困难的数据很有用。
+我们展示了这些增强功能可以通过将它们组合在一起来执行类平衡。
+
+<https://github.com/adgaudio/ietk-ret>
+
+
 ### 无源代码论文
 -----
 

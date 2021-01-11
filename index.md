@@ -59,6 +59,7 @@
 
 ## [DP](./frame/DP/)
 - [RIADD](https://xtj2020.top/frame/DP/RIADD.html)-RIADD比赛的展示 [edit](./frame/DP/RIADD.md)
+- [daily]()
 
 - [theoryGuide](https://xtj2020.top/frame/theoryGuide.html)-机器学习理论导引
 - [convexOptimize](https://xtj2020.top/frame/convexOptimize.html)-机器学习理论导引

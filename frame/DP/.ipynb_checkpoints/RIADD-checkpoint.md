@@ -118,6 +118,22 @@ CNN学习的功能通过合并手工制作的功能得到增强。
 
 <https://github.com/adgaudio/ietk-ret>
 
+-----
+文件名：2001.01815v1.pdf \
+
+标题：Regression and Learning with Pixel-wise Attention for Retinal Fundus Glaucoma Segmentation and Detection \
+主要工作：眼科医生观察视网膜眼底图像是青光眼的主要诊断方法。
+然而，仅通过手动观察仍难以区分病变特征，尤其是在青光眼早期。
+在本文中，我们提出了两种基于深度学习的自动算法，用于青光眼的检测以及视盘和杯的分割。
+我们利用注意力机制来学习像素级特征以进行准确的预测。
+特别是，我们提出了两个卷积神经网络，它们可以专注于学习各种像素级特征。
+此外，我们制定了几种注意力策略来指导网络学习对预测准确性有重大影响的重要特征。
+我们在验证数据集上评估我们的方法，提出的两个任务的解决方案都可以取得令人印象深刻的结果，并且胜过当前的最新方法。
+
+源代码：
+- <https://github.com/cswin/RLPA>
+- <https://github.com/archit31uniyal/DC-Gnet>
+
 
 ### 无源代码论文
 -----

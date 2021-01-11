@@ -65,7 +65,27 @@ Screening from Fundus Image \
 
 ------
 
+文件名：1803.04337v3.pdf \
+标题：Replication study: Development and validation of a deep
+learning algorithm for detection of diabetic retinopathy in
+retinal fundus photographs \
+主要工作：试图在JAMA 2016发表的视网膜眼底照片中复制和开发用于检测糖尿病性视网膜病的深度学习算法的主要方法
 
+源代码：<https://github.com/mikevoets/jama16-retina-replication>tensorflow
+
+------
+
+文件名：Reproduction study using public data of:
+Development and validation of a deep
+learning algorithm for detection of diabetic
+retinopathy in retinal fundus photographs.pdf \
+标题：Reproduction study using public data of:
+Development and validation of a deep
+learning algorithm for detection of diabetic
+retinopathy in retinal fundus photographs
+
+主要工作：开发和验证用于检测眼底照片中的糖尿病性视网膜病变的深度学习算法PLOS ONE 2019•Mike Voets•KajsaMøllersen•Lars Ailo Bongo我们试图将其的结果复制和验证
+《深度学习算法》，用于检测视网膜眼底照片中的糖尿病性视网膜病变，发表于JAMA 2016; 
 
 
 ### 无源代码论文

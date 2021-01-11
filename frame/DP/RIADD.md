@@ -135,6 +135,25 @@ CNN学习的功能通过合并手工制作的功能得到增强。
 - <https://github.com/archit31uniyal/DC-Gnet>
 
 
+
+----
+
+文件名：1809.05216v1.pdf
+标题：Enhanced Optic Disk and Cup Segmentation
+with Glaucoma Screening from Fundus Images
+using Position encoded CNNs
+
+
+主要工作：使用位置编码的CNN从眼底图像中筛选青光眼的增强型视盘和杯状分割14 Sep 2018•Vismay Agrawal•Avinash Kori•Varghese Alex•Ganapathy Krishnamurthi在本手稿中，我们提出了一种可靠的方法，用于从眼底图像中选择青光眼
+卷积神经网络（CNN）。
+该管道包括首先从眼底图像中分割视盘和视杯，然后提取以视盘为中心的斑块，然后将其馈送到分类网络以区分图像为患病图像还是健康图像。
+在分割网络中，除了图像之外，我们还利用空间坐标（X \＆Y）空间来更好地学习感兴趣的结构。
+分类网络由DenseNet201和ResNet18组成，它们在大量自然图像上进行了预训练。
+在REFUGE验证数据（n = 400）上，分割网络的视盘和视杯的骰子得分分别为0.88和0.64。
+对于区分受青光眼影响的图像和健康图像的任务，ROC曲线下的面积为0.85。 
+
+源代码:<https://github.com/koriavinash1/Optic-Disk-Cup-Segmentation> pytorch
+
 ### 无源代码论文
 -----
 

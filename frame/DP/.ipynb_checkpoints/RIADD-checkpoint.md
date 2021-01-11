@@ -1,6 +1,5 @@
 <script src="ut.js" type="text/javascript"></script>
 
-
 # 文献阅读
 
 ## 阅读RIADD有关文献
@@ -156,7 +155,3 @@ Widodo Budihartoa, Edi Abdurachmana \
 
 
 ## 文档的编撰能力
-
-```{.python .input}
-
-```

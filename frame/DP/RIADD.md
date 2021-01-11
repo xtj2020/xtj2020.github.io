@@ -12,7 +12,21 @@ Patches——Exudates——Deeply learnable features 2018
 标题：Computer Methods and Programs in Biomedicine \
 主要工作：自动检测眼底图像中的视网膜微动脉瘤（MA）
 
-小红点，强度，形状，大小和位置各不相同
 
 ## 图像的预处理
 
+
+
+## 数据集的描述
+
+
+## 小目标处理（比较小的目标）
+
+利用滑窗
+
+## 比较明显的目标（用神经网络直接分类）
+
+
+
+
+## 特征融合

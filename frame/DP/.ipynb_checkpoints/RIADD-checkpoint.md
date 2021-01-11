@@ -7,8 +7,7 @@
 ###  代码查询
 
 - <https://www.semanticscholar.org/>这个网站可以提供的信息包含但不受限于论文公开的Github上的代码实现，包括其他人的复现论文被接受的Conference /Journal 和时间论文的引用情况，高引用情况，近几年引用的情况被Media Mentions(推特，博客之类的)Similar papers（这个特别特别棒！）尤其是在想深入了解该领域的前沿工作的时候
-- <https://paperswithcode.com/>paperswithcode集合了arXiv上最新的机器学习研究论文，而且关联了这些论文在GitHub上的代码。
-
+- <https://paperswithcode.com/>集合了arXiv上最新的机器学习研究论文，而且关联了这些论文在GitHub上的代码。
 - <https://researchcode.com/>一个很好用的查找论文代码的网站，当您在arxiv.或Google Scholar中搜索浏览论文时，还可以用chrome扩展程序”ResearchCode code finder“查找代码。 
 
 
@@ -154,15 +153,13 @@ using Position encoded CNNs
 
 源代码:<https://github.com/koriavinash1/Optic-Disk-Cup-Segmentation> pytorch
 
-### 无源代码论文
+## 无源代码论文
 -----
 
 文件名:du2020  \
 标题：Computer Methods and Programs in Biomedicine \
 主要工作：自动检测眼底图像中的视网膜微动脉瘤（MA）
 
-
-源代码：无
 
 ------
 
@@ -176,7 +173,6 @@ using Position encoded CNNs
 Images Using Deep Learning
 主要工作：检测硬质渗透液来判断是否有DR
 
-源代码：无
 
 -----
 
@@ -192,7 +188,6 @@ Mathematical Morphology Operations
 然后使用熵特征来查找和删除视盘区域。
 最后，他们通过扩张操作使用形态重建来分割硬性渗出液。
 
-源代码：无
 
 参考意义：
 - 可以用传统方法实现血管、视盘的移除并分割出硬性渗出液
@@ -203,7 +198,7 @@ Mathematical Morphology Operations
 classification of eye diseases
 based on color fundus images \
 作者：Bambang Krismono Triwijoyoa,b, Boy Subirosa Sabargunaa,
-Widodo Budihartoa, Edi Abdurachmana \
+Widodo Budihartoa, Edi Abdurachmana 
 
 主要工作：看看工作基础内的文章
 
@@ -217,8 +212,6 @@ Widodo Budihartoa, Edi Abdurachmana \
 [19]。 
 - Mohamed [20]使用先进的饲料神经网络进行了用于诊断的糖尿病性视网膜病变智能自动检测系统。
 
-源代码：无
-
 ------
 文件名：F9905038620.pdf \
 标题：Identification of Diabetic Retinopathy from Color Fundus Images using Deep Convolutional Neural Network \
@@ -229,7 +222,6 @@ Widodo Budihartoa, Edi Abdurachmana \
 同时，额外的视网膜图像预处理技术被应用以获得更好的分类结果。
 改进的结果为视网膜筛查系统的计算机辅助诊断领域做出了贡献
 
-源代码：无
 
 -------
 
@@ -237,6 +229,7 @@ Widodo Budihartoa, Edi Abdurachmana \
 
 
 ## 图像的预处理方法
+
 
 
 

@@ -19,9 +19,15 @@
 
 <https://zhuanlan.zhihu.com/p/138108192>
 
+眼底血管形态学阈值分割（有代码）
+
+https://blog.csdn.net/virus1175/article/details/107126348
+
+-----
+
 把深度学习网络作为特征提取器（Feature Extractor）来使用，将提取出的深度学习特征，输入传统的经典分类器，进行分类。
 
-Patches——Exudates——Deeply learnable features 2018
+----
 
 文件名:du2020  \
 标题：Computer Methods and Programs in Biomedicine \
@@ -32,22 +38,29 @@ Patches——Exudates——Deeply learnable features 2018
 标题：Automatic Detection of Hard Exudates in Retinal Fundus Images
 主要工作：检测眼底中的渗出液
 
-文件名：1808.03656.pdf
-标题：Detection of Hard Exudates in Retinal Fundus
-作者：Avula Benzamin, Chandan Chakraborty
+文件名：1808.03656.pdf \
+标题：Detection of Hard Exudates in Retinal Fundus \
+作者：Avula Benzamin, Chandan Chakraborty \
 Images Using Deep Learning
 主要工作：检测硬质渗透液来判断是否有DR
 
-- 文件名：eadgahi2012.pdf 
-- 标题：Localization of Hard Exudates in Retinal Fundus Image by
+-----
+
+文件名：eadgahi2012.pdf \
+标题：Localization of Hard Exudates in Retinal Fundus Image by \
 Mathematical Morphology Operations 
-- 作者：Mehdi ghafourian fakhar eadgahi，Hamidreza pourreza 
-主要工作：本文提出了一种基于形态学的视网膜彩色图像中硬质渗出物的分割方法。在所提出的方法中，对视网膜图像进行预处理，并首先识别视盘和血管，然后从图像中消除它们。 
-- 工作基础：
-    1. 使用形态学上的闭合算子来移除血管。
+作者：Mehdi ghafourian fakhar eadgahi，Hamidreza pourreza \
+主要工作：
+- 本文提出了一种基于形态学的视网膜彩色图像中硬质渗出物的分割方法。在所提出的方法中，对视网膜图像进行预处理，并首先识别视盘和血管，然后从图像中消除它们。 
+
+工作基础：
+- 使用形态学上的闭合算子来移除血管。
 然后使用熵特征来查找和删除光盘区域。
 最后，他们通过扩张操作使用形态重建来分割硬性渗出液。
 - 无源代码
+
+参考意义：
+- 可以用传统方法实现血管、视盘的移除并分割出硬性渗出液
 
 
 

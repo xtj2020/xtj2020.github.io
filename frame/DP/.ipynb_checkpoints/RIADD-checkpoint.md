@@ -35,6 +35,21 @@
 眼底血管形态学阈值分割（有代码）<https://blog.csdn.net/virus1175/article/details/107126348>
 
 
+## 有源代码论文
+-----
+
+文件名：1906.11143v2.pdf \
+标题：Boundary and Entropy-driven Adversarial
+Learning for Fundus Image Segmentation \
+主要工作：
+- 来自不同数据集的眼底图像中的视盘（OD）和杯（OC）的正确分割对于青光眼疾病筛查至关重要。在这项工作中，我们提出了一种无监督的领域自适应框架，称为边界和熵驱动的对抗学习（BEAL），以改善OD和OC的分割性能，尤其是在模糊边界区域上。
+
+源代码：<https://github.com/EmmaW8/BEAL> pytorch版
+
+-----
+
+
+
 
 ### 无源代码论文
 -----
@@ -115,7 +130,6 @@ Widodo Budihartoa, Edi Abdurachmana \
 
 -------
 
-## 有源代码论文
 
 
 

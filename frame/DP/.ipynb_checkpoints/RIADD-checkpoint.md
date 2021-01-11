@@ -1,38 +1,26 @@
-# 训练角度
-
-##  对数据的分析
-
-
-
-##  对某个网络的熟悉
-
-
-## 文档的编撰能力
-
-
-
-# 科研角度
+# 文献阅读
 
 ## 阅读RIADD有关文献
 
-进行小目标检测文献综述
+### 博客
 
-<https://zhuanlan.zhihu.com/p/138108192>
-
-眼底血管形态学阈值分割（有代码）
-
-https://blog.csdn.net/virus1175/article/details/107126348
-
------
+进行小目标检测文献综述<https://zhuanlan.zhihu.com/p/138108192>
 
 把深度学习网络作为特征提取器（Feature Extractor）来使用，将提取出的深度学习特征，输入传统的经典分类器，进行分类。
 
-----
+
+
+眼底血管形态学阈值分割（有代码）<https://blog.csdn.net/virus1175/article/details/107126348>
+
+
+
+### 论文
 
 文件名:du2020  \
 标题：Computer Methods and Programs in Biomedicine \
 主要工作：自动检测眼底图像中的视网膜微动脉瘤（MA）
 
+------
 
 文件名：Automatic Detection of Hard Exudates in Retinal Fundus Images.pdf \
 标题：Automatic Detection of Hard Exudates in Retinal Fundus Images
@@ -92,3 +80,14 @@ Mathematical Morphology Operations
 
 
 ## 特征分类
+
+# 训练角度
+
+##  对数据的分析
+
+
+
+##  对某个网络的熟悉
+
+
+## 文档的编撰能力

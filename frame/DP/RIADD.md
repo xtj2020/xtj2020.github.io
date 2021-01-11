@@ -69,8 +69,17 @@ Widodo Budihartoa, Edi Abdurachmana \
 - Usher等人提出了数字化视网膜图像中糖尿病视网膜病变自动检测系统的开发及其在糖尿病视网膜病变筛查中的潜在价值。 
 [19]。 
 - Mohamed [20]使用先进的饲料神经网络进行了用于诊断的糖尿病性视网膜病变智能自动检测系统。
+------
+文件名：F9905038620.pdf
+标题：Identification of Diabetic Retinopathy from Color Fundus Images using Deep Convolutional Neural Network
+作者：Bansode Balhim Narhari, Bakwad K.M., Ajij Dildar Sayyad
 
-
+-----
+文件名：jama_ting_2017_oi_170140.pdf
+标题：Development and Validation of a Deep Learning System
+for Diabetic Retinopathy and Related Eye Diseases Using
+Retinal Images From Multiethnic Populations With Diabetes
+作者:Daniel ShuWei Ting, MD, PhD; Carol Yim-Lui Cheung, PhD; Gilbert Lim, PhD;
 
 ## 图像的预处理方法
 

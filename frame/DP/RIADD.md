@@ -38,6 +38,17 @@ Patches——Exudates——Deeply learnable features 2018
 Images Using Deep Learning
 主要工作：检测硬质渗透液来判断是否有DR
 
+文件名：eadgahi2012.pdf \
+标题：Localization of Hard Exudates in Retinal Fundus Image by
+Mathematical Morphology Operations \
+作者：Mehdi ghafourian fakhar eadgahi，Hamidreza pourreza \
+主要工作：本文提出了一种基于形态学的视网膜彩色图像中硬质渗出物的分割方法。在所提出的方法中，对视网膜图像进行预处理，并首先识别视盘和血管，然后从图像中消除它们。 \
+工作基础：
+- 使用形态学上的闭合算子来移除血管。
+然后使用熵特征来查找和删除光盘区域。
+最后，他们通过扩张操作使用形态重建来分割硬性渗出液。
+- 
+
 
 
 

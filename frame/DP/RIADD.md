@@ -1,3 +1,6 @@
+<script src="ut.js" type="text/javascript"></script>
+
+
 # 文献阅读
 
 ## 阅读RIADD有关文献
@@ -6,8 +9,17 @@
 
 - <https://www.semanticscholar.org/>这个网站可以提供的信息包含但不受限于论文公开的Github上的代码实现，包括其他人的复现论文被接受的Conference /Journal 和时间论文的引用情况，高引用情况，近几年引用的情况被Media Mentions(推特，博客之类的)Similar papers（这个特别特别棒！）尤其是在想深入了解该领域的前沿工作的时候
 - <https://paperswithcode.com/>paperswithcode集合了arXiv上最新的机器学习研究论文，而且关联了这些论文在GitHub上的代码。
-- 
 
+- <https://researchcode.com/>一个很好用的查找论文代码的网站，当您在arxiv.或Google Scholar中搜索浏览论文时，还可以用chrome扩展程序”ResearchCode code finder“查找代码。 
+
+
+1.寻找论文作者的个人主页在google搜索该论文的名称加上论文作者的姓名，找到目标作者的个人主页。一般在他们的个人主页上都有可能看到论文的链接和代码。我在寻找论文和代码的过程中，发现作者的主页上会有在其他网站暂时还找不到的论文和该论文的源码。
+
+
+2.改变关键字 开发语言+论文的关键字牛人一般都会想办法证明下自己有多牛，也会自己动手去尝试实现别人论文的代码，所以换关键字后也有可能找到正好是你需要的code，不过是其他牛人的杰作。
+
+3.直接联系本人
+<https://academia.stackexchange.com/questions/26159/can-i-request-the-code-behind-a-research-paper-from-the-author>
 
 
 
@@ -144,3 +156,7 @@ Widodo Budihartoa, Edi Abdurachmana \
 
 
 ## 文档的编撰能力
+
+```{.python .input}
+
+```

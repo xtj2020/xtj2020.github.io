@@ -34,9 +34,11 @@ Patches——Exudates——Deeply learnable features 2018
 
 文件名：1808.03656.pdf
 标题：Detection of Hard Exudates in Retinal Fundus
-作者：Avula Benzamin*, Chandan Chakraborty*
+作者：Avula Benzamin, Chandan Chakraborty
 Images Using Deep Learning
-主要工作：
+主要工作：检测硬质渗透液来判断是否有DR
+
+
 
 ## 图像的预处理方法
 

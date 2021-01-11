@@ -50,8 +50,15 @@ Mathematical Morphology Operations
 参考意义：
 - 可以用传统方法实现血管、视盘的移除并分割出硬性渗出液
 
+-----
+文件名：10.1016@B978-0-12-817440-1.00002-4.pdf \
+标题：Deep learning approach for
+classification of eye diseases
+based on color fundus images \
+作者：Bambang Krismono Triwijoyoa,b, Boy Subirosa Sabargunaa,
+Widodo Budihartoa, Edi Abdurachmana \
+主要工作：
 
-文件名
 
 
 

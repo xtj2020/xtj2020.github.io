@@ -82,10 +82,24 @@ retinopathy in retinal fundus photographs.pdf \
 标题：Reproduction study using public data of:
 Development and validation of a deep
 learning algorithm for detection of diabetic
-retinopathy in retinal fundus photographs
+retinopathy in retinal fundus photographs \
 
 主要工作：开发和验证用于检测眼底照片中的糖尿病性视网膜病变的深度学习算法PLOS ONE 2019•Mike Voets•KajsaMøllersen•Lars Ailo Bongo我们试图将其的结果复制和验证
 《深度学习算法》，用于检测视网膜眼底照片中的糖尿病性视网膜病变，发表于JAMA 2016; 
+
+源代码：<https://github.com/mikevoets/jama16-retina-replication> tensorflow
+
+------
+
+文件名：1706.03008v2.pdf \
+标题：An Ensemble Deep Learning Based Approach for Red Lesion Detection in
+Fundus Images \
+主要工作：处理红色病变，在本文中，我们提出了一种结合深度学习和领域知识的红色病变检测的新方法。 
+CNN学习的功能通过合并手工制作的功能得到增强。
+随后使用描述符的这种集成向量，使用随机森林分类器来识别真正的病变候选者。
+我们从经验上观察到，结合两种信息来源，相对于分别使用每种方法，可以显着改善结果。
+此外，与第二位人类专家相比，我们的方法在DIARETDB1和e-ophtha上报告了基于病灶的最高性能，并且筛选和需要在MESSIDOR上转诊。
+
 
 
 ### 无源代码论文

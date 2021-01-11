@@ -100,6 +100,7 @@ CNN学习的功能通过合并手工制作的功能得到增强。
 我们从经验上观察到，结合两种信息来源，相对于分别使用每种方法，可以显着改善结果。
 此外，与第二位人类专家相比，我们的方法在DIARETDB1和e-ophtha上报告了基于病灶的最高性能，并且筛选和需要在MESSIDOR上转诊。
 
+源代码：<https://github.com/ignaciorlando/red-lesion-detection>
 
 
 ### 无源代码论文

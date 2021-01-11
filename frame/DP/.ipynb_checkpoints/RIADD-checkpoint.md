@@ -50,6 +50,25 @@ Mathematical Morphology Operations
 参考意义：
 - 可以用传统方法实现血管、视盘的移除并分割出硬性渗出液
 
+-----
+文件名：10.1016@B978-0-12-817440-1.00002-4.pdf \
+标题：Deep learning approach for
+classification of eye diseases
+based on color fundus images \
+作者：Bambang Krismono Triwijoyoa,b, Boy Subirosa Sabargunaa,
+Widodo Budihartoa, Edi Abdurachmana \
+
+主要工作：看看工作基础内的文章
+
+工作基础：
+- Palomera-P erez等人的研究[16]提出了视网膜血管的自动分割。 
+- Sivakumar提出了使用视觉神经-视觉中性光谱成分对糖尿病性视网膜病变进行分类的方法[17]。 
+- Marı´n等人的进一步研究。 
+[13]还提出了人工神经网络来检测糖尿病性视网膜病变。 
+- Ricci和Perfetti [18]提出了使用SVM来检测作为糖尿病性视网膜病症状的视网膜眼出血的方法。 
+- Usher等人提出了数字化视网膜图像中糖尿病视网膜病变自动检测系统的开发及其在糖尿病视网膜病变筛查中的潜在价值。 
+[19]。 
+- Mohamed [20]使用先进的饲料神经网络进行了用于诊断的糖尿病性视网膜病变智能自动检测系统。
 
 
 

@@ -58,7 +58,7 @@ based on color fundus images \
 作者：Bambang Krismono Triwijoyoa,b, Boy Subirosa Sabargunaa,
 Widodo Budihartoa, Edi Abdurachmana \
 
-主要工作：
+主要工作：看看工作基础内的文章
 
 工作基础：
 - Palomera-P erez等人的研究[16]提出了视网膜血管的自动分割。 

@@ -28,7 +28,7 @@ Patches——Exudates——Deeply learnable features 2018
 主要工作：自动检测眼底图像中的视网膜微动脉瘤（MA）
 
 
-文件名：Automatic Detection of Hard Exudates in Retinal Fundus Images.pdf
+文件名：Automatic Detection of Hard Exudates in Retinal Fundus Images.pdf \
 标题：Automatic Detection of Hard Exudates in Retinal Fundus Images
 主要工作：检测眼底中的渗出液
 

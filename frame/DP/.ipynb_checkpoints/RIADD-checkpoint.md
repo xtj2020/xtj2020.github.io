@@ -2,6 +2,17 @@
 
 ## 阅读RIADD有关文献
 
+###  代码查询
+
+- <https://www.semanticscholar.org/>这个网站可以提供的信息包含但不受限于论文公开的Github上的代码实现，包括其他人的复现论文被接受的Conference /Journal 和时间论文的引用情况，高引用情况，近几年引用的情况被Media Mentions(推特，博客之类的)Similar papers（这个特别特别棒！）尤其是在想深入了解该领域的前沿工作的时候
+- <https://paperswithcode.com/>paperswithcode集合了arXiv上最新的机器学习研究论文，而且关联了这些论文在GitHub上的代码。
+- 
+
+
+
+
+
+
 ### 博客
 
 进行小目标检测文献综述<https://zhuanlan.zhihu.com/p/138108192>

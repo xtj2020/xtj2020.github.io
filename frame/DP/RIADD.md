@@ -74,7 +74,11 @@ Widodo Budihartoa, Edi Abdurachmana \
 文件名：F9905038620.pdf \
 标题：Identification of Diabetic Retinopathy from Color Fundus Images using Deep Convolutional Neural Network \
 作者：Bansode Balhim Narhari, Bakwad K.M., Ajij Dildar Sayyad \
-
+主要工作：
+- 提供了一种基于预先检查的完全卷积神经网络（CNN）并通过转移学习完成的创新技术。
+最后，利用支持向量机分类器，从最近的深度CNN模型中有效学习。
+同时，额外的视网膜图像预处理技术被应用以获得更好的分类结果。
+改进的结果为视网膜筛查系统的计算机辅助诊断领域做出了贡献
 
 -------
 

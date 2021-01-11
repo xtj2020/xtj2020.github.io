@@ -57,8 +57,9 @@
 
 # 框架([frame](./frame/))
 
-## [DP](./frame/DP/)
+## [DP](./frame/DP/)-展示
 - [RIADD](https://xtj2020.top/frame/DP/RIADD.html)-RIADD比赛的展示 [edit](./frame/DP/RIADD.md)
+- [Daily](https://xtj2020.top/frame/DP/Daily.html)-每日事项 [edit](./frame/DP/Daily.md)
 
 - [theoryGuide](https://xtj2020.top/frame/theoryGuide.html)-机器学习理论导引
 - [convexOptimize](https://xtj2020.top/frame/convexOptimize.html)-机器学习理论导引

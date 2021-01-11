@@ -48,9 +48,9 @@ Learning for Fundus Image Segmentation \
 
 -----
 
-文件名：1805.07549v1.pdf
-标题：Disc-aware Ensemble Network for Glaucoma
-Screening from Fundus Image
+文件名：1805.07549v1.pdf \
+标题：Disc-aware Ensemble Network for Glaucoma 
+Screening from Fundus Image \
 主要工作：
 - 还是利用杯盘比
 - 本文中，我们介绍了一种深度学习技术来获取其他图像相关信息，并直接从眼底图像中筛选青光眼。
@@ -59,9 +59,12 @@ Screening from Fundus Image
 最后，将不同流的输出概率融合为最终筛选结果。
 
 源代码：
-<https://github.com/HzFu/MNet_DeepCDR> tensorflow
-<https://github.com/HzFu/DENet_GlaucomaScreen> tensorflow
-<https://github.com/Aniladepu007/Joint-Optic-Disc-and-Cup-Segmentation-Based-on-Multi-Label-Deep-Network-and-Polar-Transformation> keras
+- <https://github.com/HzFu/MNet_DeepCDR> tensorflow
+- <https://github.com/HzFu/DENet_GlaucomaScreen> tensorflow
+- <https://github.com/Aniladepu007/Joint-Optic-Disc-and-Cup-Segmentation-Based-on-Multi-Label-Deep-Network-and-Polar-Transformation> keras
+
+------
+
 
 
 

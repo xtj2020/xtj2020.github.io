@@ -15,6 +15,7 @@
 
 
 ### 论文
+-----
 
 文件名:du2020  \
 标题：Computer Methods and Programs in Biomedicine \
@@ -43,7 +44,7 @@ Mathematical Morphology Operations
 
 工作基础：
 - 使用形态学上的闭合算子来移除血管。
-然后使用熵特征来查找和删除光盘区域。
+然后使用熵特征来查找和删除视盘区域。
 最后，他们通过扩张操作使用形态重建来分割硬性渗出液。
 - 无源代码
 
@@ -70,16 +71,12 @@ Widodo Budihartoa, Edi Abdurachmana \
 [19]。 
 - Mohamed [20]使用先进的饲料神经网络进行了用于诊断的糖尿病性视网膜病变智能自动检测系统。
 ------
-文件名：F9905038620.pdf
-标题：Identification of Diabetic Retinopathy from Color Fundus Images using Deep Convolutional Neural Network
-作者：Bansode Balhim Narhari, Bakwad K.M., Ajij Dildar Sayyad
+文件名：F9905038620.pdf \
+标题：Identification of Diabetic Retinopathy from Color Fundus Images using Deep Convolutional Neural Network \
+作者：Bansode Balhim Narhari, Bakwad K.M., Ajij Dildar Sayyad \
 
------
 
-文件名：quellec2020.pdf
-标题：Automatic detection of rare pathologies in fundus photographs using few-shot learning
-作者：GwenoléQuellec a , Mathieu Lamard b , a , Pierre-Henri Conze c , a , Pascale Massin d , Béatrice Cochener
-主要内容：
+-------
 
 ## 图像的预处理方法
 
@@ -109,7 +106,9 @@ Widodo Budihartoa, Edi Abdurachmana \
 
 ## 特征分类
 
+
 # 训练角度
+
 
 ##  对数据的分析
 

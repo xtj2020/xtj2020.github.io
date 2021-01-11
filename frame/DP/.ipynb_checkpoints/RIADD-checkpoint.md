@@ -34,7 +34,7 @@
 眼底血管形态学阈值分割（有代码，cv2传统方式）<https://blog.csdn.net/virus1175/article/details/107126348>
 
 
-## 有源代码论文
+### 有源代码论文
 -----
 
 文件名：1906.11143v2.pdf \
@@ -153,7 +153,7 @@ using Position encoded CNNs
 
 源代码:<https://github.com/koriavinash1/Optic-Disk-Cup-Segmentation> pytorch
 
-## 无源代码论文
+### 无源代码论文
 -----
 
 文件名:du2020  \
@@ -166,6 +166,8 @@ using Position encoded CNNs
 文件名：Automatic Detection of Hard Exudates in Retinal Fundus Images.pdf \
 标题：Automatic Detection of Hard Exudates in Retinal Fundus Images
 主要工作：检测眼底中的渗出液
+
+------
 
 文件名：1808.03656.pdf \
 标题：Detection of Hard Exudates in Retinal Fundus \

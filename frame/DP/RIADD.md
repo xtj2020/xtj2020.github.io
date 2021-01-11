@@ -32,7 +32,7 @@
 
 
 
-眼底血管形态学阈值分割（有代码）<https://blog.csdn.net/virus1175/article/details/107126348>
+眼底血管形态学阈值分割（有代码，cv2传统方式）<https://blog.csdn.net/virus1175/article/details/107126348>
 
 
 ## 有源代码论文
@@ -48,6 +48,14 @@ Learning for Fundus Image Segmentation \
 
 -----
 
+文件名：1805.07549v1.pdf
+标题：Disc-aware Ensemble Network for Glaucoma
+Screening from Fundus Image
+主要工作：
+- 本文中，我们介绍了一种深度学习技术来获取其他图像相关信息，并直接从眼底图像中筛选青光眼。
+具体而言，提出了一种新颖的用于自动青光眼筛查的碟片感知集合网络（DENet），该网络将全球眼底图像和局部视盘区域的深层次背景进行了整合。
+在不同级别和模块上的四个深层流分别被认为是全局图像流，分段引导网络，本地磁盘区域流和磁盘极性转换流。
+最后，将不同流的输出概率融合为最终筛选结果。
 
 
 

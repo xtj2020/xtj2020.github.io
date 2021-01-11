@@ -32,7 +32,7 @@
 
 
 
-眼底血管形态学阈值分割（有代码）<https://blog.csdn.net/virus1175/article/details/107126348>
+眼底血管形态学阈值分割（有代码，cv2传统方式）<https://blog.csdn.net/virus1175/article/details/107126348>
 
 
 ## 有源代码论文

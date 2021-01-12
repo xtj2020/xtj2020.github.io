@@ -237,6 +237,9 @@ Widodo Budihartoa, Edi Abdurachmana
 
 现在用ResNet网络到底学到的是一个什么样的特征？
 
+如何平衡正负样本？
+
+
 
 ## 眼部瘤的识别
 

@@ -242,6 +242,7 @@ Widodo Budihartoa, Edi Abdurachmana
 ## 如何选取方便训练的疾病
 
 1、进行多分类或者二分类，需要确定筛选出哪些疾病
+这些疾病要有比较差异性的特征方便网络进行训练；（尽可能多得用一个网络去训练得到）
 2、
 
 ![image.png](./RIADD.assets/多重患病比例.png)

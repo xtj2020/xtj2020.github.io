@@ -233,8 +233,6 @@ Widodo Budihartoa, Edi Abdurachmana
 
 糖尿病疾病的几个显著特征：硬性渗出、视网膜出血、渗出液
 
-![image.png](./RIADD.assets/多重患病比例.png)
-
 现在用ResNet网络到底学到的是一个什么样的特征？
 
 如何平衡正负样本？
@@ -243,6 +241,10 @@ Widodo Budihartoa, Edi Abdurachmana
 
 ## 如何选取方便训练的疾病
 
+1、进行多分类或者二分类，需要确定筛选出哪些疾病
+2、
+
+![image.png](./RIADD.assets/多重患病比例.png)
 ![image-2.png](./RIADD.assets/各种疾病患病人数.png
 )
 

@@ -1,5 +1,3 @@
-<script src="ut.js" type="text/javascript"></script>
-
 # 文献阅读
 
 ## 阅读RIADD有关文献
@@ -119,7 +117,6 @@ CNN学习的功能通过合并手工制作的功能得到增强。
 
 -----
 文件名：2001.01815v1.pdf \
-
 标题：Regression and Learning with Pixel-wise Attention for Retinal Fundus Glaucoma Segmentation and Detection \
 主要工作：眼科医生观察视网膜眼底图像是青光眼的主要诊断方法。
 然而，仅通过手动观察仍难以区分病变特征，尤其是在青光眼早期。

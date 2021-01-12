@@ -1,9 +1,9 @@
 # 评价指标
 
-|  表头   | 表头  |
-|  ----  | ----  |
-| 单元格  | 单元格 |
-| 单元格  | 单元格 |
+| 预测值\真实值 |  Positive  | Negtive  |
+|  ----  | ----  | ----  |
+| Positive | TP |  | |
+| Negtive  | FN |  TF |
 
 # 优化器
 https://www.cnblogs.com/NeilZhang/p/8454890.html

@@ -227,7 +227,16 @@ Widodo Budihartoa, Edi Abdurachmana
 
 
 
+
+
 ## 糖尿病疾病的简单网络分类
 
-    糖尿病疾病的几个显著特征：硬性渗出、视网膜出血、
+糖尿病疾病的几个显著特征：硬性渗出、视网膜出血、渗出液
+
+![image.png](attachment:image.png)
+
+现在用ResNet网络到底学到的是一个什么样的特征？
+
+
+## 眼部瘤的识别
 

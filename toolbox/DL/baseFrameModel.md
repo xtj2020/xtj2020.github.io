@@ -1,9 +1,11 @@
 # 评价指标
-
+- 混淆矩阵
 | 预测值\真实值 |  Positive  | Negtive  |
 |  ----  | ----  | ----  |
-| Positive | TP |  | |
-| Negtive  | FN |  TF |
+| Positive | TP |  FP |
+| Negtive  | FN |  TN |
+
+
 
 # 优化器
 https://www.cnblogs.com/NeilZhang/p/8454890.html

@@ -73,6 +73,16 @@ np.random.shuffle(x) 类似洗牌，打乱顺序；np.random.permutation(x)返�
 
 numpy.dstack 将列表中的数组沿深度方向进行拼接。
 
+np.stack()
+
+np.hstack()
+
+np.vstack()
+
+np.dstack()
+
+<https://blog.csdn.net/fripy/article/details/86658002>
+
 # 维度的转换
 ravel()
 flatten，与ravel相同，区别在是否拷贝

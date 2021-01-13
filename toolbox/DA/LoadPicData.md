@@ -16,6 +16,9 @@ plt.axis('off') # 不显示坐标轴
 plt.show()
 #将图片转为np数组
 
+
+
+
 ```
 ## 改变图片的尺寸
 
@@ -30,25 +33,29 @@ Image.ANTIALIAS：高质量
 # PIL
 ```python
 
- from PIL import Image
- 
+from PIL import Image 
 
- img = Image.open(file_path)
- imgSize = img.size  #大小/尺寸
- w = img.width       #图片的宽
- h = img.height      #图片的高
- f = img.format      #图像格式
+img = Image.open(file_path) #读入的是一个Image对象
+imgSize = img.size  #大小/尺寸
+w = img.width       #图片的宽
+h = img.height      #图片的高
+f = img.format      #图像格式
+img.save(" ") #对图像进行保存
+
  ```
 
 # openCV
 
 ```python
  import cv2
-    
+ img = img * 255 #有时候需要将图片进行转化   
  img = cv2.imread(file_path)  #读取图片信息,返回的是一个array
 
  #sp = img.shape[0:2]     #截取长宽啊
  sp = img.shape # [高|宽|像素值由三种原色构成]
+
+# 可以对Image对象进行转化为ndarray对象
+
  ```
  
  

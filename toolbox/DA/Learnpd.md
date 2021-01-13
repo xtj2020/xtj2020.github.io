@@ -110,6 +110,8 @@ d  NaN    4
 
 ## Series 操作
 
+pd.Series(数据，索引)
+
 https://www.jianshu.com/p/0ea5f5041f3f
 
 Series类型由一组数据及与之相关的数据索引组成

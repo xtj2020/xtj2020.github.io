@@ -110,6 +110,8 @@ d  NaN    4
 
 ## Series 操作
 
+pd.Series(数据，索引)
+
 https://www.jianshu.com/p/0ea5f5041f3f
 
 Series类型由一组数据及与之相关的数据索引组成
@@ -220,6 +222,15 @@ df[(df.A==100)&(df.B=='a')]
 - 找出df中A列值为100或B列值为‘b’的所有数据 \
 df[(df.A==100)|(df.B=='b')]
 
+### 排序
+
+按索引排序
+df.sort_index(axis=1)
+
+按值排序，输入是一个列表
+unsorted_df.sort_values(by='col1')
+
+sort_values()提供了从mergeesort，heapsort和quicksort中选择算法的一个配置。Mergesort是唯一稳定的算法。
 
 ## 计算
 即按行求和

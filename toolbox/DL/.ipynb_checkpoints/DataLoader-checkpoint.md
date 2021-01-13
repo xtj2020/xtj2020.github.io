@@ -39,9 +39,59 @@ print(isinstance(cls_a, Iterable))
 
 # 自定义数据加载器
 
+## Dataset
+
 用Dataset封装自己的数据和标签
 用DataLoader达到数据的划分
 
 Dataset必须继承实现\_\_getitem\_\_、
 \_\_len\_\_
+
+```python
+import torch
+import numpy as np
+# 定义GetLoader类，继承Dataset方法，并重写__getitem__()和__len__()方法
+class GetLoader(torch.utils.data.Dataset):
+	# 初始化函数，得到数据
+    def __init__(self, data_root, data_label):
+        self.data = data_root
+        self.label = data_label
+    # index是根据batchsize划分数据后得到的索引，最后将data和对应的labels进行一起返回
+    def __getitem__(self, index):
+        data = self.data[index]
+        labels = self.label[index]
+        return data, labels
+    # 该函数返回数据大小长度，目的是DataLoader方便划分，如果不知道大小，DataLoader会一脸懵逼
+    def __len__(self):
+        return len(self.data)
+
+# 随机生成数据，大小为10 * 20列
+source_data = np.random.rand(10, 20)
+# 随机生成标签，大小为10 * 1列
+source_label = np.random.randint(0,2,(10, 1))
+# 通过GetLoader将数据进行加载，返回Dataset对象，包含data和labels
+torch_data = GetLoader(source_data, source_label)
+```
+
+## DataLoader
+```python
+torch.utils.data.DataLoader(dataset,batch_size,shuffle,drop_last，num_workers)
+
+# dataset： 加载torch.utils.data.Dataset对象数据
+# batch_size： 每个batch的大小
+#shuffle：是否对数据进行打乱
+#drop_last：是否对无法整除的最后一个datasize进行丢弃
+#num_workers：表示加载的时候子进程数
+
+
+
+```
+可以查看数据
+```python
+for i, data in enumerate(datas):
+	# i表示第几个batch， data表示该batch对应的数据，包含data和对应的labels
+    print("第 {} 个Batch \n{}".format(i, data))
+```
+
+## 使用pkl存储一个大的列表，从列表中加载Dataset
 

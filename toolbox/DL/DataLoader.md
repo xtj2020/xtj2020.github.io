@@ -93,3 +93,5 @@ for i, data in enumerate(datas):
     print("第 {} 个Batch \n{}".format(i, data))
 ```
 
+## 使用pkl存储一个大的列表，从列表中加载Dataset
+

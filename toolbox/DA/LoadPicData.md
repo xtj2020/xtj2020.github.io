@@ -17,7 +17,15 @@ plt.show()
 #将图片转为np数组
 
 ```
+## 改变图片的尺寸
 
+ img.resize((width, height),Image.ANTIALIAS)
+ 
+ 第二个参数：
+Image.NEAREST ：低质量
+Image.BILINEAR：双线性
+Image.BICUBIC ：三次样条插值
+Image.ANTIALIAS：高质量
 
 # PIL
 ```python
@@ -42,3 +50,17 @@ plt.show()
  #sp = img.shape[0:2]     #截取长宽啊
  sp = img.shape # [高|宽|像素值由三种原色构成]
  ```
+ 
+ 
+# 将数组转为图片
+
+对图片的展示
+plt.imshow(a)
+plt.show()
+
+对图片的存储
+```python
+import cv2
+result_BGR = cv2.cvtColor(a*255, cv2.COLOR_RGB2BGR)
+cv2.imwrite("/app/xtj/2.png", result_BGR)
+```

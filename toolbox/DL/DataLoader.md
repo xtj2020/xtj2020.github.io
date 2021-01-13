@@ -20,6 +20,11 @@ print(isinstance(cls_a, Iterable))
 ## yield生成器
 
 # DataLoader的实现
+
+<https://zhuanlan.zhihu.com/p/340465632>
+
+3分钟理解 pytorch 的 gather 和 scatter<https://zhuanlan.zhihu.com/p/319191164>
+
 ## 最简单的版本
 **需要满足的功能：**
 

@@ -39,6 +39,8 @@ print(isinstance(cls_a, Iterable))
 
 # 自定义数据加载器
 
+## Dataset
+
 用Dataset封装自己的数据和标签
 用DataLoader达到数据的划分
 
@@ -70,3 +72,24 @@ source_label = np.random.randint(0,2,(10, 1))
 # 通过GetLoader将数据进行加载，返回Dataset对象，包含data和labels
 torch_data = GetLoader(source_data, source_label)
 ```
+
+## DataLoader
+```python
+torch.utils.data.DataLoader(dataset,batch_size,shuffle,drop_last，num_workers)
+
+# dataset： 加载torch.utils.data.Dataset对象数据
+# batch_size： 每个batch的大小
+#shuffle：是否对数据进行打乱
+#drop_last：是否对无法整除的最后一个datasize进行丢弃
+#num_workers：表示加载的时候子进程数
+
+
+
+```
+可以查看数据
+```python
+for i, data in enumerate(datas):
+	# i表示第几个batch， data表示该batch对应的数据，包含data和对应的labels
+    print("第 {} 个Batch \n{}".format(i, data))
+```
+

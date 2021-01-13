@@ -1,10 +1,12 @@
 ## 可迭代对象
 要有\_\_iter\_\_才能叫可迭代对象(iterable)
+
 ```python
 from collections.abc import Iterable, Iterator
 print(isinstance(cls_a, Iterable))
 
 ```
+
 
 ## 迭代器
 可迭代器(Iterator)一定是可迭代的，反之不一定成立
@@ -32,3 +34,14 @@ print(isinstance(cls_a, Iterable))
 - Sampler 提供整个数据集随机访问的索引列表，每次调用都返回所有列表中的单个索引，常用子类是 SequentialSampler 用于提供顺序输出的索引 和 RandomSampler 用于提供随机输出的索引
 - BatchSampler 内部调用 Sampler 实例，输出指定 batch_size 个索引，然后将索引作用于 Dataset 上从而输出 batch_size 个数据对象，例如 batch 张图片和 batch 个 target
 - collate_fn 用于将 batch 个数据对象在 batch 维度进行聚合，生成 (b,...) 格式的数据输出，如果待聚合对象是 numpy，则会自动转化为 tensor，此时就可以输入到网络中了
+
+
+
+# 自定义数据加载器
+
+用Dataset封装自己的数据和标签
+用DataLoader达到数据的划分
+
+Dataset必须继承实现\_\_getitem\_\_、
+\_\_len\_\_
+

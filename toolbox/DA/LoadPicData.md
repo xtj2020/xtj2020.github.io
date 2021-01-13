@@ -20,6 +20,8 @@ plt.show()
 
 
 # PIL
+```python
+
  from PIL import Image
  
 
@@ -28,7 +30,7 @@ plt.show()
  w = img.width       #图片的宽
  h = img.height      #图片的高
  f = img.format      #图像格式
-
+ ```
 
 # openCV
 

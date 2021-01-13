@@ -99,21 +99,47 @@ print df
 ```
 
 
-![image-20201022134757098](Learnpd.assets/image-20201022134757098.png)
+```python
+out:
+    one  two
+a  1.0    1
+b  2.0    2
+c  3.0    3
+d  NaN    4
+```
 
+## Series 操作
 
-## Series 创建
+https://www.jianshu.com/p/0ea5f5041f3f
 
 Series类型由一组数据及与之相关的数据索引组成
 
 
-可以用自动索引或者index值都可以进行读取
+```python
+pd.Series([2,3,4,5,6])
+pd.Series([2,3,4,5,6], index=['a', 'b', 'c', 'd', 'e'])
+# 可以存储不同的类型
+# 创建时自定义索引会替换字典索引
+d2 = {
+    'name': '张三',
+    'age': 18,
+    'gander': True,
+}
 
+d = pd.Series(d2, index=['name', 'age', 'score'])
+
+
+```
+
+
+可以用自动索引或者index值都可以进行读取
 
 ```python
 df.loc[0]=['cat', 3]  # 其中loc[]中需要加入的是插入地方dataframe的索引，默认是整数型
 # 也可采用诸如df.loc['a'] = ['123',30]的形式
 ```
+
+
 添加一个空的列
 
 mydf['列名'] = None
@@ -162,6 +188,7 @@ DataFrame.index = [newName]，DataFrame.columns = [newName]
 
 
 ## 取值
+
 ```python
 df['x']      #取列名为'x'的列,格式为series
 df[['x']]    #取列名为'x'的列，格式为Dataframe

@@ -216,3 +216,11 @@ zip() 函数用于将可迭代的对象作为参数，将对象中对应的元�
 
 
 ## 迭代器的长度
+```python
+
+def get_length(generator):
+    if hasattr(generator,"__len__"):
+        return len(generator)
+    else:
+        return sum(1 for _ in generator)
+```

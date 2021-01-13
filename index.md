@@ -42,7 +42,7 @@
 
   对数据进行样本与标签的组合，并进行打乱（map）
 
-- [LoadPicData](https://xtj2020.top/toolbox/DA/LoadPicData.html)-对于图片的展示
+- [LoadPicData](https://xtj2020.top/toolbox/DA/LoadPicData.html)-对于图片的展示 [edit](./toolbox/DA/LoadPicData.md)
 
 - [tabulate](https://xtj2020.top/toolbox/DA/tabulate.html) -使用tabulate对表格进行美化 [edit](./toolbox/DA/tabulate.md)
 

@@ -119,6 +119,7 @@ df = pd.read_hdf('demo.h5',key='df')
 df
 ```
 
-**追加某一行：** \
+**追加行、列：** \
 <https://cloud.tencent.com/developer/ask/189318>
+<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_hdf.html>
 

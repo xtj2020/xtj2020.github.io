@@ -71,8 +71,8 @@ store['s'],store['df'] = s,df
 ```python
 store.put(key='s',value=s);store.put(key='df',value=df)
 ```
-**查看属性：**
-store.items store对象只有items和keys属性，没有values属性
+**查看属性：** \
+store.items store对象只有items和keys属性，没有values属性 \
 store['df'] 调用store对象中的数据直接用对应的键名来索引即可
 
 **删除：**

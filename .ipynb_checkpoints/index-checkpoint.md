@@ -26,7 +26,7 @@
 - [Inspect](https://xtj2020.top/toolbox/PY/Inspect.html)-对python的调试 [edit](./toolbox/PY/Inspect.md)
   
 
-## [DA](./toolbox/DA)-数据分析
+## [DA](./toolbox/DA)-数据处理
 
 - [Learnnp](https://xtj2020.top/toolbox/DA/Learnnp.html)-numpy库 [edit](./toolbox/DA/Learnnp.md)
 

@@ -118,3 +118,7 @@ print(store.is_open)
 df = pd.read_hdf('demo.h5',key='df')
 df
 ```
+
+**追加某一行：** \
+<https://cloud.tencent.com/developer/ask/189318>
+

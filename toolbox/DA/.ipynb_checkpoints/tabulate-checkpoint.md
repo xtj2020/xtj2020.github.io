@@ -37,6 +37,6 @@ https://pypi.org/project/tabulate/
 
 # tqdm
 ```python
-from tqdm import tqdm_notebook
+from tqdm import notebook
 tqdm_notebook(迭代器)
 ```

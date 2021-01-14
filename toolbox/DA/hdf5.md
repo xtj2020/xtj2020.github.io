@@ -32,6 +32,7 @@ dtype=float,compression='gzip',name='train',                      #数据类型�
 
 
 ## 以pd为基础的HDF5操作
+<https://www.cnblogs.com/feffery/p/11135082.html>
 
 ### 写出
 
@@ -90,4 +91,30 @@ print(store.keys())
 store.close()
 ##　查看store连接状况，False则代表已关闭
 store.is_open
+
+#导出到已存在的h5文件中，这里需要指定key
+df_.to_hdf(path_or_buf='demo.h5',key='df_')
+#创建于本地demo.h5进行IO连接的store对象
+store = pd.HDFStore('demo.h5')
+```
+**读入:**
+```python
+# 第一种
+store = pd.HDFStore('demo.h5')
+'''方式1'''
+df1 = store['df']
+'''方式2'''
+df2 = store.get('df')
+df1 == df2
+
+
+# 第二种
+print(store.is_open)
+df = pd.read_hdf('demo.h5',key='df')
+
+# 关闭后的再次提取
+store.close()
+print(store.is_open)
+df = pd.read_hdf('demo.h5',key='df')
+df
 ```

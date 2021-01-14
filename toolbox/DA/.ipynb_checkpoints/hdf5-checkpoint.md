@@ -29,7 +29,8 @@ dtype=float,compression='gzip',name='train',                      #数据类型�
 
 ## 以np为基础的HDF5操作
 
-
+直接使用
+<https://www.jianshu.com/p/de9f33cdfba0>
 
 ## 以pd为基础的HDF5操作
 <https://www.cnblogs.com/feffery/p/11135082.html>

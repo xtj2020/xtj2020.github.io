@@ -47,7 +47,7 @@
 
 - [tabulate](https://xtj2020.top/toolbox/DA/tabulate.html) -使用tabulate对表格进行美化 [edit](./toolbox/DA/tabulate.md)
 
-- [hdf5](https://xtj2020.top/toolbox/DA/hdf5.html) -利用hdf5来存储sh
+- [pickle&hdf5](https://xtj2020.top/toolbox/DA/hdf5.html) -利用pickle&hdf5来存储数据 [edit](./toolbox/DA/hdf5.md)
 
 ## [PC](./toolbox/PC)-脚本\linux\爬虫
 

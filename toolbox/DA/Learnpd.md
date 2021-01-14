@@ -227,7 +227,7 @@ df[(df.A==100)|(df.B=='b')]
 
 ### 排序
 
-按索引排序
+按列索引排序
 df.sort_index(axis=1,ascending=True,inplace=True)
 ascending为升序排序，inplace是修改数据
 

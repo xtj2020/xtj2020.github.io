@@ -1,5 +1,28 @@
 # 代码工具（[toolbox](./toolbox/)）
 
+## [DA](./toolbox/DA)-数据处理
+
+- [Learnnp](https://xtj2020.top/toolbox/DA/Learnnp.html)-numpy库 [edit](./toolbox/DA/Learnnp.md)
+
+- [Learnpd](https://xtj2020.top/toolbox/DA/Learnpd.html)-pandas库 [edit](./toolbox/DA/Learnpd.md)
+
+- [Learnscipy](https://xtj2020.top/toolbox/DA/Learnscipy.html)-scipy库
+[edit](./toolbox/DA/Learnscipy.md)
+
+- [LoadReadData](https://xtj2020.top/toolbox/DA/LoadReadData.html)-数据加载、存储
+  目录、路径操作、文件操作、文件读写
+- [researchData](https://xtj2020.top/toolbox/DA/researchData.html)-探索性数据分析 [edit](./toolbox/DA/researchData.md)
+  
+- [PreproccessData](https://xtj2020.top/toolbox/DA/PreproccessData.html)-数据预处理 [edit](./toolbox/DA/PreproccessData.md)
+
+  对数据进行样本与标签的组合，并进行打乱（map）
+
+- [LoadPicData](https://xtj2020.top/toolbox/DA/LoadPicData.html)-对于图片的展示 [edit](./toolbox/DA/LoadPicData.md)
+
+- [tabulate](https://xtj2020.top/toolbox/DA/tabulate.html) -使用tabulate对表格进行美化 [edit](./toolbox/DA/tabulate.md)
+
+- [pickle&hdf5](https://xtj2020.top/toolbox/DA/hdf5.html) -利用pickle&hdf5来存储数据 [edit](./toolbox/DA/hdf5.md)
+
 
 ## [DL](./toolbox/DL)-深度学习
 
@@ -26,28 +49,7 @@
 - [Inspect](https://xtj2020.top/toolbox/PY/Inspect.html)-对python的调试 [edit](./toolbox/PY/Inspect.md)
   
 
-## [DA](./toolbox/DA)-数据处理
 
-- [Learnnp](https://xtj2020.top/toolbox/DA/Learnnp.html)-numpy库 [edit](./toolbox/DA/Learnnp.md)
-
-- [Learnpd](https://xtj2020.top/toolbox/DA/Learnpd.html)-pandas库 [edit](./toolbox/DA/Learnpd.md)
-
-- [Learnscipy](https://xtj2020.top/toolbox/DA/Learnscipy.html)-scipy库
-[edit](./toolbox/DA/Learnscipy.md)
-
-- [LoadReadData](https://xtj2020.top/toolbox/DA/LoadReadData.html)-数据加载、存储
-  目录、路径操作、文件操作、文件读写
-- [researchData](https://xtj2020.top/toolbox/DA/researchData.html)-探索性数据分析 [edit](./toolbox/DA/researchData.md)
-  
-- [PreproccessData](https://xtj2020.top/toolbox/DA/PreproccessData.html)-数据预处理 [edit](./toolbox/DA/PreproccessData.md)
-
-  对数据进行样本与标签的组合，并进行打乱（map）
-
-- [LoadPicData](https://xtj2020.top/toolbox/DA/LoadPicData.html)-对于图片的展示 [edit](./toolbox/DA/LoadPicData.md)
-
-- [tabulate](https://xtj2020.top/toolbox/DA/tabulate.html) -使用tabulate对表格进行美化 [edit](./toolbox/DA/tabulate.md)
-
-- [pickle&hdf5](https://xtj2020.top/toolbox/DA/hdf5.html) -利用pickle&hdf5来存储数据 [edit](./toolbox/DA/hdf5.md)
 
 ## [PC](./toolbox/PC)-脚本\linux\爬虫
 
@@ -58,15 +60,6 @@
 - [GitHub](https://xtj2020.top/toolbox/PC/GitHub.html)-GitHub的使用 [edit](./toolbox/PC/GitHub.md)
 
 
-# 框架([frame](./frame/))
-
-## [DP](./frame/DP/)-展示
-- [RIADD](https://xtj2020.top/frame/DP/RIADD.html)-RIADD比赛的展示 [edit](./frame/DP/RIADD.md)
-
-
-- [theoryGuide](https://xtj2020.top/frame/theoryGuide.html)-机器学习理论导引
-- [convexOptimize](https://xtj2020.top/frame/convexOptimize.html)-机器学习理论导引
-- [ForeGround](https://xtj2020.top/frame/ForeGround.html)- 人工智能与数据分析前景 [edit](./frame/ForeGround.md)
 
 
 
@@ -91,6 +84,16 @@
 
 ## [ML](./stone/ML)-机器学习知识
 - [EnsembleLearning](https://xtj2020.top/stone/ML/EnsembleLearning.html)-集成学习 [edit](./stone/ML/EnsembleLearning.md)
+
+# 框架([frame](./frame/))
+
+## [DP](./frame/DP/)-展示
+- [RIADD](https://xtj2020.top/frame/DP/RIADD.html)-RIADD比赛的展示 [edit](./frame/DP/RIADD.md)
+
+
+- [theoryGuide](https://xtj2020.top/frame/theoryGuide.html)-机器学习理论导引
+- [convexOptimize](https://xtj2020.top/frame/convexOptimize.html)-机器学习理论导引
+- [ForeGround](https://xtj2020.top/frame/ForeGround.html)- 人工智能与数据分析前景 [edit](./frame/ForeGround.md)
 
 
 # 辅助工具

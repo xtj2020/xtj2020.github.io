@@ -108,6 +108,7 @@ c  3.0    3
 d  NaN    4
 ```
 
+
 ## Series 操作
 
 pd.Series(数据，索引)
@@ -115,7 +116,6 @@ pd.Series(数据，索引)
 https://www.jianshu.com/p/0ea5f5041f3f
 
 Series类型由一组数据及与之相关的数据索引组成
-
 
 ```python
 pd.Series([2,3,4,5,6])
@@ -157,6 +157,9 @@ dfname._stat_axis.values.tolist() # 行名称
 dfname.columns.values.tolist()    # 列名称
 
 df[i].value_counts()
+
+# 获取index，需要将其转为list
+list(df.index)
 ```
 
 
@@ -225,7 +228,8 @@ df[(df.A==100)|(df.B=='b')]
 ### 排序
 
 按索引排序
-df.sort_index(axis=1)
+df.sort_index(axis=1,ascending=True,inplace=True)
+ascending为升序排序，inplace是修改数据
 
 按值排序，输入是一个列表
 unsorted_df.sort_values(by='col1')

@@ -50,3 +50,44 @@ store = pd.HDFStore('demo.h5')
 '''查看store类型'''
 print(store)
 ```
+
+**数据的写入：**
+　第一种方式利用键值对将不同的数据存入store对象中，这里为了代码简洁使用了元组赋值法：
+```python
+store['s'],store['df'] = s,df
+```
+　　第二种方式利用store对象的put()方法，其主要参数如下：
+
+　　key：指定h5文件中待写入数据的key
+
+　　value：指定与key对应的待写入的数据
+
+　　format：字符型输入，用于指定写出的模式，'fixed'对应的模式速度快，但是不支持追加也不支持检索；'table'对应的模式以表格的模式写出，速度稍慢，但是支持直接通过store对象进行追加和表格查询操作
+
+　　使用put()方法将数据存入store对象中：
+
+ 
+```python
+store.put(key='s',value=s);store.put(key='df',value=df)
+```
+**查看属性：**
+store.items store对象只有items和keys属性，没有values属性
+store['df'] 调用store对象中的数据直接用对应的键名来索引即可
+
+**删除：**
+一、是使用remove()方法，传入要删除数据对应的键：
+```python
+store.remove('s')
+print(store.keys())
+```
+二、是使用Python中的关键词del来删除指定数据：
+```python
+del store['s']
+print(store.keys())
+```
+**持久化到本地:**
+```python
+store.close()
+##　查看store连接状况，False则代表已关闭
+store.is_open
+```

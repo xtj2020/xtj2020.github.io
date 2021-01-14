@@ -1,7 +1,6 @@
-# 使用p
+# 使用pickle
 
 ```python
-
 import pickle
 
 with open('staytim_li.pkl', 'wb') as f:
@@ -9,7 +8,4 @@ with open('staytim_li.pkl', 'wb') as f:
         
 pkl_file = open('staytim_li.pkl', 'rb')
 data1 = pickle.load(pkl_file)
-
-
-
 ```

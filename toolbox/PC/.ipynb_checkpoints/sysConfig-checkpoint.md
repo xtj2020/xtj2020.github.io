@@ -47,6 +47,8 @@ pip install gpustat \
 watch --color -n1 gpustat -cpu 
 
 # GPU知识
+<https://blog.csdn.net/TTdreamloong/article/details/84886621>
+<https://zhuanlan.zhihu.com/p/31558973>
 
 计算单位flop：浮点数先乘后加算一个flop
 

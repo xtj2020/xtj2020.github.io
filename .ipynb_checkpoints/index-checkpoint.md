@@ -36,7 +36,7 @@
 
 ## [PT](./toolbox/PT)-pytorch
 
-- [pytorchAPI](https://xtj2020.top/toolbox/PT/pytorchAPI.html)-pytorch API [edit](./toolbox/PT/pytorchAPI.md)
+- [pytorchAPI](https://xtj2020.top/toolbox/PT/pytorchAPI.html)-pytorch API [edit](./toolbox/PT/pytorchAPI.md) 
 - [framePytorch](https://xtj2020.top/toolbox/PT/framePytorch.html)-pytoch框架 [edit](./toolbox/PT/framePytorch.html)
 
 
@@ -54,7 +54,7 @@
 ## [PC](./toolbox/PC)-脚本\linux\爬虫
 
 - [FrameSpider](https://xtj2020.top/toolbox/PC/FrameSpider.html)-爬虫框架 [edit](./toolbox/PC/FrameSpider.md)
-- [sysConfig](https://xtj2020.top/toolbox/PC/sysConfig.html)-系统配置
+- [sysConfig](https://xtj2020.top/toolbox/PC/sysConfig.html)-系统配置 [edit](./toolbox/PC/sysConfig.md)
 - [Json](https://xtj2020.top/toolbox/PC/Json.html)-Json文件格式
  [edit](./toolbox/PC/Json.md)
 - [GitHub](https://xtj2020.top/toolbox/PC/GitHub.html)-GitHub的使用 [edit](./toolbox/PC/GitHub.md)

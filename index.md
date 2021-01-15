@@ -63,7 +63,7 @@
 
 
 
-# 积累([stone](./stone/))
+# 积累([stone](./stone/)
 
 ## [WT](./stone/WT)-文档与操作备份
 

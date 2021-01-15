@@ -43,3 +43,19 @@ https://developer.nvidia.com/rdp/cudnn-archive
 在github上建立一个CNAME的文件，写入域名，不带http://,并上传至文件夹。
 
 # gpustat动态监控gpu
+pip install gpustat \
+watch --color -n1 gpustat -cpu 
+
+# GPU知识
+
+计算单位flop：浮点数先乘后加算一个flop
+
+1Byte = 8 bit
+1Word = 2 Byte
+1K = 1024 Byte
+1M = 1024 K
+1G = 1024 M
+1T = 1024 G
+
+10 K = 10*1024 Byte
+

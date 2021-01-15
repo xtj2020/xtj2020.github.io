@@ -252,7 +252,6 @@ Widodo Budihartoa, Edi Abdurachmana
 - 对于某些疾病单独拎出来进行判断与训练，如血管瘤。
 
 ![image.png](./RIADD.assets/多重患病比例.png)
-![image-2.png](./RIADD.assets/各种疾病患病人数.png
-)
+![image-2.png](./RIADD.assets/各种疾病患病人数.png)
 
 ## 眼部瘤的识别

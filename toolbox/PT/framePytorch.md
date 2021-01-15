@@ -200,3 +200,13 @@ load时，torch.load可以规定一个map_loaction=torch.device('cpu') 就可以
 
 # 数据类型
 
+- 32-bit floating,	torch.float32 or torch.float	torch.FloatTensor	torch.cuda.FloatTensor	4
+- 64-bit floating,	torch.float64 or torch.double	torch.DoubleTensor	torch.cuda.DoubleTensor	8
+- 16-bit floating,	torch.float16or torch.half	torch.HalfTensor	torch.cuda.HalfTensor	-
+- 8-bit integer, (unsigned)	torch.uint8	torch.ByteTensor	torch.cuda.ByteTensor	1
+- 8-bit integer, (signed)	torch.int8	torch.CharTensor	torch.cuda.CharTensor	-
+- 16-bit integer (signed),	torch.int16or torch.short	torch.ShortTensor	torch.cuda.ShortTensor	2
+- 32-bit integer (signed),	torch.int32 or torch.int	torch.IntTensor	torch.cuda.IntTensor	4
+- 64-bit integer (signed),	torch.int64 or torch.long	torch.LongTensor	torch.cuda.LongTensor	8
+
+

@@ -284,3 +284,6 @@ Widodo Budihartoa, Edi Abdurachmana
 **问题反思：**
 
 - 训练集过拟合了
+
+# 下一步工作
+换DenseNet

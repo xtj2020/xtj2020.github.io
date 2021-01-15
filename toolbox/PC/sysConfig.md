@@ -60,4 +60,3 @@ watch --color -n1 gpustat -cpu
 1T = 1024 G
 
 10 K = 10*1024 Byte
-

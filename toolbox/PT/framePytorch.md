@@ -200,3 +200,7 @@ load时，torch.load可以规定一个map_loaction=torch.device('cpu') 就可以
 
 # 数据类型
 ![img](./framePytorch.assets/datatype.jpg)
+
+# 混合精度
+
+<https://zhuanlan.zhihu.com/p/79887894>

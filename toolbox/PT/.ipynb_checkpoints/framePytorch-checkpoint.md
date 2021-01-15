@@ -197,3 +197,7 @@ load时，torch.load可以规定一个map_loaction=torch.device('cpu') 就可以
 ## 对某一层进行初始化
 
 ## 对网络整体进行初始化
+
+# 数据类型
+
+

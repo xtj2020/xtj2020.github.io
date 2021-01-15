@@ -253,7 +253,7 @@ Widodo Budihartoa, Edi Abdurachmana
 - 对于某些疾病单独拎出来进行判断与训练，如血管瘤。
 
 ![image.png](./RIADD.assets/多重患病比例.png)
-![image-2.png](./RIADD.assets/各种疾病患病人数.png
+各种疾病患病人数.png
 )
 
 ## 眼部瘤的识别
@@ -263,7 +263,8 @@ Widodo Budihartoa, Edi Abdurachmana
 
 **实验思路：**
 1. 对数据进行统计分析，筛选出排名靠前的疾病
-疾病样本排序.png
+![image-2.png](./RIADD.assets/疾病样本排序.png)
 
+2.由于MH（媒体模糊）317例中患病为137例，正负样本接近1:1,故对其舍弃。意义：可以作为干扰项出现，可以做单独的分类，也可以尝试提取特征。
 
-对每张图片分割为16份，将其存入
+3.使用对每张图片分割为16份，将其存入pkl文件

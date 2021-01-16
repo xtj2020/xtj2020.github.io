@@ -61,3 +61,26 @@ watch --color -n1 gpustat -cpu
 
 10 K = 10*1024 Byte
 
+# wget
+
+<https://blog.csdn.net/tylai520/article/details/17168673>
+
+wget -r -p -np -k -P ~/tmp/ http://java-er.com
+
+```python
+解释一下参数
+
+-P 表示下载到哪个目录
+-r 表示递归下载
+-np 表示不下载旁站连接.
+-k 表示将下载的网页里的链接修改为本地链接.
+-p 获得所有显示网页所需的元素
+
+额外的
+-c 断点续传
+-nd 递归下载时不创建一层一层的目录，把所有的文件下载到当前目录
+-L 递归时不进入其它主机，如wget -c -r www.xxx.org/
+-A 指定要下载的文件样式列表，多个样式用逗号分隔
+-i 后面跟一个文件，文件内指明要下载的URL
+
+```

@@ -113,8 +113,8 @@ CNN学习的功能通过合并手工制作的功能得到增强。
 <https://github.com/adgaudio/ietk-ret>
 
 -----
-文件名：2001.01815v1.pdf 
-标题：Regression and Learning with Pixel-wise Attention for Retinal Fundus Glaucoma Segmentation and Detection 
+文件名：2001.01815v1.pdf \
+标题：Regression and Learning with Pixel-wise Attention for Retinal Fundus Glaucoma Segmentation and Detection \
 主要工作：眼科医生观察视网膜眼底图像是青光眼的主要诊断方法。
 然而，仅通过手动观察仍难以区分病变特征，尤其是在青光眼早期。
 在本文中，我们提出了两种基于深度学习的自动算法，用于青光眼的检测以及视盘和杯的分割。
@@ -150,8 +150,8 @@ using Position encoded CNNs
 ### 无源代码论文
 -----
 
-文件名:du2020 
-标题：Computer Methods and Programs in Biomedicine 
+文件名:du2020  \
+标题：Computer Methods and Programs in Biomedicine \
 主要工作：自动检测眼底图像中的视网膜微动脉瘤（MA）
 
 
@@ -163,21 +163,20 @@ using Position encoded CNNs
 
 ------
 
-文件名：1808.03656.pdf
-标题：Detection of Hard Exudates in Retinal Fundus 
-作者：Avula Benzamin, Chandan Chakraborty 
+文件名：1808.03656.pdf \
+标题：Detection of Hard Exudates in Retinal Fundus \
+作者：Avula Benzamin, Chandan Chakraborty \
 Images Using Deep Learning
 主要工作：检测硬质渗透液来判断是否有DR
 
 
 -----
 
-文件名：eadgahi2012.pdf 
-标题：Localization of Hard Exudates in Retinal Fundus Image by 
+文件名：eadgahi2012.pdf \
+标题：Localization of Hard Exudates in Retinal Fundus Image by \
 Mathematical Morphology Operations 
-作者：Mehdi ghafourian fakhar eadgahi，Hamidreza pourreza 
+作者：Mehdi ghafourian fakhar eadgahi，Hamidreza pourreza \
 主要工作：
-
 - 本文提出了一种基于形态学的视网膜彩色图像中硬质渗出物的分割方法。在所提出的方法中，对视网膜图像进行预处理，并首先识别视盘和血管，然后从图像中消除它们。 
 
 工作基础：
@@ -190,10 +189,10 @@ Mathematical Morphology Operations
 - 可以用传统方法实现血管、视盘的移除并分割出硬性渗出液
 
 -----
-文件名：10.1016@B978-0-12-817440-1.00002-4.pdf 
+文件名：10.1016@B978-0-12-817440-1.00002-4.pdf \
 标题：Deep learning approach for
 classification of eye diseases
-based on color fundus images 
+based on color fundus images \
 作者：Bambang Krismono Triwijoyoa,b, Boy Subirosa Sabargunaa,
 Widodo Budihartoa, Edi Abdurachmana 
 
@@ -210,11 +209,10 @@ Widodo Budihartoa, Edi Abdurachmana
 - Mohamed [20]使用先进的饲料神经网络进行了用于诊断的糖尿病性视网膜病变智能自动检测系统。
 
 ------
-文件名：F9905038620.pdf 
-标题：Identification of Diabetic Retinopathy from Color Fundus Images using Deep Convolutional Neural Network 
-作者：Bansode Balhim Narhari, Bakwad K.M., Ajij Dildar Sayyad 
+文件名：F9905038620.pdf \
+标题：Identification of Diabetic Retinopathy from Color Fundus Images using Deep Convolutional Neural Network \
+作者：Bansode Balhim Narhari, Bakwad K.M., Ajij Dildar Sayyad \
 主要工作：
-
 - 提供了一种基于预先检查的完全卷积神经网络（CNN）并通过转移学习完成的创新技术。
 最后，利用支持向量机分类器，从最近的深度CNN模型中有效学习。
 同时，额外的视网膜图像预处理技术被应用以获得更好的分类结果。
@@ -244,8 +242,9 @@ Widodo Budihartoa, Edi Abdurachmana
 ## 如何训练
 
 - 直接用神经网络进行训练并分类。进行多分类或者二分类，需要确定筛选出哪些疾病
-  这些疾病要有比较差异性的特征方便网络进行训练；并且这些疾病相关性不能太大
-- 使用kaggle代码
+这些疾病要有比较差异性的特征方便网络进行训练；并且这些疾病相关性不能太大
+
+    - 使用kaggle代码
 
 
 - 不同疾病间有相同的特征的，先提取特征（传统数学方法、影像组学、机器学习、神经网络），然后进行特征融合。最后进行分类（可以使用机器学习或者神经网络方法）。
@@ -253,37 +252,6 @@ Widodo Budihartoa, Edi Abdurachmana
 - 对于某些疾病单独拎出来进行判断与训练，如血管瘤。
 
 ![image.png](./RIADD.assets/多重患病比例.png)
-各种疾病患病人数.png
-)
+![image-2.png](./RIADD.assets/各种疾病患病人数.png)
 
 ## 眼部瘤的识别
-
-
-# 实验记录
-
-**实验思路：**
-
-1、 对数据进行统计分析，筛选出排名靠前的疾病
-![image-2.png](./RIADD.assets/疾病样本排序.png)
-
-2、由于MH（媒体模糊）317例中患病为137例，正负样本接近1:1,故对其舍弃。意义：可以作为干扰项出现，可以做单独的分类，也可以尝试提取特征。
-
-除MH外的前六种疾病为\['DR',  'ODC', 'TSLN', 'DN', 'MYA', 'ARMD'\]
-
-3、使用"(1424, 2144, 3)","(1536, 2048, 3)"两种像素的图片，(2848, 4288, 3)有缺失，舍弃。
-
-4、划分验证集合训练集，分别对不同集合中每张图片分割为16份，最终得14848张训练集图片，将其存入pkl文件
-
-
-**以图像增强方式作为样本进行ResNet训练：**
-
-将图像分割作为数据增强的一种方式，将分割后的图片作为一个新样本输入到网络中。训练效果差,训练集快速达到饱和，而验证集准确度不断降低。
-
-![img](./RIADD.assets/ResNet_loss&acc.png)
-
-**问题反思：**
-
-- 训练集过拟合了
-
-# 下一步工作
-换DenseNet

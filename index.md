@@ -65,6 +65,11 @@
 
 # 积累([stone](./stone/)）
 
+
+## []-医学图像处理
+- 影像组学
+
+
 ## [WT](./stone/WT)-文档与操作备份
 
 - [rl](https://xtj2020.top/stone/WT/rl.html)-LATEX规则（不含公式，公式见anki）

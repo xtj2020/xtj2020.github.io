@@ -5,6 +5,7 @@
 | Positive | TP |  FP |
 | Negtive  | FN |  TN |
 
+分类正确的有两类：TP,FP
 
 # ROC曲线
 
@@ -13,4 +14,5 @@
 <https://zhuanlan.zhihu.com/p/26293316> \
 <https://zhuanlan.zhihu.com/p/25982866>
 
+# mPA
 

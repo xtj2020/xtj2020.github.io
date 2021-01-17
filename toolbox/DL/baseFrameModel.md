@@ -128,62 +128,6 @@ dst = Dataset()
 ```
 
 
-### 数据方法
-
-数据的自身属性
-
-```python
-def __init__(self, train=True):
-        # 图片预处理
-        # Compose用于将多个transfrom组合起来
-        # ToTensor()将像素从[0, 255]转换为[0, 1.0]
-        # Normalize()用均值和标准差对图像标准化处理 x'=(x-mean)/std，加速收敛
-        self.transform = transforms.Compose([transforms.Resize((64, 64)),
-                                             transforms.ToTensor(),
-                                             transforms.Normalize(conf.mean, conf.std)])
-        self.train = train
-        # 加载训练数据集和验证数据集
-        if train:
-            # 这里使用通用的ImageFolder和DataLoader数据加载器，ImageFolder是读取文件夹下面的所有图片并与标签构成字典，data_images = {'train': xxx, 'valid': xxx}，DataLoader是按批打乱，是生成一批数据。
-            self.data_images = {x: datasets.ImageFolder(root=os.path.join(conf.root_dataset, x),
-                                                        transform=self.transform)
-                                for x in ['trainData', 'validData']}
-            self.data_images_loader = {x: torch.utils.data.DataLoader(dataset=self.data_images[x],
-                                                                      batch_size=conf.batch_size,
-                                                                      shuffle=True)
-                                       for x in ['trainData', 'validData']}
-            # 图片分类
-            self.classes = self.data_images['trainData'].classes
-            # 图片分类键值对 
-            self.classes_index = self.data_images['trainData'].class_to_idx
-
-        # 加载测试数据集
-        else:
-            images = [os.path.join(conf.test_dataset, img) for img in os.listdir(conf.test_dataset)]
-            self.images = sorted(images, key=lambda x: int(x.split('.')[-2].split('/')[0]))
-```
-
-
-获取项目的方法
-
-```python
-   def __getitem__(self, index):
-        img_path = self.images[index]
-        label = int(self.images[index].split('.')[-2].split('/')[-1])
-        data_images_test = Image.open(img_path)
-        data_images_test = self.transform(data_images_test)
-        return data_images_test, label
-```
-
-
-获取数目的方法
-
-```
-    def __len__(self):
-        return len(self.images)
-```
-
-
 ## 数据集的划分（移动到相应文件夹方法）
 
 ### 用csv文件作为标签读取，添加一列pd存储该行数据的情况

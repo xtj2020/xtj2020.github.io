@@ -7,6 +7,10 @@
 
 分类正确的有两类：TP,FP
 
+准确度
+
+acc精确度
+
 # ROC曲线
 
 受试者工作特征曲线 （receiver operating characteristic curve，简称ROC曲线），又称为感受性曲线（sensitivity curve）。
@@ -19,6 +23,12 @@ ROC曲线上的点，表示不同阈值时对应的FPR和TPR。阈值指预测�
 ><https://zhuanlan.zhihu.com/p/25982866>
 
 AUC = Area Under Curve
+
+
+## 绘制ROC曲线
+
+
+
 
 # mPA
 

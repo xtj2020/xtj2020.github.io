@@ -24,6 +24,7 @@
 - 绘制ROC、计算AUX、计算mPA、绘制中间特征
 > <https://shawnzhang31.com/opencv-learning/bundle3/Week8/EvaluationMetrics/wk8_mean_average_precision.html>
 
+处理多标签、多类别:<https://blog.csdn.net/qq_27009517/article/details/80264919>
 
 
 
@@ -45,4 +46,3 @@
 - 不同疾病间有相同的特征的，先提取特征（传统数学方法、影像组学、机器学习、神经网络），然后进行特征融合。最后进行分类（可以使用机器学习或者神经网络方法）。
 
 - 对于某些疾病单独拎出来进行判断与训练，如血管瘤。
-

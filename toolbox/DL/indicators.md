@@ -36,4 +36,4 @@ AUC = Area Under Curve
 
 在多个类别的检测中，算出召回率从0到1时的准确率（同一召回率取最高的准确率），计算准确率的平均值。然后对所有类别求平均就可以得到mAP了。
 
-![img](../indicators.assets/mPA.png)
+![mPA](indicators.assets/mPA.png)

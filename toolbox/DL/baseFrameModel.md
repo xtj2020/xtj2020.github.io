@@ -1,7 +1,8 @@
 # 主要流程
+- 数据的统计分析
+- 构建数据集：训练集、验证集、测试集 
+- 数据集的输入方式 
 
-1、构建数据集：训练集、验证集、测试集
-2、shu'ju'ji
 
 
 # 评价指标
@@ -349,6 +350,17 @@ $\phi$为激活函数
 ## 神经网络
 
 # 线性回归
+
+# Dataset
+
+对迭代器的验证
+
+```python
+for step in range(20000):
+    for idx, (img, label) in enumerate(train_loader):
+    print(img.shape)
+    print(label.shape)
+```            
 
 ## 数据
 

@@ -31,6 +31,7 @@
 - [ModelRNN](https://xtj2020.top/toolbox/DL/ModelRNN.html)-RNN模型
 - [PlotNeuralNet](https://xtj2020.top/toolbox/DL/PlotNeuralNet.html)-绘制网络图
 - [grad](https://xtj2020.top/toolbox/DL/PlotNeuralNet.html)-梯度下降
+- [ResNet](https://xtj2020.top/toolbox/DL/ResNet.html)-对于DesNet网络的彻底了解 [edit](./toolbox/DL/ResNet.md)
 - [DenseNet](https://xtj2020.top/toolbox/DL/DenseNet.html)-对于DesNet网络的彻底了解 [edit](./toolbox/DL/DenseNet.md)
 - [DataLoader](https://xtj2020.top/toolbox/DL/DataLoader.html)- 数据加载器的理解与使用 [edit](./toolbox/DL/DataLoader.md)
 
@@ -63,7 +64,12 @@
 
 
 
-# 积累([stone](./stone/)）
+# 积累([stone](./stone/))
+
+
+## [IC](./stone/IC)-医学图像处理
+- [Radiomics](https://xtj2020.top/stone/IC/Radiomics.html)影像组学
+ [edit](./stone/IC/Radiomics.md)
 
 ## [WT](./stone/WT)-文档与操作备份
 

@@ -64,12 +64,12 @@
 
 
 
-# 积累([stone](./stone/)）
+# 积累([stone](./stone/))
 
 
-## []-医学图像处理
-- [Radiomics]影像组学
-
+## [IC](./stone/IC)-医学图像处理
+- [Radiomics](https://xtj2020.top/stone/IC/Radiomics.html)影像组学
+ [edit](./stone/IC/Radiomics.md)
 
 ## [WT](./stone/WT)-文档与操作备份
 

@@ -96,7 +96,7 @@
 
 ## [DP](./frame/DP/)-展示
 - [RIADD](https://xtj2020.top/frame/DP/RIADD_document.html)-RIADD相关文献 [edit](./frame/DP/RIADD_document.md)
-- [RIADD](https://xtj2020.top/frame/DP/RIADD_experiment.html)-RIADD相关文献 [edit](./frame/DP/RIADD_experiment.md)
+- [RIADD](https://xtj2020.top/frame/DP/RIADD_experiment.html)-RIADD实验 [edit](./frame/DP/RIADD_experiment.md)
 
 
 - [theoryGuide](https://xtj2020.top/frame/theoryGuide.html)-机器学习理论导引

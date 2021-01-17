@@ -1,5 +1,13 @@
 # 统计数据分析
 
+![image.png](RIADD_experiment.assets/多重患病比例.png)
+
+
+
+![image.png](RIADD_experiment.assets/疾病样本排序.png)
+
+![image.png](RIADD_experiment.assets/ResNet_loss&acc.png)
+
 ## 视杯、视盘的分割
 
 

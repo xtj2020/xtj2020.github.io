@@ -5,13 +5,6 @@
 
 
 
-# 评价指标
-- 混淆矩阵
-| 预测值\真实值 |  Positive  | Negtive  |
-|  ----  | ----  | ----  |
-| Positive | TP |  FP |
-| Negtive  | FN |  TN |
-
 
 
 # 优化器

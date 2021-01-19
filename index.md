@@ -91,7 +91,6 @@
 
 ## [ML](./stone/ML)-机器学习知识
 - [EnsembleLearning](https://xtj2020.top/stone/ML/EnsembleLearning.html)-集成学习 [edit](./stone/ML/EnsembleLearning.md)
-- [MutiLabels](https://xtj2020.top/stone/ML/MutiLabels.html)-多标签训练 [edit](./stone/ML/MutiLabels.md)
 
 # 框架([frame](./frame/))
 

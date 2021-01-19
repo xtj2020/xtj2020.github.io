@@ -10,12 +10,10 @@
 [edit](./toolbox/DA/Learnscipy.md)
 
 - [LoadReadData](https://xtj2020.top/toolbox/DA/LoadReadData.html)-数据加载、存储
-  目录、路径操作、文件操作、文件读写
+  目录文件操作 [edit](./toolbox/DA/LoadReadData.md)
 - [researchData](https://xtj2020.top/toolbox/DA/researchData.html)-探索性数据分析 [edit](./toolbox/DA/researchData.md)
   
 - [PreproccessData](https://xtj2020.top/toolbox/DA/PreproccessData.html)-数据预处理 [edit](./toolbox/DA/PreproccessData.md)
-
-  对数据进行样本与标签的组合，并进行打乱（map）
 
 - [LoadPicData](https://xtj2020.top/toolbox/DA/LoadPicData.html)-对于图片的展示 [edit](./toolbox/DA/LoadPicData.md)
 
@@ -75,7 +73,7 @@
 ## [WT](./stone/WT)-文档与操作备份
 
 - [rl](https://xtj2020.top/stone/WT/rl.html)-LATEX规则（不含公式，公式见anki）
-- [UseLaTex](https://xtj2020.top/xtj2020.github.io/WT/UseLaTex.md)-LaTex的应用  [edit](../xtj2020.github.io/UseLaTex.md)
+- [UseLaTex](https://xtj2020.top/xtj2020.github.io/WT/UseLaTex.html)-LaTex的应用  [edit](../xtj2020.github.io/UseLaTex.md)
 - [md](https://xtj2020.top/stone/WT/md.html)-mermaid
 - [sb](https://xtj2020.top/stone/WT/sb.html)-seaborn绘图 [edit](./stone/WT/sb.md)
 - [pt](https://xtj2020.top/stone/WT/pt.html)-matplotlib.plot
@@ -100,14 +98,7 @@
 - [RIADD](https://xtj2020.top/frame/DP/RIADD_experiment.html)-RIADD实验 [edit](./frame/DP/RIADD_experiment.md)
 
 
+## [MA](./frame/MA/)-分析
 - [theoryGuide](https://xtj2020.top/frame/theoryGuide.html)-机器学习理论导引
 - [convexOptimize](https://xtj2020.top/frame/convexOptimize.html)-机器学习理论导引
 - [ForeGround](https://xtj2020.top/frame/ForeGround.html)- 人工智能与数据分析前景 [edit](./frame/ForeGround.md)
-
-
-
-- 使用js\nbview [js](./引用js.txt)
-
-
-
-

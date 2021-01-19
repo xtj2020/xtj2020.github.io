@@ -7,11 +7,7 @@ body#wholeDocument {
     -webkit-text-size-adjust:none; 
     font-family: Helvetica, sans-serif; 
     font-size: 12px;
-font-family: "Georgia", sans-serif; 
-    font-size: 13px;
-    line-height: 1.32;
-    background-color: rgb(254,255,255);
-    
+
 }
 /* height hack to make nested divs set to 100% height work in Chrome and Firefox */
 table.whole-row, table.whole-note, table#column-header {
@@ -316,7 +312,7 @@ tr.note-row td.note-bg {
 
 }
 table.whole-row, table.whole-note, table#column-header, div.temp-wrapper {
-width: 1130px;
+width: 641px;
 
 }
 /******************
@@ -334,12 +330,42 @@ tr#header td:nth-of-type(1), tr.outline-row > td:nth-of-type(1), tr.note-row > t
     max-width: 20px; 
 }
 table.outline-column { 
-    width: 1110px; 
-    max-width: 1110px; 
+    width: 144px; 
+    max-width: 144px; 
 }
 tr#header td:nth-of-type(2), tr.outline-row > td:nth-of-type(2) { 
-    width: 1110px; 
-    max-width: 1110px; 
+    width: 144px; 
+    max-width: 144px; 
+    
+}
+tr#header td:nth-of-type(3), tr.outline-row > td:nth-of-type(3), tr.note-row > td:nth-of-type(3) { 
+    width: 70px; 
+    max-width: 70px; 
+    
+}
+tr#header td:nth-of-type(4), tr.outline-row > td:nth-of-type(4), tr.note-row > td:nth-of-type(4) { 
+    width: 72px; 
+    max-width: 72px; 
+    
+}
+tr#header td:nth-of-type(5), tr.outline-row > td:nth-of-type(5), tr.note-row > td:nth-of-type(5) { 
+    width: 91px; 
+    max-width: 91px; 
+    
+}
+tr#header td:nth-of-type(6), tr.outline-row > td:nth-of-type(6), tr.note-row > td:nth-of-type(6) { 
+    width: 81px; 
+    max-width: 81px; 
+    
+}
+tr#header td:nth-of-type(7), tr.outline-row > td:nth-of-type(7), tr.note-row > td:nth-of-type(7) { 
+    width: 82px; 
+    max-width: 82px; 
+    
+}
+tr#header td:nth-of-type(8), tr.outline-row > td:nth-of-type(8), tr.note-row > td:nth-of-type(8) { 
+    width: 81px; 
+    max-width: 81px; 
     
 }
 
@@ -348,6 +374,24 @@ tr.outline-row > td:nth-of-type(1), tr.note-row > td:nth-of-type(1){
     
 }
 tr.outline-row > td:nth-of-type(2) { 
+    
+}
+tr.outline-row > td:nth-of-type(3), tr.note-row > td:nth-of-type(3){ 
+    
+}
+tr.outline-row > td:nth-of-type(4), tr.note-row > td:nth-of-type(4){ 
+    
+}
+tr.outline-row > td:nth-of-type(5), tr.note-row > td:nth-of-type(5){ 
+    
+}
+tr.outline-row > td:nth-of-type(6), tr.note-row > td:nth-of-type(6){ 
+    
+}
+tr.outline-row > td:nth-of-type(7), tr.note-row > td:nth-of-type(7){ 
+    
+}
+tr.outline-row > td:nth-of-type(8), tr.note-row > td:nth-of-type(8){ 
     
 }
 

@@ -75,6 +75,7 @@
 ## [WT](./stone/WT)-文档与操作备份
 
 - [rl](https://xtj2020.top/stone/WT/rl.html)-LATEX规则（不含公式，公式见anki）
+- [常用的Latex公式](https://xtj2020.top/xtj2020.github.io/UseLaTex.md)  [edit](../xtj2020.github.io/UseLaTex.md)
 - [md](https://xtj2020.top/stone/WT/md.html)-mermaid
 - [sb](https://xtj2020.top/stone/WT/sb.html)-seaborn绘图 [edit](./stone/WT/sb.md)
 - [pt](https://xtj2020.top/stone/WT/pt.html)-matplotlib.plot
@@ -109,4 +110,4 @@
 - [编程工具](./Forindex.ipynb)
 - [返回首页](../)
 - [更新记录](../cron.txt)
-- [常用的Latex公式](https://xtj2020.top/xtj2020.github.io/UseLaTex.md)  [edit](../xtj2020.github.io/UseLaTex.md)
+

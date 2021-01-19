@@ -68,14 +68,21 @@ ARMD	0	9	31	4	24	100
 ```
 将小于20的数据删除掉
 ```python
-	DR	ODC	TSLN	DN	MYA	ARMD
-DR	376	30	32	0	0	0
-ODC	30	282	48	0	23	0
-TSLN	32	48	186	0	0	31
-DN	0	0	0	138	0	0
-MYA	0	23	0	0	101	24
-ARMD	0	0	31	0	24	100
+	 DR	 ODC  TSLN DN	MYA	ARMD
+DR	 376 30	  32   0	 0	0
+ODC	 30	 282  48	0	 23	 0
+TSLN 32	 48	  186  0	 0	31
+DN	 0	 0	  0	   138  0  0
+MYA	 0	 23	  0	   0	101 24
+ARMD 0	 0	  31	0	 24	 100
 ```
+
+DR糖尿病眼底
+ODC 视盘凹陷
+TSLN 镶嵌
+ARMD 年龄相关性黄斑变性
+DN 玻璃膜疣
+MYA 高度近视
 
 
 

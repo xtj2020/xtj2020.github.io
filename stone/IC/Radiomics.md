@@ -80,5 +80,24 @@
 3）指定一个设置文件来控制预处理、图像变换的滤波器和特征类
 4）指定voxel-based基于体素的特定设置，只有在使用PyRadiomics 进行体素提取生成特征图时才需要
 
-理论部分:<https://cloud.tencent.com/developer/article/1660808> \
-使用部分:<https://cloud.tencent.com/developer/article/1662581>
+# 理论部分
+
+>理论部分:<https://cloud.tencent.com/developer/article/1660808>
+
+可以使用的图像类型：
+1）Original：原始图像
+派生图像：
+2）Wavelet：小波滤波
+3）LoG：高斯滤波器的拉普拉斯算子，是一种边缘增强滤波器，强调的是灰度变化的区域，sigma参数定义要强调的纹理粗糙度，该值较低则强调较细的纹理，该值较高则强调较粗糙的纹理。
+4）Square：平方，即获取图像强度值的平方
+5）SquareRoot：平方根，即获取图像强度值的平方根
+6）Logarithm：对数，获取图像绝对强度+1的对数
+7）Exponential：指数，获取图像强度值的指数
+8）Gradient：梯度，获取图像局部梯度的大小
+9）LocalBinaryPattern2D：本地二进制模型（2D）
+10）LocalBinaryPattern3D：本地二进制模型（3D）
+
+
+
+# 使用部分
+>使用部分:<https://cloud.tencent.com/developer/article/1662581>

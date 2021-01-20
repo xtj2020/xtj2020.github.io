@@ -69,6 +69,7 @@
 ## [IC](./stone/IC)-医学图像处理
 - [Radiomics](https://xtj2020.top/stone/IC/Radiomics.html)影像组学
  [edit](./stone/IC/Radiomics.md)
+- [traditionalDeal](https://xtj2020.top/stone/IC/traditionalDeal.html)传统处理方法[edit](./stone/IC/traditionalDeal.md)
 
 ## [WT](./stone/WT)-文档与操作备份
 

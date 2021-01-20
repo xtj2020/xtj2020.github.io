@@ -77,6 +77,7 @@
 - [md](https://xtj2020.top/stone/WT/md.html)-mermaid
 - [sb](https://xtj2020.top/stone/WT/sb.html)-seaborn绘图 [edit](./stone/WT/sb.md)
 - [pt](https://xtj2020.top/stone/WT/pt.html)-matplotlib.plot
+- [enword](https://xtj2020.top/stone/WT/enword.html)-英语单词 [edit](./stone/WT/enword.md)
 
 ## [CO](./stone/CO)-凸优化更加具体的内容
 

@@ -106,4 +106,13 @@
 - [ForeGround](https://xtj2020.top/frame/ForeGround.html)- 人工智能与数据分析前景 [edit](./frame/ForeGround.md)
 
 # 经济([economics](./economics/))
-## [KJ]
+
+## [KJ](./economics/KJ/)-会计
+
+## [SJ](./economics/SJ/)-审计
+
+## [SF](./economics/SF/)-税法
+
+## [JF](./economics/JF/)-经济法
+
+## [ZL](./economics/ZL/)-战略

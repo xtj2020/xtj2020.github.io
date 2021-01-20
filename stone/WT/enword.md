@@ -1,1 +1,1 @@
-proposal 建议、方案 | anchor 锚固、锚点
+proposal 建议、方案 &emsp; anchor 锚固、锚点

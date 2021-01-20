@@ -74,7 +74,7 @@
 
 - [rl](https://xtj2020.top/stone/WT/rl.html)-LATEX规则（不含公式，公式见anki）
 - [UseLaTex](https://xtj2020.top/xtj2020.github.io/WT/UseLaTex.html)-LaTex的应用  [edit](../xtj2020.github.io/UseLaTex.md)
-- [md](https://xtj2020.top/stone/WT/md.html)-mermaid
+- [md](https://xtj2020.top/stone/WT/md.html)-markdown语法 [edit](./stone/WT/md.md)
 - [sb](https://xtj2020.top/stone/WT/sb.html)-seaborn绘图 [edit](./stone/WT/sb.md)
 - [pt](https://xtj2020.top/stone/WT/pt.html)-matplotlib.plot
 - [enword](https://xtj2020.top/stone/WT/enword.html)-英语单词 [edit](./stone/WT/enword.md)

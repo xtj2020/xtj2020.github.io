@@ -143,3 +143,39 @@ tmp=np.linalg.multi_dot([t1,t2,t3])
 print("tmp:{}".format(tmp))
 out=demo.apply(img,tmp)
 ```
+
+```{.python .input}
+# 展示一个批的数据
+
+"""
+读取的一个批的图片，数量取决于batch_size
+"""
+import torchvision
+import cv2
+imgs, labels = iter(dst.data_images_loader['train']).next() 
+# 制作雪碧图
+# 类型为tensor，维度为[channel, height, width]
+img = torchvision.utils.make_grid(imgs)
+# 转换为数组并调整维度为[height, width, channel]
+img = img.numpy().transpose([1, 2, 0])
+# 通过反向推导标准差交换法计算图片原来的像素值
+mean, std = conf.mean, conf.std
+img = img * std + mean
+# 打印图片标签
+print([dst.classes[i] for i in labels])
+# 显示图片
+# cv2.imshow('img', img)
+# # 等待图片关闭
+# cv2.waitKey(0)
+
+import matplotlib.pyplot as plt # plt 用于显示图片
+import matplotlib.image as mpimg # mpimg 用于读取图片
+import numpy as np
+
+# 此时 lena 就已经是一个 np.array 了，可以对它进行任意处理
+# cat = mpimg.imread(img)
+# print(cat.shape) 
+plt.imshow(img) # 显示图片
+plt.axis('off') # 不显示坐标轴
+plt.show()
+```

@@ -23,7 +23,6 @@
 - [ModelCNN](https://xtj2020.top/toolbox/DL/ModelCNN.html)-对于基本CNN的调整
 - [ModelRNN](https://xtj2020.top/toolbox/DL/ModelRNN.html)-RNN模型
 
-
 - [ResNet](https://xtj2020.top/toolbox/DL/ResNet.html)-对于DesNet网络的彻底了解 [edit](./toolbox/DL/ResNet.md)
 - [DenseNet](https://xtj2020.top/toolbox/DL/DenseNet.html)-对于DesNet网络的彻底了解 [edit](./toolbox/DL/DenseNet.md)
 
@@ -114,7 +113,7 @@
 ## [CO](./stone/CO)-凸优化更加具体的内容
 
 
-# 经济([economics](./economics/))
+# 经济管理([economics](./economics/))
 
 ## [KJ](./economics/KJ/)-会计
 

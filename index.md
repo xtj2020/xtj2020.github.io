@@ -18,10 +18,9 @@
 
 ## [DL](./toolbox/DL)-深度学习
 
-- [DLloadData](https://xtj2020.top/toolbox/DL/baseFrameModel.html)
+- [DLloadData](https://xtj2020.top/toolbox/DL/DLloadData.html)- 深度学习中加载数据的流程 [edit](./toolbox/DL/DLloadData.md)
 
-- [baseFrameModel](https://xtj2020.top/toolbox/DL/baseFrameModel.html)-基础的模型 [edit](./toolbox/DL/baseFrameModel.md)
-- [Indicators](https://xtj2020.top/toolbox/DL/indicators.html)-评价指标 [edit](./toolbox/DL/indicators.md)
+
 - [ModelCNN](https://xtj2020.top/toolbox/DL/ModelCNN.html)-对于基本CNN的调整
 - [ModelRNN](https://xtj2020.top/toolbox/DL/ModelRNN.html)-RNN模型
 - [PlotNeuralNet](https://xtj2020.top/toolbox/DL/PlotNeuralNet.html)-绘制网络图
@@ -85,8 +84,10 @@
 - [answer](https://xtj2020.top/stone/PS/answer.html)-答案页 [edit](./stone/PS/answer.md)
 - [predict](https://xtj2020.top/stone/PS/predict.html)-传统预测 [edit](./stone/PS/predict.md)
 
-## [DM](./stone/DM)-深度学习中的概念
-- [DLMath](https://xtj2020.top/stone/DM/DLMath.html)-深度学习中的数学[edit](./stone/DM/DLMath.md)
+## [DC](./stone/DM)-深度学习中的概念
+- [baseFrameModel](https://xtj2020.top/toolbox/DL/baseFrameModel.html)-基础的模型 [edit](./toolbox/DL/baseFrameModel.md)
+
+- [Indicators](https://xtj2020.top/toolbox/DL/indicators.html)-评价指标 [edit](./toolbox/DL/indicators.md)
 
 ## [ML](./stone/ML)-机器学习中的概念
 - [EnsembleLearning](https://xtj2020.top/stone/ML/EnsembleLearning.html)-集成学习 [edit](./stone/ML/EnsembleLearning.md)

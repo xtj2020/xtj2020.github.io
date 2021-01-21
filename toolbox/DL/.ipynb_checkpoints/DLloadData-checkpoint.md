@@ -21,6 +21,8 @@ print(isinstance(cls_a, Iterable))
 
 ## yield生成器
 
+yiled与return不同在于yield不会结束函数
+
 # DataLoader的实现
 
 <https://zhuanlan.zhihu.com/p/340465632>

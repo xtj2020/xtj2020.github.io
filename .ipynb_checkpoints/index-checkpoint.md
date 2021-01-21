@@ -17,8 +17,6 @@
 
 - [LoadPicData](https://xtj2020.top/toolbox/DA/LoadPicData.html)-对于图片的展示 [edit](./toolbox/DA/LoadPicData.md)
 
-- [tabulate](https://xtj2020.top/toolbox/DA/tabulate.html) -使用tabulate对表格进行美化 [edit](./toolbox/DA/tabulate.md)
-
 - [pickle&hdf5](https://xtj2020.top/toolbox/DA/hdf5.html) -利用pickle&hdf5来存储数据 [edit](./toolbox/DA/hdf5.md)
 
 
@@ -72,12 +70,13 @@
  [edit](./stone/IC/Radiomics.md)
 - [TraditionalDeal](https://xtj2020.top/stone/IC/TraditionalDeal.html)传统处理方法[edit](./stone/IC/TraditionalDeal.md)
 
-## [WT](./stone/WT)-文档与操作备份
+## [WT](./stone/WT)-文档与辅助
 
 - [UseLaTex](https://xtj2020.top/xtj2020.github.io/stone/WT/UseLaTex.html)-LaTex的应用  [edit](./stone/WT/UseLaTex.md)
 - [md](https://xtj2020.top/stone/WT/md.html)-markdown语法 [edit](./stone/WT/md.md)
 - [pt](https://xtj2020.top/stone/WT/pt.html)-matplotlib.plot [edit](./stone/WT/pt.md)
-- [enword](https://xtj2020.top/stone/WT/enword.html)-英语单词 [edit](./stone/WT/enword.md)
+- [EnWord](https://xtj2020.top/stone/WT/enword.html)-英语单词 [edit](./stone/WT/enword.md)
+- [AuxiliaryTools](https://xtj2020.top/stone/WT/AuxiliaryTools.html)-辅助性工具 [edit](./stone/WT/AuxiliaryTools.md)
 
 ## [CO](./stone/CO)-凸优化更加具体的内容
 

@@ -36,7 +36,9 @@ https://python.fasionchan.com/zh_CN/latest/libs/tabulate.html
 https://pypi.org/project/tabulate/
 
 # tqdm
+
 ```python
 from tqdm import notebook
 tqdm_notebook(迭代器)
 ```
+

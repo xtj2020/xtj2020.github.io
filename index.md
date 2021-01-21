@@ -74,7 +74,7 @@
 
 ## [WT](./stone/WT)-文档与操作备份
 
-- [rl](https://xtj2020.top/stone/WT/rl.html)-LATEX规则（不含公式，公式见anki）
+- [rl](https://xtj2020.top/stone/WT/rl.html)-LATEX规则（不含公式，公式见anki）[edit](./stone/WT/rl.md)
 - [UseLaTex](https://xtj2020.top/xtj2020.github.io/WT/UseLaTex.html)-LaTex的应用  [edit](../xtj2020.github.io/UseLaTex.md)
 - [md](https://xtj2020.top/stone/WT/md.html)-markdown语法 [edit](./stone/WT/md.md)
 - [sb](https://xtj2020.top/stone/WT/sb.html)-seaborn绘图 [edit](./stone/WT/sb.md)

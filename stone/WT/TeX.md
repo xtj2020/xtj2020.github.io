@@ -521,7 +521,7 @@ $$\sum{\scriptstyle i<3 \atop \scriptstyle j<3} i/j$$
 \begin{array}{列对齐}
 第一行 \
 第二行 \
-...
+
 最后一行
 \end{array}
 这里, 列对齐的格式是{c1c2c3...cn}, 每个ci为一个字母, 说明第i列的对齐方式, 可以是c(居中), l(左对齐), r(右对齐). 而
@@ -552,11 +552,11 @@ a & a & a
 这其中的方程, 和$$情况没有两样, 只是在公式右边自动加上了方程编号(如果\documentstyle用了\leqno选项, 则公式标号在左边). 多行的方程可以把array使用在equation中来实现, 但是标号只出现一个, 出现在多行的中间. 如果多行要分别标号, 或者
 不想用麻烦的$$嵌套array, 那就要用到多行方程环境:
 \begin{eqnarray}
-......
+
 \end{eqnarray}
 和
 \begin{eqnarray}
-...
+
 \end{eqnarray}
 二者的区别是, 带号的不将公式标号排出来, 而不带的自动给每行式子编排标号. 在\begin{eqnarray}和\end{eqnarray}中的
 部分是一个三列的array环境, 因此有两个&和一个\, 如:
@@ -624,7 +624,7 @@ Equation~\ref{eq:euler} in Section~\ref{sec-early} ...
 See \cite{texbook, companion} or \cite[page 20-22]{lamport} ..
 再看\bibitem的名称可选项:
 See \cite{kn:texbook} for more details.
-...
+
 \begin{thebibliography}[lamport 86]     %[]中是最长文献编号
 \bibitem[Knuth 84]{kn:texbook} D. E. Knuth. {\sl The \TeX{}book}.
 Addison-Wesley, Reading.
@@ -639,7 +639,7 @@ Addison-Wesley, Reading.
   本节内容: 居中, 左对齐, 右对齐环境; 小页环境; 抄录环境; 列表环境; 制表环境.这里要介绍的是几个TeX中常用的环境, 它的一般格式是:
 
 \begin{环境名}
-...
+
 \end{环境名}
 
 首先是居中, 左对齐, 右对齐环境, 这三者的环境名分别是center, flushleft和flushright, 在环境中的正文以\断行. 这
@@ -648,7 +648,7 @@ Addison-Wesley, Reading.
 
  abstract就是小页. 小页环境的格式是:
 \begin{minipage}[位置]{宽度}
-...
+
 \end{minipage}
 {宽度}可以用TeX的任何合法距离; [位置]是可选项, 可以选择t
 或b来表示小页是和正文是"顶部对齐"还是"底部对齐", 请看例子:
@@ -676,7 +676,7 @@ verbatim的区别是, 它将把空格用|_|表示出来. verbatim有一个
 格以外任何字符, 它与\verb之间没有空格. 如:
 \verb+
 This is !@#$%%^&&*({ All you want to type.
-+
+
 当然, 字符串里就不能出现你作为标识符的符号了.
 
 列表环境itemize, enumerate, description.
@@ -684,7 +684,7 @@ This is !@#$%%^&&*({ All you want to type.
 \begin{itemize}
 \item 列表项1
 \item 列表项2
-...
+
 \item 列表项n
 \end{itemize}
 自动编号; 如果超过一行, 自动缩进以突出编号. 而enumerate与
@@ -693,7 +693,7 @@ description一般用于类似于名词解释的情形:
 \begin{description}
 \item[名词] 解释
 \item[名词] 解释
-...
+
 \end{description}
 一般, 还在[名词]中加上\bf或\heiti以突出名词.
 列表环境还可以嵌套使用, 具体就不细述了.
@@ -703,7 +703,7 @@ description一般用于类似于名词解释的情形:
 表格环境tabular
 
 \begin{tabular}[竖向位置]{列格式}
-....
+
 \end{tabular}
 竖向位置：t、b 缺省居中
 列与列间用&分隔，每行\[长度：改变行间间隔]结束
@@ -721,7 +721,7 @@ description一般用于类似于名词解释的情形:
 TeX专门提供了一个制表环境, 用来排印有线或无线的表格.
 
 \begin{tabular}[位置]{列定义}
-...
+
 \end{tabular}
 这里[位置]和minipage一样, 可选t或b, 但我们通常用的表格都是独立表格, 所以通常不定义位置, 而直接独立一段. {列定义}
 类似于array的列对齐, 可以用c,l和r来表示对齐方式, 这里的列定义还可以在列对齐字母间用"|"以画出表格中列的竖线. 表格内
@@ -745,8 +745,7 @@ TeX专门提供了一个制表环境, 用来排印有线或无线的表格.
 \end{tabular}
 而
 \begin{tabular}{宽度}[位置]{列定义}
-...
-····\end{tabular}可以自己定义表格的总宽度, 如\textwidth等TeX的合法距离.
+\end{tabular}可以自己定义表格的总宽度, 如\textwidth等TeX的合法距离.
 
 最后, 我们讲讲制表环境的四个参数, 这四个参数都是局部参数, 也就是说只要用   分组限定命令的作用范围, 就可以调整某
 个表格的参数而不影响其它表格. \tabcolsep是两列间水平距离的一半, 缺省为6pt; \arrayrulewidth为定义\hline, \vline,

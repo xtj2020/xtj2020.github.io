@@ -55,7 +55,7 @@
 
 
 
-# 积累([stone](./stone/))
+# 概念积累([stone](./stone/))
 
 ## [PT](./toolbox/PT)-pytorch
 
@@ -98,7 +98,7 @@
 
 - [Feature](https://xtj2020.top/toolbox/DL/Feature.html)-深度学习中的特征问题 [edit](./toolbox/DL/Feature.md)
 
-# 框架([frame](./frame/))
+# 分析框架([frame](./frame/))
 
 ## [DP](./frame/DP/)-展示
 - [RIADD](https://xtj2020.top/frame/DP/RIADD_document.html)-RIADD相关文献 [edit](./frame/DP/RIADD_document.md)
@@ -110,6 +110,7 @@
 - [convexOptimize](https://xtj2020.top/frame/convexOptimize.html)-机器学习理论导引
 - [ForeGround](https://xtj2020.top/frame/ForeGround.html)- 人工智能与数据分析前景 [edit](./frame/ForeGround.md)
 
+
 ## [CO](./stone/CO)-凸优化更加具体的内容
 
 
@@ -117,10 +118,18 @@
 
 ## [KJ](./economics/KJ/)-会计
 
+
+
 ## [SJ](./economics/SJ/)-审计
+
+
 
 ## [SF](./economics/SF/)-税法
 
+
+
 ## [JF](./economics/JF/)-经济法
+
+
 
 ## [ZL](./economics/ZL/)-战略

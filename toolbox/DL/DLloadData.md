@@ -21,7 +21,7 @@ print(isinstance(cls_a, Iterable))
 
 ## yield生成器
 
-yiled与return不同在于yield不会结束函数
+
 
 # DataLoader的实现
 
@@ -75,7 +75,9 @@ source_label = np.random.randint(0,2,(10, 1))
 torch_data = GetLoader(source_data, source_label)
 ```
 
+
 ## DataLoader
+
 ```python
 torch.utils.data.DataLoader(dataset,batch_size,shuffle,drop_last，num_workers)
 
@@ -88,13 +90,15 @@ torch.utils.data.DataLoader(dataset,batch_size,shuffle,drop_last，num_workers)
 
 
 ```
+
+
 可以查看数据
+
 ```python
 for i, data in enumerate(datas):
 	# i表示第几个batch， data表示该batch对应的数据，包含data和对应的labels
     print("第 {} 个Batch \n{}".format(i, data))
 ```
 
+
 ## 使用pkl存储一个大的列表，从列表中加载Dataset
-
-

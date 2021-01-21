@@ -1,71 +1,3 @@
-<head>
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-            inlineMath: [['$','$']]
-            }
-        });
-    </script>
-</head>
-
-
-# python操作
-
- \
-
-```python
- x[[3, 3, 1, 8]] # 获取x中的下标为3, 3, 1, 8的4个元素，组成一个新的数组
-```
-
-
-当使用布尔数组作为下标存取数组x中的元素时，将收集数组x中所有在布尔数组中对应下标为True的元素。使用布尔数组作为下标获得的数组不和原始数组共享数据空间，注意这种方式只对应于布尔数组，不能使用布尔列表。
-
-np.argsort(x)与np.sort()
-
-
-
-##  序列（字符串、列表、元组）、字典  $\rightarrow$ 索引切片操作异同、优缺点
-
-## 控制语句：实现简单的程序功能
-
-```python  
-value1 if condition else value2
-```
-
-
-## 线性表
-
-pop()
-push()
-remove()
-
-
-## 随机数的生成
-
-## 数值型的基本特征：均值方差
-
-## 写程序对非数值型数据进行统计
-
-
-
-
-
-# pandas数据结构
-
-
-
-## Series
-
-Series是一种类似于一维数组的对象，它由一组数据（各种NumPy数据类型）以及一组与之相关的数据标签（即索引）组成。
-
-```python
-Series([4, 7,-5,3], index=['d','b','a','c'])
-
-```
-
-
 使用numpy进行运算会保留索引，在算数运算中会会自动对齐不同索引的数据。
 
 利用isnull与notnull来检测缺失数据
@@ -381,3 +313,7 @@ GM(1,1)模型是基于随机的原始时间序列，经按时间累加后形成�
 全距，四分位数，四分位距，百分位数
 
 描述性统计分析的利器：箱线图（发现异常值，对比组间数据中心和变异性）
+
+```{.python .input}
+
+```

@@ -18,6 +18,8 @@
 
 ## [DL](./toolbox/DL)-深度学习
 
+- [DLloadData](https://xtj2020.top/toolbox/DL/baseFrameModel.html)
+
 - [baseFrameModel](https://xtj2020.top/toolbox/DL/baseFrameModel.html)-基础的模型 [edit](./toolbox/DL/baseFrameModel.md)
 - [Indicators](https://xtj2020.top/toolbox/DL/indicators.html)-评价指标 [edit](./toolbox/DL/indicators.md)
 - [ModelCNN](https://xtj2020.top/toolbox/DL/ModelCNN.html)-对于基本CNN的调整

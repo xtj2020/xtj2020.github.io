@@ -92,6 +92,7 @@
 
 ## [ML](./stone/ML)-机器学习知识
 - [EnsembleLearning](https://xtj2020.top/stone/ML/EnsembleLearning.html)-集成学习 [edit](./stone/ML/EnsembleLearning.md)
+- [transform](https://xtj2020.top/stone/ML/transform.html)-向量转换 [edit](./stone/ML/transform.md)
 
 # 框架([frame](./frame/))
 

@@ -33,6 +33,7 @@
 - [ResNet](https://xtj2020.top/toolbox/DL/ResNet.html)-对于DesNet网络的彻底了解 [edit](./toolbox/DL/ResNet.md)
 - [DenseNet](https://xtj2020.top/toolbox/DL/DenseNet.html)-对于DesNet网络的彻底了解 [edit](./toolbox/DL/DenseNet.md)
 - [DataLoader](https://xtj2020.top/toolbox/DL/DataLoader.html)- 数据加载器的理解与使用 [edit](./toolbox/DL/DataLoader.md)
+- [Feature](https://xtj2020.top/toolbox/DL/Feature.html)-深度学习中的特征问题 [edit](./toolbox/DL/Feature.md)
 
 ## [PT](./toolbox/PT)-pytorch
 

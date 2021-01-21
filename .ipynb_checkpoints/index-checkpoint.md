@@ -8,15 +8,12 @@
 
 - [Learnscipy](https://xtj2020.top/toolbox/DA/Learnscipy.html)-scipy库
 [edit](./toolbox/DA/Learnscipy.md)
-
-- [LoadReadData](https://xtj2020.top/toolbox/DA/LoadReadData.html)-数据加载、存储
-  目录文件操作 [edit](./toolbox/DA/LoadReadData.md)
   
 - [PreproccessData](https://xtj2020.top/toolbox/DA/PreproccessData.html)-数据预处理 [edit](./toolbox/DA/PreproccessData.md)
 
-- [LoadPicData](https://xtj2020.top/toolbox/DA/LoadPicData.html)-对于图片的展示 [edit](./toolbox/DA/LoadPicData.md)
+- [LoadData](https://xtj2020.top/toolbox/DA/LoadData.html)-导入数据 [edit](./toolbox/DA/LoadData.md)
 
-- [pickle&hdf5](https://xtj2020.top/toolbox/DA/hdf5.html) -利用pickle&hdf5来存储数据 [edit](./toolbox/DA/hdf5.md)
+
 
 
 ## [DL](./toolbox/DL)-深度学习

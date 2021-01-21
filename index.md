@@ -20,20 +20,16 @@
 
 - [DLloadData](https://xtj2020.top/toolbox/DL/DLloadData.html)- 深度学习中加载数据的流程 [edit](./toolbox/DL/DLloadData.md)
 
-
 - [ModelCNN](https://xtj2020.top/toolbox/DL/ModelCNN.html)-对于基本CNN的调整
 - [ModelRNN](https://xtj2020.top/toolbox/DL/ModelRNN.html)-RNN模型
-- [PlotNeuralNet](https://xtj2020.top/toolbox/DL/PlotNeuralNet.html)-绘制网络图
-- [grad](https://xtj2020.top/toolbox/DL/PlotNeuralNet.html)-梯度下降
+
+
 - [ResNet](https://xtj2020.top/toolbox/DL/ResNet.html)-对于DesNet网络的彻底了解 [edit](./toolbox/DL/ResNet.md)
 - [DenseNet](https://xtj2020.top/toolbox/DL/DenseNet.html)-对于DesNet网络的彻底了解 [edit](./toolbox/DL/DenseNet.md)
+
 - [DataLoader](https://xtj2020.top/toolbox/DL/DataLoader.html)- 数据加载器的理解与使用 [edit](./toolbox/DL/DataLoader.md)
-- [Feature](https://xtj2020.top/toolbox/DL/Feature.html)-深度学习中的特征问题 [edit](./toolbox/DL/Feature.md)
 
-## [PT](./toolbox/PT)-pytorch
 
-- [pytorchAPI](https://xtj2020.top/toolbox/PT/pytorchAPI.html)-pytorch API [edit](./toolbox/PT/pytorchAPI.md) 
-- [framePytorch](https://xtj2020.top/toolbox/PT/framePytorch.html)-pytoch框架 [edit](./toolbox/PT/framePytorch.md)
 
 
 ## [PY](./toolbox/PY)-python
@@ -61,6 +57,12 @@
 
 # 积累([stone](./stone/))
 
+## [PT](./toolbox/PT)-pytorch
+
+- [pytorchAPI](https://xtj2020.top/toolbox/PT/pytorchAPI.html)-pytorch API [edit](./toolbox/PT/pytorchAPI.md) 
+- [framePytorch](https://xtj2020.top/toolbox/PT/framePytorch.html)-pytoch框架 [edit](./toolbox/PT/framePytorch.md)
+
+
 
 ## [IC](./stone/IC)-医学图像处理
 - [Radiomics](https://xtj2020.top/stone/IC/Radiomics.html)影像组学
@@ -77,21 +79,24 @@
 
 
 
-## [CO](./stone/CO)-凸优化更加具体的内容
+
 
 ## [PS](./stone/PS)-传统统计与建模
 - [probability](https://xtj2020.top/stone/PS/probability.html)-概率论知识 [edit](./stone/PS/probability.md)
 - [answer](https://xtj2020.top/stone/PS/answer.html)-答案页 [edit](./stone/PS/answer.md)
 - [predict](https://xtj2020.top/stone/PS/predict.html)-传统预测 [edit](./stone/PS/predict.md)
 
-## [DC](./stone/DM)-深度学习中的概念
+## [DM](./stone/DM)-深度学习中的概念
 - [baseFrameModel](https://xtj2020.top/toolbox/DL/baseFrameModel.html)-基础的模型 [edit](./toolbox/DL/baseFrameModel.md)
 
 - [Indicators](https://xtj2020.top/toolbox/DL/indicators.html)-评价指标 [edit](./toolbox/DL/indicators.md)
 
-## [ML](./stone/ML)-机器学习中的概念
 - [EnsembleLearning](https://xtj2020.top/stone/ML/EnsembleLearning.html)-集成学习 [edit](./stone/ML/EnsembleLearning.md)
 - [transform](https://xtj2020.top/stone/ML/transform.html)-向量转换 [edit](./stone/ML/transform.md)
+
+- [grad](https://xtj2020.top/toolbox/DL/PlotNeuralNet.html)-梯度下降
+
+- [Feature](https://xtj2020.top/toolbox/DL/Feature.html)-深度学习中的特征问题 [edit](./toolbox/DL/Feature.md)
 
 # 框架([frame](./frame/))
 
@@ -104,6 +109,9 @@
 - [theoryGuide](https://xtj2020.top/frame/theoryGuide.html)-机器学习理论导引
 - [convexOptimize](https://xtj2020.top/frame/convexOptimize.html)-机器学习理论导引
 - [ForeGround](https://xtj2020.top/frame/ForeGround.html)- 人工智能与数据分析前景 [edit](./frame/ForeGround.md)
+
+## [CO](./stone/CO)-凸优化更加具体的内容
+
 
 # 经济([economics](./economics/))
 

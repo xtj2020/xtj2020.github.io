@@ -113,7 +113,7 @@
 ## [CO](./stone/CO)-凸优化更加具体的内容
 
 
-# Economics&Management([economics](./economics/))
+# [Economics&Managementeconomics](./economics/)
 
 ## [KJ](./economics/KJ/)-会计
 
@@ -133,6 +133,6 @@
 
 ## [ZL](./economics/ZL/)-战略
 
-# Coffee&Wine
+# [Coffee&Wine](./coffee/)
 
-# Lostic&Philosophy
+# [Lostic&Philosophy](./philosophy/)

@@ -11,7 +11,6 @@
 
 - [LoadReadData](https://xtj2020.top/toolbox/DA/LoadReadData.html)-数据加载、存储
   目录文件操作 [edit](./toolbox/DA/LoadReadData.md)
-- [researchData](https://xtj2020.top/toolbox/DA/researchData.html)-探索性数据分析 [edit](./toolbox/DA/researchData.md)
   
 - [PreproccessData](https://xtj2020.top/toolbox/DA/PreproccessData.html)-数据预处理 [edit](./toolbox/DA/PreproccessData.md)
 

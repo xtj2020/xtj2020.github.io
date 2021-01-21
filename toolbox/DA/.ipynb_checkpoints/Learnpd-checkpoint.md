@@ -227,7 +227,7 @@ df[(df.A==100)|(df.B=='b')]
 
 ### 排序
 
-按索引排序
+按列索引排序
 df.sort_index(axis=1,ascending=True,inplace=True)
 ascending为升序排序，inplace是修改数据
 
@@ -257,3 +257,56 @@ pd.pivot_table(df,index=["Manager","Rep"],values=["Price"],aggfunc=[np.mean,len]
 df = pd.read_csv('movies.csv') \
 添加 skiprows 参数可以直接跳过前面的行 \
 df.to_csv('to_mivies.csv')
+
+使用numpy进行运算会保留索引，在算数运算中会会自动对齐不同索引的数据。
+
+利用isnull与notnull来检测缺失数据
+
+Series对象本身及其索引都有一个name属性，可以通过赋值的方式就地修改
+
+## DataFrame
+DataFrame 生成基本的统计指标
+
+**定义：** DataFrame是一个表格型的数据结构，它含有一组有序的列，每列可以是不同的值类型（数值、字符串、布尔值等）。
+可以视为Series的一个字典（共用一个索引，那么列名就是Series名吗？）。
+
+横向：两个表的堆叠 concat axis = 1
+纵向：
+
+主键合并:merge
+
+重叠合并:combine_first
+
+指定了列序列，则DataFrame的列就会按照指定顺序排列!
+
+通过类似字典标记的方式或属性的方式，可以将DataFrame的列获取为一个Series
+
+为不存在的列赋值会创建出一个新列。关键字del用于删除列
+
+嵌套字典来转换为DataFrame
+
+切片或布尔型数组选取行
+
+### 索引对象
+
+pandas的索引对象负责管理轴标签和其他元数据（比如轴名称等）。构建Series或DataFrame时，所用到的任何数组或其他序列的标签都会被转换成一个Index
+
+Index对象是不可修改的（immutable)
+
+drop方法返回的是一个在指定轴上删除了指定值的新对象
+
+
+当使用非整数作为切片索引时,其末端是包含的（inclusive)
+
+
+
+
+
+
+
+
+
+
+
+
+

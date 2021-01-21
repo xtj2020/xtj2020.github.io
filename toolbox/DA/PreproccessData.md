@@ -27,6 +27,7 @@ seaborn.catplot(x=None, y=None, hue=None,
 
 ```
 
+
 ### 使用
 ``` python
 
@@ -98,68 +99,82 @@ https://www.jianshu.com/p/94931255aede
 - 重新采样
 - 人造数据
 - 改变分类算法
-    - 在代价函数中增加小样本的权重，减小大样本的权重
-    - 
+在代价函数中增加小样本的权重，减小大样本的权重
+
 - 尝试其它评价指标
-    - 混淆矩阵
-    - 准确率
-    - 精准率
-    - 召回率
-    - F1分数
-    - AOC
-    - DUA
+混淆矩阵
+准确率
+精准率
+召回率
+F1分数
+AOC
+DUA
 
-```{.python .input  n=5}
-import numpy as np
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-def sinplot(flip=1):
-    x = np.linspace(0, 14, 100)
-#     fig = plt.figure(figsize=(10,6))
-    for i in range(1,7):
-        plt.plot(x, np.sin(x + i * .5) * (7 - i) * flip)
 
-sinplot()
-```
+# 异常数据的处理
 
-```{.json .output n=5}
-[
- {
-  "ename": "ModuleNotFoundError",
-  "evalue": "No module named 'seaborn'",
-  "output_type": "error",
-  "traceback": [
-   "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
-   "\u001b[0;31mModuleNotFoundError\u001b[0m                       Traceback (most recent call last)",
-   "\u001b[0;32m<ipython-input-5-86f38a229fa4>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mnumpy\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0mnp\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mpandas\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0mpd\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 3\u001b[0;31m \u001b[0;32mimport\u001b[0m \u001b[0mseaborn\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0msns\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      4\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mmatplotlib\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mpyplot\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0mplt\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0;32mdef\u001b[0m \u001b[0msinplot\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mflip\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-   "\u001b[0;31mModuleNotFoundError\u001b[0m: No module named 'seaborn'"
-  ]
- }
-]
-```
+## 异常数据的判断
 
-```{.python .input  n=4}
-sns.set(style='darkgrid',font_scale=1.5)
+常用的两种：物理方法和统计方法
 
-# 利用此方法可以快速设置seaborn的默认风格，当然也可以添加参数设置其他风格
-# font_scale：float，单独的缩放因子可以独立缩放字体元素的大小。
+### $3\sigma$准则
 
-sinplot()
-```
+1. 计算均值$\bar x = \sum\limits_{i=1}^{n} x_i$
+2. 计算标准差 $\sigma= \sqrt{ \ {1 \over n-1} \sum \limits_{i=1}^n(x_i - \bar x)^2}$
+3. 小于$\bar x -3 \sigma$或者大于$\bar x +3 \sigma$的为异常值
 
-```{.json .output n=4}
-[
- {
-  "ename": "NameError",
-  "evalue": "name 'sns' is not defined",
-  "output_type": "error",
-  "traceback": [
-   "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
-   "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
-   "\u001b[0;32m<ipython-input-4-f9a9a78533c0>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0msns\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mset\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mstyle\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m'darkgrid'\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mfont_scale\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m1.5\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0;31m# \u5229\u7528\u6b64\u65b9\u6cd5\u53ef\u4ee5\u5feb\u901f\u8bbe\u7f6eseaborn\u7684\u9ed8\u8ba4\u98ce\u683c\uff0c\u5f53\u7136\u4e5f\u53ef\u4ee5\u6dfb\u52a0\u53c2\u6570\u8bbe\u7f6e\u5176\u4ed6\u98ce\u683c\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m \u001b[0;31m# font_scale\uff1afloat\uff0c\u5355\u72ec\u7684\u7f29\u653e\u56e0\u5b50\u53ef\u4ee5\u72ec\u7acb\u7f29\u653e\u5b57\u4f53\u5143\u7d20\u7684\u5927\u5c0f\u3002\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
-   "\u001b[0;31mNameError\u001b[0m: name 'sns' is not defined"
-  ]
- }
-]
-```
+### 肖维勒准则
+
+1. 计算数据的$\bar x  \text 与 \sigma$；
+2. 计算每个数据的的误差$e_i = \vert x_i - x \vert $
+3. 查概率积分表得到$\varepsilon = w_n \sigma$
+4. 若$e_i > \varepsilon $则为误差值
+
+### t检验
+1. 将数据从小到大排列，计算排除min得到均值与方差。
+2. 查表得k(n,$\alpha$)
+3. 检验最小值，计算$\vert x_{(1)} - \bar x\vert > k(n,\alpha)$是否成立,成立最小值为误差值，不成立，检验最大值
+
+### 格拉布斯准则
+1. 将数据从小到大进行排序
+2. 求出数据的$\bar x \text 与\sigma$
+3. 查表得$\lambda(n,\alpha)$
+4. 异常数据小于$\bar x - \lambda \sigma \text 大于 \bar x + \lambda \sigma$
+
+### 狄克逊准则
+
+1. 样本从大到小进行排序
+2. 根据$n, \text 和\alpha$查找系数$D(n,\alpha)$，计算低端统计量$r^,$与高端统计量r
+3. 统计量$r>r'$且$r > D(n,\alpha),x_{(n)}$为异常值 \
+$r < r'$且$r > D(n,\alpha),x_{(1)}$为异常值
+
+### 箱体图
+
+异常值的范围为$(0,Q_1-1.5IQR) (Q_2+1.5IQR,+ \infty)$
+
+## 异常数据的处理
+
+### 删除带有缺失值的样本或特征
+
+**删除样本:** 多个特征存在缺失值，且缺失值占整个数据集比例不高 \
+**删除特征:** 某个特征值缺失值较多且对数据分析的目标影响不大
+
+data.Dropna()
+
+### 填补（均值填补、随机填补和基于模型的填补）
+pandas.DataFrame.fillna()
+
+均值填补：连续的用平均值，离散的用众数
+
+正态分布-均值、偏态分布-中位数、 有离群点的分布-中位数、名义变量-众数
+
+
+在均值填补的基础加上随机项（贝叶斯与近似贝叶斯）
+
+基于模型的填补：将缺失值作为预测目标。与数据有比较好的关联性，需要进行数据检验
+
+### 插值法
+
+拉格朗日插值法
+
+### 不处理缺失值

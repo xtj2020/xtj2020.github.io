@@ -198,6 +198,16 @@ out_file = open(sys.argv[2],'w+',encoding='UTF-8')
 
 
 # 可迭代对象
+
+## 生成器函数与生成器表达式
+
+1、生成器函数执行后会得到一个生成器作为返回值，但不会执行函数体；
+2、执行了\_\_next\_\_后才能执行函数体，并获得返回值；
+3、.next()内置方法，内部调用生成器的\_\_next\_\_()方法；
+4、yiled与return不同在于yield不会结束函数
+
+
+
 ## zip
 
 zip() 函数用于将可迭代的对象作为参数，将对象中对应的元素打包成一个个元组，然后返回由这些元组组成的列表。
@@ -216,6 +226,7 @@ zip() 函数用于将可迭代的对象作为参数，将对象中对应的元�
 
 
 ## 迭代器的长度
+
 ```python
 
 def get_length(generator):
@@ -224,3 +235,4 @@ def get_length(generator):
     else:
         return sum(1 for _ in generator)
 ```
+

@@ -74,6 +74,8 @@
 - [EnWord](https://xtj2020.top/stone/WT/enword.html)-英语单词 [edit](./stone/WT/enword.md)
 - [AuxiliaryTools](https://xtj2020.top/stone/WT/AuxiliaryTools.html)-辅助性工具 [edit](./stone/WT/AuxiliaryTools.md)
 
+
+
 ## [CO](./stone/CO)-凸优化更加具体的内容
 
 ## [PS](./stone/PS)-传统统计与建模
@@ -81,10 +83,10 @@
 - [answer](https://xtj2020.top/stone/PS/answer.html)-答案页 [edit](./stone/PS/answer.md)
 - [predict](https://xtj2020.top/stone/PS/predict.html)-传统预测 [edit](./stone/PS/predict.md)
 
-## [DM](./stone/DM)-深度学习中的数学
+## [DM](./stone/DM)-深度学习中的概念
 - [DLMath](https://xtj2020.top/stone/DM/DLMath.html)-深度学习中的数学[edit](./stone/DM/DLMath.md)
 
-## [ML](./stone/ML)-机器学习知识
+## [ML](./stone/ML)-机器学习中的概念
 - [EnsembleLearning](https://xtj2020.top/stone/ML/EnsembleLearning.html)-集成学习 [edit](./stone/ML/EnsembleLearning.md)
 - [transform](https://xtj2020.top/stone/ML/transform.html)-向量转换 [edit](./stone/ML/transform.md)
 

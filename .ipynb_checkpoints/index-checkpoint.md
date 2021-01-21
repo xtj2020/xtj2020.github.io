@@ -70,11 +70,11 @@
 ## [IC](./stone/IC)-医学图像处理
 - [Radiomics](https://xtj2020.top/stone/IC/Radiomics.html)影像组学
  [edit](./stone/IC/Radiomics.md)
-- [traditionalDeal](https://xtj2020.top/stone/IC/traditionalDeal.html)传统处理方法[edit](./stone/IC/traditionalDeal.md)
+- [TraditionalDeal](https://xtj2020.top/stone/IC/TraditionalDeal.html)传统处理方法[edit](./stone/IC/TraditionalDeal.md)
 
 ## [WT](./stone/WT)-文档与操作备份
 
-- [UseLaTex](https://xtj2020.top/xtj2020.github.io/WT/UseLaTex.html)-LaTex的应用  [edit](../xtj2020.github.io/UseLaTex.md)
+- [UseLaTex](https://xtj2020.top/xtj2020.github.io/stone/WT/UseLaTex.html)-LaTex的应用  [edit](./stone/WT/UseLaTex.md)
 - [md](https://xtj2020.top/stone/WT/md.html)-markdown语法 [edit](./stone/WT/md.md)
 - [pt](https://xtj2020.top/stone/WT/pt.html)-matplotlib.plot [edit](./stone/WT/pt.md)
 - [enword](https://xtj2020.top/stone/WT/enword.html)-英语单词 [edit](./stone/WT/enword.md)

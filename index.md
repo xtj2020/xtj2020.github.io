@@ -113,32 +113,8 @@
 ## [CO](./stone/CO)-凸优化更加具体的内容
 
 
-# [Economics&Managementeconomics](./economics/)
-
-## [KJ](./economics/KJ/)-会计
 
 
 
-## [SJ](./economics/SJ/)-审计
-
-
-
-## [SF](./economics/SF/)-税法
-
-
-
-## [JF](./economics/JF/)-经济法
-
-
-
-## [ZL](./economics/ZL/)-战略
-
-# [Coffee&Wine](./wine/)
-- [产区](https://xtj2020.top/wine/产区.html)
-- [侍酒]
-- [其他知识]
-- [结晶]
-- [酒杯]
-- [醒酒器]
 
 # [Lostic&Philosophy](./philosophy/)

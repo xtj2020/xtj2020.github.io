@@ -90,12 +90,14 @@
 
 - [Indicators](https://xtj2020.top/toolbox/DL/indicators.html)-评价指标 [edit](./toolbox/DL/indicators.md)
 
-- [EnsembleLearning](https://xtj2020.top/stone/ML/EnsembleLearning.html)-集成学习 [edit](./stone/ML/EnsembleLearning.md)
-- [transform](https://xtj2020.top/stone/ML/transform.html)-向量转换 [edit](./stone/ML/transform.md)
+- [EnsembleLearning](https://xtj2020.top/stone/DM/EnsembleLearning.html)-集成学习 [edit](./stone/DM/EnsembleLearning.md)
+- [transform](https://xtj2020.top/stone/DM/transform.html)-向量转换 [edit](./stone/DM/transform.md)
 
 - [grad](https://xtj2020.top/toolbox/DL/PlotNeuralNet.html)-梯度下降
 
 - [Feature](https://xtj2020.top/toolbox/DL/Feature.html)-深度学习中的特征问题 [edit](./toolbox/DL/Feature.md)
+
+- [FasterRCNN](https://xtj2020.top/toolbox/DM/FasterRCNN.html)-FasterRCNN [edit](./toolbox/DM/FasterRCNN.md)
 
 # 分析框架([frame](./frame/))
 

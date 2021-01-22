@@ -1,5 +1,3 @@
-[Economics&Managementeconomics]
-
 # [Economics&Managementeconomics](./economics/)
 
 ## [KJ](./economics/KJ/)-会计

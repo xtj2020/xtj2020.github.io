@@ -1,6 +1,6 @@
-# 代码工具（[toolbox](./toolbox/)）
+# 代码工具（[toolbox](https://xtj2020.top/sub_index.html)）
 
-## [DA](./toolbox/DA)-数据处理
+## [DA](./sub_index.md)-数据处理
 
 - [Learnnp](https://xtj2020.top/toolbox/DA/Learnnp.html)-numpy库 [edit](./toolbox/DA/Learnnp.md)
 
@@ -110,11 +110,4 @@
 - [ForeGround](https://xtj2020.top/frame/ForeGround.html)- 人工智能与数据分析前景 [edit](./frame/ForeGround.md)
 
 
-## [CO](./stone/CO)-凸优化更加具体的内容
 
-
-
-
-
-
-# [Lostic&Philosophy](./philosophy/)

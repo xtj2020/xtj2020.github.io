@@ -1,6 +1,6 @@
-# 代码工具（[toolbox](./toolbox/)）
+# 代码工具（[toolbox](https://xtj2020.top/sub_index.html)）
 
-## [DA](./toolbox/DA)-数据处理
+## [DA](./sub_index.md)-数据处理
 
 - [Learnnp](https://xtj2020.top/toolbox/DA/Learnnp.html)-numpy库 [edit](./toolbox/DA/Learnnp.md)
 
@@ -110,35 +110,4 @@
 - [ForeGround](https://xtj2020.top/frame/ForeGround.html)- 人工智能与数据分析前景 [edit](./frame/ForeGround.md)
 
 
-## [CO](./stone/CO)-凸优化更加具体的内容
 
-
-# [Economics&Managementeconomics](./economics/)
-
-## [KJ](./economics/KJ/)-会计
-
-
-
-## [SJ](./economics/SJ/)-审计
-
-
-
-## [SF](./economics/SF/)-税法
-
-
-
-## [JF](./economics/JF/)-经济法
-
-
-
-## [ZL](./economics/ZL/)-战略
-
-# [Coffee&Wine](./wine/)
-- [产区](https://xtj2020.top/wine/产区.html)
-- [侍酒](https://xtj2020.top/wine/侍酒.html)
-- [其他知识](https://xtj2020.top/wine/其他知识.html)
-- [结晶](https://xtj2020.top/wine/结晶.html)
-- [酒杯](https://xtj2020.top/wine/酒杯.html)
-- [醒酒器](https://xtj2020.top/wine/醒酒器.html)
-
-# [Lostic&Philosophy](./philosophy/)

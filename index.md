@@ -82,7 +82,7 @@
 
 ## [PS](./stone/PS)-传统统计与建模
 - [probability](https://xtj2020.top/stone/PS/probability.html)-概率论知识 [edit](./stone/PS/probability.md)
-- [answer](https://xtj2020.top/stone/PS/answer.html)-答案页 [edit](./stone/PS/answer.md)
+
 - [predict](https://xtj2020.top/stone/PS/predict.html)-传统预测 [edit](./stone/PS/predict.md)
 
 ## [DM](./stone/DM)-深度&机器学习中的概念

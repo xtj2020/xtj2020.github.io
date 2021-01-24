@@ -11,11 +11,12 @@ import matplotlib.pyplot as plt
 plt.rcParams['font.sans-serif']=['WenQuanYi Micro Hei'] #用来正常显示中文标签
 plt.rcParams['axes.unicode_minus']=False   #这两行需要手动设置
 
-plt.figure(figsize=[30,6.5])
+plt.figure(figsize=[30,6.5]) # 设置图片的尺寸大小
 plt.subplot(111)
+
 patches,l_text,p_text = plt.pie(df_sum_sumLabel.iloc[:,0], labels = df_sum_sumLabel.index, startangle = 90, labeldistance=1.1,counterclock = True,
         explode=(0,0,0,0,0.2,0.3),autopct='%1.1f%%',wedgeprops = {'width' : 0.4});
-
+#同一处理文字大小
 #textprops={'fontsize':20,'color':'black'}
 plt.axis('square') # 将横、纵坐标轴标准化处理，保证饼图是一个正圆，否则为椭圆
 for t in p_text:
@@ -35,6 +36,23 @@ plt.show()
 
 
 ![image.png](attachment:image.png)
+
+## 条状图
+```python
+# 绘制患有各种疾病的人数
+import matplotlib.pyplot as plt
+width = 0.35       # the width of the bars: can also be len(x) sequence
+fig, ax = plt.subplots(figsize=[30,10])
+ax.bar(sum_each_disease.index, sum_each_disease.values, width, label='样本数')
+plt.xticks(fontsize=20)
+plt.yticks(fontsize=20)
+ax.set_xlabel("疾病种类", fontsize=20)
+ax.set_ylabel('样本数')
+ax.set_title('患各种疾病的样本数')
+ax.legend()
+plt.show()
+
+```
 
 ## 目标
 对比赛数据进行初步的分析,分析难点在于有多种类型的数据，每种类型又有三种不同的像素、尺寸，以及对应的0、1标签。

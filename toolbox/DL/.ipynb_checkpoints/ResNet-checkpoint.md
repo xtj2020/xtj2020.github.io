@@ -1,9 +1,10 @@
+# 结构图
 ![ResNet结构图](ResNet.assets/ResNet结构图.png)
 
 # 官方网络
 <https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py>
 
-### ```python
+```python
 
 import torch
 from torch import Tensor
@@ -386,3 +387,4 @@ def wide_resnet101_2(pretrained: bool = False, progress: bool = True, **kwargs: 
                    pretrained, progress, **kwargs)
 
 ```
+

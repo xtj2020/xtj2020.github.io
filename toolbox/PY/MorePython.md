@@ -233,7 +233,7 @@ print(isinstance(cls_a, Iterable))
 ## yield生成器
 
 
-
+## iter来获取值
 
 ## zip
 

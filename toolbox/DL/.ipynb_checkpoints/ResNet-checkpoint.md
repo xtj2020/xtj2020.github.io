@@ -1,5 +1,8 @@
 # 结构图
 ![ResNet结构图](ResNet.assets/ResNet结构图.png)
+![ResNet结构图](ResNet.assets/不同层数ResNet结构图.jpg)
+
+
 
 # 官方网络
 <https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py>

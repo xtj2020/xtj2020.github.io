@@ -1,5 +1,6 @@
 # 结构图
 ![ResNet结构图](ResNet.assets/ResNet结构图.png)
+不同层数ResNet结构图.jpg
 
 
 

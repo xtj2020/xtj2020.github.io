@@ -24,7 +24,10 @@
 
 ## [ProducingArea](./wine/ProducingArea/)
 
-- [Champagne-France](./wine/ProducingArea/Champagne-France.html) -[edit](./wine/ProducingArea/Champagne-France.md)
+- [Champagne-France](./wine/ProducingArea/Champagne-France.html) [edit](./wine/ProducingArea/Champagne-France.md)
+- - [Champagne-France](./wine/ProducingArea/Champagne-France.html) [edit](./wine/ProducingArea/Champagne-France.md)
+
+- [Alsace-France](./wine/ProducingArea/Alsace-France.html) [edit](./wine/ProducingArea/Alsace-France.md)
 
 - [产区](https://xtj2020.top/wine/产区.html)
 - [侍酒](https://xtj2020.top/wine/侍酒.html)

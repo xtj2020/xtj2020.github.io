@@ -9,11 +9,8 @@
 - [Learnscipy](https://xtj2020.top/toolbox/DA/Learnscipy.html)-scipy库
 [edit](./toolbox/DA/Learnscipy.md)
   
+- [LoadData](https://xtj2020.top/toolbox/DA/LoadData.html)-读取存储数据 [edit](./toolbox/DA/LoadData.md)  
 - [PreproccessData](https://xtj2020.top/toolbox/DA/PreproccessData.html)-数据预处理 [edit](./toolbox/DA/PreproccessData.md)
-
-- [LoadData](https://xtj2020.top/toolbox/DA/LoadData.html)-导入数据 [edit](./toolbox/DA/LoadData.md)
-
-
 
 
 ## [DL](./toolbox/DL)-深度学习
@@ -25,10 +22,6 @@
 
 - [ResNet](https://xtj2020.top/toolbox/DL/ResNet.html)-对于DesNet网络的彻底了解 [edit](./toolbox/DL/ResNet.md)
 - [DenseNet](https://xtj2020.top/toolbox/DL/DenseNet.html)-对于DesNet网络的彻底了解 [edit](./toolbox/DL/DenseNet.md)
-
-- [DataLoader](https://xtj2020.top/toolbox/DL/DataLoader.html)- 数据加载器的理解与使用 [edit](./toolbox/DL/DataLoader.md)
-
-
 
 
 ## [PY](./toolbox/PY)-python

@@ -1,29 +1,19 @@
-## 可迭代对象
-要有\_\_iter\_\_才能叫可迭代对象(iterable)
+# 数据预处理
+**进行数据的统计分析:**
+只有对数据的足够了解，有针对性筛选出合适的数据进行训练，才能有效得到实验效果。
 
-```python
-from collections.abc import Iterable, Iterator
-print(isinstance(cls_a, Iterable))
-
-```
-
-
-## 迭代器
-可迭代器(Iterator)一定是可迭代的，反之不一定成立
-
-实现了 \_\_next\_\_ 和 \_\_iter\_\_ 方法的类才能称为迭代器，就可以被 for 遍历了。
-
-为什么list是可迭代对象，不是迭代器，但是能够进行迭代？
- 
- list 内部的 \_\_iter\_\_ 方法内部返回了具备 \_\_next\_\_ 方法的类，或者说调用 iter() 后返回的对象本身就是一个迭代器，当然可以 for 循环了。
- 
-## getitem
-
-## yield生成器
+1、数据的可视化； \
+2、缺失数据与重复数据的处理； \
+3、多标签数据的处理；
 
 
 
-# DataLoader的实现
+**训练数据预处理：**考虑训练网络数据的输入要求
+
+将数据预期处理，将其固化入（pkl文件\hdf5文件）中
+
+
+# 构建DataLoader
 
 <https://zhuanlan.zhihu.com/p/340465632>
 

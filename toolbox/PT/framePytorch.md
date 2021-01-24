@@ -27,6 +27,24 @@ root下载位置,transorms是否转为Tensor对象，train控制是否为训练�
 
 ## 构建数据加载器
 
+<https://zhuanlan.zhihu.com/p/340465632>
+
+3分钟理解 pytorch 的 gather 和 scatter<https://zhuanlan.zhihu.com/p/319191164>
+
+## 最简单的版本
+**需要满足的功能：**
+
+- Dataset 提供整个数据集的随机访问功能，每次调用都返回单个对象，例如一张图片和对应 target 等等
+- Sampler 提供整个数据集随机访问的索引列表，每次调用都返回所有列表中的单个索引，常用子类是 SequentialSampler 用于提供顺序输出的索引 和 RandomSampler 用于提供随机输出的索引
+- BatchSampler 内部调用 Sampler 实例，输出指定 batch_size 个索引，然后将索引作用于 Dataset 上从而输出 batch_size 个数据对象，例如 batch 张图片和 batch 个 target
+- collate_fn 用于将 batch 个数据对象在 batch 维度进行聚合，生成 (b,...) 格式的数据输出，如果待聚合对象是 numpy，则会自动转化为 tensor，此时就可以输入到网络中了
+
+
+
+
+
+
+
 ```python
 train_loader = DataLoader(dataset = x_train,batch_size = batch_size,shuffle = False)
 ```

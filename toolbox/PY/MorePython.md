@@ -208,6 +208,33 @@ out_file = open(sys.argv[2],'w+',encoding='UTF-8')
 
 
 
+## 迭代器
+可迭代器(Iterator)一定是可迭代的，反之不一定成立
+
+实现了 \_\_next\_\_ 和 \_\_iter\_\_ 方法的类才能称为迭代器，就可以被 for 遍历了。
+
+为什么list是可迭代对象，不是迭代器，但是能够进行迭代？
+ 
+ list 内部的 \_\_iter\_\_ 方法内部返回了具备 \_\_next\_\_ 方法的类，或者说调用 iter() 后返回的对象本身就是一个迭代器，当然可以 for 循环了。
+ 
+ 
+判断是否是一个迭代器、可迭代对象：
+```python
+from collections.abc import Iterable, Iterator
+print(isinstance(cls_a, Iterable))
+
+```
+## getitem
+
+当实例对象做p[key] 运算时，会调用类中的方法\_\_getitem\_\_。
+
+一般如果想使用索引访问元素时，就可以在类中定义这个方法（\_\_getitem\_\_(self, key) ）。
+
+## yield生成器
+
+
+
+
 ## zip
 
 zip() 函数用于将可迭代的对象作为参数，将对象中对应的元素打包成一个个元组，然后返回由这些元组组成的列表。

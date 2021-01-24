@@ -1,6 +1,7 @@
 ![ResNet结构图](ResNet.assets/ResNet结构图.png)
 
 # 官方网络
+<https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py>
 
 ```python
 
@@ -177,7 +178,7 @@ class ResNet(nn.Module):
         self.groups = groups
         self.base_width = width_per_group
 ## try 修改此处，改变输入特征数目
-        self.conv1 = nn.Conv2d(48, self.inplanes, kernel_size=7, stride=2, padding=3,
+        self.conv1 = nn.Conv2d(3, self.inplanes, kernel_size=7, stride=2, padding=3,
                                bias=False)
         self.bn1 = norm_layer(self.inplanes)
         self.relu = nn.ReLU(inplace=True)

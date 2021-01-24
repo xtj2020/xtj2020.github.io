@@ -35,3 +35,6 @@ https://www.cnblogs.com/shine-lee/p/12363488.html
 
 # DenseNet
 https://blog.csdn.net/u014380165/article/details/75142664
+
+# Pytorch github DenseNet
+

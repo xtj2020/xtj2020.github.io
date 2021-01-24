@@ -33,5 +33,8 @@ https://zhuanlan.zhihu.com/p/101332297
 
 https://www.cnblogs.com/shine-lee/p/12363488.html
 
-# 参考文献
+# DenseNet
 https://blog.csdn.net/u014380165/article/details/75142664
+
+# Pytorch github DenseNet
+

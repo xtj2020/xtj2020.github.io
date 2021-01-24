@@ -48,7 +48,18 @@ root下载位置,transorms是否转为Tensor对象，train控制是否为训练�
 ```python
 train_loader = DataLoader(dataset = x_train,batch_size = batch_size,shuffle = False)
 ```
+```python
+torch.utils.data.DataLoader(dataset,batch_size,shuffle,drop_last，num_workers)
 
+# dataset： 加载torch.utils.data.Dataset对象数据
+# batch_size： 每个batch的大小
+#shuffle：是否对数据进行打乱
+#drop_last：是否对无法整除的最后一个datasize进行丢弃
+#num_workers：表示加载的时候子进程数
+
+
+
+```
 
 可以在加载器中设置samper
 

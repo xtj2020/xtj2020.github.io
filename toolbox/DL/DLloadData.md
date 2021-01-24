@@ -13,60 +13,56 @@
 将数据预期处理，将其固化入（pkl文件\hdf5文件）中
 
 
-# 构建DataLoader
-
-<https://zhuanlan.zhihu.com/p/340465632>
-
-3分钟理解 pytorch 的 gather 和 scatter<https://zhuanlan.zhihu.com/p/319191164>
-
-## 最简单的版本
-**需要满足的功能：**
-
-- Dataset 提供整个数据集的随机访问功能，每次调用都返回单个对象，例如一张图片和对应 target 等等
-- Sampler 提供整个数据集随机访问的索引列表，每次调用都返回所有列表中的单个索引，常用子类是 SequentialSampler 用于提供顺序输出的索引 和 RandomSampler 用于提供随机输出的索引
-- BatchSampler 内部调用 Sampler 实例，输出指定 batch_size 个索引，然后将索引作用于 Dataset 上从而输出 batch_size 个数据对象，例如 batch 张图片和 batch 个 target
-- collate_fn 用于将 batch 个数据对象在 batch 维度进行聚合，生成 (b,...) 格式的数据输出，如果待聚合对象是 numpy，则会自动转化为 tensor，此时就可以输入到网络中了
-
-
-
-# 自定义数据加载器
-
-## Dataset
-
-用Dataset封装自己的数据和标签
-用DataLoader达到数据的划分
-
-Dataset必须继承实现\_\_getitem\_\_、
-\_\_len\_\_
+# Dataset类与DataLoader
 
 ```python
-import torch
-import numpy as np
-# 定义GetLoader类，继承Dataset方法，并重写__getitem__()和__len__()方法
-class GetLoader(torch.utils.data.Dataset):
-	# 初始化函数，得到数据
-    def __init__(self, data_root, data_label):
-        self.data = data_root
-        self.label = data_label
-    # index是根据batchsize划分数据后得到的索引，最后将data和对应的labels进行一起返回
-    def __getitem__(self, index):
-        data = self.data[index]
-        labels = self.label[index]
-        return data, labels
-    # 该函数返回数据大小长度，目的是DataLoader方便划分，如果不知道大小，DataLoader会一脸懵逼
-    def __len__(self):
-        return len(self.data)
+batch_size = 16
+class Dataset:
+    def __init__(self, train=True):
+        self.train = train
+        # 加载训练数据集
+        if train:
+            pkl_file = open('../../xtjtemp/RF_feature48_train_pic_list.pkl', 'rb')
+            self.train_list = pickle.load(pkl_file) #[ID名，标签，图片] 
 
-# 随机生成数据，大小为10 * 20列
-source_data = np.random.rand(10, 20)
-# 随机生成标签，大小为10 * 1列
-source_label = np.random.randint(0,2,(10, 1))
-# 通过GetLoader将数据进行加载，返回Dataset对象，包含data和labels
-torch_data = GetLoader(source_data, source_label)
+        # 加载测试数据集
+        else:
+            pkl_file = open('../../xtjtemp/RF_feature48_dev_pic_list.pkl', 'rb')
+            self.dev_list = pickle.load(pkl_file) #[ID名，标签，图片]
+            
+            
+    # 获取单条数据，同时将数据转化成为Tensor输入
+    def __getitem__(self, index):
+        if self.train:
+            data_pic = self.train_list[2][index-1] #该数据类型为列表，需要对其转为矩阵，并转为tensor数据类型
+            data_images = torch.from_numpy(np.array(data_pic)+0.0/255).float()
+#           data_images = torch.from_numpy(np.array(data_pic).transpose(2,0,1)/255).float()
+            label_pic = self.train_list[1][index-1]
+            label_imagae = torch.from_numpy(np.array(label_pic)).long()
+            data_id = self.train_list[0][index-1]
+        else:
+            data_pic = self.dev_list[2][index-1] #该数据类型为列表，需要对其转为矩阵，并转为tensor数据类型
+            data_images = torch.from_numpy(np.array(data_pic)+0.0/255).float()
+#             data_images = torch.from_numpy(np.array(data_pic).transpose(2,0,1)/255).float()
+            label_pic = self.dev_list[1][index-1]
+            label_imagae = torch.from_numpy(np.array(label_pic)).long()
+            data_id = self.dev_list[0][index-1]
+        return data_id,data_images, label_imagae 
+
+    # 重载专有方法__len__
+    def __len__(self):
+        if self.train:
+            return len(self.train_list[2])
+        else:
+            return len(self.dev_list[2])
+    
+train_dst = Dataset(train=True)
+train_loader = DataLoader(train_dst, batch_size=16, shuffle=True)
+
+dev_dst = Dataset(train=False)
+dev_loader = DataLoader(dev_dst, batch_size=16, shuffle=True)
 ```
 
-
-## DataLoader
 
 ```python
 torch.utils.data.DataLoader(dataset,batch_size,shuffle,drop_last，num_workers)
@@ -90,5 +86,3 @@ for i, data in enumerate(datas):
     print("第 {} 个Batch \n{}".format(i, data))
 ```
 
-
-## 使用pkl存储一个大的列表，从列表中加载Dataset

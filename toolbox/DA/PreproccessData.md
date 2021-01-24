@@ -1,4 +1,42 @@
-# 目标
+# 数据的可视化
+
+## 饼状图
+
+```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import matplotlib.pyplot as plt
+plt.rcParams['font.sans-serif']=['WenQuanYi Micro Hei'] #用来正常显示中文标签
+plt.rcParams['axes.unicode_minus']=False   #这两行需要手动设置
+
+plt.figure(figsize=[30,6.5])
+plt.subplot(111)
+patches,l_text,p_text = plt.pie(df_sum_sumLabel.iloc[:,0], labels = df_sum_sumLabel.index, startangle = 90, labeldistance=1.1,counterclock = True,
+        explode=(0,0,0,0,0.2,0.3),autopct='%1.1f%%',wedgeprops = {'width' : 0.4});
+
+#textprops={'fontsize':20,'color':'black'}
+plt.axis('square') # 将横、纵坐标轴标准化处理，保证饼图是一个正圆，否则为椭圆
+for t in p_text:
+  t.set_size(10)
+  
+for t in l_text:
+  t.set_size(10)
+  
+# 显示
+plt.show()
+```
+
+
+
+
+
+
+
+![image.png](attachment:image.png)
+
+## 目标
 对比赛数据进行初步的分析,分析难点在于有多种类型的数据，每种类型又有三种不同的像素、尺寸，以及对应的0、1标签。
 
 - [ ] 用柱状图对数据进行合适的描述

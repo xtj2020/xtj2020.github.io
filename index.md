@@ -49,7 +49,7 @@
 
 # 概念积累([stone](https://xtj2020.top/lyrics.html))
 
-## [PT](./toolbox/PT)-pytorch
+## [PT](./lyrics.md)-pytorch
 
 - [pytorchAPI](https://xtj2020.top/toolbox/PT/pytorchAPI.html)-pytorch API [edit](./toolbox/PT/pytorchAPI.md) 
 - [framePytorch](https://xtj2020.top/toolbox/PT/framePytorch.html)-pytoch框架 [edit](./toolbox/PT/framePytorch.md)

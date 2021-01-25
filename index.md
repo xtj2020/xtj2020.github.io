@@ -38,7 +38,7 @@
 ## [PC](./toolbox/PC)-脚本\linux\爬虫
 
 - [FrameSpider](https://xtj2020.top/toolbox/PC/FrameSpider.html)-爬虫框架 [edit](./toolbox/PC/FrameSpider.md)
-- [sysConfig](https://xtj2020.top/toolbox/PC/sysConfig.html)-系统配置 [edit](./toolbox/PC/sysConfig.md)
+- [SysConfig](https://xtj2020.top/toolbox/PC/sysConfig.html)-系统配置 [edit](./toolbox/PC/sysConfig.md)
 - [Json](https://xtj2020.top/toolbox/PC/Json.html)-Json文件格式
  [edit](./toolbox/PC/Json.md)
 - [GitHub](https://xtj2020.top/toolbox/PC/GitHub.html)-GitHub的使用 [edit](./toolbox/PC/GitHub.md)
@@ -51,8 +51,8 @@
 
 ## [PT](./lyrics.md)-pytorch
 
-- [pytorchAPI](https://xtj2020.top/toolbox/PT/pytorchAPI.html)-pytorch API [edit](./toolbox/PT/pytorchAPI.md) 
-- [framePytorch](https://xtj2020.top/toolbox/PT/framePytorch.html)-pytoch框架 [edit](./toolbox/PT/framePytorch.md)
+- [PytorchAPI](https://xtj2020.top/toolbox/PT/pytorchAPI.html)-pytorch API [edit](./toolbox/PT/pytorchAPI.md) 
+- [FramePytorch](https://xtj2020.top/toolbox/PT/framePytorch.html)-pytoch框架 [edit](./toolbox/PT/framePytorch.md)
 
 
 
@@ -74,19 +74,19 @@
 
 
 ## [PS](./stone/PS)-传统统计与建模
-- [probability](https://xtj2020.top/stone/PS/probability.html)-概率论知识 [edit](./stone/PS/probability.md)
+- [Probability](https://xtj2020.top/stone/PS/probability.html)-概率论知识 [edit](./stone/PS/probability.md)
 
-- [predict](https://xtj2020.top/stone/PS/predict.html)-传统预测 [edit](./stone/PS/predict.md)
+- [Predict](https://xtj2020.top/stone/PS/predict.html)-传统预测 [edit](./stone/PS/predict.md)
 
 ## [DM](./stone/DM)-深度&机器学习中的概念
-- [baseFrameModel](https://xtj2020.top/toolbox/DL/baseFrameModel.html)-基础的模型 [edit](./toolbox/DL/baseFrameModel.md)
+- [BaseFrameModel](https://xtj2020.top/toolbox/DL/baseFrameModel.html)-基础的模型 [edit](./toolbox/DL/baseFrameModel.md)
 
 - [Indicators](https://xtj2020.top/toolbox/DL/indicators.html)-评价指标 [edit](./toolbox/DL/indicators.md)
 
 - [EnsembleLearning](https://xtj2020.top/stone/DM/EnsembleLearning.html)-集成学习 [edit](./stone/DM/EnsembleLearning.md)
-- [transform](https://xtj2020.top/stone/DM/transform.html)-向量转换 [edit](./stone/DM/transform.md)
+- [Transform](https://xtj2020.top/stone/DM/transform.html)-向量转换 [edit](./stone/DM/transform.md)
 
-- [grad](https://xtj2020.top/toolbox/DL/PlotNeuralNet.html)-梯度下降
+- [Grad](https://xtj2020.top/toolbox/DL/PlotNeuralNet.html)-梯度下降
 
 - [Feature](https://xtj2020.top/toolbox/DL/Feature.html)-深度学习中的特征问题 [edit](./toolbox/DL/Feature.md)
 
@@ -100,6 +100,6 @@
 
 
 ## [MA](./frame/MA/)-分析
-- [theoryGuide](https://xtj2020.top/frame/theoryGuide.html)-机器学习理论导引
-- [convexOptimize](https://xtj2020.top/frame/convexOptimize.html)-机器学习理论导引
+- [TheoryGuide](https://xtj2020.top/frame/theoryGuide.html)-机器学习理论导引
+- [ConvexOptimize](https://xtj2020.top/frame/convexOptimize.html)-机器学习理论导引
 - [ForeGround](https://xtj2020.top/frame/ForeGround.html)- 人工智能与数据分析前景 [edit](./frame/ForeGround.md)

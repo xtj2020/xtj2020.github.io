@@ -8,4 +8,4 @@
 - [NancyMUlligan]
 - [FeelGoodInc]
 - [pool](https://xtj2020.top/lyrics/pool.html)
-- [你若成风](https://xtj2020.top/lyrics/pool.html)
+- [你若成风](https://xtj2020.top/lyrics/你若成风.html) [edit](./lyrics/你若成风.md)

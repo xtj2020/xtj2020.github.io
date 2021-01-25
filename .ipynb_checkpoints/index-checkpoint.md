@@ -47,7 +47,7 @@
 
 
 
-# 概念积累([stone](./stone/))
+# 概念积累([stone](https://xtj2020.top/lyrics.html))
 
 ## [PT](./toolbox/PT)-pytorch
 

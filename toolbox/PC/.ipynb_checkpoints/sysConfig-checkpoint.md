@@ -19,6 +19,8 @@ c.NotebookApp.open_browser = False
 jupyter notebook --config jupyter_notebook_config_2.py
 #即使断开连接也能够继续运行
 nohup jupyter notebook &
+# 更改默认目录
+c.NotebookApp.notebook_dir = u'需要默认的路径' 
 ```
 
 ### 创建密码

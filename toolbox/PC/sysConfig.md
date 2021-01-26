@@ -4,7 +4,7 @@
 
 ### 修改配置文件
 ```python
-
+jupyter notebook --generate-config
 vi ~/.jupyter/jupyter_notebook_config.py
 
 #设置密码与指定端口
@@ -27,6 +27,10 @@ jupyter notebook password
 /home/xtj/.jupyter/jupyter_notebook_config.json
 
 from notebook.auth import passwd
+
+passwd()
+
+'argon2:$argon2id$v=19$m=10240,t=10,p=8$2GbVfeHBrTubg30miNYbyQ$521sJfIN6sf+CSJX9sWGhw'
 
 
 ## 使用kaggle下载

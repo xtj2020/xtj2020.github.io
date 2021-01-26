@@ -2,6 +2,7 @@
 
 ## jpyter系统配置
 
+### 修改配置文件
 ```python
 
 vi ~/.jupyter/jupyter_notebook_config.py
@@ -19,6 +20,13 @@ jupyter notebook --config jupyter_notebook_config_2.py
 #即使断开连接也能够继续运行
 nohup jupyter notebook &
 ```
+
+### 创建密码
+jupyter notebook password
+
+/home/xtj/.jupyter/jupyter_notebook_config.json
+
+from notebook.auth import passwd
 
 
 ## 使用kaggle下载

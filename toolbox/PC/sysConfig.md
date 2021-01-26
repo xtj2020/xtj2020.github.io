@@ -4,7 +4,7 @@
 
 ```python
 
-$vi ~/.jupyter/jupyter_notebook_config.py
+vi ~/.jupyter/jupyter_notebook_config.py
 
 #设置密码与指定端口
 c.NotebookApp.password=u'sha1:6c9e6e11ed'

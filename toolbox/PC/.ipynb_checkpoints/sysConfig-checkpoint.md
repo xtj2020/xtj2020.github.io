@@ -3,6 +3,9 @@
 ## jpyter系统配置
 
 ```python
+
+$vi ~/.jupyter/jupyter_notebook_config.py
+
 #设置密码与指定端口
 c.NotebookApp.password=u'sha1:6c9e6e11ed'
 c.NotebookApp.port = 9999
@@ -26,6 +29,37 @@ pip install kaggle
 然后同意数据集协议，复制下载命令，对数据集进行下载
 ```
 
+
+## 启用ssh服务
+
+apt-get install openssh-server
+
+vi /etc/ssh/sshd_config
+
+```python
+
+Port = 22 # 默认是22端口，如果和windows端口冲突或你想换成其他的否则不用动
+#ListenAddress 0.0.0.0 # 如果需要指定监听的IP则去除最左侧的井号，并配置对应IP，默认即监听PC所有IP
+PermitRootLogin no # 如果你需要用 root 直接登录系统则此处改为 yes
+PasswordAuthentication no # 将 no 改为 yes 表示使用帐号密码方式登录
+
+```
+
+然后启动 ssh 服务
+
+service ssh start
+
+如果提示 sshd error: could not load host key 则需要重新生成 key
+
+dpkg-reconfigure openssh-server
+
+查看服务状态
+
+service ssh status
+
+sshd is running  显示此内容则表示启动正常
+
+passwd root 设置下密码
 
 ## pytorch的配置
 
@@ -84,3 +118,4 @@ wget -r -p -np -k -P ~/tmp/ http://java-er.com
 -i 后面跟一个文件，文件内指明要下载的URL
 
 ```
+

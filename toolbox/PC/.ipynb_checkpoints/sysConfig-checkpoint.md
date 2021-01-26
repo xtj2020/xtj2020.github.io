@@ -162,3 +162,9 @@ https://stackoverflow.com/questions/58388169/date-command-not-found-in-shell-scr
 LxRunOffline -list
 
 LxRunOffline move -n {version} -d {dir}
+
+设置root密码
+
+sudo passwd root
+
+启动服务与关闭服务<https://zhuanlan.zhihu.com/p/224753478>

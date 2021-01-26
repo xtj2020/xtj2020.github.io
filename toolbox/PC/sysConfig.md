@@ -3,6 +3,7 @@
 ## jpyter系统配置
 
 ### 修改配置文件
+
 ```python
 jupyter notebook --generate-config
 vi ~/.jupyter/jupyter_notebook_config.py
@@ -22,6 +23,7 @@ nohup jupyter notebook &
 # 更改默认目录
 c.NotebookApp.notebook_dir = u'需要默认的路径' 
 ```
+
 
 ### 创建密码
 jupyter notebook password
@@ -58,6 +60,7 @@ PermitRootLogin no # 如果你需要用 root 直接登录系统则此处改为 y
 PasswordAuthentication no # 将 no 改为 yes 表示使用帐号密码方式登录
 
 ```
+
 
 然后启动 ssh 服务
 
@@ -133,3 +136,23 @@ wget -r -p -np -k -P ~/tmp/ http://java-er.com
 
 ```
 
+
+# 定时提交
+实现对github的定时提交 \
+https://my.oschina.net/gcdong/blog/1137849
+
+crontab的使用
+
+http://www.2cto.com/os/201411/348362.html
+
+对crontab的调试
+
+https://blog.csdn.net/biyongyao/article/details/77791238
+
+获取当前时间
+
+https://www.cnblogs.com/zuiyue_jing/p/12557430.html
+
+date不可用的情况
+
+https://stackoverflow.com/questions/58388169/date-command-not-found-in-shell-script

@@ -156,3 +156,9 @@ https://www.cnblogs.com/zuiyue_jing/p/12557430.html
 date不可用的情况
 
 https://stackoverflow.com/questions/58388169/date-command-not-found-in-shell-script
+
+# Ubuntu子系统
+
+LxRunOffline -list
+
+LxRunOffline move -n {version} -d {dir}

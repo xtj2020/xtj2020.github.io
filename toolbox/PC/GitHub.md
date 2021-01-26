@@ -19,6 +19,8 @@ git remote add origin git@github.com:xtj2020/laboratory.git
 
 git remote add origin https://github.com/xtj2020/laboratory.git
 
+git pull origin master
+
 ## 新建一个远程仓库
 
 git remote 查看所有远程仓库 \

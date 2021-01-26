@@ -17,42 +17,17 @@ git log
 
 git remote add origin git@github.com:xtj2020/laboratory.git
 
+git remote add origin https://github.com/xtj2020/laboratory.git
+
 ## 新建一个远程仓库
 
 git remote 查看所有远程仓库 \
 git remote xxx 查看指定远程仓库地址 \
-git remote set-url origin 你新的远程仓库地址 \
-git@github.com:YotrolZ/helloTest.git
-
-
+git remote set-url origin 修改远程仓库地址 \
 git remote set-url origin git@github.com:xtj2020/laboratory.git
 
 
-
-
-
-
-## 定时提交
-实现对github的定时提交 \
-https://my.oschina.net/gcdong/blog/1137849
-
-crontab的使用
-
-http://www.2cto.com/os/201411/348362.html
-
-对crontab的调试
-
-https://blog.csdn.net/biyongyao/article/details/77791238
-
-获取当前时间
-
-https://www.cnblogs.com/zuiyue_jing/p/12557430.html
-
-date不可用的情况
-
-https://stackoverflow.com/questions/58388169/date-command-not-found-in-shell-script
-
-## 一个完整的过程
+## 一个完整的提交过程
 git pull
 
 git status
@@ -62,6 +37,28 @@ git add -a
 git commit -m "描述"
 
 git push
+
+**自动化提交脚本：** \
+1、crontab -e
+```bash
+* */2 * * * /bin/bash /Users/xtj2020/notebook/domain_pull.sh
+*/5 * * * * /bin/bash /Users/xtj2020/notebook/gitpage_pull.sh
+```
+2、sh中的编写
+```bash
+#! /bin/sh
+source /etc/profile
+source ~/.bash_profile
+PATH="/Users/xtj2020/notebook/xtj2020.github.io/"
+cd $PATH
+currentdate=`/bin/date '+%Y%m%d%H%m'`
+/usr/bin/git pull
+/usr/bin/git add -A
+/usr/bin/git commit -m $currentdate
+/usr/bin/git push
+/bin/date >>  /Users/xtj2020/notebook/cron.txt
+```
+3、ps |grep crontab
 
 ## 不用每次输密码
 
@@ -109,4 +106,4 @@ Password for 'https://USERNAME@github.com': <PASSWORD>
 
 ## 版本的回滚
     
-https://blog.csdn.net/ligang2585116/article/details/71094887    
+https://blog.csdn.net/ligang2585116/article/details/71094887

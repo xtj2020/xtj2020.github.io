@@ -38,10 +38,27 @@ git commit -m "描述"
 
 git push
 
-**自动化提交脚本：**
-1、
-2、
-3、
+**自动化提交脚本：** \
+1、crontab -e
+```bash
+* */2 * * * /bin/bash /Users/xtj2020/notebook/domain_pull.sh
+*/5 * * * * /bin/bash /Users/xtj2020/notebook/gitpage_pull.sh
+```
+2、sh中的编写
+```bash
+#! /bin/sh
+source /etc/profile
+source ~/.bash_profile
+PATH="/Users/xtj2020/notebook/xtj2020.github.io/"
+cd $PATH
+currentdate=`/bin/date '+%Y%m%d%H%m'`
+/usr/bin/git pull
+/usr/bin/git add -A
+/usr/bin/git commit -m $currentdate
+/usr/bin/git push
+/bin/date >>  /Users/xtj2020/notebook/cron.txt
+```
+3、ps |grep crontab
 
 ## 不用每次输密码
 

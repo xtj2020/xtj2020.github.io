@@ -92,9 +92,9 @@
 
 - [FasterRCNN](https://xtj2020.top/stone/DM/FasterRCNN.html)-FasterRCNN [edit](./stone/DM/FasterRCNN.md)
 
-# 分析框架([frame](./frame/))
+# 分析框架([frame](https://xtj2020.top/sub_self.html))
 
-## [DP](./frame/DP/)-展示
+## [DP](./sub_self.md)-展示
 - [RIADD](https://xtj2020.top/frame/DP/RIADD_document.html)-RIADD相关文献 [edit](./frame/DP/RIADD_document.md)
 - [RIADD](https://xtj2020.top/frame/DP/RIADD_experiment.html)-RIADD实验 [edit](./frame/DP/RIADD_experiment.md)
 

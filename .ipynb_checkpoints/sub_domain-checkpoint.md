@@ -23,8 +23,8 @@
 
 ## 练字
 - [2021年1-2月](https://xtj2020.top/sub_domain/train/练字/2021-2.html) [edit](./sub_domain/train/练字/2021-2.md)
-- [衡水数字]
-- [衡水英文]
+- [衡水数字](https://xtj2020.top/sub_domain/train/练字/衡水数字.html) [edit](./sub_domain/train/练字/衡水数字.md)
+- [衡水英文](https://xtj2020.top/sub_domain/train/练字/衡水英文.html) [edit](./sub_domain/train/练字/衡水英文.md)
 
 ## 数量关系
 

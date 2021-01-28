@@ -168,3 +168,16 @@ LxRunOffline move -n {version} -d {dir}
 sudo passwd root
 
 启动服务与关闭服务<https://zhuanlan.zhihu.com/p/224753478>
+
+# 配置Notedown
+```python
+pip install https://github.com/mli/notedown/tarball/master
+jupyter notebook --NotebookApp.contents_manager_class='notedown.NotedownContentsManager'
+
+jupyter notebook –generate-config 
+
+在配置文件（~/.jupyter/jupyter_notebook_config.py）末尾加入
+
+c.NotebookApp.contents_manager_class = ‘notedown.NotedownContentsManager’
+
+```

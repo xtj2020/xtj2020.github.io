@@ -21,6 +21,28 @@
 
 # [Train&Skill](./sub_domain/train/)
 
+## 练字
+- [2021年1-2月]
+- [衡水数字]
+- [衡水英文]
+
+## 数量关系
+
+
+## 申论
+
+
+## 判断推理
+
+
+## 常识判断
+
+
+## 资料分析
+
+
+## 语言理解与表达
+
 
 
 # [Coffee&Wine](./sub_domain/wine/)
@@ -49,5 +71,3 @@
 - [结晶](https://xtj2020.top/sub_domain/wine/结晶.html)
 - [酒杯](https://xtj2020.top/sub_domain/wine/酒杯.html)
 - [醒酒器](https://xtj2020.top/sub_domain/wine/醒酒器.html)
-
-

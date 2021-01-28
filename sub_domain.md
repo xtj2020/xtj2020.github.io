@@ -22,7 +22,7 @@
 # [Train&Skill](./sub_domain/train/)
 
 ## 练字
-- [2021年1-2月]
+- [2021年1-2月](https://xtj2020.top/sub_domain/train/练字/2021-2.html) [edit](./sub_domain/train/练字/2021-2.md)
 - [衡水数字]
 - [衡水英文]
 

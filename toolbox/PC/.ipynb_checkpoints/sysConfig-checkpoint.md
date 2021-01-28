@@ -170,6 +170,7 @@ sudo passwd root
 启动服务与关闭服务<https://zhuanlan.zhihu.com/p/224753478>
 
 # 配置Notedown
+
 ```python
 pip install https://github.com/mli/notedown/tarball/master
 jupyter notebook --NotebookApp.contents_manager_class='notedown.NotedownContentsManager'
@@ -181,3 +182,17 @@ jupyter notebook –generate-config
 c.NotebookApp.contents_manager_class = ‘notedown.NotedownContentsManager’
 
 ```
+
+
+# jupyter安装插件
+
+```python
+conda install -c conda-forge jupyter_contrib_nbextensions
+
+jupyter contrib nbextension install --user
+
+```
+当出现500错误的时候
+
+conda install nbconvert=5.4.1
+

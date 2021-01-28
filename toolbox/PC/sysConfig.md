@@ -192,4 +192,7 @@ conda install -c conda-forge jupyter_contrib_nbextensions
 jupyter contrib nbextension install --user
 
 ```
+当出现500错误的时候
+
+conda install nbconvert=5.4.1
 

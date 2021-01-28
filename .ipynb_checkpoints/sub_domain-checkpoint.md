@@ -19,6 +19,9 @@
 ## [ZL](./economics/ZL/)-战略
 
 
+# [Train&Skill](./Train/)
+
+
 
 # [Coffee&Wine](./wine/)
 
@@ -32,7 +35,12 @@
 ## [Breed](./wine/Breed/)
 
 
+## [sence]
+- [years]
 
+
+
+## [frame]  
 
 
 - [产区](https://xtj2020.top/wine/产区.html)
@@ -42,4 +50,4 @@
 - [酒杯](https://xtj2020.top/wine/酒杯.html)
 - [醒酒器](https://xtj2020.top/wine/醒酒器.html)
 
-# [Lostic&Philosophy](./philosophy/)
+

@@ -8,7 +8,7 @@
 - [最美的太阳](https://xtj2020.top/lyrics/最美的太阳.html)
 - [缘分一道桥](https://xtj2020.top/lyrics/缘分一道桥.html)
 - [爱江山更爱美人](https://xtj2020.top/lyrics/爱江山更爱美人.html)
-- [Glitter&Gold]
+- [Glitter&Gold](https://xtj2020.top/lyrics/Glitter&Gold.html)
 - [NancyMUlligan]
 - [FeelGoodInc]
 - [pool](https://xtj2020.top/lyrics/pool.html)

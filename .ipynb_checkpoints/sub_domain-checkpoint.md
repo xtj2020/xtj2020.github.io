@@ -1,38 +1,38 @@
-# [Economics&Managementeconomics](./economics/)
+# [Economics&Managementeconomics](./sub_domain/)
 
-## [KJ](./economics/KJ/)-会计
-
-
-
-## [SJ](./economics/SJ/)-审计
+## [KJ](./sub_domain/cpa/KJ/)-会计
 
 
 
-## [SF](./economics/SF/)-税法
+## [SJ](./sub_domain/cpa/SJ/)-审计
 
 
 
-## [JF](./economics/JF/)-经济法
+## [SF](./sub_domain/cpa/SF/)-税法
 
 
 
-## [ZL](./economics/ZL/)-战略
-
-
-# [Train&Skill](./Train/)
+## [JF](./sub_domain/cpa/JF/)-经济法
 
 
 
-# [Coffee&Wine](./wine/)
-
-## [ProducingArea](./wine/ProducingArea/)
-
-- [Champagne-France](./wine/ProducingArea/Champagne-France.html) [edit](./wine/ProducingArea/Champagne-France.md)
-- [Beaujolais-France](./wine/ProducingArea/Beaujolais-France.html) [edit](./wine/ProducingArea/Beaujolais-France.md)
-- [Alsace-France](./wine/ProducingArea/Alsace-France.html) [edit](./wine/ProducingArea/Alsace-France.md)
+## [ZL](./sub_domain/cpa/ZL/)-战略
 
 
-## [Breed](./wine/Breed/)
+# [Train&Skill](./sub_domain/train/)
+
+
+
+# [Coffee&Wine](./sub_domain/wine/)
+
+## [ProducingArea](./sub_domain/wine/ProducingArea/)
+
+- [Champagne-France](./sub_domain/wine/ProducingArea/Champagne-France.html) [edit](./sub_domain/wine/ProducingArea/Champagne-France.md)
+- [Beaujolais-France](./sub_domain/wine/ProducingArea/Beaujolais-France.html) [edit](./sub_domain/wine/ProducingArea/Beaujolais-France.md)
+- [Alsace-France](./sub_domain/wine/ProducingArea/Alsace-France.html) [edit](./wine/ProducingArea/Alsace-France.md)
+
+
+## [Breed](./sub_domain/wine/Breed/)
 
 
 ## [sence]
@@ -43,11 +43,11 @@
 ## [frame]  
 
 
-- [产区](https://xtj2020.top/wine/产区.html)
-- [侍酒](https://xtj2020.top/wine/侍酒.html)
-- [其余知识](https://xtj2020.top/wine/其余知识.html)
-- [结晶](https://xtj2020.top/wine/结晶.html)
-- [酒杯](https://xtj2020.top/wine/酒杯.html)
-- [醒酒器](https://xtj2020.top/wine/醒酒器.html)
+- [产区](https://xtj2020.top/sub_domain/wine/产区.html)
+- [侍酒](https://xtj2020.top/sub_domain/wine/侍酒.html)
+- [其余知识](https://xtj2020.top/sub_domain/wine/其余知识.html)
+- [结晶](https://xtj2020.top/sub_domain/wine/结晶.html)
+- [酒杯](https://xtj2020.top/sub_domain/wine/酒杯.html)
+- [醒酒器](https://xtj2020.top/sub_domain/wine/醒酒器.html)
 
 

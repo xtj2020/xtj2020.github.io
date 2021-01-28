@@ -1,6 +1,5 @@
 ## 绕口令
-
-
+- [110个绕口令](https://xtj2020.top/sub_memory/绕口令.html) [edit](./sub_memory/绕口令.md)
 
 ## 歌词
 - [口是心非](https://xtj2020.top/sub_memory/口是心非.html)

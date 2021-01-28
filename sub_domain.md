@@ -1,25 +1,25 @@
-# [Economics&Managementeconomics](./economics/)
+# [Economics&Managementeconomics](./sub_domain/)
 
-## [KJ](./economics/KJ/)-会计
-
-
-
-## [SJ](./economics/SJ/)-审计
+## [KJ](./sub_domain/cpa/KJ/)-会计
 
 
 
-## [SF](./economics/SF/)-税法
+## [SJ](./sub_domain/cpa/SJ/)-审计
 
 
 
-## [JF](./economics/JF/)-经济法
+## [SF](./sub_domain/cpa/SF/)-税法
 
 
 
-## [ZL](./economics/ZL/)-战略
+## [JF](./sub_domain/cpa/JF/)-经济法
 
 
-# [Train&Skill](./Train/)
+
+## [ZL](./sub_domain/cpa/ZL/)-战略
+
+
+# [Train&Skill](./sub_domain/train/)
 
 
 

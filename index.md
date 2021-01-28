@@ -1,6 +1,6 @@
-# 代码工具（[toolbox](https://xtj2020.top/sub_index.html)）
+# 代码工具（[toolbox](https://xtj2020.top/sub_domain.html)）
 
-## [DA](./sub_index.md)-数据处理
+## [DA](./sub_domain.md)-数据处理
 
 - [Learnnp](https://xtj2020.top/toolbox/DA/Learnnp.html)-numpy库 [edit](./toolbox/DA/Learnnp.md)
 
@@ -47,9 +47,9 @@
 
 
 
-# 概念积累([stone](https://xtj2020.top/lyrics.html))
+# 概念积累([stone](https://xtj2020.top/sub_memory.html))
 
-## [PT](./lyrics.md)-pytorch
+## [PT](./sub_memory.md)-pytorch
 
 - [PytorchAPI](https://xtj2020.top/toolbox/PT/pytorchAPI.html)-pytorch API [edit](./toolbox/PT/pytorchAPI.md) 
 - [FramePytorch](https://xtj2020.top/toolbox/PT/framePytorch.html)-pytoch框架 [edit](./toolbox/PT/framePytorch.md)

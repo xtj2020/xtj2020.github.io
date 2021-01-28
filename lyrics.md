@@ -14,3 +14,6 @@
 - [FeelGoodInc](https://xtj2020.top/lyrics/FeelGoodInc.html)
 - [pool](https://xtj2020.top/lyrics/pool.html)
 - [你若成风](https://xtj2020.top/lyrics/你若成风.html) [edit](./lyrics/你若成风.md)
+
+## 背诵
+- [26字母](https://xtj2020.top/lyrics/26字母.html) [edit](./lyrics/26字母.md)

@@ -29,6 +29,7 @@
 - [衡水英文](https://xtj2020.top/sub_domain/train/练字/衡水英文.html) [edit](./sub_domain/train/练字/衡水英文.md)
 
 ## 数量关系
+- [速算](https://xtj2020.top/sub_domain/train/数量关系/速算.html) [edit](./sub_domain/train/数量关系/速算.md)
 
 
 ## 申论
@@ -44,6 +45,10 @@
 
 
 ## 语言理解与表达
+
+## 马克思理论
+
+-[党章]
 
 
 

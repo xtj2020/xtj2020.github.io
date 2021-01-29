@@ -1,22 +1,24 @@
 # [Economics&Managementeconomics](./sub_domain/)
 
-## [KJ](./sub_domain/cpa/KJ/)-会计
+## [会计](./sub_domain/cpa/KJ/)
+- 总论
+- 存货
+- 固定资产
 
 
 
-## [SJ](./sub_domain/cpa/SJ/)-审计
+## [审计](./sub_domain/cpa/SJ/)
 
 
 
-## [SF](./sub_domain/cpa/SF/)-税法
+## [税法](./sub_domain/cpa/SF/)
+
+
+## [经济法](./sub_domain/cpa/JF/)
 
 
 
-## [JF](./sub_domain/cpa/JF/)-经济法
-
-
-
-## [ZL](./sub_domain/cpa/ZL/)-战略
+## [战略](./sub_domain/cpa/ZL/)
 
 
 # [Train&Skill](./sub_domain/train/)

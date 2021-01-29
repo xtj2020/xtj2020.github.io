@@ -1,6 +1,9 @@
 # [Economics&Managementeconomics](./sub_domain/)
 
 ## [会计](./sub_domain/cpa/KJ/)
+- 总论
+- 存货
+- 固定资产
 
 
 

@@ -3,7 +3,7 @@
 ## [会计](./sub_domain/cpa/KJ/)
 - 总论
 - 存货
-- [固定资产](https://xtj2020.top/sub_domain/cpa/KJ/固定资产.html) [edit](https://xtj2020.top/sub_domain/cpa/KJ/固定资产.html)
+- [固定资产](https://xtj2020.top/sub_domain/cpa/KJ/固定资产.html) [edit](./sub_domain/cpa/KJ/固定资产.md)
 
 
 

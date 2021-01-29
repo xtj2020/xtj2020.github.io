@@ -29,6 +29,7 @@
 - [衡水英文](https://xtj2020.top/sub_domain/train/练字/衡水英文.html) [edit](./sub_domain/train/练字/衡水英文.md)
 
 ## 数量关系
+- [速算]
 
 
 ## 申论

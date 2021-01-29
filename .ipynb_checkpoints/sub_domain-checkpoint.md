@@ -23,7 +23,7 @@
 
 # [Train&Skill](./sub_domain/train/)
 
-[总的方法](https://xtj2020.top/sub_domain/train.html) [edit](./sub_domain/train.md)
+[总的方法](https://xtj2020.top/sub_domain/train/train.html) [edit](./sub_domain/train/train.md)
 
 ## 练字
 - [2021年1-2月](https://xtj2020.top/sub_domain/train/练字/2021-2.html) [edit](./sub_domain/train/练字/2021-2.md)

@@ -45,6 +45,10 @@
 
 ## 语言理解与表达
 
+## 马克思理论
+
+-[党章]
+
 
 
 # [Coffee&Wine](./sub_domain/wine/)

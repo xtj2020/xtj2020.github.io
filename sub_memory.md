@@ -11,7 +11,7 @@
 - [缘分一道桥](https://xtj2020.top/sub_memory/缘分一道桥.html)
 - [爱江山更爱美人](https://xtj2020.top/sub_memory/爱江山更爱美人.html)
 - [Glitter&Gold](https://xtj2020.top/sub_memory/Glitter&Gold.html)
-- [NancyMUlligan](https://xtj2020.top/sub_memory/NancyMUlligan.html)
+- [NancyMUlligan](https://xtj2020.top/sub_memory/NancyMUlligan.html) [edit](./sub_memory/NancyMUlligan.md)
 - [FeelGoodInc](https://xtj2020.top/sub_memory/FeelGoodInc.html)
 - [pool](https://xtj2020.top/sub_memory/pool.html)
 - [你若成风](https://xtj2020.top/sub_memory/你若成风.html) [edit](./sub_memory/你若成风.md)

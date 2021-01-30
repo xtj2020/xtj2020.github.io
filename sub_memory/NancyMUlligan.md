@@ -9,6 +9,7 @@ I made that wedding ring from dentist gold
 And I asked her father but her daddy said no
 You can’t marry my daughter
 She and I went on the run
+
 Don’t care about religion
 I’m gonna marry the woman I love
 Down by the Wexford border

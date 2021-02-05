@@ -24,7 +24,10 @@ pd.set_option('display.width', 200) \
 横向最多显示多少个字符， 一般80不适合横向的屏幕，平时多用
 200.pd.set_option('display.max_columns', 12) \
  pd.set_option('display.max_rows', 10)  \
-显示的最大行数和列数
+显示的最大行数和列数 \
+pd.set_option('display.max_rows', None) \
+将所有内容进行展示
+
 pd.set_option('colheader_justify', 'left')    显示的单元格内容靠左边还是右边
 
 # 基本操作
@@ -297,16 +300,3 @@ drop方法返回的是一个在指定轴上删除了指定值的新对象
 
 
 当使用非整数作为切片索引时,其末端是包含的（inclusive)
-
-
-
-
-
-
-
-
-
-
-
-
-

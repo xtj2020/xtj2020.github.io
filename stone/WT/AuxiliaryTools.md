@@ -66,6 +66,7 @@ vim my_arch.py
 bash ../tikzmake.sh my_arch
 ```
 
+
 模版
 
 ```python
@@ -95,5 +96,4 @@ def main():
 if __name__ == '__main__':
     main()
 ```
-
 

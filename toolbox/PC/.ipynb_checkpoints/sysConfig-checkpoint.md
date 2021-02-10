@@ -188,7 +188,22 @@ LxRunOffline move -n {version} -d {dir}
 
 sudo passwd root
 
-启动服务与关闭服务<https://zhuanlan.zhihu.com/p/224753478>
+# 启动服务与关闭服务
+
+
+Linux子系统（WSL ）是基于 LxssManager 服务运行的。
+
+重启WSL的话只需要将 LxssManager 重启即可。
+
+停止LxssManager服务
+net stop LxssManager  
+ 
+启动LxssManager服务
+net start LxssManager  
+
+
+在管理员权限的cmd窗口输入 services.msc 打开服务 \
+找到LxssManager右键重新启动即可
 
 # 配置Notedown
 

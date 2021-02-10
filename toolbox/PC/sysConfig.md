@@ -26,15 +26,23 @@ c.NotebookApp.notebook_dir = u'需要默认的路径'
 
 
 ### 创建密码
+
+生成密码
+
 jupyter notebook password
 
-/home/xtj/.jupyter/jupyter_notebook_config.json
+导出密码
 
 from notebook.auth import passwd
 
 passwd()
 
-'argon2:$argon2id$v=19$m=10240,t=10,p=8$2GbVfeHBrTubg30miNYbyQ$521sJfIN6sf+CSJX9sWGhw'
+## 开启jupyter服务
+
+
+jupyter notebook --allow-root
+
+
 
 
 ## 使用kaggle下载
@@ -138,7 +146,20 @@ wget -r -p -np -k -P ~/tmp/ http://java-er.com
 
 
 # 定时提交
+
+
+service crond restart
+
+service crond stop
+
+无service服务的时候:
+
+/etc/init.d/cron  top
+
+/etc/init.d/cron start
+
 实现对github的定时提交 \
+
 https://my.oschina.net/gcdong/blog/1137849
 
 crontab的使用

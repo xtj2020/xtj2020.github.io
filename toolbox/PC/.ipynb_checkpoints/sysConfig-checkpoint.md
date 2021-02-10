@@ -26,15 +26,23 @@ c.NotebookApp.notebook_dir = u'需要默认的路径'
 
 
 ### 创建密码
+
+生成密码
+
 jupyter notebook password
 
-/home/xtj/.jupyter/jupyter_notebook_config.json
+导出密码
 
 from notebook.auth import passwd
 
 passwd()
 
-'argon2:$argon2id$v=19$m=10240,t=10,p=8$2GbVfeHBrTubg30miNYbyQ$521sJfIN6sf+CSJX9sWGhw'
+## 开启jupyter服务
+
+
+jupyter notebook --allow-root
+
+
 
 
 ## 使用kaggle下载
@@ -138,7 +146,20 @@ wget -r -p -np -k -P ~/tmp/ http://java-er.com
 
 
 # 定时提交
+
+
+service crond restart
+
+service crond stop
+
+无service服务的时候:
+
+/etc/init.d/cron  top
+
+/etc/init.d/cron start
+
 实现对github的定时提交 \
+
 https://my.oschina.net/gcdong/blog/1137849
 
 crontab的使用
@@ -192,7 +213,30 @@ conda install -c conda-forge jupyter_contrib_nbextensions
 jupyter contrib nbextension install --user
 
 ```
+
+
 当出现500错误的时候
 
 conda install nbconvert=5.4.1
 
+# 查看系统配置
+
+df -h命令来查看磁盘信息， -h 选项为根据大小适当显示
+
+df -hl：查看磁盘剩余空间 \
+df -h：查看每个根路径的分区大小 \
+du -sh [目录名]：返回该目录的大小 \
+du -sm [文件夹]：返回该文件夹总M数 \
+du -h [目录名]：查看指定文件夹下的所有文件大小（包含子文件夹）
+
+
+du 命令用于查看当前目录的总大小： \
+
+-s：对每个Names参数只给出占用的数据块总数。 \
+-a：递归地显示指定目录中各文件及子目录中各文件占用的数据块数。若既不指定-s，也不指定-a，则只显示Names中的每一个目录及其中的各子目录所占的磁盘块数。 \
+-b：以字节为单位列出磁盘空间使用情况（系统默认以k字节为单位）。 \
+-k：以1024字节为单位列出磁盘空间使用情况。 \
+-c：最后再加上一个总计（系统默认设置）。 \
+-l：计算所有的文件大小，对硬链接文件，则计算多次。 \
+-x：跳过在不同文件系统上的目录不予统计。\
+-h：以K，M，G为单位，提高信息的可读性。

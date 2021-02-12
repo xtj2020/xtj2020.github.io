@@ -1,7 +1,7 @@
 # [Economics&Managementeconomics](./sub_domain/)
 
 ## [会计](./sub_domain/cpa/KJ/)
-- 3.1[总论]
+第一章 [总论]
 - [存货]
 - [固定资产](https://xtj2020.top/sub_domain/cpa/KJ/固定资产.html) [edit](./sub_domain/cpa/KJ/固定资产.md)
 - [无形资产]

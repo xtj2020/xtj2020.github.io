@@ -1,8 +1,3 @@
-## 书单
-- []
-
-## 歌单
-
 ## 绕口令
 - [体系](https://xtj2020.top/sub_memory/体系.html) [edit](./sub_memory/体系.md)
 - [110个绕口令](https://xtj2020.top/sub_memory/绕口令.html) [edit](./sub_memory/绕口令.md)

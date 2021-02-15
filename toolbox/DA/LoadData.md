@@ -555,8 +555,11 @@ data1 = pickle.load(pkl_file)
 
 h5file = h5py.File(filename,'w')
 
-w 覆盖创建
-r zhi'du
+w 覆盖创建新文件 \
+r 只读 \
+r+ 读写
+a 打开读写文件（如果文件不存在则创建）
+w- 这将创建一个新文件，但如果已经存在相同名称的文件，则会失败。
 
 ```python
 X = h5file.create_dataset(shape=(0,args.patch_size,args.patch_size),　    #数据集的维度

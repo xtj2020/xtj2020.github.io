@@ -551,7 +551,7 @@ data1 = pickle.load(pkl_file)
 <https://www.jianshu.com/p/998c861d32e3>
 
 
-## 创建
+## 文件操作
 
 h5file = h5py.File(filename,'w')
 
@@ -561,7 +561,7 @@ r+ 读写
 a 打开读写文件（如果文件不存在则创建） \
 w- 这将创建一个新文件，但如果已经存在相同名称的文件，则会失败。
 
-## 打开
+### 打开
 
 ```python
 with h5py.File("name.hdf5", "w") as f:
@@ -570,13 +570,8 @@ with h5py.File("name.hdf5", "w") as f:
 f = h5py.File("name.hdf5", driver="core", backing_store=True)
 ```
 
-```python
-X = h5file.create_dataset(shape=(0,args.patch_size,args.patch_size),　    #数据集的维度
-maxshape = (None,args.patch_size,args.patch_size),     #数据集的允许最大维度　
-dtype=float,compression='gzip',name='train',                      #数据类型、是否压缩，以及数据集的名字
-                              chunks=(args.chunk_size,args.patch_size,args.patch_size))         #分块存储，每一分块的大小
-```
-## 数据类型
+
+### 数据类型
 
 查看数据类型
 
@@ -584,6 +579,17 @@ dset.dtype \
 dset.shape
 
 可以用列表切片的方法进行读取
+
+## Datasets
+
+### 创建
+```python
+X = h5file.create_dataset(shape=(0,args.patch_size,args.patch_size),　    #数据集的维度
+maxshape = (None,args.patch_size,args.patch_size),     #数据集的允许最大维度　
+     dtype=float,compression='gzip',name='train',                      #数据类型、是否压缩，以及数据集的名字
+     chunks=(args.chunk_size,args.patch_size,args.patch_size))         #分块存储，每一分块的大小
+```
+也可以使用字典的方式进行创建
 
 
 

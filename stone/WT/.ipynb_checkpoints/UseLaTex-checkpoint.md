@@ -219,12 +219,14 @@ quoted statements in a narrowed width.
 # 列表与对齐
 
 ## 制表环境
+```python
 
 \begin{tabbing}
 \= \\\
 \\>\\\
 \\>
 \end{tabbing}
+```
 
 # 图
 

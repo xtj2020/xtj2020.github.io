@@ -234,6 +234,12 @@ jupyter contrib nbextension install --user
 
 conda install nbconvert=5.4.1
 
+如果出现不能自动补全的情况
+
+插件安装Hint
+
+jedi版本过高,需要为0.17
+
 # 查看系统配置
 
 df -h命令来查看磁盘信息， -h 选项为根据大小适当显示

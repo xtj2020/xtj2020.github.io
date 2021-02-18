@@ -27,6 +27,7 @@
 [总的方法](https://xtj2020.top/sub_domain/train/train.html) [edit](./sub_domain/train/train.md)
 
 ## 练字
+- [2021-2.15-2.21](https://xtj2020.top/sub_domain/train/练字/2021-2.15-2.21.html) [edit](./sub_domain/train/练字/2021-2.15-2.21.md)
 - [2021-2.8-2.14](https://xtj2020.top/sub_domain/train/练字/2021-2.8-2.14.html) [edit](./sub_domain/train/练字/2021-2.8-2.14.md)
 - [2021-1.28-2.7](https://xtj2020.top/sub_domain/train/练字/2021-1.28-2.7.html) [edit](./sub_domain/train/练字/2021-1.28-2.7.md)
 - [衡水数字](https://xtj2020.top/sub_domain/train/练字/衡水数字.html) [edit](./sub_domain/train/练字/衡水数字.md)

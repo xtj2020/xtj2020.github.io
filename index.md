@@ -94,7 +94,7 @@
 - [FasterRCNN](https://xtj2020.top/stone/DM/FasterRCNN.html)-FasterRCNN [edit](./stone/DM/FasterRCNN.md)
 
 ## [ML](./stone/ML)-机器学习基本概念与方法
--[Define](https://xtj2020.top/stone/ML/Define.html)-基础的模型 [edit](./stone/ML/Define.md)
+-[Define](https://xtj2020.top/stone/ML/Define.html)-基础概念 [edit](./stone/ML/Define.md)
 
 
 # 分析框架([frame](https://xtj2020.top/sub_self.html))

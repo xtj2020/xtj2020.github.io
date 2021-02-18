@@ -5,7 +5,7 @@
 - [存货]
 - [固定资产](https://xtj2020.top/sub_domain/cpa/KJ/固定资产.html) [edit](./sub_domain/cpa/KJ/固定资产.md)
 - [无形资产]
-
+- 11 [借款费用](https://xtj2020.top/sub_domain/cpa/KJ/固定资产.html) [edit](./sub_domain/cpa/KJ/借款费用.md)
 
 
 ## [审计](./sub_domain/cpa/SJ/)

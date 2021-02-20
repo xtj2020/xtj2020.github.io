@@ -142,39 +142,6 @@ wget -r -p -np -k -P ~/tmp/ http://java-er.com
 -A 指定要下载的文件样式列表，多个样式用逗号分隔
 -i 后面跟一个文件，文件内指明要下载的URL
 
-# 定时提交
-
-
-service crond restart
-
-service crond stop
-
-无service服务的时候:
-
-/etc/init.d/cron  top
-
-/etc/init.d/cron start
-
-实现对github的定时提交 \
-
-https://my.oschina.net/gcdong/blog/1137849
-
-crontab的使用
-
-http://www.2cto.com/os/201411/348362.html
-
-对crontab的调试
-
-https://blog.csdn.net/biyongyao/article/details/77791238
-
-获取当前时间
-
-https://www.cnblogs.com/zuiyue_jing/p/12557430.html
-
-date不可用的情况
-
-https://stackoverflow.com/questions/58388169/date-command-not-found-in-shell-
-script
 
 # Ubuntu子系统
 
@@ -183,6 +150,10 @@ LxRunOffline -list
 LxRunOffline move -n {version} -d {dir}
 
 设置root密码
+
+sudo passwd
+
+修改密码
 
 sudo passwd root
 
@@ -219,11 +190,7 @@ c.NotebookApp.contents_manager_class = ‘notedown.NotedownContentsManager’
 # jupyter安装插件
 
 ```{.python .input}
-conda install -c conda-forge jupyter_contrib_nbextensions
-
-jupyter contrib nbextension install --user
-
-#卸载
+# 卸载
 pip uninstall jupyter_contrib_nbextensions
 pip uninstall jupyter_nbextensions_configurator
 

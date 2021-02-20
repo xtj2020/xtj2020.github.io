@@ -3,7 +3,7 @@
 https://www.yiibai.com/git/git_commit.html
 
 
-### 本地仓
+## 本地仓
 
 git分为三个仓库：远程仓库、本地仓库、缓存仓库
 
@@ -72,15 +72,27 @@ git push
 
 
 ## 自动化提交脚本：
+
+service crond restart
+
+service crond stop
+
+无service服务的时候:
+
+/etc/init.d/cron  top
+
+/etc/init.d/cron start
+
 1、crontab -e
-```python
+
+```{.python .input}
 * */2 * * * /bin/bash /Users/xtj2020/notebook/domain_pull.sh
 */5 * * * * /bin/bash /Users/xtj2020/notebook/gitpage_pull.sh
 ```
 
 2、sh中的编写
 
-```python
+```{.python .input}
 source /etc/profile
 source ~/.bash_profile
 PATH="/Users/xtj2020/notebook/xtj2020.github.io/"

@@ -1,13 +1,22 @@
-# 系统配置(system)
+# jpyter系统配置
 
-## jpyter系统配置
+## 创建密码
 
-### 修改配置文件
+生成密码
+
+jupyter notebook password
+
+导出密码
+
+from notebook.auth import passwd
+
+passwd()
+
+## 修改配置文件
 
 ```python
 jupyter notebook --generate-config
 vi ~/.jupyter/jupyter_notebook_config.py
-
 #设置密码与指定端口
 c.NotebookApp.password=u'sha1:6c9e6e11ed'
 c.NotebookApp.port = 9999
@@ -25,34 +34,34 @@ c.NotebookApp.notebook_dir = u'需要默认的路径'
 ```
 
 
-### 创建密码
 
-生成密码
 
-jupyter notebook password
 
-导出密码
+## 配置Notedown
 
-from notebook.auth import passwd
 
-passwd()
+pip install https://github.com/mli/notedown/tarball/master
+jupyter notebook
+--NotebookApp.contents_manager_class='notedown.NotedownContentsManager'
+
+jupyter notebook –generate-config
+
+在配置文件（~/.jupyter/jupyter_notebook_config.py）末尾加入
+
+c.NotebookApp.contents_manager_class = ‘notedown.NotedownContentsManager’
 
 ## 开启jupyter服务
 
 
 jupyter notebook --allow-root
 
-
-
-
-## 使用kaggle下载
+# 使用kaggle下载
 
 ```python
 pip install kaggle
 在我的账号里找到kaggle.json文件，放入～.kaggle目录下
 然后同意数据集协议，复制下载命令，对数据集进行下载
 ```
-
 
 ## 启用ssh服务
 
@@ -177,18 +186,7 @@ net start LxssManager
 在管理员权限的cmd窗口输入 services.msc 打开服务 \
 找到LxssManager右键重新启动即可
 
-# 配置Notedown
 
-
-pip install https://github.com/mli/notedown/tarball/master
-jupyter notebook
---NotebookApp.contents_manager_class='notedown.NotedownContentsManager'
-
-jupyter notebook –generate-config
-
-在配置文件（~/.jupyter/jupyter_notebook_config.py）末尾加入
-
-c.NotebookApp.contents_manager_class = ‘notedown.NotedownContentsManager’
 
 # jupyter安装插件
 

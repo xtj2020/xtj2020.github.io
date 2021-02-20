@@ -85,13 +85,14 @@ service crond stop
 
 1、crontab -e
 
-<code>* */2 * * * /bin/bash /Users/xtj2020/notebook/domain_pull.sh
+```python
+* */2 * * * /bin/bash /Users/xtj2020/notebook/domain_pull.sh
 */5 * * * * /bin/bash /Users/xtj2020/notebook/gitpage_pull.sh
-</code>
+```
 
 2、sh中的编写
 
-<code>source /etc/profile
+```python
 source ~/.bash_profile
 PATH="/Users/xtj2020/notebook/xtj2020.github.io/"
 cd $PATH
@@ -100,7 +101,8 @@ currentdate=`/bin/date '+%Y%m%d%H%m'`
 /usr/bin/git add -A
 /usr/bin/git commit -m $currentdate
 /usr/bin/git push
-/bin/date >>  /Users/xtj2020/notebook/cron.txt</code>
+/bin/date >>  /Users/xtj2020/notebook/cron.txt
+```
 
 3、ps |grep crontab
 

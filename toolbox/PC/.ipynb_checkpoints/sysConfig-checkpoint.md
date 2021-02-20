@@ -21,7 +21,7 @@ jupyter notebook --config jupyter_notebook_config_2.py
 #即使断开连接也能够继续运行
 nohup jupyter notebook &
 # 更改默认目录
-c.NotebookApp.notebook_dir = u'需要默认的路径' 
+c.NotebookApp.notebook_dir = u'需要默认的路径'
 ```
 
 ### 创建密码
@@ -59,12 +59,10 @@ apt-get install openssh-server
 vi /etc/ssh/sshd_config
 
 ```{.python .input}
-
 Port = 22 # 默认是22端口，如果和windows端口冲突或你想换成其他的否则不用动
 #ListenAddress 0.0.0.0 # 如果需要指定监听的IP则去除最左侧的井号，并配置对应IP，默认即监听PC所有IP
 PermitRootLogin no # 如果你需要用 root 直接登录系统则此处改为 yes
 PasswordAuthentication no # 将 no 改为 yes 表示使用帐号密码方式登录
-
 ```
 
 然后启动 ssh 服务
@@ -82,6 +80,12 @@ service ssh status
 sshd is running  显示此内容则表示启动正常
 
 passwd root 设置下密码
+
+不能正常启动
+sshd: no hostkeys available – exiting
+
+sudo ssh-keygen -A
+
 
 ## pytorch的配置
 
@@ -210,7 +214,6 @@ jupyter notebook –generate-config
 在配置文件（~/.jupyter/jupyter_notebook_config.py）末尾加入
 
 c.NotebookApp.contents_manager_class = ‘notedown.NotedownContentsManager’
-
 ```
 
 # jupyter安装插件
@@ -220,7 +223,26 @@ conda install -c conda-forge jupyter_contrib_nbextensions
 
 jupyter contrib nbextension install --user
 
+#卸载
+pip uninstall jupyter_contrib_nbextensions
+pip uninstall jupyter_nbextensions_configurator
+
+# 安装
+pip install jupyter_contrib_nbextensions
+jupyter contrib nbextension install --user
+pip install jupyter_nbextensions_configurator
 ```
+
+404 GET /static/notebook/js/mathjaxutils.js?v=2021010720231
+
+解决方法：
+
+1. Go to conda envs directory.  e.g. $ cd ~/anaconda3/envs/tf
+
+2. $ vi ./lib/python3.7/site-
+packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/render/render.js
+
+3. change 'notebook/js/mathjaxutils' to 'base/js/mathjaxutils'
 
 当出现500错误的时候
 

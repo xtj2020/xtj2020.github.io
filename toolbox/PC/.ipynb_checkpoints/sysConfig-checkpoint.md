@@ -4,7 +4,7 @@
 
 ### 修改配置文件
 
-```python
+```{.python .input}
 jupyter notebook --generate-config
 vi ~/.jupyter/jupyter_notebook_config.py
 
@@ -23,7 +23,6 @@ nohup jupyter notebook &
 # 更改默认目录
 c.NotebookApp.notebook_dir = u'需要默认的路径' 
 ```
-
 
 ### 创建密码
 
@@ -47,12 +46,11 @@ jupyter notebook --allow-root
 
 ## 使用kaggle下载
 
-```
+```{.python .input}
 pip install kaggle
 在我的账号里找到kaggle.json文件，放入～.kaggle目录下
 然后同意数据集协议，复制下载命令，对数据集进行下载
 ```
-
 
 ## 启用ssh服务
 
@@ -60,7 +58,7 @@ apt-get install openssh-server
 
 vi /etc/ssh/sshd_config
 
-```python
+```{.python .input}
 
 Port = 22 # 默认是22端口，如果和windows端口冲突或你想换成其他的否则不用动
 #ListenAddress 0.0.0.0 # 如果需要指定监听的IP则去除最左侧的井号，并配置对应IP，默认即监听PC所有IP
@@ -68,7 +66,6 @@ PermitRootLogin no # 如果你需要用 root 直接登录系统则此处改为 y
 PasswordAuthentication no # 将 no 改为 yes 表示使用帐号密码方式登录
 
 ```
-
 
 然后启动 ssh 服务
 
@@ -103,7 +100,7 @@ https://developer.nvidia.com/rdp/cudnn-archive
 
 # gpustat动态监控gpu
 pip install gpustat \
-watch --color -n1 gpustat -cpu 
+watch --color -n1 gpustat -cpu
 
 # GPU知识
 <https://blog.csdn.net/TTdreamloong/article/details/84886621>
@@ -126,7 +123,6 @@ watch --color -n1 gpustat -cpu
 
 wget -r -p -np -k -P ~/tmp/ http://java-er.com
 
-```python
 解释一下参数
 
 -P 表示下载到哪个目录
@@ -141,9 +137,6 @@ wget -r -p -np -k -P ~/tmp/ http://java-er.com
 -L 递归时不进入其它主机，如wget -c -r www.xxx.org/
 -A 指定要下载的文件样式列表，多个样式用逗号分隔
 -i 后面跟一个文件，文件内指明要下载的URL
-
-```
-
 
 # 定时提交
 
@@ -176,7 +169,8 @@ https://www.cnblogs.com/zuiyue_jing/p/12557430.html
 
 date不可用的情况
 
-https://stackoverflow.com/questions/58388169/date-command-not-found-in-shell-script
+https://stackoverflow.com/questions/58388169/date-command-not-found-in-shell-
+script
 
 # Ubuntu子系统
 
@@ -196,10 +190,10 @@ Linux子系统（WSL ）是基于 LxssManager 服务运行的。
 重启WSL的话只需要将 LxssManager 重启即可。
 
 停止LxssManager服务
-net stop LxssManager  
- 
+net stop LxssManager
+
 启动LxssManager服务
-net start LxssManager  
+net start LxssManager
 
 
 在管理员权限的cmd窗口输入 services.msc 打开服务 \
@@ -207,7 +201,7 @@ net start LxssManager
 
 # 配置Notedown
 
-```python
+```{.python .input}
 pip install https://github.com/mli/notedown/tarball/master
 jupyter notebook --NotebookApp.contents_manager_class='notedown.NotedownContentsManager'
 
@@ -219,16 +213,14 @@ c.NotebookApp.contents_manager_class = ‘notedown.NotedownContentsManager’
 
 ```
 
-
 # jupyter安装插件
 
-```python
+```{.python .input}
 conda install -c conda-forge jupyter_contrib_nbextensions
 
 jupyter contrib nbextension install --user
 
 ```
-
 
 当出现500错误的时候
 
@@ -254,7 +246,8 @@ du -h [目录名]：查看指定文件夹下的所有文件大小（包含子文
 du 命令用于查看当前目录的总大小： \
 
 -s：对每个Names参数只给出占用的数据块总数。 \
--a：递归地显示指定目录中各文件及子目录中各文件占用的数据块数。若既不指定-s，也不指定-a，则只显示Names中的每一个目录及其中的各子目录所占的磁盘块数。 \
+-a：递归地显示指定目录中各文件及子目录中各文件占用的数据块数。若既不指定-s，也不指定-a，则只显示Names中的每一个目录及其中的各子目录所占的磁盘块数。
+\
 -b：以字节为单位列出磁盘空间使用情况（系统默认以k字节为单位）。 \
 -k：以1024字节为单位列出磁盘空间使用情况。 \
 -c：最后再加上一个总计（系统默认设置）。 \

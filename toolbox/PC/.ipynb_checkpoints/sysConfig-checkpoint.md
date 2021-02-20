@@ -176,11 +176,12 @@ net start LxssManager
 
 # 配置Notedown
 
-```{.python .input}
+```python
 pip install https://github.com/mli/notedown/tarball/master
-jupyter notebook --NotebookApp.contents_manager_class='notedown.NotedownContentsManager'
+jupyter notebook
+--NotebookApp.contents_manager_class='notedown.NotedownContentsManager'
 
-jupyter notebook –generate-config 
+jupyter notebook –generate-config
 
 在配置文件（~/.jupyter/jupyter_notebook_config.py）末尾加入
 
@@ -189,7 +190,7 @@ c.NotebookApp.contents_manager_class = ‘notedown.NotedownContentsManager’
 
 # jupyter安装插件
 
-```{.python .input}
+```python
 # 卸载
 pip uninstall jupyter_contrib_nbextensions
 pip uninstall jupyter_nbextensions_configurator

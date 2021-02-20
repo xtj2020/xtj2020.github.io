@@ -4,7 +4,7 @@
 
 ### 修改配置文件
 
-```python
+```{.python .input}
 jupyter notebook --generate-config
 vi ~/.jupyter/jupyter_notebook_config.py
 
@@ -46,7 +46,7 @@ jupyter notebook --allow-root
 
 ## 使用kaggle下载
 
-```python
+```{.python .input}
 pip install kaggle
 在我的账号里找到kaggle.json文件，放入～.kaggle目录下
 然后同意数据集协议，复制下载命令，对数据集进行下载
@@ -58,7 +58,7 @@ apt-get install openssh-server
 
 vi /etc/ssh/sshd_config
 
-```python
+```{.python .input}
 Port = 22 # 默认是22端口，如果和windows端口冲突或你想换成其他的否则不用动
 #ListenAddress 0.0.0.0 # 如果需要指定监听的IP则去除最左侧的井号，并配置对应IP，默认即监听PC所有IP
 PermitRootLogin no # 如果你需要用 root 直接登录系统则此处改为 yes
@@ -178,9 +178,10 @@ net start LxssManager
 
 ```{.python .input}
 pip install https://github.com/mli/notedown/tarball/master
-jupyter notebook --NotebookApp.contents_manager_class='notedown.NotedownContentsManager'
+jupyter notebook
+--NotebookApp.contents_manager_class='notedown.NotedownContentsManager'
 
-jupyter notebook –generate-config 
+jupyter notebook –generate-config
 
 在配置文件（~/.jupyter/jupyter_notebook_config.py）末尾加入
 

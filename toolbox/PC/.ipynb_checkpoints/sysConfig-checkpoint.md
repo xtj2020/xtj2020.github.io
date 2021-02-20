@@ -4,25 +4,24 @@
 
 ### 修改配置文件
 
-```python
-jupyter notebook --generate-config
-vi ~/.jupyter/jupyter_notebook_config.py
 
-#设置密码与指定端口
-c.NotebookApp.password=u'sha1:6c9e6e11ed'
-c.NotebookApp.port = 9999
-#使得所有机器都能连接
-c.NotebookApp.allow_remote_access = True
-c.NotebookApp.ip='*'
-#默认不打开浏览器
-c.NotebookApp.open_browser = False
-#使用指定文件配置jupytermotebook
-jupyter notebook --config jupyter_notebook_config_2.py
-#即使断开连接也能够继续运行
-nohup jupyter notebook &
-# 更改默认目录
-c.NotebookApp.notebook_dir = u'需要默认的路径'
-```
+    jupyter notebook --generate-config
+    vi ~/.jupyter/jupyter_notebook_config.py
+
+    #设置密码与指定端口
+    c.NotebookApp.password=u'sha1:6c9e6e11ed'
+    c.NotebookApp.port = 9999
+    #使得所有机器都能连接
+    c.NotebookApp.allow_remote_access = True
+    c.NotebookApp.ip='*'
+    #默认不打开浏览器
+    c.NotebookApp.open_browser = False
+    #使用指定文件配置jupytermotebook
+    jupyter notebook --config jupyter_notebook_config_2.py
+    #即使断开连接也能够继续运行
+    nohup jupyter notebook &
+    # 更改默认目录
+    c.NotebookApp.notebook_dir = u'需要默认的路径'
 
 ### 创建密码
 
@@ -46,11 +45,9 @@ jupyter notebook --allow-root
 
 ## 使用kaggle下载
 
-```python
-pip install kaggle
-在我的账号里找到kaggle.json文件，放入～.kaggle目录下
-然后同意数据集协议，复制下载命令，对数据集进行下载
-```
+    pip install kaggle
+    在我的账号里找到kaggle.json文件，放入～.kaggle目录下
+    然后同意数据集协议，复制下载命令，对数据集进行下载
 
 ## 启用ssh服务
 
@@ -58,12 +55,10 @@ apt-get install openssh-server
 
 vi /etc/ssh/sshd_config
 
-```python
-Port = 22 # 默认是22端口，如果和windows端口冲突或你想换成其他的否则不用动
-#ListenAddress 0.0.0.0 # 如果需要指定监听的IP则去除最左侧的井号，并配置对应IP，默认即监听PC所有IP
-PermitRootLogin no # 如果你需要用 root 直接登录系统则此处改为 yes
-PasswordAuthentication no # 将 no 改为 yes 表示使用帐号密码方式登录
-```
+    Port = 22 # 默认是22端口，如果和windows端口冲突或你想换成其他的否则不用动
+    #ListenAddress 0.0.0.0 # 如果需要指定监听的IP则去除最左侧的井号，并配置对应IP，默认即监听PC所有IP
+    PermitRootLogin no # 如果你需要用 root 直接登录系统则此处改为 yes
+    PasswordAuthentication no # 将 no 改为 yes 表示使用帐号密码方式登录
 
 然后启动 ssh 服务
 
@@ -176,7 +171,7 @@ net start LxssManager
 
 # 配置Notedown
 
-```python
+
 pip install https://github.com/mli/notedown/tarball/master
 jupyter notebook
 --NotebookApp.contents_manager_class='notedown.NotedownContentsManager'
@@ -186,20 +181,17 @@ jupyter notebook –generate-config
 在配置文件（~/.jupyter/jupyter_notebook_config.py）末尾加入
 
 c.NotebookApp.contents_manager_class = ‘notedown.NotedownContentsManager’
-```
 
 # jupyter安装插件
 
-```python
-# 卸载
-pip uninstall jupyter_contrib_nbextensions
-pip uninstall jupyter_nbextensions_configurator
+    # 卸载
+    pip uninstall jupyter_contrib_nbextensions
+    pip uninstall jupyter_nbextensions_configurator
 
-# 安装
-pip install jupyter_contrib_nbextensions
-jupyter contrib nbextension install --user
-pip install jupyter_nbextensions_configurator
-```
+    # 安装
+    pip install jupyter_contrib_nbextensions
+    jupyter contrib nbextension install --user
+    pip install jupyter_nbextensions_configurator
 
 404 GET /static/notebook/js/mathjaxutils.js?v=2021010720231
 

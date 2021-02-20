@@ -100,8 +100,7 @@ currentdate=`/bin/date '+%Y%m%d%H%m'`
 /usr/bin/git add -A
 /usr/bin/git commit -m $currentdate
 /usr/bin/git push
-/bin/date >>  /Users/xtj2020/notebook/cron.txt
-<\code>
+/bin/date >>  /Users/xtj2020/notebook/cron.txt</code>
 
 3、ps |grep crontab
 

@@ -91,8 +91,7 @@ service crond stop
 
 2、sh中的编写
 
-<code>
-source /etc/profile
+<code>source /etc/profile
 source ~/.bash_profile
 PATH="/Users/xtj2020/notebook/xtj2020.github.io/"
 cd $PATH
@@ -101,8 +100,7 @@ currentdate=`/bin/date '+%Y%m%d%H%m'`
 /usr/bin/git add -A
 /usr/bin/git commit -m $currentdate
 /usr/bin/git push
-/bin/date >>  /Users/xtj2020/notebook/cron.txt
-<\code>
+/bin/date >>  /Users/xtj2020/notebook/cron.txt</code>
 
 3、ps |grep crontab
 

@@ -24,6 +24,7 @@ nohup jupyter notebook &
 c.NotebookApp.notebook_dir = u'需要默认的路径'
 ```
 
+
 ### 创建密码
 
 生成密码
@@ -52,6 +53,7 @@ pip install kaggle
 然后同意数据集协议，复制下载命令，对数据集进行下载
 ```
 
+
 ## 启用ssh服务
 
 apt-get install openssh-server
@@ -64,6 +66,7 @@ Port = 22 # 默认是22端口，如果和windows端口冲突或你想换成其�
 PermitRootLogin no # 如果你需要用 root 直接登录系统则此处改为 yes
 PasswordAuthentication no # 将 no 改为 yes 表示使用帐号密码方式登录
 ```
+
 
 然后启动 ssh 服务
 
@@ -199,6 +202,7 @@ pip install jupyter_contrib_nbextensions
 jupyter contrib nbextension install --user
 pip install jupyter_nbextensions_configurator
 ```
+
 
 404 GET /static/notebook/js/mathjaxutils.js?v=2021010720231
 

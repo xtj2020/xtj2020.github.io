@@ -72,6 +72,8 @@ git push
 
 
 ## 自动化提交脚本：
+
+
 1、crontab -e
 ```python
 * */2 * * * /bin/bash /Users/xtj2020/notebook/domain_pull.sh

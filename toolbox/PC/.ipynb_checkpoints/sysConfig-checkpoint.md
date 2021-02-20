@@ -45,6 +45,7 @@ jupyter notebook --allow-root
 
 ## 使用kaggle下载
 
+
     pip install kaggle
     在我的账号里找到kaggle.json文件，放入～.kaggle目录下
     然后同意数据集协议，复制下载命令，对数据集进行下载
@@ -54,6 +55,7 @@ jupyter notebook --allow-root
 apt-get install openssh-server
 
 vi /etc/ssh/sshd_config
+
 
     Port = 22 # 默认是22端口，如果和windows端口冲突或你想换成其他的否则不用动
     #ListenAddress 0.0.0.0 # 如果需要指定监听的IP则去除最左侧的井号，并配置对应IP，默认即监听PC所有IP
@@ -183,6 +185,7 @@ jupyter notebook –generate-config
 c.NotebookApp.contents_manager_class = ‘notedown.NotedownContentsManager’
 
 # jupyter安装插件
+
 
     # 卸载
     pip uninstall jupyter_contrib_nbextensions

@@ -99,5 +99,15 @@ if __name__ == '__main__':
 
 
 # TiddlyWiki
-增加空行
+## text/vnd.tiddlywiki
+```wiki
+# 增加空行
 <br/><br/>
+# 警告
+<<.warning "Don't attempt to use the browser ''File''/''Save'' menu option to save changes (it doesn't work)">>
+# 内嵌某个页面
+{{}}
+
+# 多标签转换
+<<tabs "Forums Latest Tutorials [[Community Editions]] [[Community Plugins]] [[Community Themes]] [[Community Palettes]] [[Other Resources]] Examples Articles Meetups" "Latest">>
+```

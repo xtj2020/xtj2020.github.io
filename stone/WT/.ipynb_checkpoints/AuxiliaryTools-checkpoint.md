@@ -66,6 +66,7 @@ vim my_arch.py
 bash ../tikzmake.sh my_arch
 ```
 
+
 模版
 
 ```python
@@ -97,3 +98,13 @@ if __name__ == '__main__':
 ```
 
 
+# TiddlyWiki
+## text/vnd.tiddlywiki
+```wiki
+# 增加空行
+<br/><br/>
+# 警告
+<<.warning "Don't attempt to use the browser ''File''/''Save'' menu option to save changes (it doesn't work)">>
+# 内嵌某个页面
+{{}}
+```

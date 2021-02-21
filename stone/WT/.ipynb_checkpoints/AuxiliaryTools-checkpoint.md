@@ -126,4 +126,12 @@ Default tiddlers:
 # 生成列表
 Saving中的可以进行脚本的编写
 
+# 复选框
+<$checkbox tag="done"> Is it done?</$checkbox>
+
+# 如何生成TableOfContents
+新建TableOfContents块
+
+子页中TableOfContents
+
 ```

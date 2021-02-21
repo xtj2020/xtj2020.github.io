@@ -110,4 +110,10 @@ if __name__ == '__main__':
 
 # 多标签转换
 <<tabs "Forums Latest Tutorials [[Community Editions]] [[Community Plugins]] [[Community Themes]] [[Community Palettes]] [[Other Resources]] Examples Articles Meetups" "Latest">>
+
+# contents中列表
+list:[[]]
+
+# 初始页面
+Default tiddlers:
 ```

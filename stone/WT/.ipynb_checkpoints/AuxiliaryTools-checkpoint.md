@@ -107,4 +107,17 @@ if __name__ == '__main__':
 <<.warning "Don't attempt to use the browser ''File''/''Save'' menu option to save changes (it doesn't work)">>
 # 内嵌某个页面
 {{}}
+
+# 多标签转换
+<<tabs "Forums Latest Tutorials [[Community Editions]] [[Community Plugins]] [[Community Themes]] [[Community Palettes]] [[Other Resources]] Examples Articles Meetups" "Latest">>
+
+# contents中列表
+list:[[]]
+
+# 初始页面
+Default tiddlers:
+
+# 生成列表
+Saving中的可以进行脚本的编写
+
 ```

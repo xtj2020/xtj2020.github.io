@@ -4,26 +4,24 @@
 
 ### 修改配置文件
 
-```python
-jupyter notebook --generate-config
-vi ~/.jupyter/jupyter_notebook_config.py
 
-#设置密码与指定端口
-c.NotebookApp.password=u'sha1:6c9e6e11ed'
-c.NotebookApp.port = 9999
-#使得所有机器都能连接
-c.NotebookApp.allow_remote_access = True
-c.NotebookApp.ip='*'
-#默认不打开浏览器
-c.NotebookApp.open_browser = False
-#使用指定文件配置jupytermotebook
-jupyter notebook --config jupyter_notebook_config_2.py
-#即使断开连接也能够继续运行
-nohup jupyter notebook &
-# 更改默认目录
-c.NotebookApp.notebook_dir = u'需要默认的路径' 
-```
+    jupyter notebook --generate-config
+    vi ~/.jupyter/jupyter_notebook_config.py
 
+    #设置密码与指定端口
+    c.NotebookApp.password=u'sha1:6c9e6e11ed'
+    c.NotebookApp.port = 9999
+    #使得所有机器都能连接
+    c.NotebookApp.allow_remote_access = True
+    c.NotebookApp.ip='*'
+    #默认不打开浏览器
+    c.NotebookApp.open_browser = False
+    #使用指定文件配置jupytermotebook
+    jupyter notebook --config jupyter_notebook_config_2.py
+    #即使断开连接也能够继续运行
+    nohup jupyter notebook &
+    # 更改默认目录
+    c.NotebookApp.notebook_dir = u'需要默认的路径'
 
 ### 创建密码
 
@@ -47,12 +45,10 @@ jupyter notebook --allow-root
 
 ## 使用kaggle下载
 
-```
-pip install kaggle
-在我的账号里找到kaggle.json文件，放入～.kaggle目录下
-然后同意数据集协议，复制下载命令，对数据集进行下载
-```
 
+    pip install kaggle
+    在我的账号里找到kaggle.json文件，放入～.kaggle目录下
+    然后同意数据集协议，复制下载命令，对数据集进行下载
 
 ## 启用ssh服务
 
@@ -60,15 +56,11 @@ apt-get install openssh-server
 
 vi /etc/ssh/sshd_config
 
-```python
 
-Port = 22 # 默认是22端口，如果和windows端口冲突或你想换成其他的否则不用动
-#ListenAddress 0.0.0.0 # 如果需要指定监听的IP则去除最左侧的井号，并配置对应IP，默认即监听PC所有IP
-PermitRootLogin no # 如果你需要用 root 直接登录系统则此处改为 yes
-PasswordAuthentication no # 将 no 改为 yes 表示使用帐号密码方式登录
-
-```
-
+    Port = 22 # 默认是22端口，如果和windows端口冲突或你想换成其他的否则不用动
+    #ListenAddress 0.0.0.0 # 如果需要指定监听的IP则去除最左侧的井号，并配置对应IP，默认即监听PC所有IP
+    PermitRootLogin no # 如果你需要用 root 直接登录系统则此处改为 yes
+    PasswordAuthentication no # 将 no 改为 yes 表示使用帐号密码方式登录
 
 然后启动 ssh 服务
 
@@ -85,6 +77,12 @@ service ssh status
 sshd is running  显示此内容则表示启动正常
 
 passwd root 设置下密码
+
+不能正常启动
+sshd: no hostkeys available – exiting
+
+sudo ssh-keygen -A
+
 
 ## pytorch的配置
 
@@ -103,7 +101,7 @@ https://developer.nvidia.com/rdp/cudnn-archive
 
 # gpustat动态监控gpu
 pip install gpustat \
-watch --color -n1 gpustat -cpu 
+watch --color -n1 gpustat -cpu
 
 # GPU知识
 <https://blog.csdn.net/TTdreamloong/article/details/84886621>
@@ -126,7 +124,6 @@ watch --color -n1 gpustat -cpu
 
 wget -r -p -np -k -P ~/tmp/ http://java-er.com
 
-```python
 解释一下参数
 
 -P 表示下载到哪个目录
@@ -142,41 +139,6 @@ wget -r -p -np -k -P ~/tmp/ http://java-er.com
 -A 指定要下载的文件样式列表，多个样式用逗号分隔
 -i 后面跟一个文件，文件内指明要下载的URL
 
-```
-
-
-# 定时提交
-
-
-service crond restart
-
-service crond stop
-
-无service服务的时候:
-
-/etc/init.d/cron  top
-
-/etc/init.d/cron start
-
-实现对github的定时提交 \
-
-https://my.oschina.net/gcdong/blog/1137849
-
-crontab的使用
-
-http://www.2cto.com/os/201411/348362.html
-
-对crontab的调试
-
-https://blog.csdn.net/biyongyao/article/details/77791238
-
-获取当前时间
-
-https://www.cnblogs.com/zuiyue_jing/p/12557430.html
-
-date不可用的情况
-
-https://stackoverflow.com/questions/58388169/date-command-not-found-in-shell-script
 
 # Ubuntu子系统
 
@@ -185,6 +147,10 @@ LxRunOffline -list
 LxRunOffline move -n {version} -d {dir}
 
 设置root密码
+
+sudo passwd
+
+修改密码
 
 sudo passwd root
 
@@ -196,10 +162,10 @@ Linux子系统（WSL ）是基于 LxssManager 服务运行的。
 重启WSL的话只需要将 LxssManager 重启即可。
 
 停止LxssManager服务
-net stop LxssManager  
- 
+net stop LxssManager
+
 启动LxssManager服务
-net start LxssManager  
+net start LxssManager
 
 
 在管理员权限的cmd窗口输入 services.msc 打开服务 \
@@ -207,32 +173,49 @@ net start LxssManager
 
 # 配置Notedown
 
-```python
-pip install https://github.com/mli/notedown/tarball/master
-jupyter notebook --NotebookApp.contents_manager_class='notedown.NotedownContentsManager'
 
-jupyter notebook –generate-config 
+pip install https://github.com/mli/notedown/tarball/master
+jupyter notebook
+--NotebookApp.contents_manager_class='notedown.NotedownContentsManager'
+
+jupyter notebook –generate-config
 
 在配置文件（~/.jupyter/jupyter_notebook_config.py）末尾加入
 
 c.NotebookApp.contents_manager_class = ‘notedown.NotedownContentsManager’
 
-```
-
-
 # jupyter安装插件
 
-```python
-conda install -c conda-forge jupyter_contrib_nbextensions
 
-jupyter contrib nbextension install --user
+    # 卸载
+    pip uninstall jupyter_contrib_nbextensions
+    pip uninstall jupyter_nbextensions_configurator
 
-```
+    # 安装
+    pip install jupyter_contrib_nbextensions
+    jupyter contrib nbextension install --user
+    pip install jupyter_nbextensions_configurator
 
+404 GET /static/notebook/js/mathjaxutils.js?v=2021010720231
+
+解决方法：
+
+1. Go to conda envs directory.  e.g. $ cd ~/anaconda3/envs/tf
+
+2. $ vi ./lib/python3.7/site-
+packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/render/render.js
+
+3. change 'notebook/js/mathjaxutils' to 'base/js/mathjaxutils'
 
 当出现500错误的时候
 
 conda install nbconvert=5.4.1
+
+如果出现不能自动补全的情况
+
+插件安装Hint
+
+jedi版本过高,需要为0.17
 
 # 查看系统配置
 
@@ -248,7 +231,8 @@ du -h [目录名]：查看指定文件夹下的所有文件大小（包含子文
 du 命令用于查看当前目录的总大小： \
 
 -s：对每个Names参数只给出占用的数据块总数。 \
--a：递归地显示指定目录中各文件及子目录中各文件占用的数据块数。若既不指定-s，也不指定-a，则只显示Names中的每一个目录及其中的各子目录所占的磁盘块数。 \
+-a：递归地显示指定目录中各文件及子目录中各文件占用的数据块数。若既不指定-s，也不指定-a，则只显示Names中的每一个目录及其中的各子目录所占的磁盘块数。
+\
 -b：以字节为单位列出磁盘空间使用情况（系统默认以k字节为单位）。 \
 -k：以1024字节为单位列出磁盘空间使用情况。 \
 -c：最后再加上一个总计（系统默认设置）。 \

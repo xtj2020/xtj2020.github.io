@@ -550,16 +550,47 @@ data1 = pickle.load(pkl_file)
 
 <https://www.jianshu.com/p/998c861d32e3>
 
-## 创建
+
+## 文件操作
 
 h5file = h5py.File(filename,'w')
 
+w 覆盖创建新文件 \
+r 只读 \
+r+ 读写
+a 打开读写文件（如果文件不存在则创建） \
+w- 这将创建一个新文件，但如果已经存在相同名称的文件，则会失败。
+
+### 打开
+
+```python
+with h5py.File("name.hdf5", "w") as f:
+    print f["missing_dataset"]
+# core在内存中进行操作，backing_store    
+f = h5py.File("name.hdf5", driver="core", backing_store=True)
+```
+
+
+### 数据类型
+
+查看数据类型
+
+dset.dtype \
+dset.shape
+
+可以用列表切片的方法进行读取
+
+## Datasets
+
+### 创建
 ```python
 X = h5file.create_dataset(shape=(0,args.patch_size,args.patch_size),　    #数据集的维度
 maxshape = (None,args.patch_size,args.patch_size),     #数据集的允许最大维度　
-dtype=float,compression='gzip',name='train',                      #数据类型、是否压缩，以及数据集的名字
-                              chunks=(args.chunk_size,args.patch_size,args.patch_size))         #分块存储，每一分块的大小
+     dtype=float,compression='gzip',name='train',                      #数据类型、是否压缩，以及数据集的名字
+     chunks=(args.chunk_size,args.patch_size,args.patch_size))         #分块存储，每一分块的大小
 ```
+也可以使用字典的方式进行创建
+
 
 
 ## 以np为基础的HDF5操作
@@ -581,6 +612,7 @@ dtype=float,compression='gzip',name='train',                      #数据类型�
   
 **创建：** \
 一个HDF5 IO对象store：
+
 ```python
 import pandas as pd
 store = pd.HDFStore('demo.h5')
@@ -588,12 +620,16 @@ store = pd.HDFStore('demo.h5')
 print(store)
 ```
 
+
 **数据的写入：**
 　第一种方式利用键值对将不同的数据存入store对象中，这里为了代码简洁使用了元组赋值法：
+
 ```python
 store['s'],store['df'] = s,df
 ```
-　　第二种方式利用store对象的put()方法，其主要参数如下：
+
+
+第二种方式利用store对象的put()方法，其主要参数如下：
 
 　　key：指定h5文件中待写入数据的key
 
@@ -603,26 +639,34 @@ store['s'],store['df'] = s,df
 
 　　使用put()方法将数据存入store对象中：
 
- 
 ```python
 store.put(key='s',value=s);store.put(key='df',value=df)
 ```
+
+
 **查看属性：** \
 store.items store对象只有items和keys属性，没有values属性 \
 store['df'] 调用store对象中的数据直接用对应的键名来索引即可
 
 **删除：**
 一、是使用remove()方法，传入要删除数据对应的键：
+
 ```python
 store.remove('s')
 print(store.keys())
 ```
+
+
 二、是使用Python中的关键词del来删除指定数据：
+
 ```python
 del store['s']
 print(store.keys())
 ```
+
+
 **持久化到本地:**
+
 ```python
 store.close()
 ##　查看store连接状况，False则代表已关闭
@@ -633,7 +677,10 @@ df_.to_hdf(path_or_buf='demo.h5',key='df_')
 #创建于本地demo.h5进行IO连接的store对象
 store = pd.HDFStore('demo.h5')
 ```
+
+
 **读入:**
+
 ```python
 # 第一种
 store = pd.HDFStore('demo.h5')
@@ -655,8 +702,7 @@ df = pd.read_hdf('demo.h5',key='df')
 df
 ```
 
+
 **追加行、列：** \
 <https://cloud.tencent.com/developer/ask/189318>
 <https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_hdf.html>
-
-

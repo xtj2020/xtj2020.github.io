@@ -97,3 +97,41 @@ if __name__ == '__main__':
     main()
 ```
 
+
+# TiddlyWiki
+## 常用插件
+
+Highlight
+KaTeX
+Core:TiddlyWiki5 core
+
+## text/vnd.tiddlywiki
+```wiki
+# 增加空行
+<br/><br/>
+# 警告
+<<.warning "Don't attempt to use the browser ''File''/''Save'' menu option to save changes (it doesn't work)">>
+# 内嵌某个页面
+{{}}
+
+# 多标签转换
+<<tabs "Forums Latest Tutorials [[Community Editions]] [[Community Plugins]] [[Community Themes]] [[Community Palettes]] [[Other Resources]] Examples Articles Meetups" "Latest">>
+
+# contents中列表
+list:[[]]
+
+# 初始页面
+Default tiddlers:
+
+# 生成列表
+Saving中的可以进行脚本的编写
+
+# 复选框
+<$checkbox tag="done"> Is it done?</$checkbox>
+
+# 如何生成TableOfContents
+新建TableOfContents块
+
+子页中TableOfContents
+
+```

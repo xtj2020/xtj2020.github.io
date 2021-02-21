@@ -219,12 +219,14 @@ quoted statements in a narrowed width.
 # 列表与对齐
 
 ## 制表环境
+```python
 
 \begin{tabbing}
 \= \\\
 \\>\\\
 \\>
 \end{tabbing}
+```
 
 # 图
 
@@ -300,7 +302,6 @@ latex模块
 \begin{equation}
   \int_{R^q} f(x,y) dy.\emph{of\kern0pt f}
 \end{equation}
-
 
 
 

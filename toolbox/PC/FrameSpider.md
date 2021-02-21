@@ -302,3 +302,7 @@ find_all( name , attrs , recursive , string , **kwargs )
 ### 编码
 
 ###  其他
+
+# 发送邮件
+
+<https://blog.csdn.net/yuting209/article/details/105424833?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-0&spm=1001.2101.3001.4242>

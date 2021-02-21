@@ -99,6 +99,12 @@ if __name__ == '__main__':
 
 
 # TiddlyWiki
+## 常用插件
+
+Highlight
+KaTeX
+Core:TiddlyWiki5 core
+
 ## text/vnd.tiddlywiki
 ```wiki
 # 增加空行

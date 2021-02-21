@@ -126,4 +126,7 @@ Default tiddlers:
 # 生成列表
 Saving中的可以进行脚本的编写
 
+# 复选框
+<$checkbox tag="done"> Is it done?</$checkbox>
+
 ```

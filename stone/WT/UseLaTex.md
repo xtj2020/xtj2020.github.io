@@ -219,6 +219,7 @@ quoted statements in a narrowed width.
 # 列表与对齐
 
 ## 制表环境
+
 ```python
 
 \begin{tabbing}
@@ -227,6 +228,7 @@ quoted statements in a narrowed width.
 \\>
 \end{tabbing}
 ```
+
 
 # 图
 

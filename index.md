@@ -84,8 +84,7 @@
 
 ## [WT](./stone/WT)-文档与辅助
 
--
-[UseLaTex](https://xtj2020.top/xtj2020.github.io/stone/WT/UseLaTex.html)-LaTex的应用
+- [UseLaTex](https://xtj2020.top/xtj2020.github.io/stone/WT/UseLaTex.html)-LaTex的应用
 [edit](./stone/WT/UseLaTex.md)
 - [md](https://xtj2020.top/stone/WT/md.html)-markdown语法 [edit](./stone/WT/md.md)
 - [pt](https://xtj2020.top/stone/WT/pt.html)-matplotlib.plot
@@ -127,7 +126,7 @@
 [edit](./stone/DM/FasterRCNN.md)
 
 ## [ML](./stone/ML)-机器学习基本概念与方法
--[Define](https://xtj2020.top/stone/ML/Define.html)-基础概念
+- [Define](https://xtj2020.top/stone/ML/Define.html)-基础概念
 [edit](./stone/ML/Define.md)
 
 

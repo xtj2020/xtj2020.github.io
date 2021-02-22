@@ -34,9 +34,6 @@ c.NotebookApp.notebook_dir = u'需要默认的路径'
 ```
 
 
-
-
-
 ## 配置Notedown
 
 
@@ -52,8 +49,11 @@ c.NotebookApp.contents_manager_class = ‘notedown.NotedownContentsManager’
 
 ## 开启jupyter服务
 
-
+```python
 jupyter notebook --allow-root
+# 配置不为base环境
+conda config --set auto_activate_base false
+```
 
 # 使用kaggle下载
 
@@ -62,6 +62,7 @@ pip install kaggle
 在我的账号里找到kaggle.json文件，放入～.kaggle目录下
 然后同意数据集协议，复制下载命令，对数据集进行下载
 ```
+
 
 ## 启用ssh服务
 

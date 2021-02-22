@@ -1,4 +1,13 @@
 <script src="../ut.js" type="text/javascript"></script>
+# 内容结构
+常见的LATEX公式
+
+模板的使用
+
+通用命令
+
+# LATEX公式
+
 
 
 # preamble
@@ -46,26 +55,7 @@
 
 ## 字符
 
-键盘输入
-
-![image-20200823081721537](UseLaTex.assets/image-20200823081721537.png)
-
-通过命令输入（本身在LaTeX中有原意）
 可以用\verb"$"打印美元符号
-
-| 字符 | 纯字符          | 功能                         |
-| ---- | --------------- | ---------------------------- |
-| $    | \\$             | 内联数学模式                 |
-| %    | \%              | 注释                         |
-| { }  | \\{\\}          | 强制参数                     |
-| _    | \\-             | 数学模式生成下标             |
-| ^    | \^\             | 生成上标                     |
-| &    | \\&             | 分割表中两列                 |
-| #    | \\#             | 其他符号                     |
-| \    | \$\blackslash\$ | 命令以\开头                  |
-| ~    | \$\sim\$        | 绑定两个要打印在同一行的单词 |
-| \|   | \$\|\$          | 在表格中生成生成（列）线     |
-| < >  | \$< >\$         | 无                           |
 
 数学字符（见gnki）
 
@@ -161,11 +151,14 @@ quoted statements in a narrowed width.
 
 不会按回车来设置新行和段落
 
-新行
+```python
+#新行
 \newline
-\linebreak 强制最后一行覆盖整个页面宽度
+#强制最后一行覆盖整个页面宽度
+\linebreak 
 \\\
-\\\\\ 会产生一个空白行
+\\\\\ #会产生一个空白行
+```
 
 新段落
 尽量使用预定义的宏来创建统一的段落
@@ -219,6 +212,7 @@ quoted statements in a narrowed width.
 # 列表与对齐
 
 ## 制表环境
+
 ```python
 
 \begin{tabbing}
@@ -227,6 +221,7 @@ quoted statements in a narrowed width.
 \\>
 \end{tabbing}
 ```
+
 
 # 图
 
@@ -302,7 +297,6 @@ latex模块
 \begin{equation}
   \int_{R^q} f(x,y) dy.\emph{of\kern0pt f}
 \end{equation}
-
 
 
 

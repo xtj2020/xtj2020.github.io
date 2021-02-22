@@ -90,6 +90,7 @@ service crond stop
 */5 * * * * /bin/bash /Users/xtj2020/notebook/gitpage_pull.sh
 ```
 
+
 2、sh中的编写
 
 ```python
@@ -104,7 +105,22 @@ currentdate=`/bin/date '+%Y%m%d%H%m'`
 /bin/date >>  /Users/xtj2020/notebook/cron.txt
 ```
 
+
 3、ps |grep crontab
+
+## win下的自动提交
+```bash
+@echo off
+@title bat execute git auto commit
+G:
+cd G:\Mirror\Codes\GitHub\xtj2020.github.io
+git pull
+git add .
+git commit -m "Auto commit."
+git push
+```
+
+在计划任务中选择bat文件
 
 
 ## SSH配置密码

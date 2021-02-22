@@ -132,6 +132,13 @@
 
 # 分析框架([frame](https://xtj2020.top/sub_self.html))
 
+
+## domain
+
+## memory
+
+## self
+
 ## [DP](./sub_self.md)-展示
 - [RIADD](https://xtj2020.top/frame/DP/RIADD_document.html)-RIADD相关文献
 [edit](./frame/DP/RIADD_document.md)

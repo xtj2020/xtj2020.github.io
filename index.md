@@ -1,71 +1,7 @@
-# 代码工具（[toolbox](https://xtj2020.top/sub_domain.html)）
-
-## [DA](./sub_domain.md)-数据处理
-
-- [Learnnp](https://xtj2020.top/toolbox/DA/Learnnp.html)-numpy库
-[edit](./toolbox/DA/Learnnp.md)
-
-- [Learnpd](https://xtj2020.top/toolbox/DA/Learnpd.html)-pandas库
-[edit](./toolbox/DA/Learnpd.md)
-
-- [Learnscipy](https://xtj2020.top/toolbox/DA/Learnscipy.html)-scipy库
-[edit](./toolbox/DA/Learnscipy.md)
-
-- [LoadData](https://xtj2020.top/toolbox/DA/LoadData.html)-读取存储数据
-[edit](./toolbox/DA/LoadData.md)
-- [PreproccessData](https://xtj2020.top/toolbox/DA/PreproccessData.html)-数据预处理
-[edit](./toolbox/DA/PreproccessData.md)
+# 代码工具（[toolbox](https://xtj2020.top/toolbox)）
 
 
-## [DL](./toolbox/DL)-深度学习
-
-- [DLloadData](https://xtj2020.top/toolbox/DL/DLloadData.html)- 深度学习中加载数据的流程
-[edit](./toolbox/DL/DLloadData.md)
-
-- [ModelCNN](https://xtj2020.top/toolbox/DL/ModelCNN.html)-对于基本CNN的调整
-- [ModelRNN](https://xtj2020.top/toolbox/DL/ModelRNN.html)-RNN模型
-
-- [ResNet](https://xtj2020.top/toolbox/DL/ResNet.html)-对于DesNet网络的彻底了解
-[edit](./toolbox/DL/ResNet.md)
-- [DenseNet](https://xtj2020.top/toolbox/DL/DenseNet.html)-对于DesNet网络的彻底了解
-[edit](./toolbox/DL/DenseNet.md)
-
-
-## [PY](./toolbox/PY)-python
-
-- [BasePython](https://xtj2020.top/toolbox/PY/BasePython.html)-基础python用法
-[edit](./toolbox/PY/BasePython.md)
-- [MorePython](https://xtj2020.top/toolbox/PY/MorePython.html)-高级使用
-[edit](./toolbox/PY/MorePython.md)
-- [PythonFunction](https://xtj2020.top/toolbox/PY/functionBook.html)-一些常用的函数功能
-[edit](./toolbox/PY/functionBook.md)
-- [DataStructure](https://xtj2020.top/toolbox/PY/DataStructure.html)-数据结构刷题的一些记录
-[edit](./toolbox/PY/DataStructure.md)
-- [Inspect](https://xtj2020.top/toolbox/PY/Inspect.html)-对python的调试
-[edit](./toolbox/PY/Inspect.md)
--
-[PythonChalleng](https://xtj2020.top/toolbox/PY/PythonChalleng.html)-对python的调试
-[edit](./toolbox/PY/PythonChalleng.md)
-
-
-
-
-## [PC](./toolbox/PC)-脚本\linux\爬虫
-
-- [FrameSpider](https://xtj2020.top/toolbox/PC/FrameSpider.html)-爬虫框架
-[edit](./toolbox/PC/FrameSpider.md)
-- [SysConfig](https://xtj2020.top/toolbox/PC/sysConfig.html)-系统配置
-[edit](./toolbox/PC/sysConfig.md)
-- [Json](https://xtj2020.top/toolbox/PC/Json.html)-Json文件格式
- [edit](./toolbox/PC/Json.md)
-- [GitHub](https://xtj2020.top/toolbox/PC/GitHub.html)-GitHub的使用
-[edit](./toolbox/PC/GitHub.md)
-
-
-
-
-
-# 概念积累([stone](https://xtj2020.top/sub_memory.html))
+# 概念积累([stone](https://xtj2020.top/stone))
 
 ## [PT](./sub_memory.md)-pytorch
 
@@ -81,6 +17,17 @@
  [edit](./stone/IC/Radiomics.md)
 -
 [TraditionalDeal](https://xtj2020.top/stone/IC/TraditionalDeal.html)传统处理方法[edit](./stone/IC/TraditionalDeal.md)
+
+# 分析框架([frame](https://xtj2020.top/sub_self.html))
+## [DM](./stone/DM)-深度&机器学习中的概念
+- [BaseFrameModel](https://xtj2020.top/toolbox/DL/baseFrameModel.html)-基础的模型
+[edit](./toolbox/DL/baseFrameModel.md)
+## [CO]-凸优化
+## [DP](./sub_self.md)-展示
+- [RIADD](https://xtj2020.top/frame/DP/RIADD_document.html)-RIADD相关文献
+[edit](./frame/DP/RIADD_document.md)
+- [RIADD](https://xtj2020.top/frame/DP/RIADD_experiment.html)-RIADD实验
+[edit](./frame/DP/RIADD_experiment.md)
 
 ## [WT](./stone/WT)-文档与辅助
 
@@ -105,9 +52,7 @@
 - [Predict](https://xtj2020.top/stone/PS/predict.html)-传统预测
 [edit](./stone/PS/predict.md)
 
-## [DM](./stone/DM)-深度&机器学习中的概念
-- [BaseFrameModel](https://xtj2020.top/toolbox/DL/baseFrameModel.html)-基础的模型
-[edit](./toolbox/DL/baseFrameModel.md)
+
 
 - [Indicators](https://xtj2020.top/toolbox/DL/indicators.html)-评价指标
 [edit](./toolbox/DL/indicators.md)
@@ -130,20 +75,9 @@
 [edit](./stone/ML/Define.md)
 
 
-# 分析框架([frame](https://xtj2020.top/sub_self.html))
 
 
-## domain
 
-## memory
-
-## self
-
-## [DP](./sub_self.md)-展示
-- [RIADD](https://xtj2020.top/frame/DP/RIADD_document.html)-RIADD相关文献
-[edit](./frame/DP/RIADD_document.md)
-- [RIADD](https://xtj2020.top/frame/DP/RIADD_experiment.html)-RIADD实验
-[edit](./frame/DP/RIADD_experiment.md)
 
 
 ## [MA](./frame/MA/)-分析
@@ -151,3 +85,10 @@
 - [ConvexOptimize](https://xtj2020.top/frame/convexOptimize.html)-机器学习理论导引
 - [ForeGround](https://xtj2020.top/frame/ForeGround.html)- 人工智能与数据分析前景
 [edit](./frame/ForeGround.md)
+
+
+
+
+
+
+

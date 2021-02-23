@@ -85,10 +85,3 @@
 - [ConvexOptimize](https://xtj2020.top/frame/convexOptimize.html)-机器学习理论导引
 - [ForeGround](https://xtj2020.top/frame/ForeGround.html)- 人工智能与数据分析前景
 [edit](./frame/ForeGround.md)
-
-
-
-
-
-
-

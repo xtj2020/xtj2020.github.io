@@ -1,7 +1,18 @@
+<head>
+    <meta charset="utf-8" />
+    <title>主页面</title>
+    <!--import引入-->
+    <link rel="import" href="./toolbox/index.html" id="page1"/>
+</head>
 # 代码工具（[toolbox](https://xtj2020.top/toolbox)）
+[edit](./toolbox/index.html)
 
+<script type="text/javascript">
+    document.write(page1.import.body.innerHTML);
+</script>
 
 # 概念积累([stone](https://xtj2020.top/stone))
+[edit](./stone/index.html)
 
 ## [PT](./sub_memory.md)-pytorch
 

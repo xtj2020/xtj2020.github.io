@@ -1,0 +1,3568 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="generator" content="TiddlyWiki" />
+<meta name="tiddlywiki-version" content="5.1.23" />
+<meta name="format-detection" content="telephone=no">
+<link id="faviconLink" rel="shortcut icon" href="favicon.ico">
+<title>个人笔记本 — 随时记录</title>
+<div id="styleArea">
+<style data-tiddler-title="$:/boot/boot.css" data-tiddler-type="text/css" data-tiddler-revision="0" data-tiddler-bag="default" type="text/css">/*
+Basic styles used before we boot up the parsing engine
+*/
+
+/*
+Error message and password prompt
+*/
+
+.tc-error-form {
+	font-family: sans-serif;
+	color: #fff;
+	z-index: 20000;
+	position: fixed;
+	background-color: rgb(255, 75, 75);
+	border: 8px solid rgb(255, 0, 0);
+	border-radius: 8px;
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 4em;
+	padding: 0 2em 1em 2em;
+}
+
+.tc-error-form h1 {
+	text-align: center;
+}
+
+.tc-error-prompt {
+	text-align: center;
+	color: #000;
+}
+
+.tc-error-message {
+	overflow: auto;
+	max-height: 40em;
+	padding-right: 1em;
+	margin: 1em 0;
+	white-space: pre-line;
+}
+
+.tc-password-wrapper {
+    font-family: sans-serif;
+	z-index: 20000;
+	position: fixed;
+	text-align: center;
+	width: 200px;
+	top: 4em;
+	left: 50%;
+	margin-left: -144px; /* - width/2 - paddingHorz/2 - border */
+	padding: 16px 16px 16px 16px;
+	border-radius: 8px;
+}
+
+.tc-password-wrapper {
+	color: #000;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	background-color: rgb(197, 235, 183);
+	border: 8px solid rgb(164, 197, 152);
+}
+
+.tc-password-wrapper form {
+	text-align: left;
+}
+
+.tc-password-wrapper h1 {
+	font-size: 16px;
+	line-height: 20px;
+	padding-bottom: 16px;
+}
+
+.tc-password-wrapper input {
+	width: 100%;
+}
+</style>
+</div>
+<style type="text/css">
+
+.tc-sidebar-header {
+	text-shadow: 0 1px 0 rgba(255,255,255, 0.8);
+}.tc-tiddler-info {
+	
+  -webkit-box-shadow: inset 1px 2px 3px rgba(0,0,0,0.1);
+     -moz-box-shadow: inset 1px 2px 3px rgba(0,0,0,0.1);
+          box-shadow: inset 1px 2px 3px rgba(0,0,0,0.1);
+
+}@media screen {
+	.tc-tiddler-frame {
+		
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+
+	}
+}@media (max-width: 959px) {
+	.tc-tiddler-frame {
+		
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+
+	}
+}.tc-page-controls button svg, .tc-tiddler-controls button svg, .tc-topbar button svg {
+	
+  -webkit-transition: fill 150ms ease-in-out;
+     -moz-transition: fill 150ms ease-in-out;
+          transition: fill 150ms ease-in-out;
+
+}.tc-tiddler-controls button.tc-selected,
+.tc-page-controls button.tc-selected {
+	
+  -webkit-filter: drop-shadow(0px -1px 2px rgba(0,0,0,0.25));
+     -moz-filter: drop-shadow(0px -1px 2px rgba(0,0,0,0.25));
+          filter: drop-shadow(0px -1px 2px rgba(0,0,0,0.25));
+
+}.tc-tiddler-frame input.tc-edit-texteditor {
+	
+  -webkit-box-shadow: inset 0 1px 8px rgba(0, 0, 0, 0.15);
+     -moz-box-shadow: inset 0 1px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0 1px 8px rgba(0, 0, 0, 0.15);
+
+}.tc-edit-tags {
+	
+  -webkit-box-shadow: inset 0 1px 8px rgba(0, 0, 0, 0.15);
+     -moz-box-shadow: inset 0 1px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0 1px 8px rgba(0, 0, 0, 0.15);
+
+}.tc-tiddler-frame .tc-edit-tags input.tc-edit-texteditor {
+	
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+
+	border: none;
+	outline: none;
+}textarea.tc-edit-texteditor {
+	font-family: ;
+}canvas.tc-edit-bitmapeditor  {
+	
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+}.tc-drop-down {
+	border-radius: 4px;
+	
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+
+}.tc-block-dropdown {
+	border-radius: 4px;
+	
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+
+}.tc-modal {
+	border-radius: 6px;
+	
+  -webkit-box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+     -moz-box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+          box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+
+}.tc-modal-footer {
+	border-radius: 0 0 6px 6px;
+	
+  -webkit-box-shadow: inset 0 1px 0 #fff;
+     -moz-box-shadow: inset 0 1px 0 #fff;
+          box-shadow: inset 0 1px 0 #fff;
+;
+}.tc-alert {
+	border-radius: 6px;
+	
+  -webkit-box-shadow: 0 3px 7px rgba(0,0,0,0.6);
+     -moz-box-shadow: 0 3px 7px rgba(0,0,0,0.6);
+          box-shadow: 0 3px 7px rgba(0,0,0,0.6);
+
+}.tc-notification {
+	border-radius: 6px;
+	
+  -webkit-box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+     -moz-box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+          box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+
+	text-shadow: 0 1px 0 rgba(255,255,255, 0.8);
+}.tc-sidebar-lists .tc-tab-set .tc-tab-divider {
+	border-top: none;
+	height: 1px;
+	
+background-image: linear-gradient(left, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.0) 100%);
+background-image: -o-linear-gradient(left, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.0) 100%);
+background-image: -moz-linear-gradient(left, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.0) 100%);
+background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.0) 100%);
+background-image: -ms-linear-gradient(left, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.0) 100%);
+
+}.tc-more-sidebar > .tc-tab-set > .tc-tab-buttons > button {
+	
+background-image: linear-gradient(left, rgba(0,0,0,0.01) 0%, rgba(0,0,0,0.1) 100%);
+background-image: -o-linear-gradient(left, rgba(0,0,0,0.01) 0%, rgba(0,0,0,0.1) 100%);
+background-image: -moz-linear-gradient(left, rgba(0,0,0,0.01) 0%, rgba(0,0,0,0.1) 100%);
+background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.01) 0%, rgba(0,0,0,0.1) 100%);
+background-image: -ms-linear-gradient(left, rgba(0,0,0,0.01) 0%, rgba(0,0,0,0.1) 100%);
+
+}.tc-more-sidebar > .tc-tab-set > .tc-tab-buttons > button.tc-tab-selected {
+	
+background-image: linear-gradient(left, rgba(0,0,0,0.05) 0%, rgba(255,255,255,0.05) 100%);
+background-image: -o-linear-gradient(left, rgba(0,0,0,0.05) 0%, rgba(255,255,255,0.05) 100%);
+background-image: -moz-linear-gradient(left, rgba(0,0,0,0.05) 0%, rgba(255,255,255,0.05) 100%);
+background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.05) 0%, rgba(255,255,255,0.05) 100%);
+background-image: -ms-linear-gradient(left, rgba(0,0,0,0.05) 0%, rgba(255,255,255,0.05) 100%);
+
+}.tc-message-box img {
+	
+  -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+     -moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+          box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+
+}.tc-plugin-info {
+	
+  -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+     -moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+          box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+
+}
+
+
+/*
+** Start with the normalize CSS reset, and then belay some of its effects
+*//*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/*
+Document
+========
+*/
+
+/**
+Use a better box model (opinionated).
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+
+:root {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+Sections
+========
+*/
+
+/**
+Remove the margin in all browsers.
+*/
+
+body {
+  margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+
+body {
+  font-family:
+    system-ui,
+    -apple-system, /* Firefox supports this but not yet `system-ui` */
+    'Segoe UI',
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji';
+}
+
+/*
+Grouping content
+================
+*/
+
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    Consolas,
+    'Liberation Mono',
+    Menlo,
+    monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+*, input[type="search"] {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}input[type="search"] {
+  outline-offset: initial;
+}html button {
+	line-height: 1.2;
+	color: ;
+	fill: ;
+	background: ;
+	border-color: ;
+}/*
+** Basic element styles
+*/html, body {
+	font-family: Chinese Quote,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif;;
+	text-rendering: optimizeLegibility; /* Enables kerning and ligatures etc. */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}html:-webkit-full-screen {
+	background-color: #ffffff;
+}body.tc-body {
+	font-size: 12px;
+	line-height: 1.5;
+	word-wrap: break-word;
+	
+
+
+	color: #333333;
+	background-color: #ffffff;
+	fill: #333333;
+}/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */h1 {
+	font-size: 2em;
+}h1, h2, h3, h4, h5, h6 {
+	line-height: 1.2;
+	font-weight: 300;
+}pre {
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	word-break: normal;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+	background-color: #f5f5f5;
+	border: 1px solid #cccccc;
+	padding: 0 3px 2px;
+	border-radius: 3px;
+	font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+}code {
+	color: #dd1144;
+	background-color: #f7f7f9;
+	border: 1px solid #e1e1e8;
+	white-space: pre-wrap;
+	padding: 0 3px 2px;
+	border-radius: 3px;
+	font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+}blockquote {
+	border-left: 5px solid #999999;
+	margin-left: 25px;
+	padding-left: 10px;
+	quotes: "\201C""\201D""\2018""\2019";
+}blockquote > div {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}blockquote.tc-big-quote {
+	font-family: Georgia, serif;
+	position: relative;
+	background: #f5f5f5;
+	border-left: none;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding: 10px;
+    border-radius: 8px;
+}blockquote.tc-big-quote cite:before {
+	content: "\2014 \2009";
+}blockquote.tc-big-quote:before {
+	font-family: Georgia, serif;
+	color: #999999;
+	content: open-quote;
+	font-size: 8em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+	position: absolute;
+    left: -50px;
+    top: 42px;
+}blockquote.tc-big-quote:after {
+	font-family: Georgia, serif;
+	color: #999999;
+	content: close-quote;
+	font-size: 8em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+	position: absolute;
+    right: -80px;
+    bottom: -20px;
+}dl dt {
+	font-weight: bold;
+	margin-top: 6px;
+}button, textarea, input, select {
+	outline-color: #7897f3;
+}textarea,
+input[type=text],
+input[type=search],
+input[type=""],
+input:not([type]) {
+	color: #333333;
+	background: #ffffff;
+}input[type="checkbox"] {
+  vertical-align: middle;
+}input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+	-webkit-appearance:none;
+}.tc-muted {
+	color: #999999;
+}svg.tc-image-button {
+	padding: 0px 1px 1px 0px;
+}.tc-icon-wrapper > svg {
+	width: 1em;
+	height: 1em;
+}kbd {
+	display: inline-block;
+	padding: 3px 5px;
+	font-size: 0.8em;
+	line-height: 1.2;
+	color: #333333;
+	vertical-align: middle;
+	background-color: #ffffff;
+	border: solid 1px #999999;
+	border-bottom-color: #999999;
+	border-radius: 3px;
+	box-shadow: inset 0 -1px 0 #999999;
+}::selection {
+	background-color: Highlight;
+	color: HighlightText;
+	background-color: ;
+	color: ;
+}/*
+Markdown likes putting code elements inside pre elements
+*/
+pre > code {
+	padding: 0;
+	border: none;
+	background-color: inherit;
+	color: inherit;
+}table {
+	border: 1px solid #dddddd;
+	width: auto;
+	max-width: 100%;
+	caption-side: bottom;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	/* next 2 elements needed, since normalize 8.0.1 */
+	border-collapse: collapse;
+	border-spacing: 0;
+}table th, table td {
+	padding: 0 7px 0 7px;
+	border-top: 1px solid #dddddd;
+	border-left: 1px solid #dddddd;
+}table thead tr td, table th {
+	background-color: #f0f0f0;
+	font-weight: bold;
+}table tfoot tr td {
+	background-color: #a8a8a8;
+}.tc-csv-table {
+	white-space: nowrap;
+}.tc-tiddler-frame img,
+.tc-tiddler-frame svg,
+.tc-tiddler-frame canvas,
+.tc-tiddler-frame embed,
+.tc-tiddler-frame iframe {
+	max-width: 100%;
+}.tc-tiddler-body > embed,
+.tc-tiddler-body > iframe {
+	width: 100%;
+	height: 600px;
+}/*
+** Links
+*/button.tc-tiddlylink,
+a.tc-tiddlylink {
+	text-decoration: none;
+	font-weight: 500;
+	color: #7897f3;
+	-webkit-user-select: inherit; /* Otherwise the draggable attribute makes links impossible to select */
+}.tc-sidebar-lists a.tc-tiddlylink {
+	color: #7897f3;
+}.tc-sidebar-lists a.tc-tiddlylink:hover {
+	color: #444444;
+}button.tc-tiddlylink:hover,
+a.tc-tiddlylink:hover {
+	text-decoration: underline;
+}a.tc-tiddlylink-resolves {
+}a.tc-tiddlylink-shadow {
+	font-weight: bold;
+}a.tc-tiddlylink-shadow.tc-tiddlylink-resolves {
+	font-weight: normal;
+}a.tc-tiddlylink-missing {
+	font-style: italic;
+}a.tc-tiddlylink-external {
+	text-decoration: underline;
+	color: #0000ee;
+	background-color: inherit;
+}a.tc-tiddlylink-external:visited {
+	color: #0000aa;
+	background-color: inherit;
+}a.tc-tiddlylink-external:hover {
+	color: inherit;
+	background-color: inherit;
+}.tc-drop-down a.tc-tiddlylink:hover {
+	color: #ffffff;
+}/*
+** Drag and drop styles
+*/.tc-tiddler-dragger {
+	position: relative;
+	z-index: -10000;
+}.tc-tiddler-dragger-inner {
+	position: absolute;
+	top: -1000px;
+	left: -1000px;
+	display: inline-block;
+	padding: 8px 20px;
+	font-size: 16.9px;
+	font-weight: bold;
+	line-height: 20px;
+	color: #ffffff;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 1);
+	white-space: nowrap;
+	vertical-align: baseline;
+	background-color: #333333;
+	border-radius: 20px;
+}.tc-tiddler-dragger-cover {
+	position: absolute;
+	background-color: #ffffff;
+}.tc-dropzone {
+	position: relative;
+}.tc-dropzone.tc-dragover:before {
+	z-index: 10000;
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,200,0,0.7);
+	text-align: center;
+	content: "拖放到此处 （或按 ESC 键取消）";
+}.tc-droppable > .tc-droppable-placeholder {
+	display: none;
+}.tc-droppable.tc-dragover > .tc-droppable-placeholder {
+	display: block;
+	border: 2px dashed rgba(0,200,0,0.7);
+}.tc-draggable {
+	cursor: move;
+}.tc-sidebar-tab-open .tc-droppable-placeholder, .tc-tagged-draggable-list .tc-droppable-placeholder,
+.tc-links-draggable-list .tc-droppable-placeholder {
+	line-height: 2em;
+	height: 2em;
+}.tc-sidebar-tab-open-item {
+	position: relative;
+}.tc-sidebar-tab-open .tc-btn-invisible.tc-btn-mini svg {
+	font-size: 0.7em;
+	fill: #999999;
+}/*
+** Plugin reload warning
+*/.tc-plugin-reload-warning {
+	z-index: 1000;
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #ffe476;
+	text-align: center;
+}/*
+** Buttons
+*/button svg, button img, label svg, label img {
+	vertical-align: middle;
+}.tc-btn-invisible {
+	padding: 0;
+	margin: 0;
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: #333333;
+	fill: #333333;
+}.tc-btn-boxed {
+	font-size: 0.6em;
+	padding: 0.2em;
+	margin: 1px;
+	background: none;
+	border: 1px solid #cccccc;
+	border-radius: 0.25em;
+}html body.tc-body .tc-btn-boxed svg {
+	font-size: 1.6666em;
+}.tc-btn-boxed:hover {
+	background: #999999;
+	color: #ffffff;
+}html body.tc-body .tc-btn-boxed:hover svg {
+	fill: #ffffff;
+}.tc-btn-rounded {
+	font-size: 0.5em;
+	line-height: 2;
+	padding: 0em 0.3em 0.2em 0.4em;
+	margin: 1px;
+	border: 1px solid #999999;
+	background: #999999;
+	color: #ffffff;
+	border-radius: 2em;
+}html body.tc-body .tc-btn-rounded svg {
+	font-size: 1.6666em;
+	fill: #ffffff;
+}.tc-btn-rounded:hover {
+	border: 1px solid #999999;
+	background: #ffffff;
+	color: #999999;
+}html body.tc-body .tc-btn-rounded:hover svg {
+	fill: #999999;
+}.tc-btn-icon svg {
+	height: 1em;
+	width: 1em;
+	fill: #999999;
+}.tc-btn-text {
+	padding: 0;
+	margin: 0;
+}/* used for documentation "fake" buttons */
+.tc-btn-standard {
+	line-height: 1.8;
+	color: #667;
+	background-color: #e0e0e0;
+	border: 1px solid #888;
+	padding: 2px 1px 2px 1px;
+	margin: 1px 4px 1px 4px;
+}.tc-btn-big-green {
+	display: inline-block;
+	padding: 8px;
+	margin: 4px 8px 4px 8px;
+	background: #66cccc;
+	color: #ffffff;
+	fill: #ffffff;
+	border: none;
+	border-radius: 2px;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	text-decoration: none;
+}.tc-btn-big-green svg,
+.tc-btn-big-green img {
+	height: 2em;
+	width: 2em;
+	vertical-align: middle;
+	fill: #ffffff;
+}.tc-primary-btn {
+ 	background: #7897f3;
+}.tc-sidebar-lists input {
+	color: #333333;
+}.tc-sidebar-lists button {
+	color: #333333;
+	fill: #333333;
+}.tc-sidebar-lists button.tc-btn-mini {
+	color: #c0c0c0;
+}.tc-sidebar-lists button.tc-btn-mini:hover {
+	color: #444444;
+}.tc-sidebar-lists button small {
+	color: #333333;
+}button svg.tc-image-button, button .tc-image-button img {
+	height: 1em;
+	width: 1em;
+}.tc-unfold-banner {
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	background: none;
+	border: none;
+	width: 100%;
+	width: calc(100% + 2px);
+	margin-left: -43px;
+	text-align: center;
+	border-top: 2px solid #f8f8f8;
+	margin-top: 4px;
+}.tc-unfold-banner:hover {
+	background: #f8f8f8;
+	border-top: 2px solid #dddddd;
+}.tc-unfold-banner svg, .tc-fold-banner svg {
+	height: 0.75em;
+	fill: #cccccc;
+}.tc-unfold-banner:hover svg, .tc-fold-banner:hover svg {
+	fill: #888888;
+}.tc-fold-banner {
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	background: none;
+	border: none;
+	width: 23px;
+	text-align: center;
+	margin-left: -35px;
+	top: 6px;
+	bottom: 6px;
+}.tc-fold-banner:hover {
+	background: #f8f8f8;
+}@media (max-width: 959px) {.tc-unfold-banner {
+		position: static;
+		width: calc(100% + 59px);
+	}.tc-fold-banner {
+		width: 16px;
+		margin-left: -16px;
+		font-size: 0.75em;
+	}}/*
+** Tags and missing tiddlers
+*/.tc-tag-list-item {
+	position: relative;
+	display: inline-block;
+	margin-right: 7px;
+}.tc-tags-wrapper {
+	margin: 4px 0 14px 0;
+}.tc-missing-tiddler-label {
+	font-style: italic;
+	font-weight: normal;
+	display: inline-block;
+	font-size: 11.844px;
+	line-height: 14px;
+	white-space: nowrap;
+	vertical-align: baseline;
+}.tc-block-tags-dropdown > .tc-btn-invisible:hover {
+	background-color: #7897f3;
+}button.tc-tag-label, span.tc-tag-label {
+	display: inline-block;
+	padding: 0.16em 0.7em;
+	font-size: 0.9em;
+	font-weight: 400;
+	line-height: 1.2em;
+	color: #000;
+	white-space: nowrap;
+	vertical-align: baseline;
+	background-color: #ffeedd;
+	border-radius: 1em;
+}.tc-sidebar-scrollable .tc-tag-label {
+	text-shadow: none;
+}.tc-untagged-separator {
+	width: 10em;
+	left: 0;
+	margin-left: 0;
+	border: 0;
+	height: 1px;
+	background: #d8d8d8;
+}button.tc-untagged-label {
+	background-color: #999999;
+}.tc-tag-label svg, .tc-tag-label img {
+	height: 1em;
+	width: 1em;
+	margin-right: 3px; 
+	margin-bottom: 1px;
+	vertical-align: bottom;
+}.tc-edit-tags button.tc-remove-tag-button svg {
+	font-size: 0.7em;
+	vertical-align: middle;
+}.tc-tag-manager-table .tc-tag-label {
+	white-space: normal;
+}.tc-tag-manager-tag {
+	width: 100%;
+}button.tc-btn-invisible.tc-remove-tag-button {
+	outline: none;
+}.tc-tag-button-selected,
+.tc-list-item-selected a.tc-tiddlylink, a.tc-list-item-selected {
+	background-color: #7897f3;
+	color: #ffffff;
+}/*
+** Page layout
+*/.tc-topbar {
+	position: fixed;
+	z-index: 1200;
+}.tc-topbar-left {
+	left: 29px;
+	top: 5px;
+}.tc-topbar-right {
+	top: 5px;
+	right: 29px;
+}@media (max-width: 959px) {.tc-topbar-right {
+		right: 10px;
+	}}.tc-topbar button {
+	padding: 8px;
+}.tc-topbar svg {
+	fill: #999999;
+}.tc-topbar button:hover svg {
+	fill: #333333;
+}@media (max-width: 959px) {.tc-show-sidebar-btn svg.tc-image-chevron-left, .tc-hide-sidebar-btn svg.tc-image-chevron-right {
+		transform: rotate(-90deg);
+	}}.tc-sidebar-header {
+	color: #acacac;
+	fill: #acacac;
+}.tc-sidebar-header .tc-title a.tc-tiddlylink-resolves {
+	font-weight: 300;
+}.tc-sidebar-header .tc-sidebar-lists p {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}.tc-sidebar-header .tc-missing-tiddler-label {
+	color: #acacac;
+}.tc-advanced-search input {
+	width: 60%;
+}.tc-search a svg {
+	width: 1.2em;
+	height: 1.2em;
+	vertical-align: middle;
+}.tc-page-controls {
+	margin-top: 14px;
+	font-size: 1.5em;
+}.tc-page-controls .tc-drop-down {
+  font-size: 1rem;
+}.tc-page-controls button {
+	margin-right: 0.5em;
+}.tc-page-controls a.tc-tiddlylink:hover {
+	text-decoration: none;
+}.tc-page-controls img {
+	width: 1em;
+}.tc-page-controls svg {
+	fill: #ccc;
+}.tc-page-controls button:hover svg, .tc-page-controls a:hover svg {
+	fill: #000000;
+}.tc-sidebar-lists .tc-menu-list-item {
+	white-space: nowrap;
+}.tc-menu-list-count {
+	font-weight: bold;
+}.tc-menu-list-subitem {
+	padding-left: 7px;
+}.tc-story-river {
+	position: relative;
+}@media (max-width: 959px) {.tc-sidebar-header {
+		padding: 14px;
+		min-height: 32px;
+		margin-top: 0px;
+		transition:  min-height 400ms ease-in-out, padding-top 400ms ease-in-out, padding-bottom 400ms ease-in-out;
+	}
+	
+	.tc-story-river {
+		position: relative;
+		padding: 0;
+	}
+}@media (min-width: 960px) {.tc-message-box {
+		margin: 21px -21px 21px -21px;
+	}.tc-sidebar-scrollable {
+		position: fixed;
+		top: 0px;
+		left: 800px;
+		bottom: 0;
+		right: 0;
+		overflow-y: auto;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		margin: 0 0 0 -42px;
+		padding: 71px 0 28px 42px;
+	}html[dir="rtl"] .tc-sidebar-scrollable {
+		left: auto;
+		right: 800px;
+	}.tc-story-river {
+		position: relative;
+		left: 0px;
+		top: 0px;
+		width: 800px;
+		padding: 42px 42px 42px 42px;
+	}.tc-story-river.tc-static-story-river {
+		margin-right: 0;
+		padding-right: 42px;
+	}}@media print {body.tc-body {
+		background-color: transparent;
+	}.tc-sidebar-header, .tc-topbar {
+		display: none;
+	}.tc-story-river {
+		margin: 0;
+		padding: 0;
+	}.tc-story-river .tc-tiddler-frame {
+		margin: 0;
+		border: none;
+		padding: 0;
+	}
+}/*
+** Tiddler styles
+*/.tc-tiddler-frame {
+	position: relative;
+	margin-bottom: 28px;
+	background-color: #ffffff;
+	border: 1px solid #eee;
+}
+
+.tc-tiddler-title {
+	position: -webkit-sticky;
+	position: -moz-sticky;
+	position: -o-sticky;
+	position: -ms-sticky;
+	position: sticky;
+	top: 0px;
+	background: #ffffff;
+	z-index: 500;
+}
+
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+1) {
+z-index: 199;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+2) {
+z-index: 198;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+3) {
+z-index: 197;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+4) {
+z-index: 196;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+5) {
+z-index: 195;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+6) {
+z-index: 194;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+7) {
+z-index: 193;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+8) {
+z-index: 192;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+9) {
+z-index: 191;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+10) {
+z-index: 190;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+11) {
+z-index: 189;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+12) {
+z-index: 188;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+13) {
+z-index: 187;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+14) {
+z-index: 186;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+15) {
+z-index: 185;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+16) {
+z-index: 184;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+17) {
+z-index: 183;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+18) {
+z-index: 182;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+19) {
+z-index: 181;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+20) {
+z-index: 180;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+21) {
+z-index: 179;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+22) {
+z-index: 178;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+23) {
+z-index: 177;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+24) {
+z-index: 176;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+25) {
+z-index: 175;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+26) {
+z-index: 174;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+27) {
+z-index: 173;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+28) {
+z-index: 172;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+29) {
+z-index: 171;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+30) {
+z-index: 170;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+31) {
+z-index: 169;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+32) {
+z-index: 168;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+33) {
+z-index: 167;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+34) {
+z-index: 166;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+35) {
+z-index: 165;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+36) {
+z-index: 164;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+37) {
+z-index: 163;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+38) {
+z-index: 162;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+39) {
+z-index: 161;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+40) {
+z-index: 160;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+41) {
+z-index: 159;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+42) {
+z-index: 158;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+43) {
+z-index: 157;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+44) {
+z-index: 156;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+45) {
+z-index: 155;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+46) {
+z-index: 154;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+47) {
+z-index: 153;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+48) {
+z-index: 152;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+49) {
+z-index: 151;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+50) {
+z-index: 150;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+51) {
+z-index: 149;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+52) {
+z-index: 148;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+53) {
+z-index: 147;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+54) {
+z-index: 146;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+55) {
+z-index: 145;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+56) {
+z-index: 144;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+57) {
+z-index: 143;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+58) {
+z-index: 142;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+59) {
+z-index: 141;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+60) {
+z-index: 140;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+61) {
+z-index: 139;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+62) {
+z-index: 138;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+63) {
+z-index: 137;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+64) {
+z-index: 136;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+65) {
+z-index: 135;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+66) {
+z-index: 134;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+67) {
+z-index: 133;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+68) {
+z-index: 132;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+69) {
+z-index: 131;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+70) {
+z-index: 130;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+71) {
+z-index: 129;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+72) {
+z-index: 128;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+73) {
+z-index: 127;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+74) {
+z-index: 126;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+75) {
+z-index: 125;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+76) {
+z-index: 124;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+77) {
+z-index: 123;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+78) {
+z-index: 122;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+79) {
+z-index: 121;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+80) {
+z-index: 120;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+81) {
+z-index: 119;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+82) {
+z-index: 118;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+83) {
+z-index: 117;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+84) {
+z-index: 116;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+85) {
+z-index: 115;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+86) {
+z-index: 114;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+87) {
+z-index: 113;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+88) {
+z-index: 112;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+89) {
+z-index: 111;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+90) {
+z-index: 110;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+91) {
+z-index: 109;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+92) {
+z-index: 108;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+93) {
+z-index: 107;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+94) {
+z-index: 106;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+95) {
+z-index: 105;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+96) {
+z-index: 104;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+97) {
+z-index: 103;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+98) {
+z-index: 102;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+99) {
+z-index: 101;
+}
+
+
+.tc-story-river .tc-tiddler-frame:nth-child(100n+100) {
+z-index: 100;
+}
+
+
+
+.tc-tiddler-info {
+	padding: 14px 42px 14px 42px;
+	background-color: #f8f8f8;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+}.tc-tiddler-info p {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}.tc-tiddler-info .tc-tab-buttons button.tc-tab-selected {
+	background-color: #f8f8f8;
+	border-bottom: 1px solid #f8f8f8;
+}@media (max-width: 959px) {.tc-tiddler-info {
+		padding: 14px 14px 14px 14px;
+	}}.tc-view-field-table {
+	width: 100%;
+}.tc-view-field-name {
+	width: 1%; /* Makes this column be as narrow as possible */
+	text-align: right;
+	font-style: italic;
+	font-weight: 200;
+}.tc-view-field-value {
+}@media (max-width: 959px) {
+	.tc-tiddler-frame {
+		padding: 14px 14px 14px 14px;
+		margin-bottom: .5em;
+	}.tc-tiddler-info {
+		margin: 0 -14px 0 -14px;
+	}
+}@media (min-width: 960px) {
+	.tc-tiddler-frame {
+		padding: 28px 42px 42px 42px;
+		width: 790px;
+		border-radius: 2px;
+	}.tc-tiddler-info {
+		margin: 0 -42px 0 -42px;
+	}
+}.tc-site-title,
+.tc-titlebar {
+	font-weight: 300;
+	font-size: 2.35em;
+	line-height: 1.35em;
+	color: #ff9900;
+	margin: 0;
+}.tc-site-title {
+	color: #ff9900;
+}.tc-tiddler-title-icon {
+	vertical-align: middle;
+	margin-right: .1em;
+}.tc-system-title-prefix {
+	color: #999999;
+}.tc-titlebar h2 {
+	font-size: 1em;
+	display: inline;
+}.tc-titlebar img {
+	height: 1em;
+}.tc-subtitle {
+	font-size: 0.9em;
+	color: #c0c0c0;
+	font-weight: 300;
+}.tc-subtitle .tc-tiddlylink {
+	margin-right: .3em;
+}.tc-tiddler-missing .tc-title {
+  font-style: italic;
+  font-weight: normal;
+}.tc-tiddler-frame .tc-tiddler-controls {
+	float: right;
+}.tc-tiddler-controls .tc-drop-down {
+	font-size: 0.6em;
+}.tc-tiddler-controls .tc-drop-down .tc-drop-down {
+	font-size: 1em;
+}.tc-tiddler-controls > span > button,
+.tc-tiddler-controls > span > span > button,
+.tc-tiddler-controls > span > span > span > button {
+	vertical-align: baseline;
+	margin-left:5px;
+}.tc-tiddler-controls button svg, .tc-tiddler-controls button img,
+.tc-search button svg, .tc-search a svg {
+	fill: #cccccc;
+}.tc-tiddler-controls button svg, .tc-tiddler-controls button img {
+	height: 0.75em;
+}.tc-search button svg, .tc-search a svg {
+    height: 1.2em;
+    width: 1.2em;
+    margin: 0 0.25em;
+}.tc-tiddler-controls button.tc-selected svg,
+.tc-page-controls button.tc-selected svg  {
+	fill: #444444;
+}.tc-tiddler-controls button.tc-btn-invisible:hover svg,
+.tc-search button:hover svg, .tc-search a:hover svg {
+	fill: #888888;
+}@media print {
+	.tc-tiddler-controls {
+		display: none;
+	}
+}.tc-tiddler-help { /* Help prompts within tiddler template */
+	color: #999999;
+	margin-top: 14px;
+}.tc-tiddler-help a.tc-tiddlylink {
+	color: #888888;
+}.tc-tiddler-frame .tc-edit-texteditor {
+	width: 100%;
+	margin: 4px 0 4px 0;
+}.tc-tiddler-frame input.tc-edit-texteditor,
+.tc-tiddler-frame textarea.tc-edit-texteditor,
+.tc-tiddler-frame iframe.tc-edit-texteditor {
+	padding: 3px 3px 3px 3px;
+	border: 1px solid #cccccc;
+	line-height: 1.3em;
+	-webkit-appearance: none;
+	font-family: ;
+}.tc-tiddler-frame input.tc-edit-texteditor,
+.tc-tiddler-frame textarea.tc-edit-texteditor {
+	background-color: #f8f8f8;
+}.tc-tiddler-frame iframe.tc-edit-texteditor {
+	background-color: #ffffff;
+}.tc-tiddler-frame .tc-binary-warning {
+	width: 100%;
+	height: 5em;
+	text-align: center;
+	padding: 3em 3em 6em 3em;
+	background: #ffe476;
+	border: 1px solid #b99e2f;
+}canvas.tc-edit-bitmapeditor  {
+	border: 6px solid #ffffff;
+	cursor: crosshair;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}.tc-edit-bitmapeditor-width {
+	display: block;
+}.tc-edit-bitmapeditor-height {
+	display: block;
+}.tc-tiddler-body {
+	clear: both;
+}.tc-tiddler-frame .tc-tiddler-body {
+	font-size: 15px;
+	line-height: 20px;
+}.tc-titlebar, .tc-tiddler-edit-title {
+	overflow: hidden; /* https://github.com/Jermolene/TiddlyWiki5/issues/282 */
+}html body.tc-body.tc-single-tiddler-window {
+	margin: 1em;
+	background: #ffffff;
+}.tc-single-tiddler-window img,
+.tc-single-tiddler-window svg,
+.tc-single-tiddler-window canvas,
+.tc-single-tiddler-window embed,
+.tc-single-tiddler-window iframe {
+	max-width: 100%;
+}/*
+** Editor
+*/.tc-editor-toolbar {
+	margin-top: 8px;
+}.tc-editor-toolbar button {
+	vertical-align: middle;
+	background-color: #cccccc;
+	color: #444444;
+	fill: #444444;
+	border-radius: 4px;
+	padding: 3px;
+	margin: 2px 0 2px 4px;
+}.tc-editor-toolbar button.tc-text-editor-toolbar-item-adjunct {
+	margin-left: 1px;
+	width: 1em;
+	border-radius: 8px;
+}.tc-editor-toolbar button.tc-text-editor-toolbar-item-start-group {
+	margin-left: 11px;
+}.tc-editor-toolbar button.tc-selected {
+	background-color: #7897f3;
+}.tc-editor-toolbar button svg {
+	width: 1.6em;
+	height: 1.2em;
+}.tc-editor-toolbar button:hover {
+	background-color: #444444;
+	fill: #ffffff;
+	color: #ffffff;
+}.tc-editor-toolbar .tc-text-editor-toolbar-more {
+	white-space: normal;
+}.tc-editor-toolbar .tc-text-editor-toolbar-more button {
+	display: inline-block;
+	padding: 3px;
+	width: auto;
+}.tc-editor-toolbar .tc-search-results {
+	padding: 0;
+}/*
+** Adjustments for fluid-fixed mode
+*/@media (min-width: 960px) {.tc-story-river {
+		padding-right: 0;
+		position: relative;
+		width: auto;
+		left: 0;
+		margin-left: 0px;
+		margin-right: 300px;
+	}.tc-tiddler-frame {
+		width: 100%;
+	}.tc-sidebar-scrollable {
+		left: auto;
+		bottom: 0;
+		right: 0;
+		width: 300px;
+	}body.tc-body .tc-storyview-zoomin-tiddler {
+		width: 100%;
+		width: calc(100% - 42px);
+	}}/*
+** Toolbar buttons
+*/.tc-page-controls svg.tc-image-new-button {
+  fill: ;
+}.tc-page-controls svg.tc-image-options-button {
+  fill: ;
+}.tc-page-controls svg.tc-image-save-button {
+  fill: ;
+}.tc-tiddler-controls button svg.tc-image-info-button {
+  fill: ;
+}.tc-tiddler-controls button svg.tc-image-edit-button {
+  fill: ;
+}.tc-tiddler-controls button svg.tc-image-close-button {
+  fill: ;
+}.tc-tiddler-controls button svg.tc-image-delete-button {
+  fill: ;
+}.tc-tiddler-controls button svg.tc-image-cancel-button {
+  fill: ;
+}.tc-tiddler-controls button svg.tc-image-done-button {
+  fill: ;
+}/*
+** Tiddler edit mode
+*/.tc-tiddler-edit-frame em.tc-edit {
+	color: #999999;
+	font-style: normal;
+}.tc-edit-type-dropdown a.tc-tiddlylink-missing {
+	font-style: normal;
+}.tc-type-selector .tc-edit-typeeditor {
+	width: auto;
+}.tc-type-selector-dropdown-wrapper {
+	display: inline-block;
+}.tc-type-selector-dropdown-wrapper {
+		min-width: calc(32ch + 4em);
+	}.tc-type-selector-dropdown-wrapper input.tc-edit-typeeditor {
+		min-width: 32ch;
+	}.tc-edit-tags {
+	border: 1px solid #cccccc;
+	padding: 4px 8px 4px 8px;
+}.tc-edit-add-tag {
+	display: inline-block;
+}.tc-edit-add-tag .tc-add-tag-name input {
+	width: 50%;
+}.tc-edit-add-tag .tc-keyboard {
+	display:inline;
+}.tc-edit-tags .tc-tag-label {
+	display: inline-block;
+}.tc-edit-tags-list {
+	margin: 14px 0 14px 0;
+}.tc-remove-tag-button {
+	padding-left: 4px;
+}.tc-tiddler-preview {
+	overflow: auto;
+}.tc-tiddler-preview-preview {
+	float: right;
+	width: 49%;
+	border: 1px solid #cccccc;
+	margin: 4px 0 3px 3px;
+	padding: 3px 3px 3px 3px;
+}.tc-tiddler-frame .tc-tiddler-preview .tc-edit-texteditor {
+	width: 49%;
+}.tc-tiddler-frame .tc-tiddler-preview canvas.tc-edit-bitmapeditor {
+	max-width: 49%;
+}.tc-edit-fields {
+	width: 100%;
+}.tc-edit-fields.tc-edit-fields-small {
+	margin-top: 0;
+	margin-bottom: 0;
+}.tc-edit-fields table, .tc-edit-fields tr, .tc-edit-fields td {
+	border: none;
+	padding: 4px;
+}.tc-edit-fields > tbody > .tc-edit-field:nth-child(odd) {
+	background-color: #f0f4f0;
+}.tc-edit-fields > tbody > .tc-edit-field:nth-child(even) {
+	background-color: #e0e8e0;
+}.tc-edit-field-name {
+	text-align: right;
+}.tc-edit-field-value input {
+	width: 100%;
+}.tc-edit-field-remove {
+}.tc-edit-field-remove svg {
+	height: 1em;
+	width: 1em;
+	fill: #999999;
+	vertical-align: middle;
+}.tc-edit-field-add-name-wrapper input.tc-edit-texteditor {
+	width: auto;
+}.tc-edit-field-add-name-wrapper {
+	display: inline-block;
+}.tc-edit-field-add-value {
+	display: inline-block;
+}@media (min-width: 960px) {.tc-edit-field-add-value {
+		width: 35%;
+	}}.tc-edit-field-add-button {
+	display: inline-block;
+	width: 10%;
+}/*
+** Storyview Classes
+*/.tc-viewswitcher .tc-image-button {
+	margin-right: .3em;
+}.tc-storyview-zoomin-tiddler {
+	position: absolute;
+	display: block;
+	width: 100%;
+}@media (min-width: 960px) {.tc-storyview-zoomin-tiddler {
+		width: calc(100% - 84px);
+	}}/*
+** Dropdowns
+*/.tc-btn-dropdown {
+	text-align: left;
+}.tc-btn-dropdown svg, .tc-btn-dropdown img {
+	height: 1em;
+	width: 1em;
+	fill: #999999;
+}.tc-drop-down-wrapper {
+	position: relative;
+}.tc-drop-down {
+	min-width: 380px;
+	border: 1px solid #999999;
+	background-color: #ffffff;
+	padding: 7px 0 7px 0;
+	margin: 4px 0 0 0;
+	white-space: nowrap;
+	text-shadow: none;
+	line-height: 1.4;
+}.tc-drop-down .tc-drop-down {
+	margin-left: 14px;
+}.tc-drop-down button svg, .tc-drop-down a svg  {
+	fill: #333333;
+}.tc-drop-down button.tc-btn-invisible:hover svg {
+	fill: #ffffff;
+}.tc-drop-down .tc-drop-down-info {
+	padding-left: 14px;
+}.tc-drop-down p {
+	padding: 0 14px 0 14px;
+}.tc-drop-down svg {
+	width: 1em;
+	height: 1em;
+}.tc-drop-down img {
+	width: 1em;
+}.tc-drop-down a, .tc-drop-down button {
+	display: block;
+	padding: 0 14px 0 14px;
+	width: 100%;
+	text-align: left;
+	color: #333333;
+	line-height: 1.4;
+}.tc-drop-down .tc-tab-set .tc-tab-buttons button {
+	display: inline-block;
+    width: auto;
+    margin-bottom: 0px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}.tc-drop-down .tc-prompt {
+	padding: 0 14px;
+}.tc-drop-down .tc-chooser {
+	border: none;
+}.tc-drop-down .tc-chooser .tc-swatches-horiz {
+	font-size: 0.4em;
+	padding-left: 1.2em;
+}.tc-drop-down .tc-file-input-wrapper {
+	width: 100%;
+}.tc-drop-down .tc-file-input-wrapper button {
+	color: #333333;
+}.tc-drop-down a:hover, .tc-drop-down button:hover, .tc-drop-down .tc-file-input-wrapper:hover button {
+	color: #ffffff;
+	background-color: #7897f3;
+	text-decoration: none;
+}.tc-drop-down .tc-tab-buttons button {
+	background-color: #ececec;
+}.tc-drop-down .tc-tab-buttons button.tc-tab-selected {
+	background-color: #fff;
+	border-bottom: 1px solid #fff;
+}.tc-drop-down-bullet {
+	display: inline-block;
+	width: 0.5em;
+}.tc-drop-down .tc-tab-contents a {
+	padding: 0 0.5em 0 0.5em;
+}.tc-block-dropdown-wrapper {
+	position: relative;
+}.tc-block-dropdown {
+	position: absolute;
+	min-width: 220px;
+	border: 1px solid #999999;
+	background-color: #ffffff;
+	padding: 7px 0;
+	margin: 4px 0 0 0;
+	white-space: nowrap;
+	z-index: 1000;
+	text-shadow: none;
+}.tc-block-dropdown.tc-search-drop-down {
+	margin-left: -12px;
+}.tc-block-dropdown a {
+	display: block;
+	padding: 4px 14px 4px 14px;
+}.tc-block-dropdown.tc-search-drop-down a {
+	display: block;
+	padding: 0px 10px 0px 10px;
+}.tc-drop-down .tc-dropdown-item-plain,
+.tc-block-dropdown .tc-dropdown-item-plain {
+	padding: 4px 14px 4px 7px;
+}.tc-drop-down .tc-dropdown-item,
+.tc-block-dropdown .tc-dropdown-item {
+	padding: 4px 14px 4px 7px;
+	color: #999999;
+}.tc-block-dropdown a.tc-tiddlylink:hover {
+	color: #ffffff;
+	background-color: #7897f3;
+	text-decoration: none;
+}.tc-search-results {
+	padding: 0 7px 0 7px;
+}.tc-image-chooser, .tc-colour-chooser {
+	white-space: normal;
+}.tc-image-chooser a,
+.tc-colour-chooser a {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	position: relative;
+}.tc-image-chooser a {
+	border: 1px solid #999999;
+	padding: 2px;
+	margin: 2px;
+	width: 4em;
+	height: 4em;
+}.tc-colour-chooser a {
+	padding: 3px;
+	width: 2em;
+	height: 2em;
+	vertical-align: middle;
+}.tc-image-chooser a:hover,
+.tc-colour-chooser a:hover {
+	background: #7897f3;
+	padding: 0px;
+	border: 3px solid #7897f3;
+}.tc-image-chooser a svg,
+.tc-image-chooser a img {
+	display: inline-block;
+	width: auto;
+	height: auto;
+	max-width: 3.5em;
+	max-height: 3.5em;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}/*
+** Modals
+*/.tc-modal-wrapper {
+	position: fixed;
+	overflow: auto;
+	overflow-y: scroll;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 900;
+}.tc-modal-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+	background-color: #333333;
+}.tc-modal {
+	z-index: 1100;
+	background-color: #ffffff;
+	border: 1px solid #999999;
+}@media (max-width: 55em) {
+	.tc-modal {
+		position: fixed;
+		top: 1em;
+		left: 1em;
+		right: 1em;
+	}.tc-modal-body {
+		overflow-y: auto;
+		max-height: 400px;
+		max-height: 60vh;
+	}
+}@media (min-width: 55em) {
+	.tc-modal {
+		position: fixed;
+		top: 2em;
+		left: 25%;
+		width: 50%;
+	}.tc-modal-body {
+		overflow-y: auto;
+		max-height: 400px;
+		max-height: 60vh;
+	}
+}.tc-modal-header {
+	padding: 9px 15px;
+	border-bottom: 1px solid #eeeeee;
+}.tc-modal-header h3 {
+	margin: 0;
+	line-height: 30px;
+}.tc-modal-header img, .tc-modal-header svg {
+	width: 1em;
+	height: 1em;
+}.tc-modal-body {
+	padding: 15px;
+}.tc-modal-footer {
+	padding: 14px 15px 15px;
+	margin-bottom: 0;
+	text-align: right;
+	background-color: #f5f5f5;
+	border-top: 1px solid #dddddd;
+}/*
+** Centered modals
+*/
+.tc-modal-centered .tc-modal {
+	width: auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) !important;
+}/*
+** Notifications
+*/.tc-notification {
+	position: fixed;
+	top: 14px;
+	right: 42px;
+	z-index: 1300;
+	max-width: 280px;
+	padding: 0 14px 0 14px;
+	background-color: #ffffdd;
+	border: 1px solid #999999;
+}/*
+** Tabs
+*/.tc-tab-set.tc-vertical {
+	display: -webkit-flex;
+	display: flex;
+}.tc-tab-buttons {
+	font-size: 0.85em;
+	padding-top: 1em;
+	margin-bottom: -2px;
+}.tc-tab-buttons.tc-vertical  {
+	z-index: 100;
+	display: block;
+	padding-top: 14px;
+	vertical-align: top;
+	text-align: right;
+	margin-bottom: inherit;
+	margin-right: -1px;
+	max-width: 33%;
+	-webkit-flex: 0 0 auto;
+	flex: 0 0 auto;
+}.tc-tab-buttons button.tc-tab-selected {
+	color: #666666;
+	background-color: #ffffff;
+	border-left: 1px solid #cccccc;
+	border-top: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+}.tc-tab-buttons button {
+	color: #666666;
+	padding: 3px 5px 3px 5px;
+	margin-right: 0.3em;
+	font-weight: 300;
+	border: none;
+	background: inherit;
+	background-color: #eeeeee;
+	border-left: 1px solid #cccccc;
+	border-top: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}.tc-tab-buttons.tc-vertical button {
+	display: block;
+	width: 100%;
+	margin-top: 3px;
+	margin-right: 0;
+	text-align: right;
+	background-color: #eeeeee;
+	border-left: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	border-right: none;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}.tc-tab-buttons.tc-vertical button.tc-tab-selected {
+	background-color: #ffffff;
+	border-right: 1px solid #ffffff;
+}.tc-tab-divider {
+	border-top: 1px solid #d8d8d8;
+}.tc-tab-divider.tc-vertical  {
+	display: none;
+}.tc-tab-content {
+	margin-top: 14px;
+}.tc-tab-content.tc-vertical  {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 0;
+	padding-left: 14px;
+	border-left: 1px solid #cccccc;
+	-webkit-flex: 1 0 70%;
+	flex: 1 0 70%;
+	overflow: auto;
+}.tc-sidebar-lists .tc-tab-buttons {
+	margin-bottom: -1px;
+}.tc-sidebar-lists .tc-tab-buttons button.tc-tab-selected {
+	background-color: #ffffff;
+	color: ;
+	border-left: 1px solid #cccccc;
+	border-top: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+}.tc-sidebar-lists .tc-tab-buttons button {
+	background-color: #eeeeee;
+	color: #666666;
+	border-left: 1px solid #cccccc;
+	border-top: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+}.tc-sidebar-lists .tc-tab-divider {
+	border-top: 1px solid #d8d8d8;
+}.tc-more-sidebar > .tc-tab-set > .tc-tab-buttons > button {
+	display: block;
+	width: 100%;
+	background-color: #eeeeee;
+	border-top: none;
+	border-left: none;
+	border-bottom: none;
+	border-right: 1px solid #ccc;
+	margin-bottom: inherit;
+}.tc-more-sidebar > .tc-tab-set > .tc-tab-buttons > button.tc-tab-selected {
+	background-color: #ffffff;
+	border: none;
+}/*
+** Manager
+*/.tc-manager-wrapper {
+	
+}.tc-manager-controls {
+	
+}.tc-manager-control {
+	margin: 0.5em 0;
+}.tc-manager-list {
+	width: 100%;
+	border-top: 1px solid #999999;
+	border-left: 1px solid #999999;
+	border-right: 1px solid #999999;
+}.tc-manager-list-item {}.tc-manager-list-item-heading {
+    display: block;
+    width: 100%;
+    text-align: left;	
+	border-bottom: 1px solid #999999;
+	padding: 3px;
+}.tc-manager-list-item-heading-selected {
+	font-weight: bold;
+	color: #ffffff;
+	fill: #ffffff;
+	background-color: #333333;
+}.tc-manager-list-item-heading:hover {
+	background: #7897f3;
+	color: #ffffff;
+}.tc-manager-list-item-content {
+	display: flex;
+}.tc-manager-list-item-content-sidebar {
+    flex: 1 0;
+    background: #f8f8f8;
+    border-right: 0.5em solid #999999;
+    border-bottom: 0.5em solid #999999;
+    white-space: nowrap;
+}.tc-manager-list-item-content-item-heading {
+	display: block;
+	width: 100%;
+	text-align: left;
+    background: #999999;
+	text-transform: uppercase;
+	font-size: 0.6em;
+	font-weight: bold;
+    padding: 0.5em 0 0.5em 0;
+}.tc-manager-list-item-content-item-body {
+	padding: 0 0.5em 0 0.5em;
+}.tc-manager-list-item-content-item-body > pre {
+	margin: 0.5em 0 0.5em 0;
+	border: none;
+	background: inherit;
+}.tc-manager-list-item-content-tiddler {
+    flex: 3 1;
+    border-left: 0.5em solid #999999;
+    border-right: 0.5em solid #999999;
+    border-bottom: 0.5em solid #999999;
+}.tc-manager-list-item-content-item-body > table {
+	border: none;
+	padding: 0;
+	margin: 0;
+}.tc-manager-list-item-content-item-body > table td {
+	border: none;
+}.tc-manager-icon-editor > button {
+	width: 100%;
+}.tc-manager-icon-editor > button > svg,
+.tc-manager-icon-editor > button > button {
+	width: 100%;
+	height: auto;
+}/*
+** Import table
+*/.tc-import-table {
+	width: 100%;
+}.tc-import-table svg.tc-image-edit-button {
+	max-width: unset;
+}.tc-import-table th:first-of-type {
+	width: 10%;
+}.tc-import-table th:last-of-type {
+	width: 30%;
+}.tc-import-table .tc-row-disabled {
+	background: #88888810;
+	opacity: 0.8;
+}.tc-import-table .tc-row-warning {
+	background: #ffc9c950;
+}/*
+** Alerts
+*/.tc-alerts {
+	position: fixed;
+	top: 28px;
+	left: 0;
+	right: 0;
+	max-width: 50%;
+	z-index: 20000;
+}.tc-alert {
+	position: relative;
+	margin: 14px;
+	padding: 7px;
+	border: 1px solid #b99e2f;
+	background-color: #ffe476;
+}.tc-alert-toolbar {
+	position: absolute;
+	top: 7px;
+	right: 7px;
+    line-height: 0;
+}.tc-alert-toolbar svg {
+	fill: #b99e2f;
+}.tc-alert-subtitle {
+	color: #b99e2f;
+	font-weight: bold;
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+}.tc-alert-body > p {
+	margin: 0;
+}.tc-alert-highlight {
+	color: #881122;
+}@media (min-width: 960px) {.tc-static-alert {
+		position: relative;
+	}.tc-static-alert-inner {
+		position: absolute;
+		z-index: 100;
+	}}.tc-static-alert-inner {
+	padding: 0 2px 2px 42px;
+	color: #aaaaaa;
+}/*
+** Floating drafts list
+*/.tc-drafts-list {
+	z-index: 2000;
+	position: fixed;
+	font-size: 0.8em;
+	left: 0;
+	bottom: 0;
+}.tc-drafts-list a {
+	margin: 0 0.5em;
+	padding: 4px 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border: 1px solid #ffffff;
+	border-bottom-none;
+	background: #ff0000;
+	color: #ffffff;
+	fill: #ffffff;
+}.tc-drafts-list a:hover {
+	text-decoration: none;
+	background: #333333;
+	color: #ffffff;
+	fill: #ffffff;
+}.tc-drafts-list a svg {
+	width: 1em;
+	height: 1em;
+	vertical-align: text-bottom;
+}/*
+** Control panel
+*/.tc-control-panel td {
+	padding: 4px;
+}.tc-control-panel table, .tc-control-panel table input, .tc-control-panel table textarea {
+	width: 100%;
+}.tc-plugin-info {
+	display: flex;
+	border: 1px solid #999999;
+	fill: #999999;
+	background-color: #ffffff;
+	margin: 0.5em 0 0.5em 0;
+	padding: 4px;
+    align-items: center;
+}.tc-plugin-info-sub-plugins .tc-plugin-info {
+    margin: 0.5em;
+	background: #ffffff;
+}.tc-plugin-info-sub-plugin-indicator {
+	margin: -16px 1em 0 2em;
+}.tc-plugin-info-sub-plugin-indicator button {
+	color: #ffffff;
+	background: #333333;
+	border-radius: 8px;
+    padding: 2px 7px;
+    font-size: 0.75em;
+}.tc-plugin-info-sub-plugins .tc-plugin-info-dropdown {
+	margin-left: 1em;
+	margin-right: 1em;
+}.tc-plugin-info-disabled {
+	background: -webkit-repeating-linear-gradient(45deg, #ff0, #ff0 10px, #eee 10px, #eee 20px);
+	background: repeating-linear-gradient(45deg, #ff0, #ff0 10px, #eee 10px, #eee 20px);
+}.tc-plugin-info-disabled:hover {
+	background: -webkit-repeating-linear-gradient(45deg, #aa0, #aa0 10px, #888 10px, #888 20px);
+	background: repeating-linear-gradient(45deg, #aa0, #aa0 10px, #888 10px, #888 20px);
+}a.tc-tiddlylink.tc-plugin-info:hover {
+	text-decoration: none;
+	background-color: #7897f3;
+	color: #ffffff;
+	fill: #333333;
+}a.tc-tiddlylink.tc-plugin-info:hover > .tc-plugin-info-chunk > svg {
+	fill: #ffffff;
+}.tc-plugin-info-chunk {
+    margin: 2px;
+}.tc-plugin-info-chunk.tc-plugin-info-toggle {
+	flex-grow: 0;
+	flex-shrink: 0;
+	line-height: 1;
+}.tc-plugin-info-chunk.tc-plugin-info-icon {
+	flex-grow: 0;
+	flex-shrink: 0;
+	line-height: 1;
+}.tc-plugin-info-chunk.tc-plugin-info-description {
+	flex-grow: 1;
+}.tc-plugin-info-chunk.tc-plugin-info-buttons {
+	font-size: 0.8em;
+	line-height: 1.2;
+	flex-grow: 0;
+	flex-shrink: 0;
+    text-align: right;
+}.tc-plugin-info-chunk.tc-plugin-info-description h1 {
+	font-size: 1em;
+	line-height: 1.2;
+	margin: 2px 0 2px 0;
+}.tc-plugin-info-chunk.tc-plugin-info-description h2 {
+	font-size: 0.8em;
+	line-height: 1.2;
+	margin: 2px 0 2px 0;
+}.tc-plugin-info-chunk.tc-plugin-info-description div {
+	font-size: 0.7em;
+	line-height: 1.2;
+	margin: 2px 0 2px 0;
+}.tc-plugin-info-chunk.tc-plugin-info-toggle img, .tc-plugin-info-chunk.tc-plugin-info-toggle svg {
+	width: 1em;
+	height: 1em;
+}.tc-plugin-info-chunk.tc-plugin-info-icon img, .tc-plugin-info-chunk.tc-plugin-info-icon svg {
+	width: 2em;
+	height: 2em;
+}.tc-plugin-info-dropdown {
+	border: 1px solid #999999;
+	background: #ffffff;
+	margin-top: -8px;
+}.tc-plugin-info-dropdown-message {
+	background: #ecf2ff;
+	padding: 0.5em 1em 0.5em 1em;
+	font-weight: bold;
+	font-size: 0.8em;
+}.tc-plugin-info-dropdown-body {
+	padding: 1em 1em 0 1em;
+	background: #ffffff;
+}.tc-plugin-info-sub-plugins {
+	padding: 0.5em;
+    margin: 0 1em 1em 1em;
+	background: #ffffdd;
+}.tc-install-plugin {
+	font-weight: bold;
+	background: green;
+	color: white;
+	fill: white;
+	border-radius: 4px;
+	padding: 3px;
+}.tc-install-plugin.tc-reinstall-downgrade {
+	background: red;
+}.tc-install-plugin.tc-reinstall {
+	background: blue;
+}.tc-install-plugin.tc-reinstall-upgrade {
+	background: orange;
+}.tc-check-list {
+	line-height: 2em;
+}.tc-check-list .tc-image-button {
+	height: 1.5em;
+}/*
+** Message boxes
+*/.tc-message-box {
+	border: 1px solid #cfd6e6;
+	background: #ecf2ff;
+	padding: 0px 21px 0px 21px;
+	font-size: 12px;
+	line-height: 18px;
+	color: #547599;
+}.tc-message-box svg {
+	width: 1em;
+	height: 1em;
+    vertical-align: text-bottom;
+}/*
+** Pictures
+*/.tc-bordered-image {
+	border: 1px solid #999999;
+	padding: 5px;
+	margin: 5px;
+}/*
+** Floats
+*/.tc-float-right {
+	float: right;
+}/*
+** Chooser
+*/.tc-chooser {
+	border-right: 1px solid #f0f0f0;
+	border-left: 1px solid #f0f0f0;
+}.tc-chooser-item {
+	border-bottom: 1px solid #f0f0f0;
+	border-top: 1px solid #f0f0f0;
+	padding: 2px 4px 2px 14px;
+}.tc-drop-down .tc-chooser-item {
+	padding: 2px;
+}.tc-chosen,
+.tc-chooser-item:hover {
+	background-color: #f0f0f0;
+	border-color: #a8a8a8;
+}.tc-chosen .tc-tiddlylink {
+	cursor:default;
+}.tc-chooser-item .tc-tiddlylink {
+	display: block;
+	text-decoration: none;
+	background-color: transparent;
+}.tc-chooser-item:hover .tc-tiddlylink:hover {
+	text-decoration: none;
+}.tc-drop-down .tc-chosen .tc-tiddlylink,
+.tc-drop-down .tc-chooser-item .tc-tiddlylink:hover {
+	color: #333333;
+}.tc-chosen > .tc-tiddlylink:before {
+	margin-left: -10px;
+	position: relative;
+	content: "» ";
+}.tc-chooser-item svg,
+.tc-chooser-item img{
+	width: 1em;
+	height: 1em;
+	vertical-align: middle;
+}.tc-language-chooser .tc-image-button img {
+	width: 2em;
+	vertical-align: -0.15em;
+}/*
+** Palette swatches
+*/.tc-swatches-horiz {
+}.tc-swatches-horiz .tc-swatch {
+	display: inline-block;
+}.tc-swatch {
+	width: 2em;
+	height: 2em;
+	margin: 0.4em;
+	border: 1px solid #888;
+}input.tc-palette-manager-colour-input {
+	width: 100%;
+	padding: 0;
+}/*
+** Table of contents
+*/.tc-sidebar-lists .tc-table-of-contents {
+	white-space: nowrap;
+}.tc-table-of-contents button {
+	color: #acacac;
+}.tc-table-of-contents svg {
+	width: 0.7em;
+	height: 0.7em;
+	vertical-align: middle;
+	fill: #acacac;
+}.tc-table-of-contents ol {
+	list-style-type: none;
+	padding-left: 0;
+}.tc-table-of-contents ol ol {
+	padding-left: 1em;
+}.tc-table-of-contents li {
+	font-size: 1.0em;
+	font-weight: bold;
+}.tc-table-of-contents li a {
+	font-weight: bold;
+}.tc-table-of-contents li li {
+	font-size: 0.95em;
+	font-weight: normal;
+	line-height: 1.4;
+}.tc-table-of-contents li li a {
+	font-weight: normal;
+}.tc-table-of-contents li li li {
+	font-size: 0.95em;
+	font-weight: 200;
+	line-height: 1.5;
+}.tc-table-of-contents li li li li {
+	font-size: 0.95em;
+	font-weight: 200;
+}.tc-tabbed-table-of-contents {
+	display: -webkit-flex;
+	display: flex;
+}.tc-tabbed-table-of-contents .tc-table-of-contents {
+	z-index: 100;
+	display: inline-block;
+	padding-left: 1em;
+	max-width: 50%;
+	-webkit-flex: 0 0 auto;
+	flex: 0 0 auto;
+	background: #eeeeee;
+	border-left: 1px solid #cccccc;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+}.tc-tabbed-table-of-contents .tc-table-of-contents .toc-item > a,
+.tc-tabbed-table-of-contents .tc-table-of-contents .toc-item-selected > a {
+	display: block;
+	padding: 0.12em 1em 0.12em 0.25em;
+}.tc-tabbed-table-of-contents .tc-table-of-contents .toc-item > a {
+	border-top: 1px solid #eeeeee;
+	border-left: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+}.tc-tabbed-table-of-contents .tc-table-of-contents .toc-item > a:hover {
+	text-decoration: none;
+	border-top: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	background: #cccccc;
+}.tc-tabbed-table-of-contents .tc-table-of-contents .toc-item-selected > a {
+	border-top: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	background: #ffffff;
+	margin-right: -1px;
+}.tc-tabbed-table-of-contents .tc-table-of-contents .toc-item-selected > a:hover {
+	text-decoration: none;
+}.tc-tabbed-table-of-contents .tc-tabbed-table-of-contents-content {
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	border: 1px solid #cccccc;
+	-webkit-flex: 1 0 50%;
+	flex: 1 0 50%;
+}/*
+** Dirty indicator
+*/body.tc-dirty span.tc-dirty-indicator, body.tc-dirty span.tc-dirty-indicator svg {
+	fill: #ff0000;
+	color: #ff0000;
+}/*
+** File inputs
+*/.tc-file-input-wrapper {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: middle;
+}.tc-file-input-wrapper input[type=file] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-size: 999px;
+	max-width: 100%;
+	max-height: 100%;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	outline: none;
+	background: white;
+	cursor: pointer;
+	display: inline-block;
+}::-webkit-file-upload-button {
+	cursor:pointer;
+}/*
+** Thumbnail macros
+*/.tc-thumbnail-wrapper {
+	position: relative;
+	display: inline-block;
+	margin: 6px;
+	vertical-align: top;
+}.tc-thumbnail-right-wrapper {
+	float:right;
+	margin: 0.5em 0 0.5em 0.5em;
+}.tc-thumbnail-image {
+	text-align: center;
+	overflow: hidden;
+	border-radius: 3px;
+}.tc-thumbnail-image svg,
+.tc-thumbnail-image img {
+	filter: alpha(opacity=1);
+	opacity: 1;
+	min-width: 100%;
+	min-height: 100%;
+	max-width: 100%;
+}.tc-thumbnail-wrapper:hover .tc-thumbnail-image svg,
+.tc-thumbnail-wrapper:hover .tc-thumbnail-image img {
+	filter: alpha(opacity=0.8);
+	opacity: 0.8;
+}.tc-thumbnail-background {
+	position: absolute;
+	border-radius: 3px;
+}.tc-thumbnail-icon svg,
+.tc-thumbnail-icon img {
+	width: 3em;
+	height: 3em;
+	
+  -webkit-filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
+     -moz-filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
+          filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
+
+}.tc-thumbnail-wrapper:hover .tc-thumbnail-icon svg,
+.tc-thumbnail-wrapper:hover .tc-thumbnail-icon img {
+	fill: #fff;
+	
+  -webkit-filter: drop-shadow(3px 3px 4px rgba(0,0,0,0.6));
+     -moz-filter: drop-shadow(3px 3px 4px rgba(0,0,0,0.6));
+          filter: drop-shadow(3px 3px 4px rgba(0,0,0,0.6));
+
+}.tc-thumbnail-icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	-webkit-justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}.tc-thumbnail-caption {
+	position: absolute;
+	background-color: #777;
+	color: #fff;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	filter: alpha(opacity=0.9);
+	opacity: 0.9;
+	line-height: 1.4;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}.tc-thumbnail-wrapper:hover .tc-thumbnail-caption {
+	filter: alpha(opacity=1);
+	opacity: 1;
+}/*
+** Diffs
+*/.tc-diff-equal {
+	background-color: ;
+	color: #333333;
+}.tc-diff-insert {
+	background-color: #aaefad;
+	color: #333333;
+}.tc-diff-delete {
+	background-color: #ffc9c9;
+	color: #333333;
+}.tc-diff-invisible {
+	background-color: ;
+	color: #999999;
+}.tc-diff-tiddlers th {
+	text-align: right;
+	background: #ffffff;
+	font-weight: normal;
+	font-style: italic;
+}.tc-diff-tiddlers pre {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+}/*
+** Errors
+*/.tc-error {
+	background: #f00;
+	color: #fff;
+}/*
+** Tree macro
+*/.tc-tree div {
+    	padding-left: 14px;
+}.tc-tree ol {
+    	list-style-type: none;
+    	padding-left: 0;
+    	margin-top: 0;
+}.tc-tree ol ol {
+    	padding-left: 1em;    
+}.tc-tree button { 
+    	color: #acacac;
+}.tc-tree svg {
+     	fill: #acacac;
+}.tc-tree span svg {
+    	width: 1em;
+    	height: 1em;
+    	vertical-align: baseline;
+}.tc-tree li span {
+    	color: lightgray;
+}select {
+        color: ;
+        background: ;
+}/*
+** Utility classes for SVG icons
+*/.tc-fill-background {
+	fill: #ffffff;
+}/*
+** Flexbox utility classes
+*/.tc-flex {
+	display: -webkit-flex;
+	display: flex;
+}.tc-flex-column {
+	flex-direction: column;
+}.tc-flex-row {
+	flex-direction: row;
+}.tc-flex-grow-1 {
+	flex-grow: 1;
+}.tc-flex-grow-2 {
+	flex-grow: 2;
+}/*
+** Other utility classes
+*/.tc-small-gap {
+	margin-left: .5em;
+	margin-right: .5em;
+}.tc-small-gap-left {
+	margin-left: .5em;
+}.tc-small-gap-right {
+	margin-right: .5em;
+}.tc-big-gap {
+	margin-left: 1em;
+	margin-right: 1em;
+}.tc-big-gap-left {
+	margin-left: 1em;
+}.tc-big-gap-right {
+	margin-right: 1em;
+}.tc-word-break {
+	word-break: break-all;
+}
+
+
+
+button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fclone, .tc-drop-down button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fclone, div.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fclone,
+button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fdelete, .tc-drop-down button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fdelete, div.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fdelete,
+button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fedit, .tc-drop-down button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fedit, div.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fedit,
+button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-here, .tc-drop-down button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-here, div.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-here,
+button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-journal-here, .tc-drop-down button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-journal-here, div.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-journal-here,
+button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fimport, .tc-drop-down button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fimport, div.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fimport,
+button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fmanager, .tc-drop-down button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fmanager, div.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fmanager,
+button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-image, .tc-drop-down button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-image, div.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-image,
+button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-journal, .tc-drop-down button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-journal, div.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-journal,
+button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-tiddler, .tc-drop-down button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-tiddler, div.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-tiddler {
+	display: none;
+}
+
+
+body.tc-dirty span.tc-dirty-indicator svg {
+	transition: fill 250ms ease-in-out;
+}body .tc-image-cloud-idle {
+	fill: #ffffff;
+	transition: opacity 250ms ease-in-out;
+	opacity: 1;
+	display: unset;
+}body.tc-dirty .tc-image-cloud-idle {
+	opacity: 0;
+	display: none;
+}body .tc-image-cloud-progress {
+	transition: opacity 250ms ease-in-out;
+	transform-origin: 50% 50%;
+	transform: rotate(359deg);
+	animation: animation-rotate-slow 2s infinite linear;
+	fill: #ffffff;
+	display: none;
+	opacity: 0;
+}body.tc-dirty .tc-image-cloud-progress {
+	opacity: 1;
+	display: unset;
+}@keyframes animation-rotate-slow {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: scale(359deg);
+	}
+}
+
+
+/*
+
+Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #F0F0F0;
+}
+
+
+/* Base color: saturation 0; */
+
+.hljs,
+.hljs-subst {
+  color: #444;
+}
+
+.hljs-comment {
+  color: #888888;
+}
+
+.hljs-keyword,
+.hljs-attribute,
+.hljs-selector-tag,
+.hljs-meta-keyword,
+.hljs-doctag,
+.hljs-name {
+  font-weight: bold;
+}
+
+
+/* User color: hue: 0 */
+
+.hljs-type,
+.hljs-string,
+.hljs-number,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-quote,
+.hljs-template-tag,
+.hljs-deletion {
+  color: #880000;
+}
+
+.hljs-title,
+.hljs-section {
+  color: #880000;
+  font-weight: bold;
+}
+
+.hljs-regexp,
+.hljs-symbol,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-link,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  color: #BC6060;
+}
+
+
+/* Language color: hue: 90; */
+
+.hljs-literal {
+  color: #78A960;
+}
+
+.hljs-built_in,
+.hljs-bullet,
+.hljs-code,
+.hljs-addition {
+  color: #397300;
+}
+
+
+/* Meta color: hue: 200 */
+
+.hljs-meta {
+  color: #1f7199;
+}
+
+.hljs-meta-string {
+  color: #4d99bf;
+}
+
+
+/* Misc effects */
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #f8f8f8;
+  color: #333333;
+  -webkit-text-size-adjust:none
+}.hljs-comment,
+.hljs-quote {
+  color: #93a1a1;
+}/* Solarized Green */
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-addition {
+  color: #859900;
+}/* Solarized Cyan */
+.hljs-number,
+.hljs-string,
+.hljs-meta .hljs-meta-string,
+.hljs-literal,
+.hljs-doctag,
+.hljs-regexp {
+  color: #2aa198;
+}/* Solarized Blue */
+.hljs-title,
+.hljs-section,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #268bd2;
+}/* Solarized Yellow */
+.hljs-attribute,
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-class .hljs-title,
+.hljs-type {
+  color: #b58900;
+}/* Solarized Orange */
+.hljs-symbol,
+.hljs-bullet,
+.hljs-subst,
+.hljs-meta,
+.hljs-meta .hljs-keyword,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-link {
+  color: #cb4b16;
+}/* Solarized Red */
+.hljs-built_in,
+.hljs-deletion {
+  color: #dc322f;
+}.hljs-formula {
+  background: #eee8d5;
+}.hljs-emphasis {
+  font-style: italic;
+}.hljs-strong {
+  font-weight: bold;
+}
+
+
+
+</style>
+</head>
+<body class="tc-body">
+
+<section class="tc-story-river tc-static-story-river">
+<a name="Draft of '新条目'">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="Draft of '新条目'"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">Draft of '新条目'</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月24日 20:31</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="github的托管">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="github的托管"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">github的托管</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月23日 21:13</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><p>eb8bbb0aba02d1000e31f7312eadd9756a634566</p></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="HTML标签">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="HTML标签"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">HTML标签</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月24日 17:41</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><p><article class="hello">
+This is my nice and simple block of text. <a class="tc-tiddlylink tc-tiddlylink-missing" href="#HelloThere">HelloThere</a> html标签与注释能直接用
+
+</article></p></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="Macro调用">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="Macro调用"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">Macro调用</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月24日 17:41</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><pre><code>调用采用&lt;&lt;名称或参数值&gt;&gt;
+
+Each parameter value can be enclosed in 'single quotes', &quot;double quotes&quot;, &quot;&quot;&quot;triple double quotes&quot;&quot;&quot; or [[double square brackets]]. Triple double quotes allow a value to contain almost anything. 
+
+</code></pre></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="SVM">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="SVM"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">SVM</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月24日 08:31</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><p>\subsection{SVM多分类}</p><p>SVM多分类原理：对于样本中的每两个类别之间都训练一个SVM二分类器。对于k个类别， 共可训练出k(k-1)/2个SVM二分类器。在预测时，将测试样例分别输入到k(k-1)/2分类器中。
+假设（i,j)表示划分类别i和类别j的SVM分类器
+对于每个分类器(i,j)：
+若分类结果为+1，则count[i] +=1
+若分类结果为-1，则count[j] +=1
+最后分类结果取相应类别计数最大的那个类别作为最终分类结果</p><p>\subsubsection{代码实现}</p><p>\subsubsection{训练过程}</p><p>随机森林的训练过程如下：
+ 
+\begin{enumerate}</p><p>\item 给定训练集S，测试集T，特征维数F。确定参数：使用到的CART的数量t，每棵树的深度d，每个节点使用到的特征数量f，终止条件：节点上最少样本数s，节点上最少的信息增益m;</p><p>对于第1-t棵树，i=1-t：</p><p>\item 从S中有放回的抽取大小和S一样的训练集S(i)，随机的选择作为根节点的样本，从根节点开始训练</p><p>\item 如果当前节点上达到终止条件，则设置当前节点为叶子节点，如果是分类问题，该叶子节点的预测输出为当前节点样本集合中数量最多的那一类c(j)，概率p为c(j)占当前样本集的比例；如果是回归问题，预测输出为当前节点样本集各个样本值的平均值。然后继续训练其他节点。如果当前节点没有达到终止条件，则从F维特征中无放回的随机选取f维特征。利用这f维特征，寻找分类效果最好的一维特征k及其阈值th，当前节点上样本第k维特征小于th的样本被划分到左节点，其余的被划分到右节点。继续训练其他节点。有关分类效果的评判标准在后面会讲。</p><p>\item 重复(2)(3)直到所有节点都训练过了或者被标记为叶子节点。</p><p>\item 重复(2),(3),(4)直到所有CART都被训练过。
+\end{enumerate}</p><p>随机森林的预测过程如下：</p><p>对于第1-t棵树，i=1-t：
+         \begin{enumerate}</p><p>\item 从当前树的根节点开始，根据当前节点的阈值th，判断是进入左节点(&lt;th)还是进入右节点(&gt;=th)，直到到达，某个叶子节点，并输出预测值。</p><p>\item 重复执行(1)直到所有t棵树都输出了预测值。如果是分类问题，则输出为所有树中预测概率总和最大的那一个类，即对每个c(j)的p进行累计；如果是回归问题，则输出为所有树的输出的平均值。</p><p>注：有关分类效果的评判标准，因为使用的是CART，因此使用的也是CART的平板标准，和C3.0,C4.5都不相同。</p><p>对于分类问题（将某个样本划分到某一类），也就是离散变量问题，CART使用Gini值作为评判标准。定义为Gini=1-∑(P(i)*P(i)),P(i)为当前节点上数据集中第i类样本的比例。例如：分为2类，当前节点上有100个样本，属于第一类的样本有70个，属于第二类的样本有30个，则Gini=1-0.7×07-0.3×03=0.42，可以看出，类别分布越平均，Gini值越大，类分布越不均匀，Gini值越小，在寻找最佳的分类特征和阈值时。</p><p>1：评判标准为：argmax（Gini-GiniLeft-GiniRight），即寻找最佳的特征f和阈值th，使得当前节点的Gini值减去左子节点的Gini和右子节点的Gini值最大。</p><p>2：对于回归问题，相对更加简单，直接使用argmax(Var-VarLeft-VarRight)作为评判标准，即当前节点训练集的方差Var减去减去左子节点的方差<a class="tc-tiddlylink tc-tiddlylink-missing" href="#VarLeft">VarLeft</a>和右子节点的方差<a class="tc-tiddlylink tc-tiddlylink-missing" href="#VarRight">VarRight</a>值最大。</p><p>Random Forest与Bagging的区别在于：Bagging每次生成决策树的时候从全部的属性Attributes里面选择，而Random Forest是随机从全部Attributes的集合里面生成一个大小固定的子集，相对而言需要的计算量更小一些。
+         
+\end{enumerate}   </p><ul><li><ul><li>常用**</li></ul></li></ul><p>Ctrl + 左右键：在单词之间跳转</p><p>Ctrl + A：跳到本行的行首</p><p>Ctrl + E：跳到页尾</p><p>Ctrl + U：删除当前光标前面的所有文字（还有剪切功能）</p><p>Ctrl + K：删除当前光标后面的所有文字（还有剪切功能）</p><p>Ctrl + L：进行清屏操作</p><p>Ctrl + Y：粘贴Ctrl + U或Ctrl + K剪切的内容</p><p>Ctrl + W和Alt + D：对于当前的单词进行删除操作，W删除光标前面的单词的字符，D则删除后面的字符</p><p>Alt + Backsapce：删除当前光标后面的单词</p><ul><li><ul><li>说明**</li></ul></li></ul><p>Ctrl + K: 先按住 Ctrl 键，然后再按 K 键；</p><p>Alt + K: 先按住 Alt 键，然后再按 K 键；</p><p>Esc + K：先单击 Esc 键，然后再按 K 键。</p><ul><li><ul><li>移动光标**</li></ul></li></ul><p>Ctrl + A：移到行首</p><p>Ctrl + E：移到行尾</p><p>Ctrl + B：往回(左)移动一个字符（相当于左键）</p><p>Ctrl + F：往后(右)移动一个字符（相当于右键）</p><p>Ctrl + XX：（两个X）在命令行尾和光标之间移动</p><p>Alt + B：往回(左)移动一个单词</p><p>Alt + F：往后(右)移动一个单词</p><p>Esc + B：往回(左)移动一个单词</p><p>Esc + F：往后(右)移动一个单词</p><p>Esc + T：交换光标位置前的两个单词</p><ul><li><ul><li>编辑命令**</li></ul></li></ul><p>Ctrl + H ：删除光标左方位置的字符</p><p>Ctrl + D：删除光标右方位置的字符（注意：当前命令行没有任何字符时，会注销系统或结束终端）</p><p>Ctrl + W ：由光标位置开始，往左删除单词。往行首删</p><p>Alt + D ：由光标位置开始，往右删除单词。往行尾删</p><p>Esc + D ：由光标位置开始，删除单词，直到该单词结束。</p><p>Ctrl + K ：由光标所在位置开始，删除右方所有的字符，直到该行结束。</p><p>Ctrl + U ：由光标所在位置开始，删除左方所有的字符，直到该行开始。</p><p>Ctrl + Y ：粘贴之前删除的内容到光标后。</p><p>Ctrl + T ：交换光标处和之前两个字符的位置。</p><p>Alt + . ：使用上一条命令的最后一个参数。</p><p>Ctrl + \_ ：回复之前的状态。撤销操作。</p><p>Ctrl + A + K ，或 Ctrl + E + U 或 Ctrl + K + U 组合可删除整行。</p><ul><li><ul><li>查找历史命令**</li></ul></li></ul><p>Ctrl + P：显示当前命令的上一条历史命令（相当于上键）</p><p>Ctrl + N：显示当前命令的下一条历史命令（相当于下键）</p><p>Ctrl + R：搜索历史命令，随着输入会显示历史命令中的一条匹配命令，Enter键执行匹配命令；ESC键在命令行显示而不执行匹配命令。</p><p>Ctrl + G：从历史搜索模式（Ctrl + R）退出。</p><ul><li><ul><li>控制命令**</li></ul></li></ul><p>Ctrl + L：清除屏幕，然后，在最上面重新显示目前光标所在的这一行的内容。</p><p>Ctrl + O：执行当前命令，并选择上一条命令。</p><p>Ctrl + S：阻止屏幕输出</p><p>Ctrl + Q：允许屏幕输出</p><p>Ctrl + C：终止命令</p><p>Ctrl + Z：挂起命令（使用‘fg’命令恢复）</p><ul><li><ul><li>重复执行操作动作**</li></ul></li></ul><p>Esc – 操作次数 操作动作 ： 指定操作次数，重复执行指定的操作。</p><ul><li><ul><li>Bang(!)命令**</li></ul></li></ul><h2 class="">：执行上一条命令。</h2><p>^foo^bar ：把上一条命令里的foo替换为bar，并执行。</p><h1 class="">wget ：执行最近的以wget开头的命令。</h1><h1 class="">wget:p ：仅打印最近的以wget开头的命令，不执行。</h1><h1 class="">$ ：上一条命令的最后一个参数， 与 Alt - . 和 $\_ 相同。</h1><h1 class="">\* ：上一条命令的所有参数</h1><h1 class="">\*:p ：打印上一条命令是所有参数，也即 !\*的内容。</h1><p>^abc ：删除上一条命令中的abc。</p><p>^foo^bar ：将上一条命令中的 foo 替换为 bar</p><p>^foo^bar^ ：将上一条命令中的 foo 替换为 bar</p><h1 class="">-n ：执行前n条命令，执行上一条命令： !-1， 执行前5条命令的格式是： !-5</h1></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="TableOfContents">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists  tc-tagged-%24%3A%2Ftags%2FSideBar tc-tagged-TableOfContents" data-tags="$:/tags/SideBar TableOfContents" data-tiddler-title="TableOfContents"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">TableOfContents</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月24日 17:38</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"><span class="tc-tag-list-item">
+<span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:#333333;
+color:#333333;">
+$:/tags/SideBar
+</span>
+<span class="tc-drop-down tc-reveal" hidden="true"></span></span><span class="tc-tag-list-item">
+<span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:#333333;
+color:#333333;">
+TableOfContents
+</span>
+<span class="tc-drop-down tc-reveal" hidden="true"></span></span></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><div class="tc-table-of-contents"><p>
+  
+    <ol class="tc-toc toc-selective-expandable">
+      
+        
+  
+    <li class="toc-item">
+      <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%A6%82%E4%BD%95%E7%94%9F%E6%88%90%E4%BE%A7%E8%BE%B9%E7%9B%AE%E5%BD%95">
+          <button class="tc-btn-invisible"><svg class="tc-image-blank tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"></svg></button>
+        
+  
+    如何生成侧边目录
+  
+
+      </a>
+      <span class=" tc-reveal" hidden="true"></span>
+    </li>
+  
+
+      
+    </ol>
+  
+</p></div></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="transclusion部分引用">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="transclusion部分引用"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">transclusion部分引用</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月24日 17:41</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="wiki输出单个html文件（动态的）">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="wiki输出单个html文件（动态的）"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">wiki输出单个html文件（动态的）</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月24日 20:48</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><pre><code>指定输出文件夹
+tiddlywiki --output notebook/stone/output/
+
+tiddlywiki xtjwiki --build --rendertiddler $:/plugins/tiddlywiki/tiddlyweb/save/offline xtjindex.html text/plain
+</code></pre></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="云部署">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="云部署"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">云部署</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月23日 18:22</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><p><a class="tc-tiddlylink-external" href="https://fspark.me/archives/TiddlyWiki-Deploy-To-Server.html#toc-24TiddlyServer" rel="noopener noreferrer" target="_blank">https://fspark.me/archives/TiddlyWiki-Deploy-To-Server.html#toc-24TiddlyServer</a></p></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="列表段内引用">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="列表段内引用"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">列表段内引用</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月24日 17:41</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><ul><li>第一个</li><li><blockquote class="tc-quote"><p>常规引用
+</p><cite>作者</cite></blockquote><blockquote class="tc-quote tc-big-quote"><p>大引号
+</p><cite>作者</cite></blockquote><blockquote><div>单行</div></blockquote><ul><li>列表</li></ul><ol><li>数字列表</li></ol><p>可以使用css</p><ul><li>List One</li><li class="MyClass">List Two</li><li>List Three</li></ul><hr><pre class="python hljs"><code><span class="hljs-comment"># 代码块</span>
+<span class="hljs-keyword">import</span> numpy</code></pre><p>自动换行<br>另一行<br></p></li><li>第二个</li></ul><ol><li>Step 1</li><li>Step 2</li><li>Step 3<div><p>Here is the first of several paragraphs. Note that the double linebreak preceding this paragraph is significant.</p><p>And here is the second of several paragraphs.
+</p></div></li><li>Step 4</li><li>Step 5</li><li>Step 6</li></ol></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="制作favicon">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="制作favicon"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">制作favicon</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月24日 12:00</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><p><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%24%3A%2Ffavicon.ico">$:/favicon.ico</a></p></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="博客与指引">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="博客与指引"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">博客与指引</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月24日 17:41</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><p><a class="tc-tiddlylink-external" href="http://note.dimpurr.com/#Books" rel="noopener noreferrer" target="_blank">http://note.dimpurr.com/#Books</a><br><a class="tc-tiddlylink-external" href="https://www.npc.ink/2480.html" rel="noopener noreferrer" target="_blank">https://www.npc.ink/2480.html</a><br><a class="tc-tiddlylink-external" href="https://tiddlywiki.com/#WikiText" rel="noopener noreferrer" target="_blank">https://tiddlywiki.com/#WikiText</a><br><a class="tc-tiddlylink-external" href="http://tiddlymap.org/" rel="noopener noreferrer" target="_blank">http://tiddlymap.org/</a><br></p></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="图像">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="图像"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">图像</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月24日 17:41</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><p><img src="https://tiddlywiki.com/favicon.ico"></p><p><img class="tc-image" src="https://tiddlywiki.com/favicon.ico" width="32"></p><p><img src="https://tiddlywiki.com/favicon.ico"></p><p>作为链接
+<a class="tc-tiddlylink tc-tiddlylink-missing" href="#HelloThere" title="Custom tooltip"><svg height="22pt" viewBox="0 0 128 128" width="22pt"><path d="M64 0l54.56 32v64L64 128 9.44 96V32L64 0zm21.127 95.408c-3.578-.103-5.15-.094-6.974-3.152l-1.42.042c-1.653-.075-.964-.04-2.067-.097-1.844-.07-1.548-1.86-1.873-2.8-.52-3.202.687-6.43.65-9.632-.014-1.14-1.593-5.17-2.157-6.61-1.768.34-3.546.406-5.34.497-4.134-.01-8.24-.527-12.317-1.183-.8 3.35-3.16 8.036-1.21 11.44 2.37 3.52 4.03 4.495 6.61 4.707 2.572.212 3.16 3.18 2.53 4.242-.55.73-1.52.864-2.346 1.04l-1.65.08c-1.296-.046-2.455-.404-3.61-.955-1.93-1.097-3.925-3.383-5.406-5.024.345.658.55 1.938.24 2.53-.878 1.27-4.665 1.26-6.4.47-1.97-.89-6.73-7.162-7.468-11.86 1.96-3.78 4.812-7.07 6.255-11.186-3.146-2.05-4.83-5.384-4.61-9.16l.08-.44c-3.097.59-1.49.37-4.82.628-10.608-.032-19.935-7.37-14.68-18.774.34-.673.664-1.287 1.243-.994.466.237.4 1.18.166 2.227-3.005 13.627 11.67 13.732 20.69 11.21.89-.25 2.67-1.936 3.905-2.495 2.016-.91 4.205-1.282 6.376-1.55 5.4-.63 11.893 2.276 15.19 2.37 3.3.096 7.99-.805 10.87-.615 2.09.098 4.143.483 6.16 1.03 1.306-6.49 1.4-11.27 4.492-12.38 1.814.293 3.213 2.818 4.25 4.167 2.112-.086 4.12.46 6.115 1.066 3.61-.522 6.642-2.593 9.833-4.203-3.234 2.69-3.673 7.075-3.303 11.127.138 2.103-.444 4.386-1.164 6.54-1.348 3.507-3.95 7.204-6.97 7.014-1.14-.036-1.805-.695-2.653-1.4-.164 1.427-.81 2.7-1.434 3.96-1.44 2.797-5.203 4.03-8.687 7.016-3.484 2.985 1.114 13.65 2.23 15.594 1.114 1.94 4.226 2.652 3.02 4.406-.37.58-.936.785-1.54 1.01l-.82.11zm-40.097-8.85l.553.14c.694-.27 2.09.15 2.83.353-1.363-1.31-3.417-3.24-4.897-4.46-.485-1.47-.278-2.96-.174-4.46l.02-.123c-.582 1.205-1.322 2.376-1.72 3.645-.465 1.71 2.07 3.557 3.052 4.615l.336.3z" fill-rule="evenodd"></path></svg></a></p></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="如何生成侧边目录">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists  tc-tagged-TableOfContents" data-tags="TableOfContents" data-tiddler-title="如何生成侧边目录"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">如何生成侧边目录</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月24日 17:27</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"><span class="tc-tag-list-item">
+<span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:#333333;
+color:#333333;">
+TableOfContents
+</span>
+<span class="tc-drop-down tc-reveal" hidden="true"></span></span></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><p><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TableOfContents">TableOfContents</a>中控制两个标签
+在需要列入目录的tidder上加入<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TableOfContents">TableOfContents</a>标签。</p><p>如何控制子目录的生成：
+在每个需要连接的tidder中填写list字段</p></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="安装node.js服务端">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="安装node.js服务端"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">安装node.js服务端</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月23日 18:24</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><p><a class="tc-tiddlylink-external" href="https://tiddlywiki.com/#TiddlyServer%20by%20Arlen%20Beiler" rel="noopener noreferrer" target="_blank">https://tiddlywiki.com/#TiddlyServer%20by%20Arlen%20Beiler</a></p></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="定义">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="定义"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">定义</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月24日 17:41</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><dl><dt>术语</dt><dd>具体的定义</dd></dl></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="导入的条目">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="导入的条目"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">导入的条目</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月24日 17:42</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><p>下列条目已被导入：</p><ol><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E6%A0%87%E9%A2%98%E4%BD%BF%E7%94%A8CSS">标题使用CSS</a></li><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E8%A1%A8%E6%A0%BC">表格</a></li><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%8D%9A%E5%AE%A2%E4%B8%8E%E6%8C%87%E5%BC%95">博客与指引</a></li><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%AE%9A%E4%B9%89">定义</a></li><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E9%93%BE%E6%8E%A5">链接</a></li><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%88%97%E8%A1%A8%E6%AE%B5%E5%86%85%E5%BC%95%E7%94%A8">列表段内引用</a></li><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E7%89%B9%E6%AE%8A%E5%AD%97%E4%BD%93">特殊字体</a></li><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%9B%BE%E5%83%8F">图像</a></li><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%B0%8F%E5%B7%A5%E5%85%B7">小工具</a></li><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E9%80%89%E6%8B%A9%E5%B7%A5%E5%85%B7">选择工具</a></li><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E6%A0%B7%E5%BC%8F">样式</a></li><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%BC%95%E7%94%A8%E5%9D%97">引用块</a></li><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E9%95%BF%E7%9F%AD%E5%88%92">长短划</a></li><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#HTML%E6%A0%87%E7%AD%BE">HTML标签</a></li><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#Macro%E8%B0%83%E7%94%A8">Macro调用</a></li><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#transclusion%E9%83%A8%E5%88%86%E5%BC%95%E7%94%A8">transclusion部分引用</a></li></ol></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="小工具">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="小工具"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">小工具</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月24日 17:41</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><p><button class="">Close Me!</button></p><p><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E9%80%89%E6%8B%A9%E5%B7%A5%E5%85%B7">选择工具</a></p></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="引用块">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="引用块"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">引用块</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月24日 17:41</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><blockquote class="tc-quote"><p>常规引用
+</p><cite>作者</cite></blockquote><blockquote class="tc-quote tc-big-quote"><p>大引号
+</p><cite>作者</cite></blockquote><blockquote><div>单行</div></blockquote><ul><li>列表</li></ul><ol><li>数字列表</li></ol><p>可以使用css</p><ul><li>List One</li><li class="MyClass">List Two</li><li>List Three</li></ul><hr><pre class="python hljs"><code><span class="hljs-comment"># 代码块</span>
+<span class="hljs-keyword">import</span> numpy</code></pre><p>自动换行<br>另一行<br></p></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="服务器tiddlywiki常见命令">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="服务器tiddlywiki常见命令"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">服务器tiddlywiki常见命令</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月23日 20:08</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><ul><li>build: Automatically run configured commands</li><li>clearpassword: Clear a password for subsequent crypto operations</li><li>deletetiddlers: Deletes a group of tiddlers</li><li>editions: Lists the available editions of <a class="tc-tiddlylink tc-tiddlylink-missing" href="#TiddlyWiki">TiddlyWiki</a></li><li>fetch: Fetch tiddlers from wiki by URL</li><li>help: Display help for <a class="tc-tiddlylink tc-tiddlylink-missing" href="#TiddlyWiki">TiddlyWiki</a> commands</li><li>import: Import tiddlers from a file</li><li>init: Initialise a new wiki folder</li><li>listen: Provides an HTTP server interface to <a class="tc-tiddlylink tc-tiddlylink-missing" href="#TiddlyWiki">TiddlyWiki</a></li><li>load: Load tiddlers from a file</li><li>makelibrary: Construct library plugin required by upgrade process</li><li>output: Set the base output directory for subsequent commands</li><li>password: Set a password for subsequent crypto operations</li><li>render: Renders individual tiddlers to files</li><li>rendertiddler: Render an individual tiddler as a specified <a class="tc-tiddlylink tc-tiddlylink-missing" href="#ContentType">ContentType</a></li><li>rendertiddlers: Render tiddlers matching a filter to a specified <a class="tc-tiddlylink tc-tiddlylink-missing" href="#ContentType">ContentType</a></li><li>save: Saves individual raw tiddlers to files</li><li>savelibrarytiddlers: </li><li>savetiddler: Saves a raw tiddler to a file</li><li>savetiddlers: Saves a group of raw tiddlers to a directory</li><li>savewikifolder: Saves a wiki to a new wiki folder</li><li>server: Provides an HTTP server interface to <a class="tc-tiddlylink tc-tiddlylink-missing" href="#TiddlyWiki">TiddlyWiki</a> (deprecated in favour of the new listen command)</li><li>setfield: Prepares external tiddlers for use</li><li>unpackplugin: Unpack the payload tiddlers from a plugin</li><li>verbose: Triggers verbose output mode</li><li>version: Displays the version number of <a class="tc-tiddlylink tc-tiddlylink-missing" href="#TiddlyWiki">TiddlyWiki</a></li></ul></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="标题使用CSS">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="标题使用CSS"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">标题使用CSS</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月24日 17:41</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><h2 class="myStyle">This heading has the class <code>myStyle</code></h2><p><h2 class="myStyle">有HTML的格式 <code>myStyle</code></h2></p></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="样式">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="样式"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">样式</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月24日 17:41</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><ul style="background-color:red;"><li>List One</li><li>List Two</li></ul><hr><p class="tc-tiddler-frame" style="width:400px;">Some text
+</p></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="桌面版tiddlywiki server">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="桌面版tiddlywiki server"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">桌面版tiddlywiki server</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月23日 18:23</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><p><a class="tc-tiddlylink-external" href="https://github.com/mklauber/TiddlyServer/releases/" rel="noopener noreferrer" target="_blank">https://github.com/mklauber/TiddlyServer/releases/</a></p></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="特殊字体">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="特殊字体"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">特殊字体</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月24日 17:41</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><p><code>内嵌代码</code>
+<strong>黑体</strong>
+<em>斜体</em>
+<u>下划线</u>
+<sup>上标</sup>
+<sub>下标</sub>
+<strike>删除线</strike></p></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="生成动态目录">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="生成动态目录"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">生成动态目录</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月24日 17:34</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><pre class="python hljs"><code>&lt;div class="tc-table-of-contents"&gt;
+
+&lt;&lt;toc-selective-expandable '一个标签'&gt;&gt;
+
+&lt;/div&gt;</code></pre><p>标签可以为tidder</p></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="表格">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="表格"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">表格</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月24日 17:41</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><table><tbody><tr class="evenRow"><th align="left">Cell1</th><th align="left">Cell2</th></tr><tr class="oddRow"><td align="left">Cell3</td><td align="left">Cell3</td></tr></tbody></table><table><tbody><tr class="evenRow"><td align="left">Left aligned content</td></tr><tr class="oddRow"><td align="right">Right aligned content</td></tr><tr class="evenRow"><td align="center">Centred content</td></tr><tr class="oddRow"><td>+++ a very wide column so we can see the alignment +++</td></tr></tbody></table><table><tbody><tr class="evenRow"><td align="left" valign="top">top left</td><td align="center" valign="top">top center</td><td align="right" valign="top">top right</td></tr><tr class="oddRow"><td align="left">middle left</td><td align="center">middle center</td><td align="right">middle right</td></tr><tr class="evenRow"><td align="left" valign="bottom">bottom left</td><td align="center" valign="bottom">bottom center</td><td align="right" valign="bottom">bottom right</td></tr></tbody></table><p>单元格的合并</p><table><tbody><tr class="evenRow"><td align="left">Cell1</td><td align="left">Cell2</td><td align="left">Cell3</td><td align="left">Cell4</td></tr><tr class="oddRow"><td align="left">Cell5</td><td align="left" rowspan="2" valign="center">Cell6</td><td align="left" colspan="2">Cell7</td></tr><tr class="evenRow"><td align="left">Cell5</td><td align="left">Cell7</td><td align="left">Cell8</td></tr><tr class="oddRow"><td align="left" colspan="2">Cell9</td><td align="left">Cell10</td><td align="left">Cell11</td></tr></tbody></table><p>表头与注脚</p><table class="myclass anotherClass"><caption>This is a caption </caption><tbody><tr class="evenRow"><td align="left">Cell1</td><td align="left">Cell2</td></tr><tr class="oddRow"><td align="left">Cell3</td><td align="left">Cell3</td></tr></tbody><thead><tr class="evenRow"><td>Header</td><td>Header</td></tr></thead><tfoot><tr class="oddRow"><td>Footer</td><td>Footer</td></tr></tfoot></table></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="选择工具">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="选择工具"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">选择工具</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月24日 17:41</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="链接">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="链接"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">链接</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月24日 17:41</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><p>https://xtj2020.top 这不是一个链接</p></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="长短划">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="长短划"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">长短划</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月24日 17:41</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><p>–
+—</p><p>纵横线
+<hr></p></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a><a name="静态化">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="静态化"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">静态化</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>2021年02月23日 21:24</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><p><a class="tc-tiddlylink-external" href="https://tiddlywiki.com/" rel="noopener noreferrer" target="_blank">https://tiddlywiki.com/</a></p><p>单个文件</p><p>How to build a <a class="tc-tiddlylink tc-tiddlylink-missing" href="#TiddlyWiki5">TiddlyWiki5</a> from individual tiddlers</p><p><a class="tc-tiddlylink tc-tiddlylink-missing" href="#TiddlyWiki">TiddlyWiki</a> on Node.js</p><pre class="python hljs"><code><span class="hljs-comment"># 生成单个文件</span>
+tiddlywiki xtjwiki/ --rendertiddlers <span class="hljs-string">'[!is[system]]'</span> $:/core/templates/static.tiddler.html static text/plain
+<span class="hljs-comment"># 直接生成当前的编辑视图</span>
+tiddlywiki xtjwiki/ --rendertiddler $:/core/templates/static.template.html static.html text/plain
+<span class="hljs-comment"># 生成css</span>
+tiddlywiki xtjwiki/ --rendertiddler $:/core/templates/static.template.css static/static.css text/plain</code></pre></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+
+</a>
+</section>
+</body>
+</html>

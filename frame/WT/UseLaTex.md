@@ -1,5 +1,14 @@
 <script src="../ut.js" type="text/javascript"></script>
+
+
+![img](https://xtj2020.top/webimg/LaTex/LaTex换行.png)
+![img](https://xtj2020.top/webimg/LaTex/LaTex段落结构.png)
+![img](https://xtj2020.top/webimg/LaTex/LaTex版面尺寸.png)
+![img](https://xtj2020.top/webimg/LaTex/LaTex空格.png)
+![img](https://xtj2020.top/webimg/LaTex/LaTex结构.png)
+
 # 公式中的LaTex
+
 - 字体
 - 
 
@@ -313,11 +322,11 @@ latex模块
 
 \sum\limits
  $\bar x = \sum\limits_{i=1}^{n} x_i$
- 
+
  需要用 \vert 来替代 \|
- 
+
  用\times 来替代* 用\div替代除法
- 
+
 \xi $\xi$ \delta $\delta$
 \varepsilon $\varepsilon$
 \lambda $\lambda$

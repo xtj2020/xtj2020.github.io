@@ -40,5 +40,3 @@
 
 - [FasterRCNN](https://xtj2020.top/stone/DM/FasterRCNN.html)-FasterRCNN
 [edit](./stone/DM/FasterRCNN.md)
-
-

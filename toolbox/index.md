@@ -1,4 +1,4 @@
-## [DA](./sub_domain.md)-数据处理
+## [DA](./toolbox/DA)-数据处理
 
 - [Learnnp](https://xtj2020.top/toolbox/DA/Learnnp.html)-numpy库
 [edit](./toolbox/DA/Learnnp.md)
@@ -54,3 +54,9 @@
  [edit](./toolbox/PC/Json.md)
 - [GitHub](https://xtj2020.top/toolbox/PC/GitHub.html)-GitHub的使用
 [edit](./toolbox/PC/GitHub.md)
+
+## [PT](./toolbox/PT)-pytorch的使用
+- [framePytorch](https://xtj2020.top/toolbox/PT/framePytorch.html)-GitHub的使用
+[edit](./toolbox/PT/framePytorch.md)
+- [pytorchAPI](https://xtj2020.top/toolbox/PT/pytorchAPI.html)-GitHub的使用
+[edit](./toolbox/PT/pytorchAPI.md)

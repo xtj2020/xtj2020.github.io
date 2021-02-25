@@ -1,4 +1,10 @@
 <script src="../ut.js" type="text/javascript"></script>
+# 公式中的LaTex
+- 字体
+- 
+
+
+
 # 内容结构
 常见的LATEX公式
 
@@ -159,6 +165,7 @@ quoted statements in a narrowed width.
 \\\
 \\\\\ #会产生一个空白行
 ```
+
 
 新段落
 尽量使用预定义的宏来创建统一的段落

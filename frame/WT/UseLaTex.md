@@ -1,3 +1,27 @@
+```{.python .input  n=1}
+import os
+path = './LaTex/'
+files = os.listdir(path)
+```
+
+```{.python .input  n=2}
+# - [上下标](./LaTex/上下标.html)-[edit](./LaTex/上下标.html)
+files
+```
+
+```{.json .output n=2}
+[
+ {
+  "data": {
+   "text/plain": "['.ipynb_checkpoints',\n '\u4e0a\u4e0b\u6807.md',\n '\u5173\u7cfb\u7b26\u53f7.md',\n '\u5806\u53e0.md',\n '\u5b57\u4f53.md',\n '\u5e38\u89c4\u51fd\u6570.md',\n '\u7279\u6b8a\u5b57\u7b26.md',\n '\u754c\u9650.md',\n '\u77e9\u9635.md',\n '\u7a7a\u683c\u7834\u6298\u53f7\u7bad\u5934.md']"
+  },
+  "execution_count": 2,
+  "metadata": {},
+  "output_type": "execute_result"
+ }
+]
+```
+
 <script src="../ut.js" type="text/javascript"></script>
 
 
@@ -9,8 +33,7 @@
 
 # 公式中的LaTex
 
-- 字体
-- 
+- [上下标](./LaTex/上下标.html)-[edit](./LaTex/上下标.html)
 
 
 

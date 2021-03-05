@@ -40,147 +40,33 @@
 
 
 
-# 内容结构
+# 模板的使用
 
+使用模板为eleantpaper
 
+## 章节
 
-![img](https://xtj2020.top/webimg/LaTex/LaTex段落结构.png)
-![img](https://xtj2020.top/webimg/LaTex/LaTex版面尺寸.png)
-![img](https://xtj2020.top/webimg/LaTex/LaTex结构.png)
-常见的LATEX公式
+\section
+\subsection
+\subsubsection
 
-模板的使用
+## 图片的使用
 
-通用命令
+```python
 
-# LATEX公式
+# 紧跟文字显示
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{XGOOST二分类.png}
+\end{figure}
 
+# 浮动显示
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.5\textwidth]{donate.jpg}
+  \caption{一键三连求赞}
+\end{figure}
 
-
-# preamble
-
-生成文档的全局处理参数
-\documentclass[ ] (dtype)
-[]为选项，可以有若干无序参数![image-20200823074537156](UseLaTex.assets/image-20200823074537156.png)
-
-# body
-
-\begin{document}
-\end{document}
-
-# LaTeX语言
-
-由环境与命令组成
-
-## 命令
-
-一条独立指令，用于生成新内容或更改现有项目的形式
-
-\latex
-
-\\copyright
-
-## 环境
-
-由两个互补命令组成，可以执行某些特定的工作
-
-创建环境
-\begin(ename)
-\end{ename}
-
-## 包
-
-通过\documentclass {}命令的强制参数合并的文档类（或类型），包括文档的一些基本功能，例如页面布局和分节。还提供了在文档中调用其他命令和环境的功能，以添加不属于标准文档类的其他功能。
-此类命令和环境在单独的文件（称为包）中定义。
-
-\usepackage{pname}
-\usepackage{amssymb,amsmath} 用于生成彩色文字，或用于生成AMS类型的数字符号和类型。
-
-许多包接受[ ]可选指令
-
-\documentclass 对于全局生效，包括其他包，而\usepackage仅对局部加载的包生效
-
-## 字符
-
-可以用\verb"$"打印美元符号
-
-数学字符（见gnki）
-
-# 文字模式
-
-## 文本模式
-
-包括：paragraph模式、LR模式
-
-<img src="UseLaTex.assets/image-20200823084040041.png" alt="image-20200823084040041" style="zoom: 200%;" />
-
-
-
-## math模式
-
-<img src="UseLaTex.assets/image-20200823084357173.png" alt="image-20200823084357173" style="zoom:200%;" />
-
-## 强调
-
-## 彩色字体
-
-# 格式化文本1
-
-
-
-## 标签与编号
-
-LaTeX会为许多环境和环境中的变量分配序号
-
-允许通过唯一的参考关键字编码的项目，该关键字可用于引用同一文档中任何部分的项目（未编号的除外）
-
-\label{rkey} 标记已编号项目
-\ref{rkey} 对上面标记进行引用
-rkey是item的唯一关键字
-
-有一些打印出现编号项目的页码的命令
-\pageref{rkey}
-\vref{rkey}
-\vpageref{rkey}
-
-## 对齐
-
-默认为两边都对齐
-
-左对齐
-\begin{flushleft}
-\end{flushleft}
-
-右对齐
-\begin{flushright}
-\end{flushright}
-
-居中对齐
-\begin{center}
-\end{center}
-
-## 引用
-
-建议用`'来引用，用一次产生单引号，两次产生双引号
-
-引用环境
-\begin{quotation}
-\end{quotation}
-
-```tex
-\LaTeX\ prints texts with both side aligned,
-covering the specified width of a page.
-\begin{quotation}
-\begin{spacing}{1.2}
-Quoted statements are also printed with both side
-aligned, but in a narrowed width.
-	\begin{flushright}
-	{\it - Anonymous}
-	\end{flushright}
-\end{spacing}
-\end{quotation}
-The ‘quotation’ environment is used for printing
-quoted statements in a narrowed width.
 ```
 
 
@@ -207,92 +93,17 @@ quoted statements in a narrowed width.
 
 ![img](https://xtj2020.top/webimg/LaTex/LaTex空格.png)
 
-# 格式化文本2
-
-## 改标题
-
-## 多栏
-
-可以使用\document[]{}中的twocolumn选项，也可以使用\twocolumn[ ]
-除非单列模式用于单列打印文章的摘要外，不要混用。
-
-参数
-
-
-## Mini pages
-
-## 脚标
-
-# 页布局
-
-## 标准布局
-
-![image-20200823161034606](UseLaTex.assets/image-20200823161034606.png)
-
-可选项portrait(纵向，默认，较长尺寸在垂直方向)与landscape（横向）
-
-## 改变部分
-
-![image-20200823161601405](UseLaTex.assets/image-20200823161601405.png)
-
-## 自定义尺寸
-
-<img src="UseLaTex.assets/image-20200823161737087.png" alt="image-20200823161737087" style="zoom:150%;" />
-
-# 列表与对齐
-
-## 制表环境
-
-
-```
-
-
-# 图
-
-# 自定义宏
-
-## 定义命令
-
-\newcommand{newc}{aval}或\providecommand{newc}{aval} newc代表新命令
-aval代表属性，新命令名称只能为字母，不能以end开头，不能与现有命令相同。
-\providecommand{newc}{aval} newc 不会返回是否冲突，故尽量不用。
 
 
 
 
-
-## 定义环境
-
-# 文献
-
-# 目录
-
-# 错误信息
-
-
-latex模块
-
-# 章节
-
-\section
-\subsection
-\subsubsection
-
-# 使用图片
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.5\textwidth]{donate.jpg}
-  \caption{一键三连求赞}
-\end{figure}
-
-# 不缩进 加粗
+## 不缩进 加粗
 \noindent  \textbf{赞赏费用的使用解释权归 Elegant\LaTeX{} 所有，并且不接受监督，请自愿理性打赏}。
 
-# 内置文字类型
+## 内置文字类型
 \lstinline{founder} 
 
-# 进行枚举（带编号）
+## 进行枚举（带编号）
 
 \begin{enumerate}
 
@@ -300,24 +111,15 @@ latex模块
 
 \end{enumerate}
 
-# 链接
+## 链接
 \href{https://github.com/peggy2006xzyz}{YPY}
 
-# 不带编号进行枚举
+## 不带编号进行枚举
 
 \begin{itemize}
  \item
 
 \end{itemize}
-
-
-# 使用代码块
-\begin{lstlisting}
-\author{author 1\\ org. 1 \and author 2 \\ org. 2 }
-\end{lstlisting}
-
-
-
 
 ``` python
 三种方式来实现链接

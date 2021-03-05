@@ -9,10 +9,10 @@
 
 - [UseLaTex](https://xtj2020.top/xtj2020.github.io/frame/WT/UseLaTex.html)-LaTex的应用
 [edit](./WT/UseLaTex.md)
-- [md](https://xtj2020.top/stone/WT/md.html)-markdown语法 [edit](./stone/WT/md.md)
-- [pt](https://xtj2020.top/stone/WT/pt.html)-matplotlib.plot
+- [md](https://xtj2020.top/frame/WT/md.html)-markdown语法 [edit](./stone/WT/md.md)
+- [pt](https://xtj2020.top/frame/WT/pt.html)-matplotlib.plot
 [edit](./stone/WT/pt.md)
-- [EnWord](https://xtj2020.top/stone/WT/enword.html)-英语单词
+- [EnWord](https://xtj2020.top/frame/WT/enword.html)-英语单词
 [edit](./stone/WT/enword.md)
-- [AuxiliaryTools](https://xtj2020.top/stone/WT/AuxiliaryTools.html)-辅助性工具
+- [AuxiliaryTools](https://xtj2020.top/frame/WT/AuxiliaryTools.html)-辅助性工具
 [edit](./stone/WT/AuxiliaryTools.md)

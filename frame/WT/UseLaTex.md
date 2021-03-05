@@ -1,13 +1,3 @@
-import os
-path = './LaTex/'
-files = os.listdir(path)
-
-# - [上下标](./LaTex/上下标.html)-[edit](./LaTex/上下标.md)
-for i in files:
-    j = i.split(".")
-    new_str = "- ["+j[0]+"](./LaTex/"+j[0]+".html)-[edit](./LaTex/"+j[0]+".md)"
-    print(new_str)
-
 <script src="../ut.js" type="text/javascript"></script>
 
 

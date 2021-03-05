@@ -14,15 +14,38 @@
 - [矩阵](./LaTex/矩阵.html)-[edit](./LaTex/矩阵.md)
 - [空格破折号箭头](./LaTex/空格破折号箭头.html)-[edit](./LaTex/空格破折号箭头.md)
 
+# 常用Latex公式
+\begin{equation}
+  \int_{R^q} f(x,y) dy.\emph{of\kern0pt f}
+\end{equation}
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], inlineMath: [['$','$']] } }); </script>
+
+\sigma $\sigma$
+
+\sum\limits
+ $\bar x = \sum\limits_{i=1}^{n} x_i$
+
+ 需要用 \vert 来替代 \|
+
+ 用\times 来替代* 用\div替代除法
+
+\xi $\xi$ \delta $\delta$
+\varepsilon $\varepsilon$
+\lambda $\lambda$
+
+\infty $\infty$
+
+2 \stackrel{p} \rightarrow \delta^2  $2 \stackrel{p} \rightarrow \delta^2$
+
 
 
 # 内容结构
 
 
-![img](https://xtj2020.top/webimg/LaTex/LaTex换行.png)
+
 ![img](https://xtj2020.top/webimg/LaTex/LaTex段落结构.png)
 ![img](https://xtj2020.top/webimg/LaTex/LaTex版面尺寸.png)
-![img](https://xtj2020.top/webimg/LaTex/LaTex空格.png)
 ![img](https://xtj2020.top/webimg/LaTex/LaTex结构.png)
 常见的LATEX公式
 
@@ -103,17 +126,7 @@
 
 # 格式化文本1
 
-## 文章结构
 
-![image-20200823084620591](UseLaTex.assets/image-20200823084620591.png)
-
-章以整数编号，后面接标签词和标题
-
-章可以包含多个节，节包含多个小节，三层结构 2.5.3、6.2.2
-
-书信类不支持任何分段单位
-
-需要省略的加*号，如序言 \chapter\*{}
 
 ## 标签与编号
 
@@ -192,17 +205,9 @@ quoted statements in a narrowed width.
 
 一系列空格和Tab键产生的空格被视为一个
 
-![image-20200823100117787](UseLaTex.assets/image-20200823100117787.png)
-
-![image-20200823100157805](UseLaTex.assets/image-20200823100157805.png)
+![img](https://xtj2020.top/webimg/LaTex/LaTex空格.png)
 
 # 格式化文本2
-
-## 深化结构
-
-![image-20200823144606809](UseLaTex.assets/image-20200823144606809.png)
-
-如果不需要编号，可以使用负编号
 
 ## 改标题
 
@@ -238,13 +243,7 @@ quoted statements in a narrowed width.
 
 ## 制表环境
 
-```python
 
-\begin{tabbing}
-\= \\\
-\\>\\\
-\\>
-\end{tabbing}
 ```
 
 
@@ -318,31 +317,7 @@ latex模块
 \end{lstlisting}
 
 
-# 使用Latex公式
-\begin{equation}
-  \int_{R^q} f(x,y) dy.\emph{of\kern0pt f}
-\end{equation}
 
-
-
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], inlineMath: [['$','$']] } }); </script>
-
-\sigma $\sigma$
-
-\sum\limits
- $\bar x = \sum\limits_{i=1}^{n} x_i$
-
- 需要用 \vert 来替代 \|
-
- 用\times 来替代* 用\div替代除法
-
-\xi $\xi$ \delta $\delta$
-\varepsilon $\varepsilon$
-\lambda $\lambda$
-
-\infty $\infty$
-
-2 \stackrel{p} \rightarrow \delta^2  $2 \stackrel{p} \rightarrow \delta^2$
 
 ``` python
 三种方式来实现链接
@@ -357,27 +332,5 @@ I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
 这是一个链接到谷歌的[^脚注]。
 
 [^脚注]: http://www.google.com
-```
-
-
-```python
-使用JS插件
-<script src="ut.js" type="text/javascript"></script>
-
-使用公式渲染
-<head>
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-            inlineMath: [['$','$']]
-            }
-        });
-    </script>
-</head>
-
-代码展示
-https://nbviewer.jupyter.org/urls/xtj2020.top/toolbox/aa.ipynb
 ```
 

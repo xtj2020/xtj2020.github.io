@@ -1,5 +1,4 @@
-<script src="../ut.js" type="text/javascript"></script>
-
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], inlineMath: [['$','$']] } }); </script>
 
 
 # 公式中的LaTex
@@ -15,11 +14,12 @@
 - [空格破折号箭头](./LaTex/空格破折号箭头.html)-[edit](./LaTex/空格破折号箭头.md)
 
 # 常用Latex公式
+```
 \begin{equation}
   \int_{R^q} f(x,y) dy.\emph{of\kern0pt f}
 \end{equation}
+```
 
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], inlineMath: [['$','$']] } }); </script>
 
 \sigma $\sigma$
 
@@ -45,14 +45,15 @@
 使用模板为eleantpaper
 
 ## 章节
-
+```
 \section
 \subsection
 \subsubsection
+```
 
 ## 图片的使用
 
-```python
+```
 
 # 紧跟文字显示
 \begin{figure}[H]
@@ -66,7 +67,6 @@
   \includegraphics[width=0.5\textwidth]{donate.jpg}
   \caption{一键三连求赞}
 \end{figure}
-
 ```
 
 
@@ -87,7 +87,7 @@
 新段落
 尽量使用预定义的宏来创建统一的段落
 
-## 空白
+## 空格
 
 一系列空格和Tab键产生的空格被视为一个
 

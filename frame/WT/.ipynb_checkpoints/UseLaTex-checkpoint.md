@@ -1,5 +1,53 @@
+```{.python .input  n=1}
+import os
+path = './LaTex/'
+files = os.listdir(path)
+```
+
+```{.python .input  n=7}
+# - [上下标](./LaTex/上下标.html)-[edit](./LaTex/上下标.md)
+for i in files:
+    j = i.split(".")
+    new_str = "- ["+j[0]+"](./LaTex/"+j[0]+".html)-[edit](./LaTex/"+j[0]+".md)"
+    print(new_str)
+```
+
+```{.json .output n=7}
+[
+ {
+  "name": "stdout",
+  "output_type": "stream",
+  "text": "- [](./LaTex/.html)-[edit](./LaTex/.md)\n- [\u4e0a\u4e0b\u6807](./LaTex/\u4e0a\u4e0b\u6807.html)-[edit](./LaTex/\u4e0a\u4e0b\u6807.md)\n- [\u5173\u7cfb\u7b26\u53f7](./LaTex/\u5173\u7cfb\u7b26\u53f7.html)-[edit](./LaTex/\u5173\u7cfb\u7b26\u53f7.md)\n- [\u5806\u53e0](./LaTex/\u5806\u53e0.html)-[edit](./LaTex/\u5806\u53e0.md)\n- [\u5b57\u4f53](./LaTex/\u5b57\u4f53.html)-[edit](./LaTex/\u5b57\u4f53.md)\n- [\u5e38\u89c4\u51fd\u6570](./LaTex/\u5e38\u89c4\u51fd\u6570.html)-[edit](./LaTex/\u5e38\u89c4\u51fd\u6570.md)\n- [\u7279\u6b8a\u5b57\u7b26](./LaTex/\u7279\u6b8a\u5b57\u7b26.html)-[edit](./LaTex/\u7279\u6b8a\u5b57\u7b26.md)\n- [\u754c\u9650](./LaTex/\u754c\u9650.html)-[edit](./LaTex/\u754c\u9650.md)\n- [\u77e9\u9635](./LaTex/\u77e9\u9635.html)-[edit](./LaTex/\u77e9\u9635.md)\n- [\u7a7a\u683c\u7834\u6298\u53f7\u7bad\u5934](./LaTex/\u7a7a\u683c\u7834\u6298\u53f7\u7bad\u5934.html)-[edit](./LaTex/\u7a7a\u683c\u7834\u6298\u53f7\u7bad\u5934.md)\n"
+ }
+]
+```
+
 <script src="../ut.js" type="text/javascript"></script>
+
+
+
+# 公式中的LaTex
+
+- [上下标](./LaTex/上下标.html)-[edit](./LaTex/上下标.md)
+- [关系符号](./LaTex/关系符号.html)-[edit](./LaTex/关系符号.md)
+- [堆叠](./LaTex/堆叠.html)-[edit](./LaTex/堆叠.md)
+- [字体](./LaTex/字体.html)-[edit](./LaTex/字体.md)
+- [常规函数](./LaTex/常规函数.html)-[edit](./LaTex/常规函数.md)
+- [特殊字符](./LaTex/特殊字符.html)-[edit](./LaTex/特殊字符.md)
+- [界限](./LaTex/界限.html)-[edit](./LaTex/界限.md)
+- [矩阵](./LaTex/矩阵.html)-[edit](./LaTex/矩阵.md)
+- [空格破折号箭头](./LaTex/空格破折号箭头.html)-[edit](./LaTex/空格破折号箭头.md)
+
+
+
 # 内容结构
+
+
+![img](https://xtj2020.top/webimg/LaTex/LaTex换行.png)
+![img](https://xtj2020.top/webimg/LaTex/LaTex段落结构.png)
+![img](https://xtj2020.top/webimg/LaTex/LaTex版面尺寸.png)
+![img](https://xtj2020.top/webimg/LaTex/LaTex空格.png)
+![img](https://xtj2020.top/webimg/LaTex/LaTex结构.png)
 常见的LATEX公式
 
 模板的使用
@@ -160,6 +208,7 @@ quoted statements in a narrowed width.
 \\\\\ #会产生一个空白行
 ```
 
+
 新段落
 尽量使用预定义的宏来创建统一的段落
 
@@ -306,11 +355,11 @@ latex模块
 
 \sum\limits
  $\bar x = \sum\limits_{i=1}^{n} x_i$
- 
+
  需要用 \vert 来替代 \|
- 
+
  用\times 来替代* 用\div替代除法
- 
+
 \xi $\xi$ \delta $\delta$
 \varepsilon $\varepsilon$
 \lambda $\lambda$

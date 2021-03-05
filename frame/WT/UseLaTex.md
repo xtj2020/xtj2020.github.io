@@ -1,26 +1,12 @@
-```{.python .input  n=1}
 import os
 path = './LaTex/'
 files = os.listdir(path)
-```
 
-```{.python .input  n=7}
 # - [上下标](./LaTex/上下标.html)-[edit](./LaTex/上下标.md)
 for i in files:
     j = i.split(".")
     new_str = "- ["+j[0]+"](./LaTex/"+j[0]+".html)-[edit](./LaTex/"+j[0]+".md)"
     print(new_str)
-```
-
-```{.json .output n=7}
-[
- {
-  "name": "stdout",
-  "output_type": "stream",
-  "text": "- [](./LaTex/.html)-[edit](./LaTex/.md)\n- [\u4e0a\u4e0b\u6807](./LaTex/\u4e0a\u4e0b\u6807.html)-[edit](./LaTex/\u4e0a\u4e0b\u6807.md)\n- [\u5173\u7cfb\u7b26\u53f7](./LaTex/\u5173\u7cfb\u7b26\u53f7.html)-[edit](./LaTex/\u5173\u7cfb\u7b26\u53f7.md)\n- [\u5806\u53e0](./LaTex/\u5806\u53e0.html)-[edit](./LaTex/\u5806\u53e0.md)\n- [\u5b57\u4f53](./LaTex/\u5b57\u4f53.html)-[edit](./LaTex/\u5b57\u4f53.md)\n- [\u5e38\u89c4\u51fd\u6570](./LaTex/\u5e38\u89c4\u51fd\u6570.html)-[edit](./LaTex/\u5e38\u89c4\u51fd\u6570.md)\n- [\u7279\u6b8a\u5b57\u7b26](./LaTex/\u7279\u6b8a\u5b57\u7b26.html)-[edit](./LaTex/\u7279\u6b8a\u5b57\u7b26.md)\n- [\u754c\u9650](./LaTex/\u754c\u9650.html)-[edit](./LaTex/\u754c\u9650.md)\n- [\u77e9\u9635](./LaTex/\u77e9\u9635.html)-[edit](./LaTex/\u77e9\u9635.md)\n- [\u7a7a\u683c\u7834\u6298\u53f7\u7bad\u5934](./LaTex/\u7a7a\u683c\u7834\u6298\u53f7\u7bad\u5934.html)-[edit](./LaTex/\u7a7a\u683c\u7834\u6298\u53f7\u7bad\u5934.md)\n"
- }
-]
-```
 
 <script src="../ut.js" type="text/javascript"></script>
 

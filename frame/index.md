@@ -7,7 +7,7 @@
 
 ## [WT](./stone/WT)-文档与辅助
 
-- [UseLaTex](https://xtj2020.top/xtj2020.github.io/stone/WT/UseLaTex.html)-LaTex的应用
+- [UseLaTex](https://xtj2020.top/xtj2020.github.io/frame/WT/UseLaTex.html)-LaTex的应用
 [edit](./WT/UseLaTex.md)
 - [md](https://xtj2020.top/stone/WT/md.html)-markdown语法 [edit](./stone/WT/md.md)
 - [pt](https://xtj2020.top/stone/WT/pt.html)-matplotlib.plot

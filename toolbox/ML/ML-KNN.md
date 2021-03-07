@@ -29,10 +29,20 @@ cls.fit(X_train, Y_train)
 
 
 ```
-# 指标
+# 预测与指标
 
 ```python
 
+from sklearn import metrics
+Y_pred = cls.predict(X_test)
 
+print(metrics.f1_score(Y_test, Y_pred, average="macro"))
+# 0.666
+print(metrics.f1_score(Y_test, Y_pred, average="micro"))
+# 0.8
+print(metrics.f1_score(Y_test, Y_pred, average="weighted"))
+# 1.0
+print(metrics.f1_score(Y_test, Y_pred, average="samples"))
+# 0.4
 
 ```

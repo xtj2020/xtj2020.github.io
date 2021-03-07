@@ -20,6 +20,9 @@ from sklearn.tree import DecisionTreeClassifier
 # Split dataset to 8:2
 X_train, X_test, Y_train ,Y_test = train_test_split(X, Y, test_size=0.2)
 
+```
+## 对验证集的验证
+```
 cls = DecisionTreeClassifier()
 cls.fit(X_train, Y_train)
 

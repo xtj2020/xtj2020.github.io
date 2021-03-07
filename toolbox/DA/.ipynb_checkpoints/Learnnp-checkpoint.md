@@ -1,4 +1,4 @@
-基本数据类型
+# 基本数据类型
 
 ndarray:存储单一数据类型的多维数组
 
@@ -110,3 +110,7 @@ flatten，与ravel相同，区别在是否拷贝
 # 排序
 
 np.argsort(x)与np.sort()
+
+# np的显示
+
+np.set_printoptions(threshold=1000)

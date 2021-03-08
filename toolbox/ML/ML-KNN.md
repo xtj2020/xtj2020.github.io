@@ -1,11 +1,13 @@
 # ML-KNN模型的使用
 ## 读入数据
+
 ```python
 
 path = '/CentOShome/xtjdata/xtjtemp/featuers.csv'
-feature_df = pd.read_csv(path)
+feature_df = pd.read_csv(path,)
 
 ```
+
 
 ## 对标签进行堆叠
 
@@ -21,7 +23,10 @@ from sklearn.tree import DecisionTreeClassifier
 X_train, X_test, Y_train ,Y_test = train_test_split(X, Y, test_size=0.2)
 
 ```
+
+
 ## 对验证集的验证
+
 ```
 cls = DecisionTreeClassifier()
 cls.fit(X_train, Y_train)
@@ -29,6 +34,8 @@ cls.fit(X_train, Y_train)
 
 
 ```
+
+
 # 预测与指标
 
 ```python
@@ -46,3 +53,4 @@ print(metrics.f1_score(Y_test, Y_pred, average="samples"))
 # 0.4
 
 ```
+

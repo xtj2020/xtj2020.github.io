@@ -27,6 +27,10 @@
 - [DenseNet](https://xtj2020.top/toolbox/DL/DenseNet.html)-对于DesNet网络的彻底了解
 [edit](./toolbox/DL/DenseNet.md)
 
+## [ML](./toolbox/ML)-机器学习
+
+- [ML-KNN](https://xtj2020.top/toolbox/ML/ML-KNN.html)
+
 
 ## [PY](./toolbox/PY)-python
 

@@ -27,6 +27,10 @@
 - [DenseNet](https://xtj2020.top/toolbox/DL/DenseNet.html)-对于DesNet网络的彻底了解
 [edit](./toolbox/DL/DenseNet.md)
 
+## [ML](./toolbox/ML)-机器学习
+
+- [聚类](https://xtj2020.top/toolbox/ML/聚类.html)-聚类算法的实现代码
+
 
 ## [PY](./toolbox/PY)-python
 
@@ -74,3 +78,19 @@
 - [官方wiki](./r-wiki)
 
 # 分析框架([frame](./frame))-[edit](./frame/index.md)
+
+## [PS](./stone/PS)-传统统计与建模
+- [Probability](https://xtj2020.top/stone/PS/probability.html)-概率论知识
+[edit](./stone/PS/probability.md)
+
+- [Predict](https://xtj2020.top/stone/PS/predict.html)-传统预测
+[edit](./stone/PS/predict.md)
+
+## [WT](./stone/WT)-文档与辅助
+
+- [UseLaTex](https://xtj2020.top/xtj2020.github.io/frame/WT/UseLaTex.html)-LaTex的应用
+[edit](./WT/UseLaTex.md)
+- [pt](https://xtj2020.top/frame/WT/pt.html)-matplotlib.plot
+[edit](./stone/WT/pt.md)
+- [AuxiliaryTools](https://xtj2020.top/frame/WT/AuxiliaryTools.html)-辅助性工具
+[edit](./stone/WT/AuxiliaryTools.md)

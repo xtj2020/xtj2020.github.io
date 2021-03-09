@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="generator" content="TiddlyWiki" />
+<meta name="tiddlywiki-version" content="5.1.23" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no">
+<link id="faviconLink" rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="static.css">
+<title>集成学习: 技术 — 优化理论与算法基础</title>
+</head>
+<body class="tc-body">
+
+<section class="tc-story-river tc-static-story-river">
+<p><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists  tc-tagged-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%A6%82%E5%BF%B5" data-tags="机器学习概念" data-tiddler-title="集成学习"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="更多" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="更多动作"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="编辑" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="编辑此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="关闭" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="关闭此条目"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">集成学习</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href=".html"></a>2021年02月26日 10:10</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"><span class="tc-tag-list-item">
+<span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:#333333;
+color:#333333;">
+机器学习概念
+</span>
+<span class="tc-drop-down tc-reveal" hidden="true"></span></span></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><ol><li>集成学习<ol><li>参考文献</li></ol></li></ol><p>&lt;<a class="tc-tiddlylink-external" href="https://www.cnblogs.com/sddai/p/7647731.html#:~:text=Boosting%E7%AE%97%E6%B3%95.%20Boosting%E7%AE%97%E6%B3%95%E6%8C%87%E5%B0%86%E5%BC%B1%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E7%BB%84%E5%90%88%E6%88%90%E5%BC%BA%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%EF%BC%8C%E5%AE%83%E7%9A%84%E6%80%9D%E6%83%B3%E8%B5%B7%E6%BA%90%E4%BA%8EValiant%E6%8F%90%E5%87%BA%E7%9A%84PAC%20%28Probably%20Approximately,Correct%29%E5%AD%A6%E4%B9%A0%E6%A8%A1%E5%9E%8B%E3%80%82.%20%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3%EF%BC%9A%E4%B8%8D%E5%90%8C%E7%9A%84%E8%AE%AD%E7%BB%83%E9%9B%86%E6%98%AF%E9%80%9A%E8%BF%87%E8%B0%83%E6%95%B4%E6%AF%8F%E4%B8%AA%E6%A0%B7%E6%9C%AC%E5%AF%B9%E5%BA%94%E7%9A%84%E6%9D%83%E9%87%8D%E5%AE%9E%E7%8E%B0%E7%9A%84%EF%BC%8C%E4%B8%8D%E5%90%8C%E7%9A%84%E6%9D%83%E9%87%8D%E5%AF%B9%E5%BA%94%E4%B8%8D%E5%90%8C%E7%9A%84%E6%A0%B7%E6%9C%AC%E5%88%86%E5%B8%83%EF%BC%8C%E8%80%8C%E8%BF%99%E4%B8%AA%E6%9D%83%E9%87%8D%E4%B8%BA%E5%88%86%E7%B1%BB%E5%99%A8%E4%B8%8D%E6%96%AD%E5%A2%9E%E5%8A%A0%E5%AF%B9%E9%94%99%E5%88%86%E6%A0%B7%E6%9C%AC%E7%9A%84%E9%87%8D%E8%A7%86%E7%A8%8B%E5%BA%A6%E3%80%82.%201.%20%E9%A6%96%E5%85%88%E8%B5%8B%E4%BA%88%E6%AF%8F%E4%B8%AA%E8%AE%AD%E7%BB%83%E6%A0%B7%E6%9C%AC%E7%9B%B8%E5%90%8C%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E6%9D%83%E9%87%8D%EF%BC%8C%E5%9C%A8%E6%AD%A4%E8%AE%AD%E7%BB%83%E6%A0%B7%E6%9C%AC%E5%88%86%E5%B8%83%E4%B8%8B%E8%AE%AD%E7%BB%83%E5%87%BA%E4%B8%80%E4%B8%AA%E5%BC%B1%E5%88%86%E7%B1%BB%E5%99%A8%EF%BC%9B.%202" rel="noopener noreferrer" target="_blank">https://www.cnblogs.com/sddai/p/7647731.html#:~:text=Boosting%E7%AE%97%E6%B3%95.%20Boosting%E7%AE%97%E6%B3%95%E6%8C%87%E5%B0%86%E5%BC%B1%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E7%BB%84%E5%90%88%E6%88%90%E5%BC%BA%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%EF%BC%8C%E5%AE%83%E7%9A%84%E6%80%9D%E6%83%B3%E8%B5%B7%E6%BA%90%E4%BA%8EValiant%E6%8F%90%E5%87%BA%E7%9A%84PAC%20%28Probably%20Approximately,Correct%29%E5%AD%A6%E4%B9%A0%E6%A8%A1%E5%9E%8B%E3%80%82.%20%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3%EF%BC%9A%E4%B8%8D%E5%90%8C%E7%9A%84%E8%AE%AD%E7%BB%83%E9%9B%86%E6%98%AF%E9%80%9A%E8%BF%87%E8%B0%83%E6%95%B4%E6%AF%8F%E4%B8%AA%E6%A0%B7%E6%9C%AC%E5%AF%B9%E5%BA%94%E7%9A%84%E6%9D%83%E9%87%8D%E5%AE%9E%E7%8E%B0%E7%9A%84%EF%BC%8C%E4%B8%8D%E5%90%8C%E7%9A%84%E6%9D%83%E9%87%8D%E5%AF%B9%E5%BA%94%E4%B8%8D%E5%90%8C%E7%9A%84%E6%A0%B7%E6%9C%AC%E5%88%86%E5%B8%83%EF%BC%8C%E8%80%8C%E8%BF%99%E4%B8%AA%E6%9D%83%E9%87%8D%E4%B8%BA%E5%88%86%E7%B1%BB%E5%99%A8%E4%B8%8D%E6%96%AD%E5%A2%9E%E5%8A%A0%E5%AF%B9%E9%94%99%E5%88%86%E6%A0%B7%E6%9C%AC%E7%9A%84%E9%87%8D%E8%A7%86%E7%A8%8B%E5%BA%A6%E3%80%82.%201.%20%E9%A6%96%E5%85%88%E8%B5%8B%E4%BA%88%E6%AF%8F%E4%B8%AA%E8%AE%AD%E7%BB%83%E6%A0%B7%E6%9C%AC%E7%9B%B8%E5%90%8C%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E6%9D%83%E9%87%8D%EF%BC%8C%E5%9C%A8%E6%AD%A4%E8%AE%AD%E7%BB%83%E6%A0%B7%E6%9C%AC%E5%88%86%E5%B8%83%E4%B8%8B%E8%AE%AD%E7%BB%83%E5%87%BA%E4%B8%80%E4%B8%AA%E5%BC%B1%E5%88%86%E7%B1%BB%E5%99%A8%EF%BC%9B.%202</a>.&gt;</p><ol><li><ol><li>所解决的问题</li></ol></li></ol><p>- 单个分类器效果好，为什么不用多个呢：
+  - 分类器之间有差异
+  - 每个分类器的精度必须大于0.5
+- 如何获取多个分类器：
+  - 用不同的机器学习算法训练模型
+  - 每个模型训练数据的一部分</p><ol><li><ol><li>boosting</li></ol></li></ol><p>不同的训练集是通过调整每个样本对应的权重实现的，不同的权重对应不同的样本分布，而这个权重为分类器不断增加对错分样本的重视程度。</p><p>Adaboost、GBDT、XGBOOST</p><p>步骤：</p><ol><li><ol><li>Bagging（Bootstrap Aggregating）</li></ol></li></ol><p>采用的是随机有放回的选择训练数据然后构造分类器，最后组合。</p><p>每次训练数据时只使用训练集中的某个子集作为当前训练集（有放回随机抽样），每一个训练样本在某个训练集中可以多次或不出现，经过T次训练后，可得到T个不同的分类器。对一个测试样例进行分类时，分别调用这T个分类器，得到T个分类结果。最后把这T个分类结果中出现次数多的类赋予测试样例。这种抽样的方法叫做bootstrap，就是利用有限的样本资料经由多次重复抽样，重新建立起足以代表原始样本分布之新样本。</p><p>随机森林</p></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+</p>
+</section>
+</body>
+</html>
+

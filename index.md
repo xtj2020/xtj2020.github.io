@@ -72,10 +72,9 @@
 
 将服务器上的wiki导出单文件到该目录下。然后进行链接
 
-- [凸优化](./ConvexOptimization.html)
-- [机器学习](./ML.html)
-- [wiki语法](./t-wiki.html)
-- [官方wiki](./r-wiki)
+- [凸优化](https://xtj2020.top/stone/cowiki)
+- [笔记本](https://xtj2020.top/stone/xtjwiki)
+- [CPA](https://xtj2020.top/stone/cpawiki)
 
 # 分析框架([frame](./frame))-[edit](./frame/index.md)
 

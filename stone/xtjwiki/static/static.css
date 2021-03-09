@@ -542,7 +542,7 @@ summary {
 }html:-webkit-full-screen {
 	background-color: #ffffff;
 }body.tc-body {
-	font-size: 12px;
+	font-size: 18px;
 	line-height: 1.5;
 	word-wrap: break-word;
 	
@@ -1758,7 +1758,7 @@ z-index: 100;
 }.tc-tiddler-body {
 	clear: both;
 }.tc-tiddler-frame .tc-tiddler-body {
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 20px;
 }.tc-titlebar, .tc-tiddler-edit-title {
 	overflow: hidden; /* https://github.com/Jermolene/TiddlyWiki5/issues/282 */

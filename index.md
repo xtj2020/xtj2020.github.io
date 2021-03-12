@@ -1,3 +1,24 @@
+# 框架思路([frame](./frame))-[edit](./frame/index.md)
+
+## [PS](./stone/PS)-传统统计与建模
+- [Probability](https://xtj2020.top/stone/PS/probability.html)-概率论知识
+[edit](./stone/PS/probability.md)
+
+- [Predict](https://xtj2020.top/stone/PS/predict.html)-传统预测
+[edit](./stone/PS/predict.md)
+
+- []
+
+
+## [WT](./stone/WT)-文档与辅助
+
+- [UseLaTex](https://xtj2020.top/xtj2020.github.io/frame/WT/UseLaTex.html)-LaTex的应用
+[edit](./WT/UseLaTex.md)
+- [pt](https://xtj2020.top/frame/WT/pt.html)-matplotlib.plot
+[edit](./stone/WT/pt.md)
+- [AuxiliaryTools](https://xtj2020.top/frame/WT/AuxiliaryTools.html)-辅助性工具
+[edit](./stone/WT/AuxiliaryTools.md)
+
 # 代码工具（[toolbox](./toolbox)）-[edit](./toolbox/index.md)
 
 ## [DA](./toolbox/DA)-数据处理
@@ -76,20 +97,4 @@
 - [笔记本](https://xtj2020.top/stone/xtjwiki)
 - [CPA](https://xtj2020.top/stone/cpawiki)
 
-# 分析框架([frame](./frame))-[edit](./frame/index.md)
 
-## [PS](./stone/PS)-传统统计与建模
-- [Probability](https://xtj2020.top/stone/PS/probability.html)-概率论知识
-[edit](./stone/PS/probability.md)
-
-- [Predict](https://xtj2020.top/stone/PS/predict.html)-传统预测
-[edit](./stone/PS/predict.md)
-
-## [WT](./stone/WT)-文档与辅助
-
-- [UseLaTex](https://xtj2020.top/xtj2020.github.io/frame/WT/UseLaTex.html)-LaTex的应用
-[edit](./WT/UseLaTex.md)
-- [pt](https://xtj2020.top/frame/WT/pt.html)-matplotlib.plot
-[edit](./stone/WT/pt.md)
-- [AuxiliaryTools](https://xtj2020.top/frame/WT/AuxiliaryTools.html)-辅助性工具
-[edit](./stone/WT/AuxiliaryTools.md)

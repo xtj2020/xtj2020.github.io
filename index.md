@@ -7,8 +7,8 @@
 - [Predict](https://xtj2020.top/stone/PS/predict.html)-传统预测
 [edit](./stone/PS/predict.md)
 
-## [TV](./frame/TV)-训练与验证
-- [2020]
+## [TV](./frame/TV)-训练流程
+- [2020](https://xtj2020.top/frame/TV/2020.html)-2020采用的图像训练方法 [edit](./frame/TV/2020.html)
 
 
 ## [WT](./stone/WT)-文档与辅助
@@ -97,5 +97,3 @@
 - [凸优化](https://xtj2020.top/stone/cowiki)
 - [笔记本](https://xtj2020.top/stone/xtjwiki)
 - [CPA](https://xtj2020.top/stone/cpawiki)
-
-

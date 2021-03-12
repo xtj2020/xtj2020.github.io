@@ -1,3 +1,25 @@
+# 框架思路([frame](./frame))-[edit](./frame/index.md)
+
+## [PS](./stone/PS)-传统统计与建模
+- [Probability](https://xtj2020.top/stone/PS/probability.html)-概率论知识
+[edit](./stone/PS/probability.md)
+
+- [Predict](https://xtj2020.top/stone/PS/predict.html)-传统预测
+[edit](./stone/PS/predict.md)
+
+## [TV](./frame/TV)-训练流程
+- [2020](https://xtj2020.top/frame/TV/2020.html)-2020采用的图像训练方法 [edit](./frame/TV/2020.html)
+
+
+## [WT](./stone/WT)-文档与辅助
+
+- [UseLaTex](https://xtj2020.top/xtj2020.github.io/frame/WT/UseLaTex.html)-LaTex的应用
+[edit](./WT/UseLaTex.md)
+- [pt](https://xtj2020.top/frame/WT/pt.html)-matplotlib.plot
+[edit](./stone/WT/pt.md)
+- [AuxiliaryTools](https://xtj2020.top/frame/WT/AuxiliaryTools.html)-辅助性工具
+[edit](./stone/WT/AuxiliaryTools.md)
+
 # 代码工具（[toolbox](./toolbox)）-[edit](./toolbox/index.md)
 
 ## [DA](./toolbox/DA)-数据处理
@@ -72,25 +94,8 @@
 
 将服务器上的wiki导出单文件到该目录下。然后进行链接
 
-- [凸优化](./ConvexOptimization.html)
-- [机器学习](./stone/cowiki)
-- [wiki语法](./stone/xtjwiki)
-- [官方wiki](./stone/cpawiki)
+- [凸优化](https://xtj2020.top/stone/cowiki)
+- [笔记本](https://xtj2020.top/stone/xtjwiki)
+- [CPA](https://xtj2020.top/stone/cpawiki)
 
-# 分析框架([frame](./frame))-[edit](./frame/index.md)
 
-## [PS](./stone/PS)-传统统计与建模
-- [Probability](https://xtj2020.top/stone/PS/probability.html)-概率论知识
-[edit](./stone/PS/probability.md)
-
-- [Predict](https://xtj2020.top/stone/PS/predict.html)-传统预测
-[edit](./stone/PS/predict.md)
-
-## [WT](./stone/WT)-文档与辅助
-
-- [UseLaTex](https://xtj2020.top/xtj2020.github.io/frame/WT/UseLaTex.html)-LaTex的应用
-[edit](./WT/UseLaTex.md)
-- [pt](https://xtj2020.top/frame/WT/pt.html)-matplotlib.plot
-[edit](./stone/WT/pt.md)
-- [AuxiliaryTools](https://xtj2020.top/frame/WT/AuxiliaryTools.html)-辅助性工具
-[edit](./stone/WT/AuxiliaryTools.md)

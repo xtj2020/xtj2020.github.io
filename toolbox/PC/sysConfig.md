@@ -55,6 +55,7 @@ jupyter notebook --allow-root
 conda config --set auto_activate_base false
 ```
 
+
 # 使用kaggle下载
 
 ```python
@@ -98,6 +99,10 @@ passwd root 设置下密码
 sshd: no hostkeys available – exiting
 
 sudo ssh-keygen -A
+
+## 启用crontab
+
+service cron start
 
 
 ## pytorch的配置

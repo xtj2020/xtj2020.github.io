@@ -49,11 +49,12 @@ c.NotebookApp.contents_manager_class = ‘notedown.NotedownContentsManager’
 
 ## 开启jupyter服务
 
-
+```python
 jupyter notebook --allow-root
-
-配置不为base环境
+# 配置不为base环境
 conda config --set auto_activate_base false
+```
+
 
 # 使用kaggle下载
 
@@ -98,6 +99,10 @@ passwd root 设置下密码
 sshd: no hostkeys available – exiting
 
 sudo ssh-keygen -A
+
+## 启用crontab
+
+service cron start
 
 
 ## pytorch的配置

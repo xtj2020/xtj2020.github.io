@@ -204,125 +204,6 @@ file.close()
 ```
 
 
-# 读取医学图片信息
-
-模块的导入
-
-```pythom
-import os
-import re
-import pandas as pd
-import numpy as np
-```
-
-
-函数的定义
-
-```python
-
-'''
-定义的函数功能：
-get_name(person_info)
-get_type(person_info)
-get_degreeed(person_info)
-get_person_infoAndpath(main_path) 获取每个人的文件名与路径名
-get_photo_conuts(person_path) 获取每个人每种疾病的文件数目
-'''
-
-#从主目录中获得子目录，根据子目录文件夹获得病人的病症、程度、姓名（姓名作为“主键”）
-def get_name(person_info):
-    matchRule_PersonName = re.compile("([A-Z]+_*){1,3}(?=_\d)")
-    personName = re.search(matchRule_PersonName,person_info)
-    if personName != None:
-        person_name = personName.group()
-        return person_name
-
-def get_type(person_info):
-    if '[肝血管瘤]' in person_info  or 'ANG' in person_info:
-        disease_type = 'ANG'
-    elif '[肝囊肿]'  in person_info or 'Cyst' in person_info:
-        disease_type = 'Cyst'
-    elif '[肝脏局灶性结节增生]'  in person_info  or 'FNH' in person_info:
-        disease_type = 'FNH'
-    elif '[肝细胞癌]'  in person_info  or 'HCC' in person_info:
-        disease_type = 'HCC'
-    elif '[转移瘤]'  in person_info  or 'Metastasis' in person_info:
-        disease_type = 'Metastasis'
-    elif '[正常肝脏]'  in person_info  or 'Normal' in person_info:
-        disease_type = 'Normal'
-    else:
-        disease_type = 'other'
-    return disease_type
-        
-def get_degreed(person_info):
-    degreed_type =  ["Well","Moderately","Poorly"]
-    for degreed in degreed_type:
-        if degreed in person_info:
-            person_degreed = degreed
-    return person_degreed
-
-# 主文件夹，病人信息文件夹（person_info,person_path）,照片文件夹(photo_info,photo_path)
-#person_info获得每个人的信息
-def get_person_infoAndpath(main_path):
-    person_info = os.listdir(main_path)
-#person_path是一个存储病人简历的一个列表文件
-    person_path = []
-    for i in person_info:
-        path = os.path.join(main_path,i)
-        person_path.append(path)
-    return person_info,person_path
-
-#需要获取的是病人每种切片的个数
-def get_photo_conuts(person_path):
-    photo_path =[]
-    for photo_info in  os.listdir(person_path):
-        photo_path.append(os.path.join(person_path,photo_info))
-#    df_photo_counts = pd.DataFrame(columns=['NonContrast1.0','NonContrast5.0','VenousPhase1.0','VenousPhase5.0','ArterialPhase1.0','ArterialPhase5.0','DelayPhase1.0','DelayPhase5.0'])
-#     df_photo_counts=pd.DataFrame()
-    photos_counts=dict()
-#子疾病的文件数目
-    for i in range(len(photo_path)):
-        if 'NonContrast1.0'  in photo_path[i]:
-            photos_counts['NonContrast1.0'] = len(os.listdir(photo_path[i]))
-        elif 'NonContrast5.0'  in photo_path[i]:
-            photos_counts['NonContrast5.0'] = len(os.listdir(photo_path[i]))
-        elif 'VenousPhase1.0'  in photo_path[i]:
-            photos_counts['VenousPhase1.0'] = len(os.listdir(photo_path[i]))
-        if 'VenousPhase5.0'  in photo_path[i]:
-            photos_counts['VenousPhase5.0'] = len(os.listdir(photo_path[i]))    
-        if 'ArterialPhase1.0'  in photo_path[i]:
-            photos_counts['ArterialPhase1.0'] = len(os.listdir(photo_path[i]))
-        if 'ArterialPhase5.0'  in photo_path[i]:
-            photos_counts['ArterialPhase5.0'] = len(os.listdir(photo_path[i]))
-        if 'DelayPhase1.0'  in photo_path[i]:
-            photos_counts['DelayPhase1.0'] = len(os.listdir(photo_path[i]))
-        if 'DelayPhase5.0'  in photo_path[i]:
-            photos_counts['DelayPhase5.0'] = len(os.listdir(photo_path[i]))
-#    nnew = pd.DataFrame(photos_counts,index=[1])
-#     df_photo_counts = pd.concat([df_photo_counts,nnew],axis=0)
-#     print(df_photo_counts)
-    return photos_counts
-```
-
-
-主函数的运行
-
-```python
-main_path = "H:\肝脏局灶性病变分类原始图像6"
-person_info,person_path = get_person_infoAndpath(main_path)
-main_dict = dict()
-df_main = pd.DataFrame()
-for i in range(len(person_info)):
-    main_dict["name"]=get_name(person_info[i])
-    main_dict["type"]=get_type(person_info[i])
-    main_dict["degreed"]=get_degreed(person_info[i])
-    main_dict.update(get_photo_conuts(person_path[i]))
-    df_dict = pd.DataFrame(main_dict,index=[i])
-    df_main = pd.concat([df_main,df_dict],axis=0)
-print(df_main)
-```
-
-
 # 去除文本中杂字符串
 
 ```python
@@ -417,122 +298,6 @@ for j in range(len(file_list)):
 ```
 
 
-# 模块的导入
-
-```pythom
-import os
-import re
-import pandas as pd
-import numpy as np
-```
-
-
-# 函数的定义
-
-```python
-'''
-定义的函数功能：
-get_name(person_info)
-get_type(person_info)
-get_degreeed(person_info)
-get_person_infoAndpath(main_path) 获取每个人的文件名与路径名
-get_photo_conuts(person_path) 获取每个人每种疾病的文件数目
-'''
-
-#从主目录中获得子目录，根据子目录文件夹获得病人的病症、程度、姓名（姓名作为“主键”）
-def get_name(person_info):
-    matchRule_PersonName = re.compile("([A-Z]+_*){1,3}(?=_\d)")
-    personName = re.search(matchRule_PersonName,person_info)
-    if personName != None:
-        person_name = personName.group()
-        return person_name
-
-def get_type(person_info):
-    if '[肝血管瘤]' in person_info  or 'ANG' in person_info:
-        disease_type = 'ANG'
-    elif '[肝囊肿]'  in person_info or 'Cyst' in person_info:
-        disease_type = 'Cyst'
-    elif '[肝脏局灶性结节增生]'  in person_info  or 'FNH' in person_info:
-        disease_type = 'FNH'
-    elif '[肝细胞癌]'  in person_info  or 'HCC' in person_info:
-        disease_type = 'HCC'
-    elif '[转移瘤]'  in person_info  or 'Metastasis' in person_info:
-        disease_type = 'Metastasis'
-    elif '[正常肝脏]'  in person_info  or 'Normal' in person_info:
-        disease_type = 'Normal'
-    else:
-        disease_type = 'other'
-    return disease_type
-        
-def get_degreed(person_info):
-    degreed_type =  ["Well","Moderately","Poorly"]
-    for degreed in degreed_type:
-        if degreed in person_info:
-            person_degreed = degreed
-    return person_degreed
-
-# 主文件夹，病人信息文件夹（person_info,person_path）,照片文件夹(photo_info,photo_path)
-#person_info获得每个人的信息
-def get_person_infoAndpath(main_path):
-    person_info = os.listdir(main_path)
-#person_path是一个存储病人简历的一个列表文件
-    person_path = []
-    for i in person_info:
-        path = os.path.join(main_path,i)
-        person_path.append(path)
-    return person_info,person_path
-
-#需要获取的是病人每种切片的个数
-def get_photo_conuts(person_path):
-    photo_path =[]
-    for photo_info in  os.listdir(person_path):
-        photo_path.append(os.path.join(person_path,photo_info))
-#    df_photo_counts = pd.DataFrame(columns=['NonContrast1.0','NonContrast5.0','VenousPhase1.0','VenousPhase5.0','ArterialPhase1.0','ArterialPhase5.0','DelayPhase1.0','DelayPhase5.0'])
-#     df_photo_counts=pd.DataFrame()
-    photos_counts=dict()
-#子疾病的文件数目
-    for i in range(len(photo_path)):
-        if 'NonContrast1.0'  in photo_path[i]:
-            photos_counts['NonContrast1.0'] = len(os.listdir(photo_path[i]))
-        elif 'NonContrast5.0'  in photo_path[i]:
-            photos_counts['NonContrast5.0'] = len(os.listdir(photo_path[i]))
-        elif 'VenousPhase1.0'  in photo_path[i]:
-            photos_counts['VenousPhase1.0'] = len(os.listdir(photo_path[i]))
-        if 'VenousPhase5.0'  in photo_path[i]:
-            photos_counts['VenousPhase5.0'] = len(os.listdir(photo_path[i]))    
-        if 'ArterialPhase1.0'  in photo_path[i]:
-            photos_counts['ArterialPhase1.0'] = len(os.listdir(photo_path[i]))
-        if 'ArterialPhase5.0'  in photo_path[i]:
-            photos_counts['ArterialPhase5.0'] = len(os.listdir(photo_path[i]))
-        if 'DelayPhase1.0'  in photo_path[i]:
-            photos_counts['DelayPhase1.0'] = len(os.listdir(photo_path[i]))
-        if 'DelayPhase5.0'  in photo_path[i]:
-            photos_counts['DelayPhase5.0'] = len(os.listdir(photo_path[i]))
-#    nnew = pd.DataFrame(photos_counts,index=[1])
-#     df_photo_counts = pd.concat([df_photo_counts,nnew],axis=0)
-#     print(df_photo_counts)
-    return photos_counts
-```
-
-
-# 主函数的运行
-
-```python
-main_path = "H:\肝脏局灶性病变分类原始图像6"
-person_info,person_path = get_person_infoAndpath(main_path)
-main_dict = dict()
-df_main = pd.DataFrame()
-for i in range(len(person_info)):
-    main_dict["name"]=get_name(person_info[i])
-    main_dict["type"]=get_type(person_info[i])
-    main_dict["degreed"]=get_degreed(person_info[i])
-    main_dict.update(get_photo_conuts(person_path[i]))
-    df_dict = pd.DataFrame(main_dict,index=[i])
-    df_main = pd.concat([df_main,df_dict],axis=0)
-print(df_main)
-```
-
-
 # 使用pickle
 
 ```python
@@ -557,7 +322,7 @@ h5file = h5py.File(filename,'w')
 
 w 覆盖创建新文件 \
 r 只读 \
-r+ 读写
+r+ 读写，要求文件必须存在
 a 打开读写文件（如果文件不存在则创建） \
 w- 这将创建一个新文件，但如果已经存在相同名称的文件，则会失败。
 
@@ -583,31 +348,24 @@ dset.shape
 ## Datasets
 
 ### 创建
+
 ```python
 X = h5file.create_dataset(shape=(0,args.patch_size,args.patch_size),　    #数据集的维度
 maxshape = (None,args.patch_size,args.patch_size),     #数据集的允许最大维度　
      dtype=float,compression='gzip',name='train',                      #数据类型、是否压缩，以及数据集的名字
      chunks=(args.chunk_size,args.patch_size,args.patch_size))         #分块存储，每一分块的大小
 ```
+
+
 也可以使用字典的方式进行创建
 
 
 
-## 以np为基础的HDF5操作
-
-直接使用
-<https://www.jianshu.com/p/de9f33cdfba0>
 
 ## 以pd为基础的HDF5操作
 <https://www.cnblogs.com/feffery/p/11135082.html>
 
 ### 写出
-
-**主要参数：** \
-　path：字符型输入，用于指定h5文件的名称（不在当前工作目录时需要带上完整路径信息）
-
-　　mode：用于指定IO操作的模式，与Python内建的open()中的参数一致，默认为'a'，即当指定文件已存在时不影响原有数据写入，指定文件不存在时则新建文件；'r'，只读模式；'w'，创建新文件（会覆盖同名旧文件）；'r+'，与'a'作用相似，但要求文件必须已经存在；
-
 　　complevel：int型，用于控制h5文件的压缩水平，取值范围在0-9之间，越大则文件的压缩程度越大，占用的空间越小，但相对应的在读取文件时需要付出更多解压缩的时间成本，默认为0，代表不压缩
   
 **创建：** \

@@ -88,12 +88,3 @@
 [edit](./toolbox/PT/framePytorch.md)
 - [pytorchAPI](https://xtj2020.top/toolbox/PT/pytorchAPI.html)-GitHub的使用
 [edit](./toolbox/PT/pytorchAPI.md)
-
-
-# 概念积累([stone](./stone))-[edit](./stone/index.md)
-
-将服务器上的wiki导出单文件到该目录下。然后进行链接
-
-- [凸优化](https://xtj2020.top/stone/cowiki)
-- [笔记本](https://xtj2020.top/stone/xtjwiki)
-- [CPA](https://xtj2020.top/stone/cpawiki)

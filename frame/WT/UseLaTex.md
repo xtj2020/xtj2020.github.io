@@ -1,3 +1,4 @@
+None
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], inlineMath: [['$','$']] } }); </script>
 
 
@@ -14,6 +15,7 @@
 - [空格破折号箭头](./LaTex/空格破折号箭头.html)-[edit](./LaTex/空格破折号箭头.md)
 
 # 常用Latex公式
+
 ```
 \begin{equation}
   \int_{R^q} f(x,y) dy.\emph{of\kern0pt f}
@@ -45,11 +47,13 @@
 使用模板为eleantpaper
 
 ## 章节
+
 ```
 \section
 \subsection
 \subsubsection
 ```
+
 
 ## 图片的使用
 

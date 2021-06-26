@@ -1,4 +1,9 @@
-# 框架思路([frame](./frame))-[edit](./frame/index.md)
+None
+# 自我的发展
+
+## [song](https://xtj2020.top/song/index.html)-（[edit](./song/index.md)）
+
+# [框架思路](./frame)-（[edit](./frame/index.md)）
 
 ## [PS](./stone/PS)-传统统计与建模
 - [Probability](https://xtj2020.top/stone/PS/probability.html)-概率论知识
@@ -20,7 +25,7 @@
 - [AuxiliaryTools](https://xtj2020.top/frame/WT/AuxiliaryTools.html)-辅助性工具
 [edit](./stone/WT/AuxiliaryTools.md)
 
-# 代码工具（[toolbox](./toolbox)）-[edit](./toolbox/index.md)
+# [代码工具](./toolbox)-（[edit](./toolbox/index.md)）
 
 ## [DA](./toolbox/DA)-数据处理
 

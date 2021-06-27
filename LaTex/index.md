@@ -8,7 +8,7 @@ None
 
 - [上下标](./LaTex/上下标.html)-[edit](./LaTex/上下标.md)
 - [关系符号](./LaTex/关系符号.html)-[edit](./LaTex/关系符号.md)
-- [堆叠](./LaTex/堆叠.html)-[edit](./LaTex/堆叠.md)
+- [堆叠](https://xtj2020.top/LaTex/堆叠.html)-[edit](./LaTex/堆叠.md)
 - [字体](https://xtj2020.top/LaTex/字体.html)-[edit](./LaTex/字体.md)
 - [常规函数](./LaTex/常规函数.html)-[edit](./LaTex/常规函数.md)
 - [特殊字符](https://xtj2020.top/LaTex/特殊字符.html)-[edit](./特殊字符.md)

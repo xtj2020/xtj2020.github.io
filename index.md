@@ -22,12 +22,13 @@ None
 - [webimg](https://xtj2020.top/webimg)-（[edit](./webimg/index.md)）
 
 # 代码
+- [聚类](https://xtj2020.top/code/聚类.html)-numpy库 [edit](./code/聚类.md)
+
 
 - [FrameSpider](https://xtj2020.top/toolbox/PC/FrameSpider.html)-爬虫框架
 [edit](./toolbox/PC/FrameSpider.md)
 - [SysConfig](https://xtj2020.top/toolbox/PC/sysConfig.html)-系统配置
 [edit](./toolbox/PC/sysConfig.md)
-
 - [GitHub](https://xtj2020.top/toolbox/PC/GitHub.html)-GitHub的使用
 [edit](./toolbox/PC/GitHub.md)
 
@@ -74,7 +75,7 @@ None
 [edit](./toolbox/DL/DenseNet.md)
 
 
-- [聚类](https://xtj2020.top/toolbox/ML/聚类.html)-聚类算法的实现代码
+
 
 
 - [BasePython](https://xtj2020.top/toolbox/PY/BasePython.html)-基础python用法

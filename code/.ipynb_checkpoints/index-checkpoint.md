@@ -1,7 +1,8 @@
-## [DA](./toolbox/DA)-数据处理
+None
 
-- [Learnnp](https://xtj2020.top/toolbox/DA/Learnnp.html)-numpy库
-[edit](./toolbox/DA/Learnnp.md)
+
+
+
 - [Learnpd](https://xtj2020.top/toolbox/DA/Learnpd.html)-pandas库
 [edit](./toolbox/DA/Learnpd.md)
 - [Learnscipy](https://xtj2020.top/toolbox/DA/Learnscipy.html)-scipy库

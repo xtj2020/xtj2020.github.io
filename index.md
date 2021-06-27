@@ -1,7 +1,8 @@
 None
 # 每日任务
 
-- [train](https://xtj2020.top/train)-（[edit](./tain/flow.md)）
+- [train](https://xtj2020.top/train)-（[edit](./tain/index.md)）
+- [task](https://xtj2020.top/task)-（[edit](./task/index.md)）
 
 
 # 自我的发展
@@ -14,8 +15,6 @@ None
 
 - [flow](https://xtj2020.top/flow)-（[edit](./flow/index.md)）
 
-
-# 临时文件
 
 # 图片
 

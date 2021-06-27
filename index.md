@@ -1,9 +1,25 @@
 None
 # 自我的发展
 
-## [song](https://xtj2020.top/song/index.html)-（[edit](./song/index.md)）
+- [song](https://xtj2020.top/song)-（[edit](./song/index.md)）
+
+## [speak](https://xtj2020.top/speak)-（[edit](./speak/index.md)）
+
+## [frame](https://xtj2020.top/frame)-（[edit](./frame/index.md)）
+
+## [flow](https://xtj2020.top/flow)-（[edit](./frame/flow.md)）
+
+
 
 # [框架思路](./frame)-（[edit](./frame/index.md)）
+
+# 临时文件
+
+# 图片
+
+## [webimg](https://xtj2020.top/webimg)-（[edit](./webimg/index.md)）
+
+
 
 ## [PS](./stone/PS)-传统统计与建模
 - [Probability](https://xtj2020.top/stone/PS/probability.html)-概率论知识

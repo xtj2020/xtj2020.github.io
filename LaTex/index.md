@@ -6,15 +6,15 @@ None
 
 # 公式中的LaTex
 
-- [上下标](./LaTex/上下标.html)-[edit](./LaTex/上下标.md)
-- [关系符号](./LaTex/关系符号.html)-[edit](./LaTex/关系符号.md)
+- [上下标](https://xtj2020.top/LaTex/上下标.html)-[edit](./LaTex/上下标.md)
+- [关系符号](https://xtj2020.top/LaTex/关系符号.html)-[edit](./LaTex/关系符号.md)
 - [堆叠](https://xtj2020.top/LaTex/堆叠.html)-[edit](./LaTex/堆叠.md)
 - [字体](https://xtj2020.top/LaTex/字体.html)-[edit](./LaTex/字体.md)
-- [常规函数](./LaTex/常规函数.html)-[edit](./LaTex/常规函数.md)
+- [常规函数](https://xtj2020.top/LaTex/常规函数.html)-[edit](./LaTex/常规函数.md)
 - [特殊字符](https://xtj2020.top/LaTex/特殊字符.html)-[edit](./特殊字符.md)
-- [界限](./LaTex/界限.html)-[edit](./LaTex/界限.md)
+- [界限](https://xtj2020.top/LaTex/界限.html)-[edit](./LaTex/界限.md)
 - [矩阵](https://xtj2020.top/LaTex/矩阵.html)-[edit](./LaTex/矩阵.md)
-- [空格破折号箭头](./LaTex/空格破折号箭头.html)-[edit](./LaTex/空格破折号箭头.md)
+- [空格破折号箭头](https://xtj2020.top/LaTex/空格破折号箭头.html)-[edit](./LaTex/空格破折号箭头.md)
 
 # 常用Latex公式
 

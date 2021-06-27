@@ -3,6 +3,7 @@ None
 
 - [train](https://xtj2020.top/train)-（[edit](./tain/index.md)）
 - [task](https://xtj2020.top/task)-（[edit](./task/index.md)）
+- [LaTex](https://xtj2020.top/LaTex)-（[edit](./LaTex/index.md)）
 
 
 # 自我的发展

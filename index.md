@@ -21,6 +21,9 @@ None
 
 - [webimg](https://xtj2020.top/webimg)-（[edit](./webimg/index.md)）
 
+# 代码
+
+
 
 
 ## [PS](./stone/PS)-传统统计与建模
@@ -30,14 +33,8 @@ None
 - [Predict](https://xtj2020.top/stone/PS/predict.html)-传统预测
 [edit](./stone/PS/predict.md)
 
-## [TV](./frame/TV)-训练流程
-- [2020](https://xtj2020.top/frame/TV/2020.html)-2020采用的图像训练方法 [edit](./frame/TV/2020.html)
 
 
-## [WT](./stone/WT)-文档与辅助
-
-- [UseLaTex](https://xtj2020.top/xtj2020.github.io/frame/WT/UseLaTex.html)-LaTex的应用
-[edit](./WT/UseLaTex.md)
 - [pt](https://xtj2020.top/frame/WT/pt.html)-matplotlib.plot
 [edit](./stone/WT/pt.md)
 - [AuxiliaryTools](https://xtj2020.top/frame/WT/AuxiliaryTools.html)-辅助性工具
@@ -106,8 +103,6 @@ None
 - [GitHub](https://xtj2020.top/toolbox/PC/GitHub.html)-GitHub的使用
 [edit](./toolbox/PC/GitHub.md)
 
-## [PT](./toolbox/PT)-pytorch的使用
 - [framePytorch](https://xtj2020.top/toolbox/PT/framePytorch.html)-GitHub的使用
 [edit](./toolbox/PT/framePytorch.md)
-- [pytorchAPI](https://xtj2020.top/toolbox/PT/pytorchAPI.html)-GitHub的使用
-[edit](./toolbox/PT/pytorchAPI.md)
+

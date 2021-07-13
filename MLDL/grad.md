@@ -1,4 +1,5 @@
 None
+None
 http://www.itboth.com/d/e2mYJn
 
 https://www.cnblogs.com/xiaojianliu/articles/9649037.html
@@ -22,14 +23,7 @@ ${ \partial J( \theta ) \over \partial \theta_j }=-{1 \over m} \sum \limits _{i=
 
 # 随机梯度下降SGD
 
-```python
-Loop{
 
-
-
-}
-
-```
 
 
 # Mini-batch Gradient Descent

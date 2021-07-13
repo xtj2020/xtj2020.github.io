@@ -1,19 +1,6 @@
+None
+None
 # python基础
-##### 内置函数
-
-abs( ) 返回绝对值，是复数返回模
-
-all( ) iterable对象均为真返回True
-
-any( )
-
-ascil( )
-
-
-
-##### 实现扩充数据结构
-
-##### 常见自带库
 
 ##### python中的迭代
 
@@ -25,7 +12,15 @@ python中的迭代通过for ...in...来实现，能用于所有可迭代对象
 from collections import itreable
 isintance('abc',iterable)
 ```
+迭代器的长度:
 
+```python
+def get_length(generator):
+    if hasattr(generator,"__len__"):
+        return len(generator)
+    else:
+        return sum(1 for _ in generator)
+```    
 
 可以用enumerate将一个list变为索引元素对
 
@@ -74,3 +69,20 @@ os.getmtime(path)
 os.getctime(path)	
 
 ```
+
+```python
+## 列出输入目录中文件的个数
+def lenDirFile(img_path):
+    return len(os.listdir(img_path))
+
+## 移除指定路径下的文件
+def removeDirFile(img_path):
+    try:
+        shutil.rmtree(img_path)
+    except OSError as e:
+        print ("Error: %s - %s." % (e.filename, e.strerror))
+    os.mkdir(img_path)
+    print("\n 文件列表：",os.listdir(img_path),"\n 文件个数：",len(os.listdir(img_path)))
+```
+
+
